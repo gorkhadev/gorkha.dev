@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
+  <body id="pagetop" class="d-flex flex-column{% if page.page_name == 'home' %} home_body{% endif %}">
+    <div id="page-content">
+      <header class="{% if page.page_name == 'home' %}home{% else %}default{% endif %}_header">
+        {%- include navbar.html -%}
+
+        {% if page.page_name == "home" %}
+          {% include banner.html %}
+        {% endif %}
+      </header>
+      <main class="{{ page.page_name }}-body">
+        {{ content }}
+      </main>
+    </div>
+
+    {% include footer.html %}
+
+    <a href="#pagetop" class="scroll" id="toTop">
+      <img src="/assets/img/top.png" id="toTopHover" style="opacity: 1;" alt="Go to top" />
+    </a>
+
+    {% include javascripts.html %}
+
+    {% include youtube-video-modal.html %}
+  </body>
+
+</html>

@@ -1,0 +1,76 @@
+.courses {
+  line-height: 26px !important;
+
+  h2, h3, h4, h5, h6 {
+    color: #555;
+  }
+
+  iframe {
+    height: 600px;
+    width: 100%;
+    border: 0;
+    box-shadow: 0 6px 22px 0 rgba(0, 0, 0, 0.1);
+  }
+  .quote-text {
+    font-size: 18px;
+  }
+  .key-points {
+    font-size: 16px;
+  }
+  .course-key-points {
+    padding-left: 1rem;
+    font-size: 16px;
+  }
+  .tab-content {
+    background-color: #f2f2f2;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .nav-pills .nav-link  {
+    color: #333;
+
+    &:hover {
+      background-color: #777;
+      color: #fff;
+    }
+  }
+  .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    background: #777;
+    color: #fff;
+  }
+}
+
+.tutorial-series-body {
+  .td-sidebar-nav {
+    margin: 0;
+    padding: 0;
+  }
+  #TableOfContents {
+    padding: 1rem 0.8rem;
+    background-color: #f6f6f6;
+    border-radius: 5px;
+
+    ul {
+      margin-bottom: 0;
+      padding-left: 0;
+      list-style: none;
+
+      a {
+        font-weight: 300;
+      }
+    }
+  }
+  .project-phase {
+    .card {
+      background: transparent;
+    }
+  }
+  .project-phase:hover {
+    background-color: #eee;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-brand {
+    font-size: 20px !important;
+  }
+}

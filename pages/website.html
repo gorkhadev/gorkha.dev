@@ -1,0 +1,70 @@
+---
+layout: default
+title: Website Bootcamp
+permalink: /website/
+---
+
+<div class="bootcamp-page py-4">
+  <div class="container">
+    <h1 class="text-center mb-4">Website Bootcamp</h1>
+
+    {% include util/note.html
+        note="The content of this page will be updated as the Bootcamp progress. Currently, the running 1st batch is in 3rd Week."
+        type="important"
+    %}
+
+    <h2 class="text-center mt-5">What is Website?</h2>
+    <p class="my-4">
+      A website is a collection of web pages and related content that is identified by a common domain name
+      and published on at least one web server.
+      An examples are <a href="https://brgtrainings.com" target="_blank">brgtrainings.com</a>,
+      <a href="https://wikipedia.org" target="_blank">wikipedia.org</a> or others.
+      (<a href="https://en.wikipedia.org/wiki/Website" target="_blank">source</a>)
+    </p>
+
+    {% include util/note.html note="Videos are in Nepali." %}
+
+    <div class="videos">
+      <table class="table table-striped">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Description</th>
+            <th scope="col">Video</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for assignment in site.data.website-bootcamp %}
+            {% assign week_name = assignment[0] | split: "_" | join: " " | capitalize %}
+            <tr>
+              <th scope="row" colspan="3" class="text-center"><h4>{{ week_name }}</h4></th>
+            </tr>
+            {% for data in assignment[1] %}
+              <tr>
+                <th scope="row">{{ forloop.index }}</th>
+                <td>{{ data.description }}</td>
+                <td>
+                  {% if assignment[0] contains "assignments" %}
+                    <a href="{{ data.url }}" class="btn text-success" target="_blank">
+                      <i class="fab fa-codepen fa-lg"></i>
+                    </a>
+                  {% else %}
+                    <a href="#youtubeVideoModal" role="button" class="btn youtube-video-btn"
+                      data-src="https://www.youtube.com/embed/{{ data.video }}?autoplay=1" data-toggle="modal"
+                      data-target="#youtubeVideoModal">
+                      <i class="fab fa-youtube fa-lg"></i>
+                    </a>
+                  {% endif %}
+                </td>
+              </tr>
+            {% endfor %}
+          {% endfor %}
+          <tr>
+            <th scope="row" colspan="3" class="text-center"><h4>More coming soon ...</h4></th>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+  </div>
+</div>

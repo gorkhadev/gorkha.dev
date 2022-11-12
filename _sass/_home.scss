@@ -1,0 +1,284 @@
+#page-content {
+  flex: 1 0 auto;
+}
+#page-content main {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.section-padding {
+  padding: 70px 0px;
+}
+.btn.active:focus {
+  box-shadow: none !important;
+}
+.bg-dark {
+  background-color: #222;
+}
+.bg-white-shadow {
+  background-color: #fff;
+  box-shadow: 0 6px 22px 0 rgba(0,0,0,0.08);
+}
+.no-list-style {
+  list-style: none;
+}
+.text-light-dark {
+  color: #666;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+.navbar {
+  background-color: #003594;
+  padding-top: 0;
+  padding-bottom: 0;
+
+  .brand {
+    font-size: 1.6rem;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    line-height: 24px;
+
+    img {
+      height: 52px;
+    }
+  }
+  .navbar-nav .nav-item .nav-link {
+    padding: 1.2rem 1rem;
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;
+  }
+  .navbar-nav .nav-item.active .nav-link,
+    .navbar-nav .nav-item:hover .nav-link {
+    background-color: #1b64e7;
+    color: #fff;
+  }
+  .navbar-toggler {
+    border: 1px solid #fff;
+    font-size: 20px;
+    padding: 0.125rem 0.25rem;
+  }
+}
+
+// Header SCSS
+.home_header {
+  margin-top: 60px;
+
+  .banner-section {
+    padding: 6rem 0;
+
+    h4 {
+      color: #777;
+    }
+    h5 {
+      font-size: 1.5rem;
+    }
+
+    h1 {
+      font-size: 3.2rem;
+      font-weight: 600;
+    }
+
+    .action-btns {
+      .btn:nth-child(2) {
+        margin-left: 10px;
+      }
+    }
+
+    .banner-img-wrapper img {
+      width: 90%;
+      margin-left: auto;
+    }
+  }
+}
+
+#page-content main.home-body {
+  margin: 0;
+  padding-top: 0;
+}
+
+// footer css
+.footer-section {
+  background: linear-gradient(180deg, #142850 0%, #0b1a38 70%);
+
+  .footer-text {
+    font-size: 30px;
+    color: #fff;
+    line-height: 25px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .footer-tagline {
+    color: yellow;
+    font-size: 13px;
+    font-style: italic;
+  }
+  .footer-social {
+    a {
+      font-size: 18px;
+    }
+  }
+}
+
+// share page
+.sidebar-share-page {
+  h5 {
+    font-size: 16px;
+  }
+  .badge {
+    display: inline-block;
+  }
+  .twitter-share {
+    background-color: #55acee;
+  }
+  .facebook-share {
+    background-color: #3b5998;
+  }
+  .linkedin-share {
+    background-color: #0077B5;
+  }
+  a {
+    font-weight: 300;
+  }
+}
+
+// Getting tastes
+.getting-tastes-body {
+  .card {
+    border: 0;
+
+    .card-img-top {
+      height: 180px;
+      // width: 160px;
+    }
+  }
+  .right-arrow-btn {
+    img {
+      height: 60px;
+      width: 70px;
+      margin: auto;
+      margin-top: 3rem;
+    }
+  }
+  .card-columns {
+    column-count: 4;
+  }
+}
+
+// tutorials section
+.tutorials-page {
+  img {
+    height: 180px;
+    max-width: 100%;
+  }
+  .card-title {
+    font-size: 16px;
+    margin-top: 5px;
+  }
+  .card-body {
+    padding: 5px;
+  }
+}
+
+.stay-connected-section {
+  padding: 5rem 0;
+  background-color: $color-primary;
+  color: #fff;
+
+  a img {
+    height: 4rem;
+    margin-right: 10px;
+  }
+}
+
+.courses-section {
+  padding: 4rem 0;
+
+  h1 {
+    color: $color-primary;
+    margin-bottom: 2rem !important;
+  }
+}
+.tutorials-section {
+  background: #F8F8F8;
+  padding: 4rem 0;
+
+  h1 {
+    color: $color-primary;
+    margin-bottom: 2rem !important;
+  }
+
+  .card {
+    background-color: transparent;
+  }
+}
+
+// courses page
+.courses-page {
+  img {
+    height: 200px;
+    max-width: 100%;
+  }
+}
+
+// projects page
+.projects-page {
+  img {
+    height: 10rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    .navbar-toggler {
+      border-color: #fff !important;
+      padding: 0.5rem 0.8rem;
+
+      .fa-bars {
+        color: #fff;
+      }
+    }
+    .brand {
+      font-size: 1.5rem;
+    }
+  }
+  .navbar-nav {
+    margin-left: 0;
+
+    .nav-item .nav-link {
+      text-align: center;
+    }
+  }
+  .navbar {
+    padding: 0.6rem 1rem;
+  }
+  .navbar .navbar-nav .nav-item.active .nav-link, .navbar .navbar-nav .nav-item:hover .nav-link {
+    background-color: transparent;
+    color: #fff;
+    font-weight: 600;
+  }
+  .navbar .navbar-nav .nav-item .nav-link {
+    padding: 0.8rem 1rem;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .home_header .banner-section {
+    .action-btns {
+      .btn:nth-child(2) {
+        margin-top: 1rem;
+        margin-left: 0;
+      }
+    }
+  }
+  .stay-connected-section {
+    padding: 4rem 0;
+
+    a img {
+      height: 2rem;
+    }
+  }
+}

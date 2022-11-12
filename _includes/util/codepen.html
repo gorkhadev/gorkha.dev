@@ -1,0 +1,22 @@
+<!--
+
+include util/codepen.html
+author="author-id"
+name="Author Name"
+id="pen-id"
+title="Title of pen"
+
+-->
+{% assign pen = include %}
+{% assign height = 400 %}
+{% if pen.height %}
+  {% assign height = pen.height %}
+{% endif %}
+<p class="codepen" data-height="{{ height }}" data-theme-id="dark" data-default-tab="result" data-user="{{ pen.author }}"
+  data-slug-hash="{{ pen.id }}" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
+  data-pen-title="{{ pen.title }}">
+  <span>See the Pen <a href="https://codepen.io/{{ pen.author }}/pen/{{ pen.id }}">
+  {{ pen.title }}</a> by {{ pen.name }} (<a href="https://codepen.io/{{ pen.author }}">@{{ pen.author }}</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>

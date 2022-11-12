@@ -1,0 +1,10 @@
+<a href="/{{ site.baseurl }}{{ include.topic.url }}" class="text-secondary">
+  <div class="card shadow mb-3">
+    <div class="card-body">
+      <h5 class="card-title font-weight-bold">{{ include.index }}. {{ include.topic.title }}</h5>
+      {% if include.topic.description %}
+        <p class="card-text">{{ include.topic.description }}</p>
+      {% endif %}
+    </div>
+  </div>
+</a>

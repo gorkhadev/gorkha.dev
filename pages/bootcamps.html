@@ -1,0 +1,25 @@
+---
+layout: default
+title: Coding Bootcamps
+permalink: /bootcamps/
+page_name: bootcamps
+---
+
+<!-- bootcamps list -->
+<div class="bootcamps-page py-6">
+  <h1 class="text-center font-weight-bold mb-4">Coding Bootcamps</h1>
+
+  <div class="container">
+    <div class="row justify-content-center">
+      {% for bootcamp in site.bootcamps %}
+        <div class="card col-md-6 text-center border-0">
+          <img src="/assets/img/{{ bootcamp.thumbnail }}" class="card-img-top pt-3" alt="{{ bootcamp.title }}">
+          <div class="card-body">
+            <h5 class="card-title">{{ bootcamp.title }}</h5>
+            <a href="{{ bootcamp.url }}" class="btn btn-sm btn-primary">View Details</a>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

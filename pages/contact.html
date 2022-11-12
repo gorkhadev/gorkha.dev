@@ -1,0 +1,39 @@
+---
+layout: default
+title: Contact
+permalink: /contact/
+page_name: contact
+---
+
+<div class="contact-section py-4">
+  <h1 class="text-center font-weight-bold">Contact</h1>
+
+  <div class="container mt-4">
+    <div class="row justify-content-center text-center wow fadeInUp">
+      <div class="col-md-5 col-lg-3 contact-info mb-1">
+        <h2 class="mt-2">Do you have any message?<br>Send me a mail!</h2>
+      </div>
+      <div class="col-xs-12 col-md-7 col-lg-5">
+        <form action="https://formspree.io/f/xzbyznkd" method="POST">
+          <input type="hidden" name="_subject" value="[Mail From Website]" />
+          <input type="text" class="form-control mb-1" id="name" placeholder="Enter Full Name" name="Name"
+            pattern="^[A-Za-z\s]{1,}[\.]{0,1}[A-Za-z\s]{0,}$" required>
+
+          <input type="text" class="form-control mb-1" id="phone" placeholder="Enter Phone No (10 Digits)" name="Phone"
+            pattern="[0-9]{10}">
+
+          <input type="email" class="form-control mb-1" id="email" placeholder="Enter Email" name="Email"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+
+          <textarea class="form-control mb-1" rows="5" id="comment" name="Message" placeholder="Type your message here ..."
+            pattern=".{3,}" required></textarea>
+
+          <div class="submit mt-3 text-center">
+            <button type="submit" class="btn btn-secondary px-4">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+  </div>
+</div>

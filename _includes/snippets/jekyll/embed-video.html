@@ -1,0 +1,10 @@
+<figure>
+  <video controls width="100%" class="shadow">
+    <source src="{{ include.src }}" type="video/webm">
+    Your browser does not support the video element.
+  </video>
+  {% if include.credit %}
+    <figcaption>Credit: <a href="{{ include.credit_url }}" target="_blank">{{ include.credit }}</a></figcaption>
+  {% endif %}
+</figure>
+

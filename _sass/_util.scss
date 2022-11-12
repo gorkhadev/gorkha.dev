@@ -1,0 +1,176 @@
+
+.util-note {
+  .icon .icon-note::before {
+    content: "\f05a";
+    color: #19407c;
+  }
+  .icon .icon-question::before {
+    content: "\f059";
+    color: #bf0000;
+  }
+  .icon .icon-important::before {
+    content: "\f06a";
+    color: #bf0000;
+  }
+
+  .icon .icon-warning::before {
+    content: "\f071";
+    color: #bf6900;
+  }
+
+  .icon .icon-tip::before {
+    content: "\f0eb";
+    text-shadow: 1px 1px 2px rgba(155,155,0,.8);
+    color: #111;
+  }
+
+  .icon .icon-caution::before {
+    content: "\f06d";
+    color: #bf3400;
+  }
+
+  .icon .icon-recommend::before {
+    content: "\f4fc";
+    color: #155724;
+  }
+
+  .icon [class^="fa icon-"] {
+    font-size: 2em;
+    text-shadow: 1px 1px 2px rgba(0,0,0,.5);
+    cursor: default;
+  }
+
+  table td.icon {
+    text-align: center;
+    width: 60px;
+    background-color: #dfebf5;
+    border-color: #d3e3f1;
+    border-radius: 0.25rem 0 0 0.25rem;
+    padding: .8rem 1rem !important;
+  }
+  table td.icon.warning {
+    color: #856404;
+    background-color: #fff3cd;
+    border-color: #ffeeba;
+  }
+  table td.icon.important {
+    color: #8a0c0c;
+    background-color: #fee6e6;
+  }
+  table td.icon.question {
+    color: #a41a1a;
+    background-color: #fce6ec;
+    border-color: #ffcad7;
+  }
+  table td.icon.caution {
+    color: #a41a1a;
+    background-color: #ffdfd3;
+  }
+  table td.icon.recommend {
+    color: #155724;
+    background-color: #d4edda;
+  }
+
+  table td.content {
+    padding: 0.8rem 1rem !important;
+    border-left: 1px solid #ddddd8 !important;
+    font-size: 18px;
+    color: #32516b;
+    line-height: 27px;
+    font-weight: 400;
+    background-color: #dfebf5;
+    border-color: #d3e3f1;
+    border-radius: 0 0.25rem 0.25rem 0;
+
+    a {
+      color: #333;
+    }
+  }
+  table td.content.warning {
+    color: #856404;
+    background-color: #fff3cd;
+    border-color: #ffeeba !important;
+  }
+  table td.content.question {
+    color: #a41a1a;
+    background-color: #fce6ec;
+    border-color: #ffcad7 !important;
+  }
+  table td.content.important {
+    color: #8a0c0c;
+    background-color: #fee6e6;
+  }
+  table td.content.caution {
+    color: #a41a1a;
+    background-color: #ffdfd3;
+  }
+  table td.content.recommend {
+    color: #155724;
+    background-color: #d4edda;
+  }
+}
+.util-quote {
+  margin: 0 1em 1.5em 1.5em;
+
+  blockquote {
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    color: rgba(0,0,0,0.9);
+    font-size: 1.15rem;
+    line-height: 1.75;
+    word-spacing: 0.1em;
+    letter-spacing: 0;
+    font-style: italic;
+
+    &:before {
+      content: "\201c";
+      float: left;
+      font-size: 2.75em;
+      font-weight: bold;
+      line-height: 0.6em;
+      margin-left: -0.6em;
+      color: #7a2717;
+      text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    }
+  }
+
+  .attribution {
+    font-size: .9375em;
+    line-height: 1.45;
+    font-style: italic;
+    text-align: right;
+    margin-right: 20px;
+
+    a {
+      color: #777;
+    }
+  }
+}
+.util-quote-with-pic {
+  .source {
+    text-align: right;
+    font-size: 14px !important;
+    color: #333;
+  }
+}
+.alert-primary {
+  color: #32516b;
+  background-color: #dfebf5;
+  border-color: #d3e3f1;
+
+  a:visited:not(.btn) {
+    color: #3676ab;
+  }
+}
+
+.util-notice {
+  background-color: $site-color;
+  color: #fff;
+
+  h1, h2, h3 {
+    margin: 0 !important;
+    color: rgba(255, 255, 255, 0.9) !important;
+  }
+}

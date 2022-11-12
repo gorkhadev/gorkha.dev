@@ -1,0 +1,49 @@
+<div class="row justify-content-center">
+  <div class="col-md-10 teacher-area">
+    <div class="row">
+      <div class="col-md-6 mb-1">
+        <p class="paragraph-agileinfo">
+          {{ include.teacher.intro_header }}
+          {% unless include.teacher.intro_quote == "" %}
+            <br>
+            <blockquote><i>&#8220;{{ include.teacher.quote }}&#8221;</i></blockquote>
+          {% endunless %}
+          {{ include.teacher.intro_body }}
+        </p>
+      </div>
+      <div class="col-md-3 teacher-pic mb-1">
+        <img class="team-img img-fluid" src="{{ site.baseurl }}/assets/img/{{ include.teacher.pic }}" alt="{{ include.teacher.name }}">
+        <h6>{{ include.teacher.name }} ({{ include.teacher.nick }})</h6>
+        <div class="social-icons">
+          <ul>
+            <li>
+              <a href="https://twitter.com/{{ include.teacher.socials.twitter }}" target="_blank"><span class="fab fa-twitter"></span></a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/{{ include.teacher.socials.facebook }}" target="_blank"><span class="fab fa-facebook-f"></span></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/{{ include.teacher.socials.linkedin }}/" target="_blank"><span class="fab fa-linkedin-in"></span></a>
+            </li>
+            <li>
+              <a href="https://github.com/{{ include.teacher.socials.github }}" target="_blank"><span class="fab fa-github"></span></a>
+            </li>
+          </ul>
+        </div>
+        <div class="clearfix"> </div>
+      </div>
+      <div class="col-md-3 mb-1">
+        <div class="about-right">
+          <h4>Expertise</h4>
+          <ul class="pl-0">
+            {% for skill in include.teacher.expertise %}
+              <li><span class="fas fa-star" aria-hidden="true"></span></span>{{ skill }}</li>
+            {% endfor %}
+          </ul>
+          <h4>Lives in</h4>
+          <p>{{ include.teacher.address }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,9 @@
+- title: C Language
+  url: /c/
+  thumbnail: courses/c/thumbnail.png
+- title: Ruby Language
+  url: /ruby/
+  thumbnail: courses/ruby/ruby.png
+- title: Ruby on Rails
+  url: /ruby-on-rails/
+  thumbnail: courses/ror/thumbnail.png

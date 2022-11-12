@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
+  <body id="pagetop" class="d-flex flex-column default_body">
+    <header class="{% if page.page_name == 'home' %}home{% else %}default{% endif %}_header">
+      {%- include navbar.html -%}
+
+      {% if page.page_name == "home" %}
+        {% include staticbanner.html %}
+      {% endif %}
+    </header>
+    <main class="tutorial-series-body">
+      <div class="container-fluid td-outer">
+        <div class="td-main">
+          <div class="row justify-content-center flex-xl-nowrap">
+            <div class="col-12 col-md-3 col-xl-3 td-sidebar">
+              {% include tutorial/sidebar.html %}
+            </div>
+
+            <main class="col-12 col-md-9 col-xl-6 px-md-2 pr-md-4" role="main">
+              <div class="td-content">
+                {% if page.thumbnail and page.include_header_image %}
+                  <center>
+                    <img src="{{ site.baseurl }}/assets/img/{{ page.thumbnail }}" class="thumbnail img-fluid" />
+                  </center>
+                {% endif %}
+                {% if page.thumbnail_credit %}
+                  <p class="thumbnail-credit">Image: {{ page.thumbnail_credit }}</p>
+                {% endif %}
+                <h1 id="{{ page.title | remove: ':' | remove: ',' | downcase | split: ' ' | join: '-' }}" class="mb-0">{{ page.title }}</h1>
+                <h4 class="m-0">{{ page.description }}</h4>
+
+                {% if page.tags %}
+                  <div class="tags mb-4"></div>
+                {% endif %}
+                <hr>
+
+                {{ content }}
+
+                <div class="mt-4">
+                  {% if page.prev_link %}
+                    <a href="{{ page.prev_link }}" class="btn btn-primary px-4 mr-5" role="button">Previous</a>
+                  {% endif %}
+                  {% if page.next_link %}
+                    <a href="{{ page.next_link }}" class="btn btn-primary px-4" role="button">Next</a>
+                  {% endif %}
+                </div>
+
+                <div class="show-share mt-4">
+                  {% include share-page.html %}
+                </div>
+
+                {% if site.disqus.shortname and page.comments == true  %}
+                  <div id="comments" class="mt-3">
+                    <h4>Help me to improve <span class="site-color font-weight-bold">{{ site.title }}</span>.</h4>
+                    {% include disqus_comments.html %}
+                  </div>
+                {% endif %}
+              </div>
+            </main>
+          </div>
+        </div>
+
+        {% include footer.html %}
+      </div>
+    </main>
+
+    {% include course/toc.html %}
+    {% include course/tags.html %}
+
+    <a href="#pagetop" class="scroll" id="toTop">
+      <img src="/assets/img/top.png" id="toTopHover" style="opacity: 1;" alt="Go to top" />
+    </a>
+
+    {% include javascripts.html %}
+
+    {% include youtube-video-modal.html %}
+  </body>
+
+</html>

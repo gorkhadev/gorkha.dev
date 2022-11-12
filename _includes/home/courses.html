@@ -1,0 +1,24 @@
+<div class="courses-section">
+  <h1 class="text-center mb-3 mt-5">Learn from Our Courses</h1>
+
+  <div class="container">
+    <div class="row getting-tastes-body justify-content-center">
+      {% assign courses = site.data.courses | reverse %}
+      {% for course in courses limit: 3 %}
+        <div class="card col-md-3 text-center p-4 border-0">
+          <img src="/assets/img/{{ course.thumbnail }}" class="card-img-top" alt="{{ course.title }}">
+          <div class="card-body">
+            <h5 class="card-title">{{ course.title }}</h5>
+            <a href="{{ course.url }}" class="btn btn-sm btn-primary">Let's learn</a>
+          </div>
+        </div>
+      {% endfor %}
+      <div class="col-md-2 text-center border-0 mb-5 right-arrow-btn">
+        <a href="/courses/">
+          <img src="{{ site.asset_base_url }}/img/right-arrow.png" alt="Right Arrow">
+          <h5 class="card-title">View All</h5>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

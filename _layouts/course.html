@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
+  <body id="pagetop" class="d-flex flex-column default_body">
+    <header class="{% if page.page_name == 'home' %}home{% else %}default{% endif %}_header">
+      {%- include navbar.html -%}
+
+      {% if page.page_name == "home" %}
+        {% include staticbanner.html %}
+      {% endif %}
+    </header>
+    <main class="course-body">
+      <div class="container-fluid td-outer">
+        <div class="td-main">
+          <div class="row justify-content-center flex-xl-nowrap">
+            {% unless page.disable_sidebar %}
+            <div class="col-12 col-md-3 col-md-3 td-sidebar d-print-none">
+              {% include course/sidebar.html %}
+            </div>
+            {% endunless %}
+
+            <!-- {% unless page.disable_toc %}
+              <div class="d-none d-xl-block col-md-3 col-xl-3 td-toc d-print-none">
+                {% include share-page.html %}
+                {% include course/useful-links.html %}
+                <nav id="TableOfContents">
+                  <p class="h4 mb-2 text-muted">Quick Links</p>
+                  <ul>
+                    <li>
+                      <ul id="TOC">
+
+                      </ul>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            {% endunless %} -->
+
+            <main class="col-12 col-md-9 col-xl-6" role="main">
+              <!-- <nav aria-label="breadcrumb" class="d-none d-md-block d-print-none">
+                <ol class="breadcrumb spb-1">
+                  <li class="breadcrumb-item active" aria-current="page">
+                    {% if page.parent %}
+                      {% assign course = page.course %}
+                      <a href="{{ site.url }}{{ site.baseurl }}{{ page.parent }}">
+                        {{ page.parent  | remove: course | remove: "/" | replace: "-", " " | capitalize }}
+                      </a>
+                      <i class="fas fa-chevron-right mx-2"></i>
+                    {% endif %}
+                    <a href="{{ site.url }}{{ site.baseurl }}{{ page.url | remove: 'index' }}">
+                      {{ page.title }}
+                    </a>
+                  </li>
+                </ol>
+              </nav> -->
+              <div class="td-content">
+                {% if page.prev_section %}
+                  <a href="{{ page.prev_section }}" class="btn btn-secondary" role="button">Go to Previous Section</a>
+                {% endif %}
+
+                {{ content }}
+
+                <div class="mt-5">
+                  {% if page.prev_link %}
+                    <a href="{{ page.prev_link }}" class="btn btn-primary px-4 mr-5" role="button">Previous</a>
+                  {% endif %}
+                  {% if page.next_link %}
+                    <a href="{{ page.next_link }}" class="btn btn-primary px-4" role="button">Next</a>
+                  {% endif %}
+                </div>
+
+
+                {% if page.layout == 'syllabus_page' %}
+                  <hr class="mt-5" />
+                  <div class="show-share mt-4">
+                    {% include share-page.html %}
+                  </div>
+                {% endif %}
+
+                {% if site.disqus.shortname and page.comments == true  %}
+                  <div id="comments" class="mt-3">
+                    <h3>Help me to improve <span class="site-color font-weight-bold">{{ site.title }}</span>.</h3>
+                    {% include disqus_comments.html %}
+                  </div>
+                {% endif %}
+              </div>
+            </main>
+          </div>
+        </div>
+
+        {% include footer.html %}
+        {% include course/permalinks.html %}
+      </div>
+    </main>
+
+    <a href="#pagetop" class="scroll" id="toTop">
+      <img src="/assets/img/top.png" id="toTopHover" style="opacity: 1;" alt="Go to top" />
+    </a>
+
+    {% include javascripts.html %}
+
+    {% include youtube-video-modal.html %}
+  </body>
+
+</html>

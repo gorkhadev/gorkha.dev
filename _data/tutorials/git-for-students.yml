@@ -1,0 +1,8 @@
+- title: Git for Students
+  url: tutorials/git-for-students
+  links:
+    - title: Introduction
+      url: tutorials/git-for-students/intro
+    - title: Features of Ruby
+      url: tutorials/git-for-students/features
+

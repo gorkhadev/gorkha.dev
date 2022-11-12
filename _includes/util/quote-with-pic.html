@@ -1,0 +1,21 @@
+<div class="row util-quote-with-pic mb-3">
+  <div class="col-md-3 pic-block mb-3">
+    <img src="{{ site.asset_base_url }}/img/{{ include.pic }}" class="img-fluid" alt="Profile pic" />
+    {% if include.pic_credit %}
+      <p class="source">Image: {{ include.pic_credit }}</p>
+    {% endif %}
+  </div>
+  <div class="col-md-8 util-quote">
+    <blockquote>
+      <div class="paragraph">
+        {{ include.quote }}
+      </div>
+    </blockquote>
+    {% if include.quote_by %}
+      <div class="attribution">— {{ include.quote_by }}</div>
+    {% endif %}
+    {% if include.source %}
+      <div class="source">(Source: <a href="{{ include.source }}" target="_blank">{{ include.source }}</a>)</div>
+    {% endif %}
+  </div>
+</div>

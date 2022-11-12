@@ -1,0 +1,61 @@
+---
+layout: default
+title: Mentors and Teachers
+permalink: /teachers/
+page_name: teachers
+thumbnail: mentors-and-teachers.png
+---
+
+<section class="mentors-and-teachers py-6">
+  <div class="container">
+    <h1 class="text-center font-weight-bold mb-5">Mentors and Teachers</h1>
+
+    {% for teacher in site.data.mentors-teachers %}
+      {% include teacher-card.html teacher=teacher %}
+    {% endfor %}
+
+    <div class="upcoming-teachers">
+      <h1 class="text-center font-weight-bold mb-5 mt-3">Upcoming Teachers</h1>
+
+      <div class="row justify-content-center">
+        {% for teacher in site.data.upcoming-teachers %}
+          <div class="col-md-3">
+            <div class="card text-center">
+              <img src="/assets/img/{{ teacher.pic }}" class="card-img-top rounded-circle mt-4" alt="{{ teacher.name }}">
+              <div class="card-body">
+                <h4 class="card-title">{{ teacher.name }}</h4>
+                <p class="card-text font-weight-light">
+                  {{ teacher.intro }}
+                </p>
+              </div>
+              <div class="card-footer social-icons">
+                <ul class="text-center">
+                  {% if teacher.socials.website %}
+                  <li>
+                    <a href="{{ teacher.socials.website }}" target="_blank"><span class="fas fa-link"></span></a>
+                  </li>
+                  {% endif %}
+                  {% if teacher.socials.twitter %}
+                  <li>
+                    <a href="https://twitter.com/{{ teacher.socials.twitter }}" target="_blank"><span class="fab fa-twitter"></span></a>
+                  </li>
+                  {% endif %}
+                  {% if teacher.socials.facebook %}
+                  <li>
+                    <a href="https://www.facebook.com/{{ teacher.socials.facebook }}" target="_blank"><span class="fab fa-facebook-f"></span></a>
+                  </li>
+                  {% endif %}
+                  {% if teacher.socials.linkedin %}
+                  <li>
+                    <a href="https://www.linkedin.com/in/{{ teacher.socials.linkedin }}/" target="_blank"><span class="fab fa-linkedin-in"></span></a>
+                  </li>
+                  {% endif %}
+                </ul>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>

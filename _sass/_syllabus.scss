@@ -1,0 +1,127 @@
+.td-main {
+  .td-content {
+    h1,h2,h3,h4,h5,h6,p,ul {
+      font-family: 'Poppins', Helvetica, Arial, sans-serif;
+    }
+    h1 {
+      color: #222;
+    }
+    h2 {
+      color: #444;
+    }
+    h3 {
+      color: #555;
+    }
+    h4 {
+      color: #666;
+    }
+    .emoji {
+      height: 30px;
+      width: 30px;
+      margin-bottom: 5px;
+    }
+
+    p, ul, div {
+      font-size: 15px;
+      line-height: 30px;
+      font-weight: 400;
+    }
+    p, ul {
+      color: #555;
+    }
+    h1 {
+      font-weight: bold;
+    }
+    h2 {
+      margin-top: 2.5rem;
+      font-weight: bold;
+
+      &:before {
+        height: 0;
+        margin-top: 0;
+      }
+    }
+    h3 {
+      margin-top: 2.25rem;
+      margin-bottom: 0.6rem;
+      font-weight: 600;
+
+      &:before {
+        height: 0;
+        margin-top: 0;
+      }
+    }
+    .thumbnail-credit {
+      font-size: 13px;
+      font-weight: 300px;
+      text-align: center;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-bottom: 1rem;
+
+      thead tr th {
+        padding: 8px;
+        background-color: #555;
+        color: white;
+        border: 1px solid #ddd;
+        font-weight: 500;
+      }
+      tbody tr td {
+        border: 1px solid #ddd;
+        padding: 5px 8px;
+      }
+      tr:nth-child(even){background-color: #f2f2f2;}
+      tr:hover {background-color: #ddd;}
+    }
+    table.rouge-table {
+      margin-bottom: 0;
+      tbody tr td {
+        border: 0;
+        padding: 0 0 0 5px;
+      }
+    }
+    figcaption {
+      font-size: 12px;
+      a {
+        color: #444;
+      }
+    }
+    .util-note {
+      table tbody tr td {
+        border: 0;
+      }
+    }
+    div.highlight {
+      line-height: 24px;
+    }
+    pre > code, .highlight > code {
+      font-size: 15px;
+      line-height: 22px;
+      font-family: 'Inconsolata', SFMono-Regular,Menlo,Monaco,Consolas,monospace;
+    }
+  }
+
+  .td-toc {
+    li li {
+      margin-left: 0;
+    }
+  }
+  #TableOfContents {
+    .md-nav__item a.md-nav__link:hover {
+      background-color: #eee;
+      font-weight: 600;
+    }
+  }
+
+  #td-sidebar-menu .td-sidebar-link {
+    padding: 2px 1px 2px 5px;
+
+    &:hover {
+      background-color: #eee;
+      color: #333;
+      font-weight: 600;
+    }
+  }
+}

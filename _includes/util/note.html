@@ -1,0 +1,31 @@
+<div class="util-note table-responsive mb-3">
+  <table class="w-100">
+    <tbody>
+      <tr>
+        <td class="icon {{ include.type }}">
+          {% if include.type == "warning" %}
+            <i class="fa icon-warning" title="Warning"></i>
+          {% elsif include.type == "tip" %}
+            <i class="fa icon-tip" title="Tip"></i>
+          {% elsif include.type == "important" %}
+            <i class="fa icon-important" title="Important"></i>
+          {% elsif include.type == "caution" %}
+            <i class="fa icon-caution" title="Caution"></i>
+          {% elsif include.type == "question" %}
+            <i class="fa icon-question" title="Question"></i>
+          {% elsif include.type == "recommend" %}
+            <i class="fa icon-recommend" title="Recommend"></i>
+          {% else %}
+            <i class="fa icon-note" title="Note"></i>
+          {% endif %}
+        </td>
+        <td class="content {{ include.type }} {{ include.class }}">
+          {{ include.note }}
+          {% if include.source %}
+            <a href="{{ include.source }}" target="_blank">{% if include.source_label %}{{ include.source_label }}{% else %}(source){% endif %}</a>
+          {% endif %}
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

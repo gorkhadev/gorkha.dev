@@ -1,0 +1,85 @@
+learning:
+  - link: https://developer.mozilla.org/en-US/docs/Web/HTML
+    title: HTML Tutorial by Mozilla Developer Network
+  - link: https://www.w3schools.com/html/default.asp
+    title: HTML Tutorial by W3Schools
+  - link: https://developer.mozilla.org/en-US/docs/Learn/CSS
+    title: CSS Tutorial by Mozilla Developer Network
+  - link: https://www.w3schools.com/css/default.asp
+    title: CSS Tutorial by W3Schools
+  - link: https://github.com/rwaldron/idiomatic.js
+    title: Writing Idiomatic JavaScript (idiomatic.js)
+  - link: https://javascript.info/
+    title: The Modern JavaScript Tutorial (javascript.info)
+  - link: https://exercism.io/
+    title: Code practice and mentorship for everyone
+documentations:
+  - link: https://devdocs.io/
+    title: Multiple API documentations (devdocs.io)
+  - link: https://devhints.io/
+    title: Modest collection of cheatsheets (devhints.io)
+  - link: https://htmlreference.io/
+    title: HTML Reference
+  - link: https://cssreference.io/
+    title: CSS Reference
+web:
+  - link: https://archive.org/web/
+    title: Internet Archive Wayback Machine
+  - link: https://imageonline.co/
+    title: Free Image Online Editor
+  - link: https://colorhunt.co/
+    title: Color Palettes for Designers and Artists
+  - link: https://htmlcolorcodes.com/color-picker/
+    title: HTML Color Codes
+  - link: https://emojipedia.org/
+    title: Emojipedia
+  - link: https://loremipsum.io/
+    title: Placeholder service (loremipsum.io)
+  - link: https://unicode-table.com/en/
+    title: Unicode Character Table
+  - link: https://www.dailyui.co/
+    title: Daily design challenges (Daily UI)
+  - link: https://collectui.com/
+    title: Daily UI collections (Collect UI)
+  - link: https://getbootstrap.com/
+    title: Bootstrap CSS
+  - link: https://tailwindcss.com/
+    title: Tailwind CSS
+  - link: https://boxicons.com/
+    title: Quality Web Icons Set (Boxicons)
+  - link: https://cssgradient.io/
+    title: Create a gradient background yourself
+  - link: https://www.grabient.com/
+    title: Collection of gradient backgrounds
+  - link: https://codepen.io
+    title: A social development environment (codepen.io)
+editors:
+  - link: https://code.visualstudio.com/
+    title: VS Code Editor
+  - link: https://atom.io/
+    title: Atom Editor
+tools:
+  - link: https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa?hl=en
+    title: JSON Formatter
+  - link: https://validator.w3.org/
+    title: Markup Validation Service
+  - link: https://unsplash.com/
+    title: Source of Free Online Images (unsplash.com)
+  - link: https://www.postman.com/downloads/
+    title: Postman API
+  - link: https://placeholder.com/
+    title: A Free Image Placeholder Service
+  - link: https://carbon.now.sh/
+    title: Beautiful images of your source code (Carbon)
+  - link: https://asciinema.org/
+    title: Record and share your terminal sessions, the right way (asciinema.org)
+  - link: https://codesandbox.io/
+    title: An instant IDE and prototyping tool for rapid web development (codesandbox.io)
+fun:
+  - link: https://xkcd.com/
+    title: A webcomic of romance, sarcasm, math, and language (xkcd.com)
+others:
+  - link: https://www.keybr.com/
+    title: Online Typing Master
+# - link:
+#   title:

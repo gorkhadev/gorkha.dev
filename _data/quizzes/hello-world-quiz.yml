@@ -1,0 +1,23 @@
+title: Quiz - Hello World
+randomized: false
+questions:
+
+ - type: "multiple-choice"
+   question: "Ruby uses // for for single line comments?"
+   items:
+    - choice: True
+      correct: false
+    - choice: False
+      correct: true
+   followup: |
+     In Ruby we use \# for single line comments
+
+ - type: "multiple-choice"
+   question: "We use .ruby as our extension for Ruby programs."
+   items:
+    - choice: True
+      correct: false
+    - choice: False
+      correct: true
+   followup: |
+     The exention for Ruby programs is ".rb".

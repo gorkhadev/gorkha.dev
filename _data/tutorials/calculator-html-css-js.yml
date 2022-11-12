@@ -1,0 +1,8 @@
+- title: Calculator in HTML, CSS and JS
+  url: tutorials/calculator-html-css-js
+  links:
+    - title: Simple calculator
+      url: tutorials/calculator-html-css-js/part1
+    - title: UI and Functional changes
+      url: tutorials/calculator-html-css-js/part2
+

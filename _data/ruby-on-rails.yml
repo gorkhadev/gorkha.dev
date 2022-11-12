@@ -1,0 +1,59 @@
+- title: Ruby on Rails
+  url: ruby-on-rails
+  links:
+    - title: Installation and Setup
+      description: Install required packages and setup up development environment.
+      url: ruby-on-rails/section-one
+      children:
+        - title: Installation
+          url: ruby-on-rails/section-one/installation
+        - title: Setup Environment
+          url: ruby-on-rails/section-one/setup-environment
+    - title: Web and MVC Architecture
+      description: Understand how web works and MVC architecture.
+      url: ruby-on-rails/section-two
+      children:
+        - title: How web work
+          url: ruby-on-rails/section-two/how-web-work
+        - title: MVC architecture
+          url: ruby-on-rails/section-two/mvc-architecture
+    - title: Build first CRUD app
+      description: Build your first basic application and understand CRUD concepts.
+      url: ruby-on-rails/section-three
+      children:
+        - title: App skeleton
+          url: ruby-on-rails/section-three/app-skeleton
+        - title: App Idea model
+          url: ruby-on-rails/section-three/app-idea-model
+        - title: App Idea route
+          url: ruby-on-rails/section-three/app-idea-route
+        - title: App Idea controller
+          url: ruby-on-rails/section-three/app-idea-controller
+        - title: App Idea view
+          url: ruby-on-rails/section-three/app-idea-view
+        - title: App list ideas
+          url: ruby-on-rails/section-three/app-list-ideas
+        - title: Design the UI
+          url: ruby-on-rails/section-three/design-basic-ui
+        - title: Design the UX
+          url: ruby-on-rails/section-three/design-basic-ux
+        - title: App root URL
+          url: ruby-on-rails/section-three/app-root-url
+        - title: App new idea
+          url: ruby-on-rails/section-three/app-new-idea
+        - title: App edit idea
+          url: ruby-on-rails/section-three/app-edit-idea
+        - title: App delete idea
+          url: ruby-on-rails/section-three/app-delete-idea
+        - title: More UI and UX changes
+          url: ruby-on-rails/section-three/more-ui-ux-changes
+    # - title: Deploy the app on Heroku
+    #   description: We will deploy the application to some online hosting platform.
+    #   url: ruby-on-rails/section-four
+    #   children:
+    #     - title: Prepare your app
+    #       url: ruby-on-rails/section-four/prepare-app
+    #     - title: Deploy through CLI
+    #       url: ruby-on-rails/section-four/deploy
+    #     - title: Things to note about Heroku
+    #       url: ruby-on-rails/section-four/notes-on-heroku

@@ -1,0 +1,186 @@
+.about-section {
+  .profile-img {
+    margin-top: 4rem;
+  }
+}
+
+.role-content {
+  box-shadow: 2px 2px 13px 5px rgba(216,216,216,0.78);
+  margin-bottom: 1em;
+  color: #777;
+}
+.role-content h4 {
+  color: black;
+}
+.role-content p {
+  font-size: 15px !important;
+}
+.role-card figure img {
+  height: 80px;
+}
+
+.role-content .image-wrapper img {
+  width: auto;
+  box-shadow: none;
+}
+
+.role-content .role-desc {
+  font-size: 14px;
+}
+
+.professional-journey {
+  background: #eee;
+}
+// timeline
+.timeline {
+  position: relative;
+  // max-width: 1200px;
+  margin: 0 auto;
+  list-style: none;
+
+    /* The actual timeline (the vertical ruler) */
+  &::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #111;
+    top: 0;
+    bottom: 0;
+    left: 52%;
+  }
+
+  /* timeline-Container around content */
+  .timeline-container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+
+    width: 50%;
+  }
+
+  /* The circles on the timeline */
+  .timeline-container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: #fff;
+    border: 4px solid #FF9F55;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+
+  /* Place the timeline-container to the left */
+  .left {
+    left: 0;
+  }
+
+  /* Place the timeline-container to the right */
+  .right {
+    left: 50.7%;
+  }
+
+  /* Add arrows to the left timeline-container (pointing right) */
+  .left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid #777;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #777;
+  }
+
+  /* Add arrows to the right timeline-container (pointing left) */
+  .right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid #777;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #777 transparent transparent;
+  }
+
+  /* Fix the circle for timeline-containers on the right side */
+  .right::after {
+    left: -16px;
+  }
+
+  /* The actual content */
+  .content {
+    padding: 20px 30px;
+    background-color: #fff;
+    position: relative;
+    border-radius: 6px;
+    box-shadow: 2px 2px 4px 0px #c1c1c1;
+  }
+}
+
+.educational-journey {
+  .container {
+    max-width: 1000px;
+  }
+  .card {
+    padding: 20px;
+    border: none;
+    line-height: 23px;
+  }
+  .card-img-top {
+    width: 100px;
+    margin: auto;
+  }
+  .card-body {
+    padding: .5em 1em;
+  }
+  .card-title {
+    font-size: 15px;
+    color: #444;
+  }
+  .card-text {
+    font-size: 13px;
+    color: #777;
+  }
+}
+
+@media (max-width: 550px) {
+  .about-body {
+    .profile-img {
+      transform: scale(0.8);
+      margin-top: 0;
+    }
+
+    .timeline {
+      margin-left: -30px;
+
+      &::after {
+        left: 60px;
+      }
+      .timeline-container {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+      }
+      .timeline-container::before {
+        left: 60px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+      }
+      .left::after, .right::after {
+        left: 15px;
+      }
+      .right {
+        left: -1.5%;
+      }
+    }
+  }
+}

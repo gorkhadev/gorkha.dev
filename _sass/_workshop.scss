@@ -1,0 +1,11 @@
+.workshops-section {
+  .workshop-card {
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(142,142,142,1) 100%);
+    color: #fff;
+
+    .card-title {
+      font-size: 2rem;
+    }
+  }
+}

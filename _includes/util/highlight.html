@@ -1,0 +1,8 @@
+<div class="alert{% if include.type == 'success' %} alert-success{% else %} alert-primary{% endif %} {{ include.class }}" role="alert">
+  <span>
+    {{ include.text }}
+  </span>
+  {% if include.source %}
+    <a href="{{ include.source }}" target="_blank" class="right">(source)</a>
+  {% endif %}
+</div>

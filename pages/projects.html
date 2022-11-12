@@ -1,0 +1,26 @@
+---
+layout: default
+title: Projects
+permalink: /projects/
+page_name: projects
+---
+
+<!-- projects list -->
+<div class="projects-page py-4">
+  <h1 class="text-center mb-4">Learn by building Projects</h1>
+
+  <div class="container">
+    <div class="row justify-content-center">
+      {% assign projects = site.projects | where: "projects", true | reverse %}
+      {% for project in projects %}
+        <div class="card col-md-3 text-center border-0">
+          <img src="{% if project.external %}{{ project.thumbnail }}{% else %}/assets/img/{{ project.thumbnail }}{% endif %}" class="card-img-top pt-3" alt="{{ project.title }}">
+          <div class="card-body">
+            <h5 class="card-title">{{ project.title }}</h5>
+            <a href="{{ project.url }}" class="btn btn-sm btn-primary">Let's learn</a>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

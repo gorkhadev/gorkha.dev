@@ -1,0 +1,83 @@
+- title: Ruby Basics
+  url: ruby
+  links:
+    - title: Section One
+      description: Getting familiar with the language
+      url: ruby/section-one
+      children:
+        - title: Getting Started
+          url: ruby/section-one/getting-started
+        - title: Introduction
+          url: ruby/section-one/intro
+        - title: History
+          url: ruby/section-one/history
+        - title: Features of Ruby
+          url: ruby/section-one/features
+        - title: Hello World
+          url: ruby/section-one/hello-world
+        - title: Interactive Ruby(IRB)
+          url: ruby/section-one/irb
+    - title: Section Two
+      description: Learn basic building blocks
+      url: ruby/section-two
+      children:
+        - title: Data Types
+          url: ruby/section-two/data-types
+        - title: Variables and Constants
+          url: ruby/section-two/variables-constants
+        - title: Operators
+          url: ruby/section-two/operators
+        - title: Conditionals
+          url: ruby/section-two/conditionals
+        - title: Loops
+          url: ruby/section-two/loops
+        - title: Iterators
+          url: ruby/section-two/iterators
+        - title: Getting Input
+          url: ruby/section-two/getting-input
+        - title: Method
+          url: ruby/section-two/method
+        - title: Naming Conventions
+          url: ruby/section-two/naming-conventions
+        - title: Command Line Arguments
+          url: ruby/section-two/cmd-args
+    - title: Section Three
+      description: More building blocks
+      url: ruby/section-three
+      children:
+        - title: Array
+          url: ruby/section-three/array
+        - title: Hash
+          url: ruby/section-three/hash
+        - title: Class
+          url: ruby/section-three/class
+        - title: Module
+          url: ruby/section-three/module
+        - title: File Handling
+          url: ruby/section-three/file-handling
+    # - title: Section Three
+    #   url: ruby/section-three
+    #   children:
+    #     - title: Class and Object
+    #       url: ruby/section-three/class-object
+    #     - title: Module
+    #       url: ruby/section-three/module
+    #     - title: Package
+    #       url: ruby/section-three/package
+    #     - title: File Handling
+    #       url: ruby/section-three/file-handling
+    #     - title: Exceptions
+    #       url: ruby/section-three/exceptions
+    #     - title: Advanced Data Structures
+    #       url: ruby/section-three/adv-data-structures
+    # - title: Section Four
+    #   url: ruby/section-four
+    #   children:
+    #     - title: Style Guide
+    #       url: ruby/section-four/style-guide
+    #     - title: Standard Library
+    #       url: ruby/section-four/std-lib
+    #     - title: Python Package Index
+    #       url: ruby/section-four/package-index
+    #     - title: Popular Python Packages
+    #       url: ruby/section-four/popular-packages

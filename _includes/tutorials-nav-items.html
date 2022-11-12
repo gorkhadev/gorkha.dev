@@ -1,0 +1,16 @@
+<div class="dropdown">
+  <a class="dropdown-toggle nav-link" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Tutorials
+  </a>
+
+  <div class="dropdown-menu text-center" aria-labelledby="dropdownMenuLink">
+    <a class="dropdown-item" href="/tutorials/">Show All</a>
+    {% assign tutorials = site.tutorials | reverse %}
+    {% for tutorial in tutorials %}
+      {% if tutorial.tutorial %}
+        <a class="dropdown-item" href="{{ tutorial.url }}">{{ tutorial.title }}</a>
+      {% endif %}
+    {% endfor %}
+
+  </div>
+</div>

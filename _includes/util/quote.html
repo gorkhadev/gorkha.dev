@@ -1,0 +1,18 @@
+<div class="util-quote">
+  <blockquote>
+    <div class="paragraph">
+      {{ include.quote }}
+    </div>
+  </blockquote>
+  {% if include.quote_by or include.source %}
+    <div class="attribution">
+      {% if include.source %}
+        — {{ include.quote_by }}
+      {% endif %}
+      {% if include.source %}
+        <a href="{{ include.source }}" target="_blank">(source)</a>
+      {% endif %}
+    </div>
+  {% endif %}
+
+</div>

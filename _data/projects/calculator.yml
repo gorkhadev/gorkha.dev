@@ -1,0 +1,16 @@
+- title: Calculator in HTML, CSS and JavaScript
+  url: projects/calculator/
+  links:
+    - title: Build simple calculator
+      description: Getting start with simple calculator
+      url: projects/calculator/part1
+      thumbnail: projects/calculator/4.gif
+    - title: Add Functional and UI changes
+      description: Adding functional and UI changes to calculator
+      url: projects/calculator/part2
+      thumbnail: projects/calculator/part2_5.png
+    - title: UI Dark Mode
+      description: Adding dark mode to the UI
+      url: projects/calculator/part3
+      thumbnail: projects/calculator/part3_4.gif
+

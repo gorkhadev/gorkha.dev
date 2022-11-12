@@ -1,0 +1,97 @@
+- title: C Basics
+  url: c
+  links:
+    - title: Section One
+      description: Getting familiar with the language
+      url: c/section-one
+      children:
+        - title: Getting Started
+          url: c/section-one/getting-started
+        - title: History
+          url: c/section-one/history
+        - title: Character Set
+          url: c/section-one/charset
+        - title: Tokens
+          url: c/section-one/tokens
+        - title: Hello World
+          url: c/section-one/hello-world
+    - title: Section Two
+      description: Learn basic building blocks
+      url: c/section-two
+      children:
+        - title: Constants
+          url: c/section-two/constants
+        - title: Variables
+          url: c/section-two/variables
+        - title: Data Types
+          url: c/section-two/data-types
+        - title: Operators
+          url: c/section-two/operators
+        - title: Input and Output
+          url: c/section-two/input-and-output
+        - title: Exercises
+          url: c/section-two/exercises
+    - title: Section Three
+      description: Control Structures
+      url: c/section-three
+      children:
+        - title: Conditions
+          url: c/section-three/conditions
+        - title: Loops
+          url: c/section-three/loops
+        - title: Exercises
+          url: c/section-three/exercises
+    - title: Section Four
+      description: Functions and Pointers
+      url: c/section-four
+      children:
+        - title: Functions
+          url: c/section-four/functions
+    #     - title: Pointers
+    #       url: c/section-four/pointers
+    - title: Section Five
+      description: More on Data Types
+      url: c/section-five
+      children:
+    #     - title: Data Types Variants
+    #       url: c/section-five/data-types-variants
+        - title: Arrays
+          url: c/section-five/arrays
+        - title: Strings
+          url:  c/section-five/strings
+    #     - title: Storage Classes
+    #       url: c/section-five/storage-classes
+    # - title: Section Six
+    #   description: Structures and Unions
+    #   url: c/section-six
+    #   children:
+    #     - title: Structures
+    #       url: c/section-six/structures
+    #     - title: Unions
+    #       url: c/section-six/unions
+    # - title: Section Seven
+    #   description: Input and Output
+    #   url: c/section-seven
+    #   children:
+    #     - title: Console Input and Output
+    #       url: c/section-seven/console
+    #     - title: File Input and Output
+    #       url: c/section-seven/file
+    #     - title: Command Line Arguments
+    #       url: c/section-seven/cmd-args
+    #     - title: Standard I/O Devices
+    #       url: c/section-seven/stdio-devices
+    # - title: Section Eight
+    #   description: Other Features
+    #   url: c/section-eight
+    #   children:
+    #     - title: Enumerated Data Type
+    #       url: c/section-seven/enum
+    #     - title: Renaming Data Type with typedef
+    #       url: c/section-seven/typedef
+    #     - title: Typecasting
+    #       url: c/section-seven/typecasting
+    #     - title: Variable number of arguments
+    #       url: c/section-seven/variable-args
+    #     - title: Pointers to Functions
+    #       url: c/section-seven/pointers-to-functions

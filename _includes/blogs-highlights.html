@@ -1,0 +1,60 @@
+<section class="blogs-highlights py-10 bg-light wow fadeInUp">
+  <div class="container">
+    <div class="text-center mb-4">
+      <h3>Recent Blogs</h3>
+    </div>
+
+    <div class="row">
+      {% assign latest_post = site.posts | first %}
+      <div class="col-lg-5 col-md-5 blogs-highlight-left">
+        <div class="card border-0 mb-5 box-shadow">
+          <a href="{{ site.baseurl }}{{ latest_post.url }}">
+            <div class="top-first-image" style="background-image: url({{ site.asset_base_url }}/img/{{ latest_post.thumbnail }});"></div>
+          </a>
+          <div class="card-body pt-3 pb-0 d-flex flex-column align-items-start">
+            <h2 class="h4 post-title font-weight-bold">
+              <a class="text-dark" href="{{ site.baseurl }}{{ latest_post.url }}">
+                {{ latest_post.title }}
+              </a>
+            </h2>
+            <p class="excerpt">
+              {{ latest_post.content | strip_html | truncate: 150 }}
+              <a href="{{ site.baseurl }}{{ latest_post.url }}" class="text-dark font-weight-bold">
+                <span class="ml-1">Read More</span>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-7 col-md-7 blogs-highlight-right">
+        {% for post in site.posts offset: 1 limit: 3 %}
+          <div class="mb-3 d-flex align-items-center">
+            <div class="col-md-4">
+              <a href="{{ site.baseurl }}{{ post.url }}">
+                <img class="w-100 h-120" src="{{ site.asset_base_url }}/img/{{ post.thumbnail }}" alt="{{ post.title }}">
+              </a>
+            </div>
+
+            <div class="col-md-8">
+              <h2 class="mb-2 h6 post-title font-weight-bold">
+                <a class="text-dark" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+              </h2>
+              <p class="excerpt mb-0 display-non-mb">
+                {{ post.content | strip_html | truncate: 100 }}
+                <a href="{{ site.baseurl }}{{ post.url }}" class="text-dark font-weight-bold">
+                  <span class="ml-1">Read More</span>
+                </a>
+              </p>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+    <div class="text-center mt-3">
+      <a role="button" href="{{ site.baseurl }}/blogs" class="btn btn-outline-dark rounded-0 px-4">
+        View More
+      </a>
+    </div>
+  </div>
+</section>

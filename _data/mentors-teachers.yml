@@ -1,0 +1,44 @@
+- name: Victor Goff
+  nick: Vic
+  pic: teachers/victor.jpg
+  quote: |
+    Find me mentoring in person or online. Everyone starts somewhere! Contact me to pair program!
+  intro_header: |
+    Victor is a distinguished trainer and has been mentoring professionally for Ruby from last 12+ years and
+    actively in <a href="https://exercism.io" target="_blank">Exercism.io</a>.
+  intro_body: |
+    He has overall 25+ years working experience and now a days providing his mentoring expertise
+    to whoever needed. <br>Check his <a href="https://kotp.keybase.pub/" target="_blank">Keybase URL</a>.
+  expertise:
+    - Mentoring
+    - Pair Programming
+    - Workshop
+  address: Portland, Oregon, USA
+  socials:
+    facebook: vhgiii
+    twitter: kotp
+    linkedin: vgoff
+    github: kotp
+
+- name: Budh Ram Gurung
+  nick: BRG
+  pic: teachers/brg.jpg
+  quote: He believes in Learn-Teach Cycle theory.
+  intro_header: |
+    BRG is a teacher, mentor and a self-taught full stack engineer. He is an avid Open Source contributor and
+    a researcher.
+  intro_body: |
+    He has overall 9+ years of IT Industry experience in different domains and stack which includes
+    Full Stack Web Development with Ruby on Rails, Automation, QA, DevOps, Containers, Community engagements,
+    Team management etc. <br>Check his <a href="https://freelancerbrg.com/" target="_blank">personal website</a>
+    to know more.
+  expertise:
+    - Instructor-Led Training
+    - Pair Programming
+    - Workshop
+  address: Gorkha, Gandaki, Nepal
+  socials:
+    facebook: budhramgrg
+    twitter: coolbrg
+    linkedin: coolbrg
+    github: coolbrg

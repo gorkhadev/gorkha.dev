@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
+  <body id="pagetop" class="d-flex flex-column default_body">
+    <header class="default_header">
+      {%- include navbar.html -%}
+    </header>
+    <main class="tutorial-body">
+      <div class="container-fluid td-outer">
+        <div class="td-main">
+          <div class="row justify-content-center flex-xl-nowrap">
+            <div class="d-none d-xl-block col-md-3 col-xl-3 td-toc d-print-none">
+              {% include share-page.html %}
+              {% include course/useful-links.html %}
+              <nav id="TableOfContents">
+                <h4><a href="/snippets/" class="font-weight-bold">Back to All Snippets</a></h4>
+                <p class="h4 mb-2 text-muted">Other Snippets</p>
+                <ul>
+                  {% assign label = page.label %}
+                  {% assign snippets = site.snippets | where: "label", label %}
+                  {% for snippet in snippets %}
+                    <li>
+                      <a href="{{ snippet.url }}">{{ snippet.title }}</a>
+                    </li>
+                  {% endfor %}
+                </ul>
+              </nav>
+            </div>
+
+            <main class="col-12 col-md-9 col-xl-6 px-md-2 pr-md-4" role="main">
+              <div class="td-content">
+                {% if page.thumbnail %}
+                  <img src="{{ site.baseurl }}/assets/img/{{ page.thumbnail }}" class="thumbnail img-fluid" />
+                {% endif %}
+                {% if page.thumbnail_credit %}
+                  <p class="thumbnail-credit">Image: {{ page.thumbnail_credit }}</p>
+                {% endif %}
+                <h1 id="{{ page.description | remove: ':' | remove: ',' | downcase | split: ' ' | join: '-' }}">{{ page.description }}</h1>
+
+                {% if page.tags %}
+                  <div class="tags mb-4"></div>
+                {% endif %}
+                <hr>
+                {{ content }}
+
+                <div class="show-share mt-4">
+                  {% include share-page.html %}
+                </div>
+                {% if site.disqus.shortname and page.comments == true  %}
+                  <div id="comments" class="mt-3">
+                    <h4 class="text-center">Help me to improve this tutorial.</h4>
+                    {% include disqus_comments.html %}
+                  </div>
+                {% endif %}
+              </div>
+            </main>
+          </div>
+        </div>
+
+        {% include footer.html %}
+      </div>
+    </main>
+
+    {% include course/tags.html %}
+
+
+    <a href="#pagetop" class="scroll" id="toTop">
+      <img src="/assets/img/top.png" id="toTopHover" style="opacity: 1;" />
+    </a>
+
+    {% include javascripts.html %}
+    {% include youtube-video-modal.html %}
+  </body>
+
+</html>

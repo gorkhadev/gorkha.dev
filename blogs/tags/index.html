@@ -1,0 +1,31 @@
+---
+layout: default
+title: "Blogs: Tags"
+page_name: blogs
+---
+
+<div class="blog-tags py-5">
+  {% capture tags %}{% for tag in site.tags %}{{ tag[0] }}|{% endfor %}{% endcapture %}
+  {% assign sortedtags = tags | split:'|' | sort %}
+
+  <div class="container">
+    <div class="d-flex flex-wrap bd-highlight my-4">
+      {% for tag in sortedtags %}
+        <a type="button" href="#{{ tag }}" class="btn btn-outline-dark mr-2 mb-1">{{ tag }}
+            ({{ site.tags[tag].size }})</a>
+      {% endfor %}
+    </div>
+
+    {% for tag in sortedtags %}
+      <a name="{{ tag }}"></a>
+      <section class="mt-4">
+        <h2 class="border-bottom text-center mb-3 pb-1">
+          {{ tag }} <span class="gray">({{ site.tags[tag].size }} posts)</span>
+        </h2>
+        {% for post in site.tags[tag] %}
+          {% include blogs/post-outline.html post=post exclude_divider=forloop.last %}
+        {% endfor %}
+      </section>
+    {% endfor %}
+  </div>
+</div>

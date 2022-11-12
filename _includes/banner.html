@@ -1,0 +1,30 @@
+<!-- banner -->
+<div class="banner-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-12">
+        <div class="d-flex flex-column justify-content-center component-wrapper">
+          <h4>Welcome to</h4>
+          <h1 class="my-2 color-primary">
+            {{ site.title }}
+          </h1>
+          {% if site.tagline %}
+            <h5>{{ site.tagline }}</h5>
+          {% endif %}
+          <h5 class="mt-3 font-weight-light color-primary">
+            {{ site.description }}
+          </h5>
+          <div class="action-btns mt-5">
+            <a href="/#" class="btn px-5 py-3 btn-outline-danger rounded">First Time? Click Here</a>
+            <a href="/#" class="btn px-5 py-3 btn-primary rounded">About Us</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-12 d-none d-md-block">
+        <div class="d-flex flex-column justify-content-center banner-img-wrapper">
+          <img src="{{ site.asset_base_url }}/img/banner-img.svg" alt="Technology Channel Community" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

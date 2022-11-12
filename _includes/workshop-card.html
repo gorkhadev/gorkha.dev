@@ -1,0 +1,10 @@
+<div class="card workshop-card shadow rounded">
+  <div class="card-body p-5">
+    <h5 class="card-title font-weight-bold">{{ include.data.title }}</h5>
+    <span class="badge badge-success px-3 py-2 rounded-0">Duration {{ include.data.duration}}</span>
+    <p class="card-text mt-3">
+      {{ include.data.description }}
+    </p>
+    <a href="{{ include.data.url }}" class="btn btn-lg btn-block btn-light rounded-0">View Details</a>
+  </div>
+</div>

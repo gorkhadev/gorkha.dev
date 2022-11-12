@@ -1,0 +1,26 @@
+---
+layout: default
+title: Coding Exercises
+permalink: /exercises/
+page_name: exercises
+thumbnail: useful-links.png
+---
+
+<!-- Exercises list -->
+<div class="exercises-page pt-5">
+  <h2 class="text-center">Exercises</h2>
+
+  <div class="container">
+    <div class="row justify-content-center">
+      {% for exercise in site.exercises %}
+        <div class="card col-md-3 text-center border-0">
+          <img src="{% if exercise.external %}{{ exercise.thumbnail }}{% else %}/assets/img/{{ exercise.thumbnail }}{% endif %}" class="card-img-top pt-3" alt="{{ exercise.title }}">
+          <div class="card-body">
+            <h5 class="card-title">{{ exercise.title }}</h5>
+            <a href="{{ exercise.url }}" class="btn btn-sm btn-primary">Let's learn</a>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

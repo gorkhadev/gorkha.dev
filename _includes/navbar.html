@@ -1,0 +1,53 @@
+<nav class="navbar navbar-expand-lg navbar-light shadow fixed-top">
+  <div class="container">
+    <a href="/" class="brand">
+      <img src="{{ site.asset_base_url }}/img/logo.png" alt="Dhanu Gurung Logo" />
+      <span>{{ site.title }}</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+      aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" data-wow-delay=".5s" id="navbarCollapse">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item{% if page.page_name == 'home' %} active{% endif %}">
+          <a class="nav-link" href="/">Home</a>
+        </li>
+        <!-- <li class="nav-item ml-3{% if page.page_name == 'about' %} active{% endif %}">
+          <a class="nav-link" href="/about/">About</a>
+        </li> -->
+        <li class="nav-item{% if page.page_name == 'courses' or page.page_name == 'tutorials' or page.page_name == 'projects' %} active{% endif %}">
+          <div class="dropdown">
+            <a class="dropdown-toggle nav-link" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Learn
+            </a>
+
+            <div class="dropdown-menu text-center" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="/courses/">101 Coures</a>
+              <a class="dropdown-item" href="/tutorials/">Tutorials</a>
+              <a class="dropdown-item" href="/projects/">Projects</a>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item{% if page.page_name == 'blogs' %} active{% endif %}">
+          <a class="nav-link" href="/blogs/">Blogs</a>
+        </li>
+        <li class="nav-item {% if page.page_name == 'others' %} active{% endif %}">
+          <div class="dropdown">
+            <a class="dropdown-toggle nav-link" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Others
+            </a>
+
+            <div class="dropdown-menu text-center" aria-labelledby="dropdownMenuLink">
+              <!-- <a class="dropdown-item" href="/mentoring/">Mentoring</a> -->
+              <!-- <a class="dropdown-item" href="/teachers/">Teachers</a> -->
+              <a class="dropdown-item" href="/links/">Useful Links</a>
+              <!-- <a class="dropdown-item" href="/contact/">Contact</a> -->
+            </div>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>

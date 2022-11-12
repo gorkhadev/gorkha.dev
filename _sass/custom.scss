@@ -1,0 +1,370 @@
+/* Custom SCSS */
+// https://colorhunt.co/palette/167893
+$color-primary: #003594;
+$color-secondary: #DD0C39;
+$color1: #fff;
+$color2: #111;
+$color3: #142850;
+$color4: #365586;
+$color5: #7bff98;
+$site-color: #555;
+
+html, body {
+  height: 100%;
+}
+body {
+  font-family: "Poppins", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+}
+main {
+  line-height: 30px;
+  padding-top: 2rem;
+}
+code, kbd, pre, samp {
+  font-family: 'Inconsolata', SFMono-Regular,Menlo,Monaco,Consolas,monospace;
+  font-size: 15px;
+  line-height: 22px;
+}
+
+.color-primary {
+  color: $color-primary;
+}
+.color-secondary {
+  color: $color-secondary;
+}
+
+body.default_body {
+  margin-top: 60px;
+}
+
+.secondary-color {
+  color: $color5;
+}
+
+.social-links {
+  font-size: 1.8em;
+}
+.fa-twitter {
+  color: #38A1F3;
+}
+.fa-facebook-f {
+  color: #4267b2;
+}
+.fa-github {
+  color: #eee;
+}
+.fa-github.light {
+  color: #ddd;
+}
+.fa-linkedin-in {
+  color: #0077B5
+}
+.fa-envelope {
+  color: #777;
+}
+.fa-instagram {
+  color: #E1306C;
+}
+.fa-youtube {
+  color: red;
+}
+.fa-rss-square {
+  color: #ee802f;
+}
+
+.hide {
+  display: none;
+}
+.show {
+  display: show;
+}
+
+// Custom Paddings
+.px-6 {
+  padding: 0 4em;
+}
+.py-6 {
+  padding: 4em 0;
+}
+.pb-6 {
+  padding-bottom: 4em;
+}
+.pt-6 {
+  padding-top: 4em;
+}
+.p-6 {
+  padding: 4em;
+}
+.px-7 {
+  padding: 0 5em;
+}
+.py-7 {
+  padding: 5em 0;
+}
+.pb-7 {
+  padding-bottom: 5em;
+}
+.pt-7 {
+  padding-top: 5em;
+}
+.p-7 {
+  padding: 5em;
+}
+.px-8 {
+  padding: 0 6em;
+}
+.py-8 {
+  padding: 6em 0;
+}
+.pb-8 {
+  padding-bottom: 6em;
+}
+.pt-8 {
+  padding-top: 6em;
+}
+.p-8 {
+  padding: 6em;
+}
+.px-9 {
+  padding: 0 7em;
+}
+.py-9 {
+  padding: 7em 0;
+}
+.pb-9 {
+  padding-bottom: 7em;
+}
+.pt-9 {
+  padding-top: 7em;
+}
+.p-9 {
+  padding: 7em;
+}
+.px-10 {
+  padding: 0 8em;
+}
+.py-10 {
+  padding: 8em 0;
+}
+.pb-10 {
+  padding-bottom: 8em;
+}
+.pt-10 {
+  padding-top: 8em;
+}
+.p-10 {
+  padding: 8em;
+}
+
+// Custom Margin
+.mx-6 {
+  margin: 0 4em;
+}
+.my-6 {
+  margin: 4em 0;
+}
+.mb-6 {
+  margin-bottom: 4em;
+}
+.mt-6 {
+  margin-top: 4em;
+}
+.m-6 {
+  margin: 4em;
+}
+.mx-7 {
+  margin: 0 5em;
+}
+.my-7 {
+  margin: 5em 0;
+}
+.mb-7 {
+  margin-bottom: 5em;
+}
+.mt-7 {
+  margin-top: 5em;
+}
+.m-7 {
+  margin: 5em;
+}
+.mx-8 {
+  margin: 0 6em;
+}
+.my-8 {
+  margin: 6em 0;
+}
+.mb-8 {
+  margin-bottom: 6em;
+}
+.mt-8 {
+  margin-top: 6em;
+}
+.m-8 {
+  margin: 6em;
+}
+.mx-9 {
+  margin: 0 7em;
+}
+.my-9 {
+  margin: 7em 0;
+}
+.mb-9 {
+  margin-bottom: 7em;
+}
+.mt-9 {
+  margin-top: 7em;
+}
+.m-9 {
+  margin: 7em;
+}
+.w-80 {
+  width: 80% !important;
+}
+
+.img-full-width {
+  width: 100%;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.cover-image {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.text-blue {
+  color: #013d6f;
+}
+.line-height-30 {
+  line-height: 30px;
+}
+.text-ccc {
+  color: #ccc !important;
+}
+.text-eee {
+  color: #eee !important
+}
+.text-444 {
+  color: #444 !important
+}
+.bg-efefef {
+  background-color: #efefef !important;
+}
+.bg-eee {
+  background-color: #eee !important;
+}
+.bg-light {
+  background-color: rgb(249, 248, 252);
+}
+.text-light {
+  color: rgb(249, 248, 252);
+}
+.text-white-75 {
+  color: rgba(255, 255, 255, 0.75);
+}
+.text-white-80 {
+  color: rgba(255, 255, 255, 0.80);
+}
+.bg-primary {
+  background: linear-gradient(180deg, rgba(60,100,170,1) 0%, rgba(39,65,105,1) 100%);
+  color: #eee;
+}
+
+.td-content figure.highlight {
+  max-width: 100% !important;
+}
+.td-content .highlighter-rouge {
+  margin-bottom: 1rem;
+}
+.td-content .highlighter-rouge, .td-content figure.highlight {
+  padding: 0.6rem 1rem;
+  background: #eee;
+  border-radius: 5px;
+}
+
+textarea {
+  resize: none;
+}
+
+// make btn font weight light
+.btn {
+  font-weight: 300;
+}
+.btn-grey {
+  background-color: #ededed;
+}
+// Page Top
+#toTop {
+  display: none;
+  text-decoration: none;
+  position: fixed;
+  bottom: 23%;
+  right: 4%;
+  overflow: hidden;
+  z-index: 999;
+  width: 32px;
+  height: auto;
+  border: none;
+  text-indent: 100%;
+}
+#toTopHover {
+  width: 32px;
+  height: 32px;
+  display: block;
+  overflow: hidden;
+  float: right;
+  opacity: 0;
+  -moz-opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+.lozad {
+  border-radius: 5px;
+}
+
+#youtubeVideoModal {
+  top: 2%;
+  .modal-dialog {
+    max-width: 70%;
+  }
+
+  .modal-content {
+    background-color: transparent;
+    border: none;
+
+    .modal-header {
+      border-bottom: none;
+      padding: 0 1em;
+
+      img {
+        height: 40px;
+        width: auto;
+      }
+
+      .close {
+        color: #fff;
+        padding: 0 0.5em;
+        font-size: 60px;
+      }
+    }
+  }
+}
+
+.youtube-video-btn:focus {
+  box-shadow: none;
+}
+
+@import "docsy-jekyll";
+@import "syntax-highlighting";
+@import "animate.min";
+@import "bootstrap-overrides";
+@import "home";
+@import "blogs";
+@import "about";
+@import "util";
+@import "courses";
+@import "syllabus";
+@import "workshop";
+@import "responsive";

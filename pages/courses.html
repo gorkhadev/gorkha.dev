@@ -1,0 +1,25 @@
+---
+layout: default
+title: Courses
+permalink: /courses/
+page_name: courses
+---
+
+<!-- Tutorials list -->
+<div class="courses-page py-4">
+  <h1 class="text-center mb-4">Courses</h1>
+
+  <div class="container">
+    <div class="row justify-content-center">
+      {% for course in site.data.courses %}
+        <div class="card col-md-3 text-center p-4 border-0">
+          <img src="/assets/img/{{ course.thumbnail }}" class="card-img-top" alt="{{ course.title }}">
+          <div class="card-body">
+            <h5 class="card-title">{{ course.title }}</h5>
+            <a href="{{ course.url }}" class="btn btn-sm btn-primary">Let's learn</a>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

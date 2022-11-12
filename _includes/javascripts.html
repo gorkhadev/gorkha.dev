@@ -1,0 +1,21 @@
+{% if jekyll.environment == "production" %}
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/1.17.2/simple-lightbox.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.0/smooth-scroll.polyfills.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+{% else %}
+  <script type="text/javascript" src="{{ "/assets/js/jquery-3.4.1.min.js" | relative_url }}"></script>
+  <script type="text/javascript" src="{{ "/assets/js/bootstrap-4.5.0.min.js" | relative_url }}"></script>
+  <script type="text/javascript" src="{{ "/assets/js/popper.min.js" | relative_url }}"></script>
+  <script type="text/javascript" src="{{ "/assets/js/simplelightbox-1.17.2.min.js" | relative_url }}"></script>
+  <script type="text/javascript" src="{{ "/assets/js/wow.min.js" | relative_url }}"></script>
+  <script type="text/javascript" src="{{ "/assets/js/smooth-scroll.polyfills.min.js" | relative_url }}"></script>
+  <script src="{{ "/assets/js/particles.min.js" | relative_url }}"></script>
+{% endif %}
+
+<!-- Lazy load images -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+<script type="text/javascript" src="{{ "/assets/js/custom.js" | relative_url }}"></script>
