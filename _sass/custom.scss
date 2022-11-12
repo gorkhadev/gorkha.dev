@@ -14,7 +14,8 @@ html, body {
 }
 body {
   font-family: "Poppins", Helvetica, Arial, sans-serif;
-  font-size: 16px;
+  font-size: 17px;
+  font-weight: 300;
 }
 main {
   line-height: 30px;
@@ -22,7 +23,7 @@ main {
 }
 code, kbd, pre, samp {
   font-family: 'Inconsolata', SFMono-Regular,Menlo,Monaco,Consolas,monospace;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 22px;
 }
 
@@ -354,6 +355,19 @@ textarea {
 
 .youtube-video-btn:focus {
   box-shadow: none;
+}
+
+// normal page CSS
+.normal-page {
+  h1, h2 {
+    margin-top: 3rem;
+  }
+  h3, h4 {
+    margin-top: 2.5rem;
+  }
+  h5, h6 {
+    margin-top: 2rem;
+  }
 }
 
 @import "docsy-jekyll";
