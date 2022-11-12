@@ -15,7 +15,7 @@ author_url: https://dhanugurung.com
 future: true # Show blog post of future date
 permalink: /blogs/:year/:month/:day/:title/
 
-google_analytics: G-RXN8QR661J
+google_analytics: G-MRQN1VZ14Y
 # Disqus Comments
 disqus:
   shortname: brg-trainings
@@ -43,7 +43,7 @@ contacts:
     class: fab fa-linkedin-in
     img: linkedin.png
   email:
-    url: mailto:info@techsetu.com
+    url: mailto:techsetuu@gmail.com
     label: Email
     class: fas fa-envelope
     img: mail.png
