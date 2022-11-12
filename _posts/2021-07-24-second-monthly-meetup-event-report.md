@@ -3,8 +3,7 @@ layout: post
 title: Second Monthly Meetup Event report
 date: 2021-07-24
 tags:
-- meetup
-- event
+  - meetup
 status: publish
 type: post
 published: true
