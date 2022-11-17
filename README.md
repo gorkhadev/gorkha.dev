@@ -1,3 +1,3 @@
-# Technology Channel Community Website
+# TECH Setu Website
 
-Website repo for [Technology Community Community](https://technologychannel.org) website.
+Repo for [TECH Setu](https://techsetu.org) website.

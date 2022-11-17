@@ -87,11 +87,6 @@
         margin-left: 10px;
       }
     }
-
-    .banner-img-wrapper img {
-      width: 90%;
-      margin-left: auto;
-    }
   }
 }
 
@@ -267,6 +262,9 @@
 
 @media screen and (max-width: 520px) {
   .home_header .banner-section {
+    .banner-img-wrapper {
+      margin-top: 3rem;
+    }
     .action-btns {
       .btn:nth-child(2) {
         margin-top: 1rem;
