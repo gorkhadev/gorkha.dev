@@ -70,21 +70,25 @@
   .banner-section {
     padding: 6rem 0;
 
-    h4 {
-      color: #777;
-    }
-    h5 {
-      font-size: 1.5rem;
-    }
+    .left-panel-wrapper {
+      margin-right: 3.5rem;
 
-    h1 {
-      font-size: 3.2rem;
-      font-weight: 600;
-    }
+      h4 {
+        color: #777;
+      }
+      h5 {
+        font-size: 1.6rem;
+      }
 
-    .action-btns {
-      .btn:nth-child(2) {
-        margin-left: 10px;
+      h1 {
+        font-size: 3.5rem;
+        font-weight: 800;
+      }
+
+      .action-btns {
+        .btn:nth-child(2) {
+          margin-left: 10px;
+        }
       }
     }
   }
@@ -262,21 +266,28 @@
 
 @media screen and (max-width: 520px) {
   .home_header .banner-section {
+    .left-panel-wrapper {
+      .action-btns {
+        .btn:nth-child(2) {
+          margin-top: 1rem;
+          margin-left: 0;
+        }
+      }
+    }
     .banner-img-wrapper {
       margin-top: 3rem;
-    }
-    .action-btns {
-      .btn:nth-child(2) {
-        margin-top: 1rem;
-        margin-left: 0;
-      }
     }
   }
   .stay-connected-section {
     padding: 4rem 0;
+    text-align: center;
 
-    a img {
-      height: 2rem;
+    .social-contacts {
+      margin-top: 1.5rem;
+
+      a img {
+        height: 2rem;
+      }
     }
   }
 }
