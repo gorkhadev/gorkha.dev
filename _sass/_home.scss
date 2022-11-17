@@ -95,6 +95,17 @@
 }
 
 .home-body {
+
+  .section-heading {
+    color: $color-primary;
+    text-align: center;
+    margin-bottom: 2rem !important;
+    font-weight: 600;
+    font-size: 3rem;
+  }
+  .section-padding {
+    padding: 5rem 0;
+  }
   .updates-section {
     background: $color-primary;
     padding: 5rem 0;
@@ -113,6 +124,37 @@
       &:last-child {
         margin-bottom: 0;
       }
+    }
+  }
+
+  .learner-lifecycle-section {
+    .lifecylce-card {
+      border: 0;
+      text-align: center;
+      padding: 3rem;
+      color: #555;
+
+      .card-img-top {
+        height: 180px;
+      }
+    }
+  }
+
+  .stay-connected-section {
+    background-color: $color-primary;
+    color: #fff;
+
+    a img {
+      height: 4rem;
+      margin-right: 10px;
+    }
+  }
+
+  .tutorials-section {
+    background: #F8F8F8;
+
+    .card {
+      background-color: transparent;
     }
   }
 }
@@ -205,38 +247,7 @@
   }
 }
 
-.stay-connected-section {
-  padding: 5rem 0;
-  background-color: $color-primary;
-  color: #fff;
 
-  a img {
-    height: 4rem;
-    margin-right: 10px;
-  }
-}
-
-.courses-section {
-  padding: 4rem 0;
-
-  h1 {
-    color: $color-primary;
-    margin-bottom: 2rem !important;
-  }
-}
-.tutorials-section {
-  background: #F8F8F8;
-  padding: 4rem 0;
-
-  h1 {
-    color: $color-primary;
-    margin-bottom: 2rem !important;
-  }
-
-  .card {
-    background-color: transparent;
-  }
-}
 
 // courses page
 .courses-page {
@@ -302,6 +313,11 @@
     }
   }
   .home-body {
+    .section-heading {
+      font-size: 2rem;
+      font-weight: 600;
+    }
+
     .stay-connected-section {
       padding: 4rem 0;
       text-align: center;
@@ -318,6 +334,22 @@
     .updates-section {
       .action-btn {
         margin-top: 2rem;
+      }
+    }
+
+    .learner-lifecycle-section {
+      .lifecylce-card {
+        padding: 1rem;
+
+        .card-img-top {
+          height: 140px;
+        }
+
+        .card-body {
+          h5 {
+            font-size: 1rem;
+          }
+        }
       }
     }
   }
