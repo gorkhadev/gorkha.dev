@@ -94,6 +94,29 @@
   }
 }
 
+.home-body {
+  .updates-section {
+    background: $color-primary;
+    padding: 5rem 0;
+
+    .update-card {
+      margin-bottom: 1rem;
+
+      p {
+        font-size: 18px;
+        padding: 10px 16px;
+        line-height: 24px;
+        color: $color-secondary;
+        margin-bottom: 0;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
 #page-content main.home-body {
   margin: 0;
   padding-top: 0;
@@ -278,15 +301,23 @@
       margin-top: 3rem;
     }
   }
-  .stay-connected-section {
-    padding: 4rem 0;
-    text-align: center;
+  .home-body {
+    .stay-connected-section {
+      padding: 4rem 0;
+      text-align: center;
 
-    .social-contacts {
-      margin-top: 1.5rem;
+      .social-contacts {
+        margin-top: 1.5rem;
 
-      a img {
-        height: 2rem;
+        a img {
+          height: 2rem;
+        }
+      }
+    }
+
+    .updates-section {
+      .action-btn {
+        margin-top: 2rem;
       }
     }
   }

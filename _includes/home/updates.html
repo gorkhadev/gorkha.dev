@@ -1,0 +1,25 @@
+{% assign update_size = site.data.updates.size %}
+<div class="updates-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        {% if update_size > 0 %}
+          {% for update in site.data.updates %}
+            <div class="card update-card rounded-lg">
+              {{ update.text | markdownify }}
+            </div>
+          {% endfor %}
+        {% else %}
+          <div class="card update-card rounded-lg">
+            <p>No updates.</p>
+          </div>
+        {% endif %}
+      </div>
+      <div class="col-md-4 action-btn">
+        <div class="d-flex justify-content-center align-items-center h-100">
+          <a href="#" type="button" class="btn btn-danger btn-lg py-4 px-5{% if update_size > 0 %} enabled{% else %} disabled{% endif %}">Check All Updates</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
