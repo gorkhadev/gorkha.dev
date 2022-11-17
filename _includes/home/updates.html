@@ -1,7 +1,9 @@
 {% assign update_size = site.data.updates.size %}
-<div class="updates-section">
+<div class="updates-section section-padding">
+  <h1 class="section-heading text-white">News or Updates</h1>
+
   <div class="container">
-    <div class="row">
+    <div class="row justify-content-center">
       <div class="col-md-8">
         {% if update_size > 0 %}
           {% for update in site.data.updates %}
@@ -15,11 +17,13 @@
           </div>
         {% endif %}
       </div>
-      <div class="col-md-4 action-btn">
-        <div class="d-flex justify-content-center align-items-center h-100">
-          <a href="#" type="button" class="btn btn-danger btn-lg py-4 px-5{% if update_size > 0 %} enabled{% else %} disabled{% endif %}">Check All Updates</a>
+      <!-- {% if update_size > 3 %}
+        <div class="col-md-4 action-btn">
+          <div class="d-flex justify-content-center align-items-center h-100">
+            <a href="#" type="button" class="btn btn-danger btn-lg py-4 px-5">Check All Updates</a>
+          </div>
         </div>
-      </div>
+      {% endif %} -->
     </div>
   </div>
 </div>
