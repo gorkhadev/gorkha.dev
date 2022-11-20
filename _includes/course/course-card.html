@@ -1,0 +1,17 @@
+<div class="card course-card col-md-3 p-4 border-0">
+  <a href="{{ include.course.url }}" class="inline-block">
+    <img src="/assets/img/{{ include.course.thumbnail }}" class="course-card-img w-100" alt="{{ include.course.title }}">
+    <div class="card-body d-flex flex-column justify-content-between">
+      <h5 class="card-title">{{ include.course.title }}</h5>
+
+      <div class="course-card-info d-flex justify-content-between">
+        <div class="course-duration">
+          <i class="fa-regular fa-clock text-danger mr-1"></i><span>{{ include.course.duration }}</span>
+        </div>
+        <div class="course-modules">
+          <span>{{ include.course.modules }} Modules</span>
+        </div>
+      </div>
+    </div>
+  </a>
+</div>

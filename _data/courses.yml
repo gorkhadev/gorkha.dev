@@ -1,9 +1,15 @@
 - title: C Language
   url: /c/
   thumbnail: courses/c/thumbnail.png
+  modules: 5
+  duration: ~10 Days
 - title: Ruby Language
   url: /ruby/
-  thumbnail: courses/ruby/ruby.png
+  thumbnail: courses/ruby/thumbnail.png
+  modules: 3
+  duration: ~15 Days
 - title: Ruby on Rails
   url: /ruby-on-rails/
   thumbnail: courses/ror/thumbnail.png
+  modules: 3
+  duration: ~10 Days

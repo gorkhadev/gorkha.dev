@@ -10,15 +10,9 @@ page_name: courses
   <h1 class="text-center mb-4">Courses</h1>
 
   <div class="container">
-    <div class="row justify-content-center">
+    <div class="courses-wrapper row justify-content-center">
       {% for course in site.data.courses %}
-        <div class="card col-md-3 text-center p-4 border-0">
-          <img src="/assets/img/{{ course.thumbnail }}" class="card-img-top" alt="{{ course.title }}">
-          <div class="card-body">
-            <h5 class="card-title">{{ course.title }}</h5>
-            <a href="{{ course.url }}" class="btn btn-sm btn-primary">Let's learn</a>
-          </div>
-        </div>
+        {% include course/course-card.html course=course %}
       {% endfor %}
     </div>
   </div>

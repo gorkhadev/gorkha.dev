@@ -209,13 +209,25 @@
 }
 
 // Getting tastes
-.getting-tastes-body {
-  .card {
-    border: 0;
+.courses-wrapper {
+  .course-card {
+    .course-card-img {
+      height: 160px;
+      border-radius: 5px 5px 0 0;
+    }
 
-    .card-img-top {
-      height: 180px;
-      // width: 160px;
+    .card-body {
+      border: 1px solid #ddd;
+      border-radius: 0 0 5px 5px;
+
+      .card-title {
+        color: $color-primary;
+        font-weight: 600;
+      }
+      .course-card-info {
+        color: #666;
+        font-weight: 500;
+      }
     }
   }
   .right-arrow-btn {
