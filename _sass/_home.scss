@@ -153,67 +153,8 @@
     }
   }
 
-  .courses-section {
-    .courses-wrapper {
-      .course-card {
-        .course-card-img {
-          height: 160px;
-          border-radius: 5px 5px 0 0;
-        }
-
-        .card-body {
-          border-radius: 0 0 5px 5px;
-
-          .card-title {
-            color: $color-primary;
-            font-weight: 600;
-          }
-          .course-card-info {
-            font-size: 14px;
-            color: #666;
-            font-weight: 500;
-          }
-        }
-      }
-    }
-  }
-
   .tutorials-section {
     background: #F8F8F8;
-  }
-
-  .tutorials-section, .tutorials-page {
-    .tutorials-wrapper {
-      .tutorial-card {
-        background-color: transparent;
-
-        .card-body {
-          background-color: #fff;
-          border: 1px solid #eee;
-          border-radius: 5px;
-          height: 10.5rem;
-
-          .card-title {
-            color: $color-primary;
-            font-weight: 600;
-          }
-
-          .tutorial-card-info {
-            font-size: 14px;
-          }
-
-          .tutorial-tags {
-            .tag {
-              background: #999;
-              font-size: 13px;
-              color: #fff;
-              border-radius: 4px;
-              padding: 1px 5px;
-            }
-          }
-        }
-      }
-    }
   }
 }
 
@@ -268,6 +209,62 @@
 }
 
 
+// common in courses page and home/course-section
+.courses-wrapper {
+  .course-card {
+    .course-card-img {
+      height: 160px;
+      border-radius: 5px 5px 0 0;
+    }
+
+    .card-body {
+      border-radius: 0 0 5px 5px;
+
+      .card-title {
+        color: $color-primary;
+        font-weight: 600;
+      }
+      .course-card-info {
+        font-size: 14px;
+        color: #666;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+// common in tutorials page and home/tutorials-section
+.tutorials-wrapper {
+  .tutorial-card {
+    background-color: transparent;
+
+    .card-body {
+      background-color: #fff;
+      border: 1px solid #eee;
+      border-radius: 5px;
+      height: 10.5rem;
+
+      .card-title {
+        color: $color-primary;
+        font-weight: 600;
+      }
+
+      .tutorial-card-info {
+        font-size: 14px;
+      }
+
+      .tutorial-tags {
+        .tag {
+          background: #999;
+          font-size: 13px;
+          color: #fff;
+          border-radius: 4px;
+          padding: 1px 5px;
+        }
+      }
+    }
+  }
+}
 
 // projects page
 .projects-page {
