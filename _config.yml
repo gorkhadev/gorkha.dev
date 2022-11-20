@@ -18,7 +18,7 @@ permalink: /blogs/:year/:month/:day/:title/
 google_analytics: G-MRQN1VZ14Y
 # Disqus Comments
 disqus:
-  shortname: brg-trainings
+  shortname: techsetu
 
 contacts:
   facebook:
