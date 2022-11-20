@@ -48,37 +48,6 @@ body.default_body {
   color: $color5;
 }
 
-.social-links {
-  font-size: 1.8em;
-}
-.fa-twitter {
-  color: #38A1F3;
-}
-.fa-facebook-f {
-  color: #4267b2;
-}
-.fa-github {
-  color: #eee;
-}
-.fa-github.light {
-  color: #ddd;
-}
-.fa-linkedin-in {
-  color: #0077B5
-}
-.fa-envelope {
-  color: #777;
-}
-.fa-instagram {
-  color: #E1306C;
-}
-.fa-youtube {
-  color: red;
-}
-.fa-rss-square {
-  color: #ee802f;
-}
-
 .hide {
   display: none;
 }
@@ -293,6 +262,12 @@ a {
 
 textarea {
   resize: none;
+}
+
+.social-contacts {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
 }
 
 // make btn font weight light

@@ -1,16 +1,16 @@
 <div class="stay-connected-section section-padding">
   <div class="container">
-    <div class="row">
-      <div class="col-md-5">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
         <h1 class="caption mb-0">
           Stay Connected With Us!
         </h1>
       </div>
-      <div class="col-md-7 social-contacts">
+      <div class="col-md-6 social-contacts">
         {% for contacts_hash in site.contacts %}
           {% assign contact = contacts_hash[1] %}
           <a href="{{ contact.url }}" class="mr-2" target="_blank" alt="{{ contact.label }}">
-            <img src="{{ site.asset_base_url }}/img/{{ contact.img }}" alt="{{ contact.label }}" />
+            <i class="{{ contact.class }} text-white"></i>
           </a>
         {% endfor %}
       </div>

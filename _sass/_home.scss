@@ -143,17 +143,76 @@
     background-color: $color-primary;
     color: #fff;
 
-    a img {
-      height: 4rem;
-      margin-right: 10px;
+    .social-contacts {
+      align-items: center;
+      gap: 1.5rem;
+
+      a i {
+        font-size: 3rem;
+      }
+    }
+  }
+
+  .courses-section {
+    .courses-wrapper {
+      .course-card {
+        .course-card-img {
+          height: 160px;
+          border-radius: 5px 5px 0 0;
+        }
+
+        .card-body {
+          border-radius: 0 0 5px 5px;
+
+          .card-title {
+            color: $color-primary;
+            font-weight: 600;
+          }
+          .course-card-info {
+            font-size: 14px;
+            color: #666;
+            font-weight: 500;
+          }
+        }
+      }
     }
   }
 
   .tutorials-section {
     background: #F8F8F8;
+  }
 
-    .card {
-      background-color: transparent;
+  .tutorials-section, .tutorials-page {
+    .tutorials-wrapper {
+      .tutorial-card {
+        background-color: transparent;
+
+        .card-body {
+          background-color: #fff;
+          border: 1px solid #eee;
+          border-radius: 5px;
+          height: 10.5rem;
+
+          .card-title {
+            color: $color-primary;
+            font-weight: 600;
+          }
+
+          .tutorial-card-info {
+            font-size: 14px;
+          }
+
+          .tutorial-tags {
+            .tag {
+              background: #999;
+              font-size: 13px;
+              color: #fff;
+              border-radius: 4px;
+              padding: 1px 5px;
+            }
+          }
+        }
+      }
     }
   }
 }
@@ -208,47 +267,7 @@
   }
 }
 
-.courses-section {
-  .courses-wrapper {
-    .course-card {
-      .course-card-img {
-        height: 160px;
-        border-radius: 5px 5px 0 0;
-      }
 
-      .card-body {
-        border-radius: 0 0 5px 5px;
-
-        .card-title {
-          color: $color-primary;
-          font-weight: 600;
-        }
-        .course-card-info {
-          color: #666;
-          font-weight: 500;
-        }
-      }
-    }
-  }
-}
-
-.tutorials-section, .tutorials-page {
-  .tutorials-wrapper {
-    .tutorial-card {
-      .card-body {
-        background-color: #fff;
-        border: 1px solid #eee;
-        border-radius: 5px;
-        height: 10.5rem;
-
-        .card-title {
-          color: $color-primary;
-          font-weight: 600;
-        }
-      }
-    }
-  }
-}
 
 // projects page
 .projects-page {
@@ -293,6 +312,8 @@
 
 @media screen and (max-width: 520px) {
   .home_header .banner-section {
+    padding-top: 5rem;
+
     .left-panel-wrapper {
       .action-btns {
         .btn:nth-child(2) {
@@ -316,10 +337,10 @@
       text-align: center;
 
       .social-contacts {
-        margin-top: 1.5rem;
+        margin-top: 2rem;
 
-        a img {
-          height: 2rem;
+        a i {
+          font-size: 2rem;
         }
       }
     }
@@ -331,6 +352,8 @@
     }
 
     .learner-lifecycle-section {
+      padding-bottom: 3rem;
+
       .lifecylce-card {
         padding: 1rem;
 
@@ -343,6 +366,24 @@
             font-size: 1rem;
           }
         }
+      }
+    }
+
+    .courses-section {
+      .courses-wrapper {
+        .course-card {
+          padding: 1rem !important;
+
+          .course-card-img {
+            height: 210px;
+          }
+        }
+      }
+    }
+
+    .tutorials-section {
+      .tutorial-card {
+        padding: 1rem !important;
       }
     }
   }
