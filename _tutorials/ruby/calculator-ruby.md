@@ -3,6 +3,8 @@ layout: tutorial
 tutorial: true
 title: Simple Calculator in Ruby
 date: 20th Sept, 2020 02:00:00
+duration: 1.5 Hrs
+author: Dhanu
 tags:
  - ruby
  - beginner

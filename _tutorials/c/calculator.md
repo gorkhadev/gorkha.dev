@@ -3,6 +3,8 @@ layout: tutorial
 tutorial: true
 title: Simple Calculator in C language
 date: 14th Oct, 2020 02:00:00
+duration: 1.5 Hrs
+author: Dhanu
 tags:
  - c
  - beginner

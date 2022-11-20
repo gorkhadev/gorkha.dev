@@ -3,10 +3,10 @@ layout: tutorial
 tutorial: true
 title: Getting tastes of HTML5
 date: 25th August, 2020 02:00:00
+duration: 2 Hrs
+author: Dhanu
 tags:
- - html
- - html5
- - staticwebsite
+ - html-css
  - webdevelopment
  - beginner
 description: 'Get the taste of HTML5: Fifth and the latest major version of HTML'

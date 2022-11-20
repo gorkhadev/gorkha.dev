@@ -208,63 +208,45 @@
   }
 }
 
-// Getting tastes
-.courses-wrapper {
-  .course-card {
-    .course-card-img {
-      height: 160px;
-      border-radius: 5px 5px 0 0;
-    }
-
-    .card-body {
-      border: 1px solid #ddd;
-      border-radius: 0 0 5px 5px;
-
-      .card-title {
-        color: $color-primary;
-        font-weight: 600;
+.courses-section {
+  .courses-wrapper {
+    .course-card {
+      .course-card-img {
+        height: 160px;
+        border-radius: 5px 5px 0 0;
       }
-      .course-card-info {
-        color: #666;
-        font-weight: 500;
+
+      .card-body {
+        border-radius: 0 0 5px 5px;
+
+        .card-title {
+          color: $color-primary;
+          font-weight: 600;
+        }
+        .course-card-info {
+          color: #666;
+          font-weight: 500;
+        }
       }
     }
-  }
-  .right-arrow-btn {
-    img {
-      height: 60px;
-      width: 70px;
-      margin: auto;
-      margin-top: 3rem;
-    }
-  }
-  .card-columns {
-    column-count: 4;
   }
 }
 
-// tutorials section
-.tutorials-page {
-  img {
-    height: 180px;
-    max-width: 100%;
-  }
-  .card-title {
-    font-size: 16px;
-    margin-top: 5px;
-  }
-  .card-body {
-    padding: 5px;
-  }
-}
+.tutorials-section, .tutorials-page {
+  .tutorials-wrapper {
+    .tutorial-card {
+      .card-body {
+        background-color: #fff;
+        border: 1px solid #eee;
+        border-radius: 5px;
+        height: 10.5rem;
 
-
-
-// courses page
-.courses-page {
-  img {
-    height: 200px;
-    max-width: 100%;
+        .card-title {
+          color: $color-primary;
+          font-weight: 600;
+        }
+      }
+    }
   }
 }
 

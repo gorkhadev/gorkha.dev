@@ -3,10 +3,11 @@ layout: tutorial
 tutorial: true
 title: Number Guessing game in Ruby
 date: 20th Sept, 2020 02:00:00
+duration: 2 Hrs
+author: Dhanu
 tags:
  - ruby
  - beginner
- - game
 description: Number Guessing game in Ruby
 permalink: /tutorials/number-guess-ruby/
 thumbnail: https://asciinema.org/a/361520.svg

@@ -3,10 +3,10 @@ layout: tutorial
 tutorial: true
 title: Getting tastes of HTML and CSS
 date: 13th August, 2020 02:00:00
+duration: 2 Hrs
+author: Dhanu
 tags:
- - html
- - css
- - staticwebsite
+ - html-css
  - webdevelopment
  - beginner
 description: 'Get the taste of HTML and CSS: structure and style your web pages'

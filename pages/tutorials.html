@@ -10,16 +10,10 @@ page_name: tutorials
   <h1 class="text-center mb-4">Tutorials</h1>
 
   <div class="container">
-    <div class="row justify-content-center">
+    <div class="row tutorials-wrapper">
       {% assign tutorials = site.tutorials | reverse %}
       {% for tutorial in tutorials %}
-        <div class="card col-md-3 text-center border-0 mb-5">
-          <img src="{% if tutorial.external %}{{ tutorial.thumbnail }}{% else %}/assets/img/{{ tutorial.thumbnail }}{% endif %}" class="card-img-top pt-3" alt="{{ tutorial.title }}">
-          <div class="card-body">
-            <h5 class="card-title">{{ tutorial.title }}</h5>
-            <a href="{{ tutorial.url }}" class="btn btn-sm btn-primary">Let's learn</a>
-          </div>
-        </div>
+        {% include tutorial/tutorial-card.html tutorial=tutorial %}
       {% endfor %}
     </div>
   </div>
