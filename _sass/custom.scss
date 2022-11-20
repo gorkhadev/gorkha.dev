@@ -33,6 +33,12 @@ code, kbd, pre, samp {
 .color-secondary {
   color: $color-secondary;
 }
+.bg-primary {
+  background-color: $color-primary;
+}
+.bg-secondary {
+  background-color: $color-secondary;
+}
 
 body.default_body {
   margin-top: 60px;

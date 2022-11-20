@@ -93,7 +93,7 @@ Area of circle with radius 5 is 78.50.
 
 Following animated image should help you give a gist of how function works.
 
-{% include image.html img="courses/c/function-behavior.gif" %}
+{% include image.html path="courses/c/function-behavior.gif" %}
 
 ## Types of Functions
 
@@ -163,7 +163,7 @@ A function that calls itself during its execution is known as a recursive functi
 The recursion continues until some condition is met to prevent it from further recursion which is usually done through
 `if...else` statement (or similar approach) where we need to make one branch to call for recursion and other to return value.
 
-{% include image.html img="courses/c/recursive.png" %}
+{% include image.html path="courses/c/recursive.png" %}
 
 ### Example
 

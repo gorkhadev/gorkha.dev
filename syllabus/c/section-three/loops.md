@@ -19,7 +19,7 @@ During writing programs, sometimes it is necessary to execute the statement(s) s
 
 ## Behavior of loop
 
-{% include image.html img="courses/c/loop.png" %}
+{% include image.html path="courses/c/loop.png" %}
 
 C language has many different variants of loop statements.
 

@@ -49,7 +49,7 @@ This is called a _single-dimensional array_.
 int arr[10];  // create an array with 10 integer elements
 ```
 
-{% include image.html img="courses/c/array.png" %}
+{% include image.html path="courses/c/array.png" %}
 
 ## Declaration with initialization
 

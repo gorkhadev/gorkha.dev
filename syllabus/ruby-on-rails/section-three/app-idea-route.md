@@ -26,7 +26,7 @@ In this page, we will setup the required route in our application which will hel
 
 Following image should help you understand how a request from browser goes to `routes.rb`, `ideas_controller.rb`, fetch first idea from database, process by `ideas_controller.rb` again, through `show.html.erb` displayed to the browser.
 
-{% include image.html img="courses/ror/request-response-flow.jpg" %}
+{% include image.html path="courses/ror/request-response-flow.jpg" %}
 
 ## Routing error
 

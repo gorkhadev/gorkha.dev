@@ -66,7 +66,7 @@ __NOTE:__ If you are wondering about weird tag `<%= ... %>` along with HTML cont
 
 Now, reload your browser, you should see following:
 
-{% include image.html img="courses/ror/idea-show-1.png" class="shadow" %}
+{% include image.html path="courses/ror/idea-show-1.png" class="shadow" %}
 
 ## Check other Ideas as well
 

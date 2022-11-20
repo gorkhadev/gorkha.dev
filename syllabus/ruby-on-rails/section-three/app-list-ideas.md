@@ -109,6 +109,6 @@ __NOTE:__ `link_to` is a Rails view helper to create an anchor tag and `idea_pat
 
 Now, open the URL `https://localhost:3000/ideas` in your browser. You should now see the idea listing as following.
 
-{% include image.html img="courses/ror/all-ideas.jpg" class="shadow" %}
+{% include image.html path="courses/ror/all-ideas.jpg" class="shadow" %}
 
 __NOTE:__ You can notice that there is button `Show` at the right most of every idea. If you click on it, it will show the corresponding idea.
