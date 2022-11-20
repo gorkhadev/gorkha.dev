@@ -11,7 +11,7 @@ page_name: blogs
   <div class="container">
     <div class="d-flex flex-wrap bd-highlight my-4">
       {% for tag in sortedtags %}
-        <a type="button" href="#{{ tag }}" class="btn btn-outline-dark mr-2 mb-1">{{ tag }}
+        <a type="button" href="#{{ tag }}" class="btn btn-outline-dark me-2 mb-1">{{ tag }}
             ({{ site.tags[tag].size }})</a>
       {% endfor %}
     </div>

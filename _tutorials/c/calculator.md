@@ -36,8 +36,8 @@ specific operations.
 ## Solution Steps
 
 {% include util/note.html
-    note="The solution I described here is one of the simple solution. There are only few calculator operations
-          are implemented. Recommend you to extend at your own level for more practice." type="recommend"
+    note="The solution I described here is one of the simplest solution. There are only few calculator operations
+          are implemented. I recommend you to extend at your own level for more practice." type="recommend"
 %}
 
 Follow the steps below to build the simple calculator in C language.

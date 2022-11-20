@@ -5,8 +5,7 @@ tutorial_name: calculator
 title: Calculator - UI and functional changes
 date: 17th Oct, 2020 02:00:00
 tags:
- - html
- - css
+ - html-css
  - javascript
  - beginner
 description: Calculator - UI and functional changes

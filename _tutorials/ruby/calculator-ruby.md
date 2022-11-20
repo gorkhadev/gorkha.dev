@@ -36,7 +36,7 @@ specific operations.
 ## Solution Steps
 
 {% include util/note.html
-    note="The solution I described here is one of the simple solution.
+    note="The solution I described here is one of the simplest solution.
           I recommend you to first try to write program which is functional and then think of optimization or
           style improvement later."
 %}

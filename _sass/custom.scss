@@ -264,6 +264,13 @@ textarea {
   resize: none;
 }
 
+.tag {
+  background: #999;
+  font-size: 13px;
+  color: #fff;
+  border-radius: 4px;
+  padding: 1px 5px;
+}
 .social-contacts {
   display: flex;
   gap: 1rem;

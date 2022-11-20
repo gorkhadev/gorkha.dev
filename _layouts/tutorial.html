@@ -20,7 +20,7 @@
                 <button class="btn btn-sm btn-primary btn-block py-2 text-white td-sidebar__toggle d-block d-sm-none m-0 mb-2 font-weight-bold" type="button"
                   data-toggle="collapse" data-target="#td-section-nav" aria-controls="td-docs-nav"
                   aria-expanded="false" aria-label="Toggle section navigation">
-                  <i class="fas fa-bars mr-3"></i>Table Of Contents
+                  <i class="fas fa-bars me-3"></i>Table Of Contents
                 </button>
 
                 <div class="d-none d-sm-block">
@@ -62,7 +62,11 @@
                 <h1 id="{{ page.title | remove: ':' | remove: ',' | downcase | split: ' ' | join: '-' }}">{{ page.description }}</h1>
 
                 {% if page.tags %}
-                  <div class="tags mb-4"></div>
+                  <div class="tags mb-4">
+                    {% for tag in page.tags %}
+                      <span class="tag">{{ tag }}</span>
+                    {% endfor %}
+                  </div>
                 {% endif %}
                 <hr>
                 {{ content }}
@@ -86,8 +90,6 @@
     </main>
 
     {% include course/toc.html %}
-    {% include course/tags.html %}
-
 
     <a href="#pagetop" class="scroll" id="toTop">
       <img src="/assets/img/top.png" id="toTopHover" style="opacity: 1;" alt="Go to top" />

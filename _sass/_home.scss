@@ -206,6 +206,17 @@
   a {
     font-weight: 300;
   }
+  .email-share {
+    background-color: #999;
+
+    &:hover {
+      color: #fff;
+    }
+
+    svg {
+      height: 12px;
+    }
+  }
 }
 
 
@@ -213,7 +224,7 @@
 .courses-wrapper {
   .course-card {
     .course-card-img {
-      height: 160px;
+      height: 150px;
       border-radius: 5px 5px 0 0;
     }
 

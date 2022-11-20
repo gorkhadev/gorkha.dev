@@ -5,8 +5,7 @@ tutorial_name: calculator
 title: Calculator - build a simple one
 date: 16th Oct, 2020 02:00:00
 tags:
- - html
- - css
+ - html-css
  - javascript
  - beginner
 description: Calculator - build a simple one

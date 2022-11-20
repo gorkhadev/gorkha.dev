@@ -3,14 +3,14 @@
   <button class="btn btn-sm btn-primary btn-block py-2 text-white td-sidebar__toggle d-block d-sm-none m-0 font-weight-bold" type="button"
     data-toggle="collapse" data-target="#td-section-nav" aria-controls="td-docs-nav"
     aria-expanded="false" aria-label="Toggle section navigation">
-    <i class="fas fa-bars mr-3"></i>Table Of Contents
+    <i class="fas fa-bars me-3"></i>Table Of Contents
   </button>
   <nav class="collapse td-sidebar-nav pt-2" id="td-section-nav">
     {% for section in site.data[page.learning_type][page.tutorial_name] %}
       <ul class="td-sidebar-nav__section pl-0 pr-md-3 mb-2 py-1">
-        <li class="td-sidebar-nav__section-title pl-3">
+        <li class="td-sidebar-nav__section-title ps-3">
           <a  href="{% if section.url %}{{ site.baseurl }}/{{ section.url }}{% else %}{{ section.external_url }}{% endif %}"
-            class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">{{ section.title }}</a>
+            class="align-left pl-0 pe-2 active td-sidebar-link td-sidebar-link__section">{{ section.title }}</a>
         </li>
         {% if section.links %}
         <ul>

@@ -33,7 +33,11 @@
                 <h4 class="m-0">{{ page.description }}</h4>
 
                 {% if page.tags %}
-                  <div class="tags mb-4"></div>
+                  <div class="tags mb-4">
+                    {% for tag in page.tags %}
+                      <span class="tag">{{ tag }}</span>
+                    {% endfor %}
+                  </div>
                 {% endif %}
                 <hr>
 
@@ -41,7 +45,7 @@
 
                 <div class="mt-4 d-flex justify-content-between">
                   {% if page.prev_link %}
-                    <a href="{{ page.prev_link }}" class="btn btn-primary px-4 mr-5" role="button">Previous</a>
+                    <a href="{{ page.prev_link }}" class="btn btn-primary px-4 me-5" role="button">Previous</a>
                   {% endif %}
                   {% if page.next_link %}
                     <a href="{{ page.next_link }}" class="btn btn-primary px-4" role="button">Next</a>
@@ -68,7 +72,6 @@
     </main>
 
     {% include course/toc.html %}
-    {% include course/tags.html %}
 
     <a href="#pagetop" class="scroll" id="toTop">
       <img src="/assets/img/top.png" id="toTopHover" style="opacity: 1;" alt="Go to top" />
