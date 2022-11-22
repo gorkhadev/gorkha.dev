@@ -1,24 +1,24 @@
 journey:
+  - company: CloudYuga Guru
+    from: Aug 21, 2021
+    to: Present
+    designation: Project Manager & Full Stack Engineer
   - company: Freelancer
     from: Oct 1, 2019
     to: Present
     designation: IT Coach & Mentor
-    image: "freelancer.png"
   - company: Averon Media
     from: Dec 10, 2018
     to: April 30, 2019
     designation: Director & CTO
-    image: "averon.png"
   - company: Red Hat
     from: Feb 8, 2016
     to: Dec 5, 2018
     designation: Sr. Software Engineer
-    image: "redhat.png"
   - company: Vertis Microsystems
     from: Aug 16, 2011
     to: Jan 29, 2016
     designation: Full Stack Engineer
-    image: "vertis.png"
 education:
   - level: Masters in Computer Applications(MCA)
     name: Fergusson College, Pune, India

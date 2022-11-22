@@ -13,7 +13,7 @@ $(function(){
   var scroll = new SmoothScroll('a[href*="#"]', { speed: 700, speedAsDuration: true });
 
   $(document).scroll(function () {
-    var $nav = $(".navbar.fixed-top");
+    var $nav = $(".navbar");
     if ($(this).scrollTop() > $nav.height() + 100 ) {
       $('#toTop').css('display', 'block');
     } else {

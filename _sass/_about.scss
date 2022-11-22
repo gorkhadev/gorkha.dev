@@ -64,7 +64,7 @@
     position: absolute;
     width: 25px;
     height: 25px;
-    right: -17px;
+    right: -22px;
     background-color: #fff;
     border: 4px solid #FF9F55;
     top: 15px;
@@ -112,7 +112,7 @@
 
   /* Fix the circle for timeline-containers on the right side */
   .right::after {
-    left: -16px;
+    left: -10px;
   }
 
   /* The actual content */
@@ -175,8 +175,11 @@
         border-width: 10px 10px 10px 0;
         border-color: transparent white transparent transparent;
       }
-      .left::after, .right::after {
-        left: 15px;
+      .left::after {
+        left: 18px;
+      }
+      .right::after {
+        left: 23px;
       }
       .right {
         left: -1.5%;
