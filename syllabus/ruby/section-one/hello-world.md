@@ -42,8 +42,11 @@ Run the program in the terminal or shell as:
 ruby hello.rb
 ```
 
-{% include util/show-output.html id="rubyhelloworld" caption="Output" %}
-{% include util/output.html id="rubyhelloworld" output="Hello World" lang="ruby" %}
+You should be able to see output as:
+
+```shell
+Hello World
+```
 
 ##### Congrats! You just wrote your first program in Ruby.
 

@@ -1,25 +1,28 @@
 <div class="admonition question">
   <p class="admonition-title">
     {% if include.item.question %}
-      <i class="fas fa-chevron-circle-right me-2"></i> {{ include.item.question }}
+      <i class="fa-solid fa-circle-question fa-xl color-primary me-2"></i>
+      <span class="color-primary fs-5">{{ include.item.question }}</span>
     {% else %}
       Question {{ include.count }}
     {% endif %}
   </p>
-  <p>
-    {% for choice in include.item.items %}
-      {% if choice.correct == true %}
-        <span class="correct-{{ include.count }}">
+  {% if include.item.items.size > 0 %}
+    <p>
+      {% for choice in include.item.items %}
+        {% if choice.correct == true %}
+          <span class="correct-{{ include.count }}">
         {% endif %}
         {{ forloop.index }}. {{ choice.choice }}
         {% if choice.correct == true %}
-        </span>
-      {% endif %}
-      <br>
-    {% endfor %}
-  </p>
+          </span>
+        {% endif %}
+        <br>
+      {% endfor %}
+    </p>
+  {% endif %}
 </div>
-<button class="btn btn-success" onclick='$(".correct-{{ include.count }}").css("font-weight", 600).css("color", "blue");
+<button class="btn btn-success rounded-0 mb-3" onclick='$(".correct-{{ include.count }}").css("font-weight", 600).css("color", "blue");
   $(".correct-more-{{ include.count }}").css("display", "inline")'>Show Answer
 </button>
 {% if include.item.followup %}

@@ -195,8 +195,15 @@ puts x == 3 || y == 2
 puts !x # output: false as using ! operator to non-zero result to false
 ```
 
-{% include util/show-output.html id="and_or_not" caption="Output" %}
-{% include util/output.html id="and_or_not" output="true\ntrue\nfalse\nfalse\nfalse" lang="ruby" %}
+#### Output:
+
+```ruby
+true
+true
+false
+false
+false
+```
 
 ### Best Practice
 

@@ -99,6 +99,10 @@ num2 = gets.to_f
 puts "#{num1} + #{num2} = #{num1 + num2}"
 ```
 
-{% include util/show-output.html id="calc" caption="Output" %}
-{% include util/output.html id="calc"
-    output="Enter first number: 5\nEnter second number: 15\n5.0 + 15.0 = 20.0" lang="ruby" %}
+### Output
+
+```ruby
+Enter first number: 5
+Enter second number: 15
+5.0 + 15.0 = 20.0
+```

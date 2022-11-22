@@ -39,13 +39,17 @@ code, kbd, pre, samp {
 .bg-secondary {
   background-color: $color-secondary;
 }
-
-body.default_body {
-  margin-top: 60px;
-}
-
 .secondary-color {
   color: $color5;
+}
+.btn-primary {
+  background-color: $color-primary;
+  border-color: $color-primary;
+  border-radius: 0;
+}
+.btn-outline-primary {
+  border-color: $color-primary;
+  border-radius: 0;
 }
 
 .hide {
@@ -257,7 +261,7 @@ a {
 .td-content .highlighter-rouge, .td-content figure.highlight {
   padding: 0.6rem 1rem;
   background: #eee;
-  border-radius: 5px;
+  border-radius: 0;
 }
 
 textarea {
