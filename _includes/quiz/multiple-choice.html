@@ -23,7 +23,7 @@
   {% endif %}
 </div>
 <button class="btn btn-success rounded-0 mb-3" onclick='$(".correct-{{ include.count }}").css("font-weight", 600).css("color", "blue");
-  $(".correct-more-{{ include.count }}").css("display", "inline")'>Show Answer
+  $(".correct-more-{{ include.count }}").css("display", "inline")'>Verify Answer
 </button>
 {% if include.item.followup %}
   <p class="well correct-more-{{ include.count }}" style="display:none">{{ include.item.followup }}</p>

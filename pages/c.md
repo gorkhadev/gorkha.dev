@@ -16,8 +16,8 @@ disable_sidebar: true
 
 This course has been designed to get the basic understanding of C language. After completing this course you should be able to understand and write C programs.
 
-{% include util/highlight.html
-    text="This course has been designed with the intention of being used in an interactive online or classroom teaching session. <br>Feel free to use it for your self-learning purpose." class="h5"
+{% include util/note.html
+    note="This course has been designed with the intention of being used in an interactive online or classroom teaching session. <br>Feel free to use it for your self-learning purpose." class="h5"
 %}
 
 The course has been divided into different sections with a section goal.

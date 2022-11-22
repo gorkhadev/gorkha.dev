@@ -17,8 +17,8 @@ disable_toc: true
 
 This course has been designed to get the basic understanding of Ruby language. After completing this course you should be able to understand and write Ruby programs.
 
-{% include util/highlight.html
-    text="This course has been designed with the intention of being used in an interactive online or classroom teaching session. <br>Feel free to use it for your self-learning purpose." class="h5"
+{% include util/note.html
+    note="This course has been designed with the intention of being used in an interactive online or classroom teaching session. <br>Feel free to use it for your self-learning purpose." class="h5"
 %}
 
 The course has been divided into different sections with a section goal.

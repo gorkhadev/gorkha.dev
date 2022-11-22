@@ -17,8 +17,8 @@ disable_sidebar: true
 
 This course has been designed to get the basic understanding of Ruby on Rails web framework. After completing this course you should be able to understand and build dynamic web applications in Ruby on Rails.
 
-{% include util/highlight.html
-    text="This course has been designed with the intention of being used in an interactive online or classroom teaching session. <br><em>However, one can use this syllabus and self-learn Ruby on Rails.</em>" class="h4"
+{% include util/note.html
+    note="This course has been designed with the intention of being used in an interactive online or classroom teaching session. <br><em>However, one can use this syllabus and self-learn Ruby on Rails.</em>" class="h4"
 %}
 
 The course has been divided into different sections with a section goal.

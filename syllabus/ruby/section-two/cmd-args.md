@@ -31,7 +31,7 @@ Where
     note="This concept forms the basis in writing Command Line Interface(CLI) applications."
 %}
 
-## Varying the number of arguments (`ARGV` Array)
+## Varying the number of arguments (ARGV Array)
 
 `ARGV` stands for ARGument Vector which is a one-dimensional Array.
 It contains the full list of arguments in the order as passed as arguments.
