@@ -7,12 +7,12 @@
       <div class="col-md-8">
         {% if update_size > 0 %}
           {% for update in site.data.updates %}
-            <div class="card update-card rounded-lg">
+            <div class="card update-card rounded-2">
               {{ update.text | markdownify }}
             </div>
           {% endfor %}
         {% else %}
-          <div class="card update-card rounded-lg">
+          <div class="card update-card rounded-2">
             <p>No updates.</p>
           </div>
         {% endif %}

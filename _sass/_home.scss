@@ -1,10 +1,6 @@
 #page-content {
   flex: 1 0 auto;
 }
-#page-content main {
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
 .section-padding {
   padding: 70px 0px;
 }
@@ -65,8 +61,6 @@
 
 // Header SCSS
 .home_header {
-  margin-top: 60px;
-
   .banner-section {
     padding: 6rem 0;
 
@@ -76,19 +70,25 @@
       h4 {
         color: #777;
       }
-      h5 {
-        font-size: 1.6rem;
-      }
-
-      h1 {
+      .banner-title {
         font-size: 3.5rem;
         font-weight: 800;
+        margin-bottom: 0;
       }
-
+      .banner-tagline {
+        color: $color-secondary;
+        font-size: 20px;
+        font-weight: 300;
+        margin-bottom: 0;
+      }
+      .banner-description {
+        font-size: 2rem;
+        font-weight: 400;
+        color: #666;
+        margin-top: 1rem;
+      }
       .action-btns {
-        .btn:nth-child(2) {
-          margin-left: 10px;
-        }
+        margin-top: 1rem;
       }
     }
   }
@@ -126,18 +126,27 @@
     }
   }
 
-  .learner-lifecycle-section {
-    .lifecylce-card {
-      border: 0;
-      text-align: center;
-      padding: 3rem;
-      color: #555;
-
-      .card-img-top {
-        height: 180px;
-      }
+  .about-mentor-section {
+    .about-mentor-wrapper {
+      background: url($asset_base_url + "/img/about-bg.png") no-repeat center center/cover;
+      height: 100%;
+      padding: 4rem;
+      border-radius: 15px;
     }
   }
+
+  // .learner-lifecycle-section {
+  //   .lifecylce-card {
+  //     border: 0;
+  //     text-align: center;
+  //     padding: 3rem;
+  //     color: #555;
+
+  //     .card-img-top {
+  //       height: 180px;
+  //     }
+  //   }
+  // }
 
   .stay-connected-section {
     background-color: $color-primary;
@@ -225,12 +234,9 @@
   .course-card {
     .course-card-img {
       height: 150px;
-      border-radius: 5px 5px 0 0;
     }
 
     .card-body {
-      border-radius: 0 0 5px 5px;
-
       .card-title {
         color: $color-primary;
         font-weight: 600;
@@ -252,7 +258,6 @@
     .card-body {
       background-color: #fff;
       border: 1px solid #eee;
-      border-radius: 5px;
       height: 10.5rem;
 
       .card-title {
@@ -322,14 +327,6 @@
   .home_header .banner-section {
     padding-top: 5rem;
 
-    .left-panel-wrapper {
-      .action-btns {
-        .btn:nth-child(2) {
-          margin-top: 1rem;
-          margin-left: 0;
-        }
-      }
-    }
     .banner-img-wrapper {
       margin-top: 3rem;
     }
@@ -359,21 +356,11 @@
       }
     }
 
-    .learner-lifecycle-section {
-      padding-bottom: 3rem;
-
-      .lifecylce-card {
-        padding: 1rem;
-
-        .card-img-top {
-          height: 140px;
-        }
-
-        .card-body {
-          h5 {
-            font-size: 1rem;
-          }
-        }
+    .about-mentor-section {
+      .about-mentor-wrapper {
+        background: none;
+        background-color: #e6f6fe;
+        padding: 2rem;
       }
     }
 
@@ -385,6 +372,16 @@
           .course-card-img {
             height: 210px;
           }
+        }
+      }
+    }
+
+    .stay-connected-section {
+      .social-contacts {
+        gap: 1rem;
+
+        a i {
+          font-size: 1.5rem;
         }
       }
     }

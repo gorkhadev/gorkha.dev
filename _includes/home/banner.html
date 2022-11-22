@@ -5,24 +5,26 @@
       <div class="col-md-6 col-12">
         <div class="d-flex flex-column justify-content-center left-panel-wrapper h-100">
           <h4>Welcome to</h4>
-          <h1 class="my-2 color-primary">
+          <h1 class="banner-title color-primary">
             {{ site.title }}
           </h1>
           {% if site.tagline %}
-            <h5>{{ site.tagline }}</h5>
+            <h5 class="banner-tagline">11+ Years of IT Experience</h5>
+            <p class="">Passionate about Sharing Knowledge and Mentoring</p>
           {% endif %}
-          <h5 class="mt-3 font-weight-light color-primary">
-            Providing technological Bridge to Grow in the Tech Industry
+          <h5 class="banner-description">
+            Helping Students to build the foundation for IT Career
           </h5>
-          <div class="action-btns mt-5">
-            <a href="/#" class="btn px-5 py-2 btn-outline-danger rounded">About Us</a>
-            <a href="/#" class="btn px-5 py-2 btn-primary rounded">Join to Grow with Us</a>
+          <div class="action-btns">
+            <a href="/#courses" class="btn btn-sm px-3 btn-outline-danger rounded-0">Courses</a>
+            <a href="/#tutorials" class="btn btn-sm px-3 btn-outline-primary rounded-0 ms-1">Tutorials</a>
+            <!-- <a href="/#projects" class="btn btn-sm btn-outline-secondary">Projects</a> -->
           </div>
         </div>
       </div>
       <div class="col-md-6 col-12">
         <div class="d-flex flex-column justify-content-center banner-img-wrapper">
-          <img src="{{ site.asset_base_url }}/img/banner-img.jpg" alt="TECH Setu" class="rounded-lg" />
+          <img src="{{ site.asset_base_url }}/img/banner-img.jpg" alt="TECH Setu" class="rounded-0" />
         </div>
       </div>
     </div>

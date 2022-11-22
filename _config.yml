@@ -1,8 +1,9 @@
-title: TECH Setu
-email: techsetuu@gmail.com
+title: Dhanu Gurung
+email: budhramgurung@gmail.com
 year: 2022
+tagline: 11+ Years of IT Experience
 description: >-
-  Providing technological Bridge to Grow in the Tech Industry
+  Building the foundation for IT Career
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://techsetu.org" # the base hostname & protocol for your site, e.g. http://example.com
 asset_base_url: /assets                                     # local assets: ending without forward slash
@@ -22,33 +23,33 @@ disqus:
 
 contacts:
   facebook:
-    url: https://www.facebook.com/techsetu.org
+    url: https://www.facebook.com/dhanumentor
     label: Facebook
     class: fab fa-facebook-f
     img: facebook.png
-  # twitter:
-  #   url: https://twitter.com/techchannelnp
-  #   label: Twitter
-  #   class: fab fa-twitter
-  #   username: "@coolbrg"
-  #   img: twitter.png
+  twitter:
+    url: https://twitter.com/mentordhanu
+    label: Twitter
+    class: fab fa-twitter
+    username: "@mentordhanu"
+    img: twitter.png
   github:
-    url: https://github.com/techsetu
+    url: https://github.com/dhanugurung
     label: GitHub
     class: fab fa-github
     img: github.png
   linkedin:
-    url: https://www.linkedin.com/company/techsetu
+    url: https://www.linkedin.com/in/mentordhanu
     label: LinkdIn
     class: fab fa-linkedin-in
     img: linkedin.png
   email:
-    url: mailto:techsetuu@gmail.com
+    url: mailto:budhramgurung@gmail.com
     label: Email
     class: fas fa-envelope
     img: mail.png
   youtube:
-    url: https://www.youtube.com/channel/UC8p8tlnY5fykNYv2vZHvQDg
+    url: https://www.youtube.com/@mentordhanu
     label: YouTube Channel
     class: fab fa-youtube
     img: youtube.png
