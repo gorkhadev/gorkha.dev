@@ -57,7 +57,7 @@ __NOTE__: Check the [Getting taste of HTML and CSS tutorial](../html-css/) to qu
 
 ### Website preview
 
-Click here {% include util/open-link.html url="https://brgtrainings.github.io/student-portfolio-html5/" type="preview" %} to preview the website.
+Click here {% include util/open-link.html url="https://dhanugurung.github.io/student-portfolio-html5/" type="preview" %} to preview the website.
 
 {% include util/note.html
     note="The website might look ugly in mobile. We will taste the responsive behavior in another tutorial."
@@ -80,14 +80,14 @@ Let's jump into the coding.
 #### Using Git and GitHub (Recommended)
 
 - Make a project structure: `mkdir projects && cd projects` __[Optional]__
-- `git clone https://github.com/brgtrainings/student-portfolio-html5`
+- `git clone https://github.com/dhanugurung/student-portfolio-html5`
 - `cd student-portfolio-html5`
 - Open `student-portfolio-html5` folder in your favorite editor.
 - Open `index.html` file in the browser.
 
 #### Using Zip
 
-- Click {% include util/download-link.html url="https://github.com/brgtrainings/student-portfolio-html5/archive/starter.zip" %} to download the _Starter Zip_.
+- Click {% include util/download-link.html url="https://github.com/dhanugurung/student-portfolio-html5/archive/starter.zip" %} to download the _Starter Zip_.
 - Unzip `student-portfolio-html5.zip`.
 - Rename `student-portfolio-html5-starter` to `student-portfolio-html5`.
 - Open `student-portfolio-html5` folder in your favorite editor.
@@ -200,7 +200,7 @@ Update `<div class="column">` with `<article class="column">`. The blogs section
 </section>
 ```
 
-__NOTE:__ Check the above [step's commit](https://github.com/brgtrainings/student-portfolio-html5/commit/07fd876a862a8cae5f31aca2c96b138e62d0b4bd){:target="_blank"} in GitHub.
+__NOTE:__ Check the above [step's commit](https://github.com/dhanugurung/student-portfolio-html5/commit/07fd876a862a8cae5f31aca2c96b138e62d0b4bd){:target="_blank"} in GitHub.
 
 {% include util/note.html
     note="You will notice that the result is same in both cases. We just made the code more semantic by using HTML5."
@@ -230,7 +230,7 @@ figcaption {
 }
 ```
 
-__NOTE:__ Check the above [step's commit](https://github.com/brgtrainings/student-portfolio-html5/commit/b99d72d2409f636b45b0f46a6d4acf7b770bc561){:target="_blank"} in GitHub.
+__NOTE:__ Check the above [step's commit](https://github.com/dhanugurung/student-portfolio-html5/commit/b99d72d2409f636b45b0f46a6d4acf7b770bc561){:target="_blank"} in GitHub.
 
 Blogs section now should look like below:
 
@@ -328,7 +328,7 @@ pre {
 }
 ```
 
-__NOTE:__ Update the above new file `html5.html` as per the changes done in this [GitHub's commit](https://github.com/brgtrainings/student-portfolio-html5/commit/ea4a8ef045fbc310d6244d48a052a888d1e05705){:target="_blank"}.
+__NOTE:__ Update the above new file `html5.html` as per the changes done in this [GitHub's commit](https://github.com/dhanugurung/student-portfolio-html5/commit/ea4a8ef045fbc310d6244d48a052a888d1e05705){:target="_blank"}.
 
 You will notice that we can add video and audio in our web page as following:
 
@@ -353,9 +353,9 @@ __NOTE:__ The video extension is `.webm` but we can use other format like `.mp4`
 
 ## Resources
 
-- Preview of the Website: {% include util/open-link.html url="https://brgtrainings.github.io/student-portfolio-html5/" type="preview" %}
-- Source code: {% include util/open-link.html url="https://github.com/brgtrainings/student-portfolio-html5/" type="project" %}
-- Archives: {% include util/open-link.html url="https://github.com/brgtrainings/student-portfolio-html5/releases" type="archives" %}
+- Preview of the Website: {% include util/open-link.html url="https://dhanugurung.github.io/student-portfolio-html5/" type="preview" %}
+- Source code: {% include util/open-link.html url="https://github.com/dhanugurung/student-portfolio-html5/" type="project" %}
+- Archives: {% include util/open-link.html url="https://github.com/dhanugurung/student-portfolio-html5/releases" type="archives" %}
 
 ## Where to go from here
 

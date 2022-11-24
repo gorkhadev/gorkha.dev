@@ -16,7 +16,7 @@ comments: true
 
 # Application Root URL
 
-The root URL is the website top level url, i.e `https://localhost:3000/` in our application case. It usually represents the domain URL of the website like `https://brgtrainings.com`.
+The root URL is the website top level url, i.e `https://localhost:3000/` in our application case. It usually represents the domain URL of the website like `https://dhanugurung.com`.
 
 In Rails, the `root` method defines where it should send us for the route `/`.
 

@@ -333,7 +333,7 @@ The sample operation of calculator look like below:
 
 ## Source Code
 
-- [BRG Codesnippets for Simple Calculator in HTML, CSS and JavaScript in GitHub](https://github.com/brgtrainings/codesnippets/tree/master/html_css_js/simple_calculator).
+- [BRG Codesnippets for Simple Calculator in HTML, CSS and JavaScript in GitHub](https://github.com/dhanugurung/dhanu_codesnippets/tree/master/html_css_js/simple_calculator).
 
 ## Related tutorials
 

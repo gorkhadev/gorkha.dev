@@ -311,4 +311,4 @@ if (initialVal == "") {
 
 ## Source Code
 
-Find the source code of the tutorial [here](https://github.com/brgtrainings/codesnippets/tree/master/html_css_js/simple_calculator_part2){:target="_blank"}.
+Find the source code of the tutorial [here](https://github.com/dhanugurung/dhanu_codesnippets/tree/master/html_css_js/simple_calculator_part2){:target="_blank"}.

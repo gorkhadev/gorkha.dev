@@ -310,7 +310,7 @@ __NOTE:__ Notice that the `pow` function accept double. Hence we have declared `
 
 ## Source Code
 
-Find the complete source code of this exercise [here](https://github.com/brgtrainings/codesnippets/blob/master/c_programs/calculator.c){:target="_blank"}.
+Find the complete source code of this exercise [here](https://github.com/dhanugurung/dhanu_codesnippets/blob/master/c_programs/calculator.c){:target="_blank"}.
 
 ## Important things to remember
 
