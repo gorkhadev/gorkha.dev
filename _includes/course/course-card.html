@@ -9,7 +9,7 @@
           <i class="fa-regular fa-clock text-danger me-1"></i><span>{{ include.course.duration }}</span>
         </div>
         <div class="course-modules">
-          <span>{{ include.course.modules }} Modules</span>
+          <span>{{ include.course.modules }} {% if include.type == "project" %}Phases{% else %}Modules{% endif %}</span>
         </div>
       </div>
     </div>
