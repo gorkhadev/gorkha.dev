@@ -3172,3 +3172,13 @@ html body .md-typeset .headerlink {
   }
 }
 
+@media screen and (max-width: 520px) {
+  .course-body .td-sidebar #td-sidebar-menu {
+    padding: 0;
+
+    .td-sidebar-nav {
+      padding-left: 2rem !important;
+      padding-bottom: 1rem !important;
+    }
+  }
+}

@@ -1,8 +1,11 @@
 {% assign course_name = page.course %}
 <div id="td-sidebar-menu" class="td-sidebar__inner">
-  <button class="btn btn-sm btn-primary btn-block py-2 text-white td-sidebar__toggle d-md-none m-0 font-weight-bold" type="button" data-toggle="collapse" data-target="#td-section-nav" aria-controls="td-docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+  <button class="btn btn-sm btn-primary btn-block py-2 w-100 text-white w-100 td-sidebar__toggle d-md-none m-0 font-weight-bold"
+  type="button" data-bs-toggle="collapse" data-bs-target="#td-section-nav" aria-controls="td-docs-nav"
+  aria-expanded="false" aria-label="Toggle section navigation">
     <i class="fas fa-bars me-3"></i>Table Of Contents
   </button>
+
   <nav class="collapse td-sidebar-nav pt-2 ps-3" id="td-section-nav">
     {% for section in site.data[course_name] %}
       <ul class="td-sidebar-nav__section">
