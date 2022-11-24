@@ -3,11 +3,11 @@ email: budhramgurung@gmail.com
 year: 2022
 tagline: 11+ Years of IT Experience
 description: >-
-  Building the foundation for IT Career
+  Helping Students in the Tech Career Growth
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://techsetu.org" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://dhanugurung.com" # the base hostname & protocol for your site, e.g. http://example.com
 asset_base_url: /assets                                     # local assets: ending without forward slash
-# asset_base_url: https://techsetu.sirv.com        # cdn assets: ending without forward slash
+# asset_base_url: https://dhanugurung.sirv.com        # cdn assets: ending without forward slash
 thumbnail: thumbnail.jpg
 
 author: BRG
