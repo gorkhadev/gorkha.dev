@@ -19,7 +19,6 @@ body {
 }
 main {
   line-height: 30px;
-  padding-top: 2rem;
 }
 code, kbd, pre, samp {
   font-family: 'Fira Code', SFMono-Regular,Menlo,Monaco,Consolas,monospace;
@@ -51,7 +50,9 @@ code, kbd, pre, samp {
   border-color: $color-primary;
   border-radius: 0;
 }
-
+.page-padding {
+  padding: 5rem 0;
+}
 .hide {
   display: none;
 }
@@ -373,4 +374,5 @@ textarea {
 @import "courses";
 @import "syllabus";
 @import "workshop";
+@import "membership";
 @import "responsive";

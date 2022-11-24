@@ -80,4 +80,5 @@ $(function(){
         .removeClass("fa-minus")
         .addClass("fa-plus");
     });
+
 });
