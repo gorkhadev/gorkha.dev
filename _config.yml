@@ -1,17 +1,17 @@
-title: Dhanu Gurung
-email: budhramgurung@gmail.com
-year: 2022
+title: Dhanu Sir
+email: dhanusirofficial@gmail.com
+year: 2023
 tagline: 11+ Years of IT Experience
 description: >-
   Helping Students in the Tech Career Growth
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://dhanugurung.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://dhanusir.com" # the base hostname & protocol for your site, e.g. http://example.com
 asset_base_url: /assets                                     # local assets: ending without forward slash
 # asset_base_url: https://dhanugurung.sirv.com        # cdn assets: ending without forward slash
 thumbnail: thumbnail.jpg
 
-author: BRG
-author_url: https://dhanugurung.com
+author: Dhanu
+author_url: https://dhanusir.com
 
 future: true # Show blog post of future date
 permalink: /blogs/:year/:month/:day/:title/
@@ -19,11 +19,11 @@ permalink: /blogs/:year/:month/:day/:title/
 google_analytics: G-MRQN1VZ14Y
 # Disqus Comments
 disqus:
-  shortname: techsetu
+  shortname: dhanusir
 
 contacts:
   facebook:
-    url: https://www.facebook.com/dhanumentor
+    url: https://www.facebook.com/dhanusir
     label: Facebook
     class: fab fa-facebook-f
     img: facebook.png

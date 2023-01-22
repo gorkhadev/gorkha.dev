@@ -1,3 +1,3 @@
-# TECH Setu Website
+# Dhanu Sir Website
 
-Repo for [TECH Setu](https://techsetu.org) website.
+Repo for [Dhanu Sir](https://dhanusir.com) website.

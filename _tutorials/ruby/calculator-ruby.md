@@ -38,7 +38,7 @@ specific operations.
 {% include util/note.html
     note="The solution I described here is one of the simplest solution.
           I recommend you to first try to write program which is functional and then think of optimization or
-          style improvement later."
+          style improvement later." type="caution"
 %}
 
 Follow the steps below to build the simple calculator in Ruby.
