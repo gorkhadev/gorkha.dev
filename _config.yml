@@ -28,7 +28,7 @@ contacts:
     class: fab fa-facebook-f
     img: facebook.png
   twitter:
-    url: https://twitter.com/mentordhanu
+    url: https://twitter.com/dhanumentor
     label: Twitter
     class: fab fa-twitter
     username: "@mentordhanu"
@@ -39,17 +39,17 @@ contacts:
     class: fab fa-github
     img: github.png
   linkedin:
-    url: https://www.linkedin.com/in/mentordhanu
+    url: https://www.linkedin.com/in/dhanumentor
     label: LinkdIn
     class: fab fa-linkedin-in
     img: linkedin.png
   email:
-    url: mailto:budhramgurung@gmail.com
+    url: mailto:dhanusirofficial@gmail.com
     label: Email
     class: fas fa-envelope
     img: mail.png
   youtube:
-    url: https://www.youtube.com/@mentordhanu
+    url: https://www.youtube.com/@dhanumentor
     label: YouTube Channel
     class: fab fa-youtube
     img: youtube.png
