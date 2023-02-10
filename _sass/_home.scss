@@ -1,9 +1,6 @@
 #page-content {
   flex: 1 0 auto;
 }
-.section-padding {
-  padding: 70px 0px;
-}
 .btn.active:focus {
   box-shadow: none !important;
 }
@@ -19,6 +16,26 @@
 }
 .text-light-dark {
   color: #666;
+}
+.section-heading {
+  font-family: "Playfair Display", serif;
+  color: $color-primary;
+  text-align: center;
+  margin-bottom: 2rem !important;
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: 32px;
+}
+.section-padding {
+  padding: 6rem 0;
+}
+.all-view-btn {
+  background: linear-gradient(180deg, #3B72D5 0%, #2058BB 100%);
+  border-radius: 6px;
+  color: #fff;
+  border: 0;
+  font-size: 18px;
+  padding: 10px 22px;
 }
 
 .navbar {
@@ -122,17 +139,6 @@
 }
 
 .home-body {
-
-  .section-heading {
-    color: $color-primary;
-    text-align: center;
-    margin-bottom: 2rem !important;
-    font-weight: 600;
-    font-size: 3rem;
-  }
-  .section-padding {
-    padding: 5rem 0;
-  }
   .updates-section {
     padding: 4rem 0 7rem;
 
@@ -186,6 +192,8 @@
   }
 
   .about-mentor-section {
+    background: #F6FAFF;
+
     .about-mentor-wrapper {
       background: url($asset_base_url + "/img/about-bg.png") no-repeat center center/cover;
       height: 100%;
@@ -193,19 +201,6 @@
       border-radius: 15px;
     }
   }
-
-  // .learner-lifecycle-section {
-  //   .lifecylce-card {
-  //     border: 0;
-  //     text-align: center;
-  //     padding: 3rem;
-  //     color: #555;
-
-  //     .card-img-top {
-  //       height: 180px;
-  //     }
-  //   }
-  // }
 
   .stay-connected-section {
     background-color: $color-primary;
@@ -227,44 +222,6 @@
     h1 {
       font-family: "Playfair Display", serif;
       font-weight: 600;
-    }
-
-    .card {
-      .card-body {
-        background-color: #EDF3FF;
-        border-radius: 14px;
-        height: 220px;
-        padding: 2rem;
-        border: 1px solid #d4e2ff;
-
-        .card-title {
-          font-size: 26px;
-          line-height: 28px;
-          font-weight: 500;
-        }
-
-        .tutorial-tags {
-          .tag {
-            background-color: #cfe2ff;
-            border-radius: 6px;
-            padding: 0 8px;
-            color: $color-primary;
-          }
-        }
-      }
-    }
-
-    .tutorial-btns-wrapper {
-      .all-tutorials-btn {
-        background: linear-gradient(180deg, #3B72D5 0%, #2058BB 100%);
-        border-radius: 6px;
-        color: #fff;
-        border: 0;
-        font-size: 18px;
-        padding: 10px 22px;
-        // height: 62px;
-        // width: 265px;
-      }
     }
   }
 }
@@ -334,14 +291,21 @@
 // common in courses page and home/course-section
 .courses-wrapper {
   .course-card {
+    border-radius: 6px;
+
     .course-card-img {
       height: 150px;
+      border-radius: 6px 6px 0 0;
     }
 
     .card-body {
+      background-color: #fdfdfd;
+      border-radius: 0 0 6px 6px;
+      padding: 1.5rem;
+
       .card-title {
         color: $color-primary;
-        font-weight: 600;
+        font-weight: 500;
       }
       .course-card-info {
         font-size: 14px;
@@ -355,29 +319,26 @@
 // common in tutorials page and home/tutorials-section
 .tutorials-wrapper {
   .tutorial-card {
-    background-color: transparent;
-
     .card-body {
-      background-color: #fff;
-      border: 1px solid #eee;
-      height: 10.5rem;
+      background-color: #EDF3FF;
+      border-radius: 6px;
+      height: 220px;
+      padding: 2rem;
+      border: 1px solid #d4e2ff;
 
       .card-title {
+        font-size: 26px;
+        line-height: 28px;
+        font-weight: 500;
         color: $color-primary;
-        font-weight: 600;
-      }
-
-      .tutorial-card-info {
-        font-size: 14px;
       }
 
       .tutorial-tags {
         .tag {
-          background: #999;
-          font-size: 13px;
-          color: #fff;
-          border-radius: 4px;
-          padding: 1px 5px;
+          background-color: #cfe2ff;
+          border-radius: 6px;
+          padding: 0 8px;
+          color: $color-primary;
         }
       }
     }
@@ -474,7 +435,6 @@
 
     .about-mentor-section {
       .about-mentor-wrapper {
-        background: none;
         background-color: #e6f6fe;
         padding: 2rem;
       }
