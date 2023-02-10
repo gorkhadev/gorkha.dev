@@ -134,6 +134,8 @@
     padding: 5rem 0;
   }
   .updates-section {
+    padding: 4rem 0 7rem;
+
     .container {
       max-width: 1000px;
 
@@ -220,7 +222,50 @@
   }
 
   .tutorials-section {
-    background: #F8F8F8;
+    background: #F6FAFF;
+
+    h1 {
+      font-family: "Playfair Display", serif;
+      font-weight: 600;
+    }
+
+    .card {
+      .card-body {
+        background-color: #EDF3FF;
+        border-radius: 14px;
+        height: 220px;
+        padding: 2rem;
+        border: 1px solid #d4e2ff;
+
+        .card-title {
+          font-size: 26px;
+          line-height: 28px;
+          font-weight: 500;
+        }
+
+        .tutorial-tags {
+          .tag {
+            background-color: #cfe2ff;
+            border-radius: 6px;
+            padding: 0 8px;
+            color: $color-primary;
+          }
+        }
+      }
+    }
+
+    .tutorial-btns-wrapper {
+      .all-tutorials-btn {
+        background: linear-gradient(180deg, #3B72D5 0%, #2058BB 100%);
+        border-radius: 6px;
+        color: #fff;
+        border: 0;
+        font-size: 18px;
+        padding: 10px 22px;
+        // height: 62px;
+        // width: 265px;
+      }
+    }
   }
 }
 
@@ -403,8 +448,7 @@
   }
   .home-body {
     .section-heading {
-      font-size: 2rem;
-      font-weight: 600;
+      font-size: 2.5rem;
     }
 
     .stay-connected-section {
@@ -421,6 +465,8 @@
     }
 
     .updates-section {
+      padding: 3rem 0 6rem;
+
       .action-btn {
         margin-top: 2rem;
       }
