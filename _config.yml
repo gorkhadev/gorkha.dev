@@ -3,7 +3,7 @@ email: contact@dhanusir.com
 year: 2023
 tagline: 11+ Years of IT Experience
 description: >-
-  Helping IT Students and Professionals in their Career Growth
+  Helping IT Students and Professionals in Career Growth
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://dhanusir.com" # the base hostname & protocol for your site, e.g. http://example.com
 asset_base_url: /assets                                     # local assets: ending without forward slash
@@ -33,13 +33,23 @@ contacts:
     class: fab fa-twitter
     username: "@dhanumentor"
     img: twitter.png
+  instagram:
+    url: https://instagram.com/dhanusirofficial
+    label: YouTube Channel
+    class: fa-brands fa-instagram
+    img: youtube.png
+  tiktok:
+    url: https://tiktok.com/@dhanusirofficial
+    label: YouTube Channel
+    class: fa-brands fa-tiktok
+    img: youtube.png
   github:
-    url: https://github.com/dhanugurung
+    url: https://github.com/dhanusir
     label: GitHub
     class: fab fa-github
     img: github.png
   linkedin:
-    url: https://www.linkedin.com/in/dhanumentor
+    url: https://www.linkedin.com/in/dhanusir
     label: LinkdIn
     class: fab fa-linkedin-in
     img: linkedin.png
@@ -49,7 +59,7 @@ contacts:
     class: fas fa-envelope
     img: mail.png
   youtube:
-    url: https://www.youtube.com/@dhanumentor
+    url: https://www.youtube.com/@dhanusir
     label: YouTube Channel
     class: fab fa-youtube
     img: youtube.png

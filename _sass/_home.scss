@@ -58,7 +58,7 @@
 // Header SCSS
 .home_header {
   .banner-section {
-    padding: 4rem 0 6rem 0;
+    padding: 2rem 0 0 0;
 
     .left-panel-wrapper {
       margin-right: 3.5rem;
@@ -91,7 +91,21 @@
         margin-top: 1rem;
 
         .highlight {
-          color: $color-primary;
+          color: $color-secondary;
+        }
+      }
+      .service-list {
+        list-style: none;
+        padding-left: 0;
+
+        .service-item {
+          font-size: 1.2rem;
+          margin-right: 8px;
+          color: #555;
+
+          i {
+            color: #14B058;
+          }
         }
       }
       .action-btns {
@@ -114,8 +128,38 @@
     padding: 5rem 0;
   }
   .updates-section {
-    background: $color-primary;
+    .container {
+      max-width: 1000px;
 
+      .wrapper {
+        box-shadow: -2px -5px 33px rgba(221, 225, 233, 0.52), 14px 18px 61px -21px #B6BFCC;
+      }
+    }
+    .title {
+      color: $color-secondary;
+      text-align: center;
+      padding: 2rem 0 0 0;
+    }
+
+    .news-content {
+      list-style: none;
+      padding-left: 1rem;
+
+      .news-item {
+        color: $color-primary;
+        font-size: 18px;
+
+        i {
+          float: left;
+          margin-top: 6px;
+          color: $color-secondary;
+        }
+        span {
+          display: block;
+          margin-left: 1.6rem;
+        }
+      }
+    }
     .update-card {
       margin-bottom: 1rem;
 
