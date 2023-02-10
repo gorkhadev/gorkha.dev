@@ -26,6 +26,15 @@
   font-size: 3rem;
   line-height: 32px;
 }
+.page-section-heading {
+  font-family: "Playfair Display", serif;
+  color: $color-primary;
+  text-align: center;
+  font-weight: 500;
+  font-size: 2.5rem;
+  line-height: 32px;
+  margin-bottom: 2rem !important;
+}
 .section-padding {
   padding: 6rem 0;
 }
@@ -236,6 +245,7 @@
   background: linear-gradient(180deg, #142850 0%, #0b1a38 70%);
 
   .footer-text {
+    font-family: "Playfair Display", serif;
     font-size: 30px;
     color: #fff;
     line-height: 25px;
@@ -311,6 +321,9 @@
         font-size: 14px;
         color: #666;
         font-weight: 500;
+      }
+      .course-modules {
+        color: blue;
       }
     }
   }
