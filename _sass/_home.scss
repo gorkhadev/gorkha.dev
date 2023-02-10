@@ -46,6 +46,9 @@
   font-size: 18px;
   padding: 10px 22px;
 }
+.link-btn {
+  background-color: #EDF3FF;
+}
 
 .navbar {
   // background-color: #003594;
@@ -62,15 +65,25 @@
       height: 70px;
     }
   }
-  .navbar-nav .nav-item .nav-link {
-    padding: 1rem 1rem 0.5rem 1rem;
-    font-size: 15px;
-    font-weight: 400;
-    color: $color-primary;
+  .navbar-nav .nav-item {
+    .dropdown {
+      .dropdown-menu {
+        border-color: $color-primary;
+
+        .dropdown-item {
+          color: $color-primary;
+        }
+      }
+    }
+    .nav-link {
+      padding: 1rem 1rem 0.5rem 1rem;
+      font-size: 15px;
+      font-weight: 400;
+      color: $color-primary;
+    }
   }
   .navbar-nav .nav-item.active .nav-link,
     .navbar-nav .nav-item:hover .nav-link {
-    // background-color: #1b64e7;
     border-bottom: 1px solid $color-primary;
     color: $color-primary;
   }
@@ -87,7 +100,7 @@
     padding: 2rem 0 0 0;
 
     .left-panel-wrapper {
-      margin-right: 3.5rem;
+      margin-right: 2rem;
 
       h4 {
         color: #777;
@@ -96,7 +109,7 @@
         font-family: 'Kaisei Decol', serif;
         font-size: 3.5rem;
         font-weight: 500;
-        margin-bottom: 1.8rem;
+        margin-bottom: 1rem;
         line-height: 50px;
 
         .h3 {
@@ -107,7 +120,7 @@
         color: $color-secondary;
         font-size: 20px;
         font-weight: 300;
-        margin-bottom: 0;
+        margin-bottom: 1rem;
       }
       .banner-description {
         font-family: 'Kaisei Decol', serif;
@@ -358,6 +371,19 @@
   }
 }
 
+// useful links page
+.links-page {
+  padding: 4rem 0;
+
+  .card-title {
+    color: $color-secondary;
+  }
+  .link-btn {
+    color: $color-primary;
+    text-align: left;
+  }
+}
+
 // projects page
 .projects-page {
   img {
@@ -384,8 +410,7 @@
   }
   .navbar-nav {
     margin-left: 0;
-
-    .nav-item .nav-link {
+    .nav-link {
       text-align: center;
     }
   }
@@ -394,7 +419,7 @@
   }
   .navbar .navbar-nav .nav-item.active .nav-link, .navbar .navbar-nav .nav-item:hover .nav-link {
     background-color: transparent;
-    color: #fff;
+    color: $color-primary;
     font-weight: 600;
   }
   .navbar .navbar-nav .nav-item .nav-link {
