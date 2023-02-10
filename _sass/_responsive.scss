@@ -161,7 +161,7 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 520px) {
   .display-non-mb {
     display: none;
   }
@@ -189,7 +189,12 @@
 
   .footer-section {
     .footer-text {
-      font-size: 25px;
+      font-size: 32px;
+    }
+    .footer-logo {
+      p {
+        margin-bottom: 1rem !important;
+      }
     }
     .footer-social {
       margin: 10px 0;
