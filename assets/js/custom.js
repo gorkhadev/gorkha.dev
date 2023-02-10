@@ -1,5 +1,10 @@
 /*Custom JavaScript*/
 $(function(){
+  // replace table element next to responsive_table element
+  const targetTable = $(".responsive_table").next();
+  const newContent = targetTable.prop('outerHTML').replace("<table>", "<table class='table'>")
+  targetTable.replaceWith("<div class='table-responsive'>" + newContent + "</div>");
+
   // lazy load images
   if(location.pathname != '/workshop-template') {
     const observer = lozad(); // lazy loads elements with default selector as '.lozad'

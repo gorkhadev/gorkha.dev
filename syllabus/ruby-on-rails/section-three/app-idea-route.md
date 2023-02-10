@@ -110,6 +110,8 @@ The line `resources :ideas` provides following different routes which maps to HT
     note="Rails provides well defined routing mechanism for CRUD which properly map with HTTP verbs."
 %}
 
+<div class="responsive_table"></div>
+
 | HTTP Verb |	Path	| Controller#Action	| Used for |
 | :-: | :-: | :-: | :-: |
 | GET |	`/ideas`	| `ideas#index` | display a list of all ideas |
