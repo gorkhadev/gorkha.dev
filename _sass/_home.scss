@@ -24,7 +24,6 @@
   margin-bottom: 2rem !important;
   font-weight: 600;
   font-size: 3rem;
-  line-height: 32px;
 }
 .page-section-heading {
   font-family: "Playfair Display", serif;
@@ -345,6 +344,9 @@
 // common in tutorials page and home/tutorials-section
 .tutorials-wrapper {
   .tutorial-card {
+    background-color: transparent;
+    margin-bottom: 1rem;
+
     .card-body {
       background-color: #EDF3FF;
       border-radius: 6px;
@@ -504,6 +506,11 @@
       .tutorial-card {
         padding: 1rem !important;
       }
+    }
+  }
+  .tutorials-wrapper {
+    .tutorial-card:last-child {
+      margin-bottom: 0;
     }
   }
 }
