@@ -146,7 +146,7 @@ and white as its text color.
 
 ## Source Code
 
-Find the source code of the tutorial [here](https://github.com/dhanugurung/dhanu_codesnippets/tree/master/html_css_js/simple_calculator_part3){:target="_blank"}.
+Find the source code of the tutorial [here](https://github.com/dhanusir/dhanu_codesnippets/tree/master/html_css_js/simple_calculator_part3){:target="_blank"}.
 
 ## Useful links
 

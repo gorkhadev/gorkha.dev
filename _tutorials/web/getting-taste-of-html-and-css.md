@@ -62,7 +62,7 @@ We will cover following things in our website:
     note="You can consider it as a <em>Developer Portfolio</em> website if you working as an engineer."
 %}
 
-Click here {% include util/open-link.html url="https://dhanugurung.github.io/student-portfolio" type="preview" %} to preview the website.
+Click here {% include util/open-link.html url="https://dhanusir.github.io/student-portfolio" type="preview" %} to preview the website.
 
 {% include util/note.html
     note="The website might look ugly in mobile as it is beyond the scope of this tutorial."
@@ -100,7 +100,7 @@ Workflow of tutorial is quite simple as:
 #### Using Git and GitHub (Recommended)
 
 - Make a project structure: `mkdir projects && cd projects` __[Optional]__
-- `git clone https://github.com/dhanugurung/student-portfolio`
+- `git clone https://github.com/dhanusir/student-portfolio`
 - `cd student-portfolio`
 - Go to `starter` branch: `git checkout starter`
 - Open `student-portfolio` folder in your favorite editor.
@@ -108,7 +108,7 @@ Workflow of tutorial is quite simple as:
 
 #### Using Zip
 
-- Click {% include util/download-link.html url="https://github.com/dhanugurung/student-portfolio/archive/starter.zip" %} to download the _Starter Zip_.
+- Click {% include util/download-link.html url="https://github.com/dhanusir/student-portfolio/archive//refs/tags/starter.zip" %} to download the _Starter Zip_.
 - Unzip `student-portfolio-starter.zip`.
 - Open `student-portfolio-starter` folder in your favorite editor.
 - Open `index.html` file in the browser.
@@ -225,7 +225,7 @@ nav ul li a:hover, nav ul li a.active {
 
 I hope that the above code is simple enough to understand. If you are finding difficulty to understand any of HTML element or CSS please check the [Resources](#resources) section for HTML and CSS references.
 
-__NOTE:__ Check the above [step's commit](https://github.com/dhanugurung/student-portfolio/commit/3feeb48626733ba3e64fd64fd2652d4945aa8f7d){:target="_blank"} in GitHub.
+__NOTE:__ Check the above [step's commit](https://github.com/dhanusir/student-portfolio/commit/3feeb48626733ba3e64fd64fd2652d4945aa8f7d){:target="_blank"} in GitHub.
 
 ### Navbar Preview
 
@@ -284,7 +284,7 @@ And, update `css/style.css` with following CSS for introduction.
 
 {% include util/lazy-img.html src="tutorials/student-portfolio-intro.jpg" %}
 
-__NOTE:__ Check the above [step's commit](https://github.com/dhanugurung/student-portfolio/commit/aea8ec0e61ad30845d83031b0dab33f30e0d7b5c){:target="_blank"} in GitHub.
+__NOTE:__ Check the above [step's commit](https://github.com/dhanusir/student-portfolio/commit/aea8ec0e61ad30845d83031b0dab33f30e0d7b5c){:target="_blank"} in GitHub.
 
 ## Step 3: Adding Icon library [Bonus]
 
@@ -489,7 +489,7 @@ Now, about section should be updated as following:
 
 {% include util/lazy-img.html src="tutorials/student-portfolio-about.jpg" %}
 
-__NOTE:__ Check the above [step's commit](https://github.com/dhanugurung/student-portfolio/commit/a17b1cba9f4734ffb45050764920d4b8ece04322){:target="_blank"} in GitHub.
+__NOTE:__ Check the above [step's commit](https://github.com/dhanusir/student-portfolio/commit/a17b1cba9f4734ffb45050764920d4b8ece04322){:target="_blank"} in GitHub.
 
 ## Step 5: Blogs Section
 
@@ -693,9 +693,9 @@ The introduction section should be updated as following:
 
 ## Resources
 
-- Preview of the Website: {% include util/open-link.html url="https://dhanugurung.github.io/student-portfolio" type="preview" %}
-- Source code: {% include util/open-link.html url="https://github.com/dhanugurung/student-portfolio" type="project" %}
-- Link of all step by step archives: {% include util/open-link.html url="https://github.com/dhanugurung/student-portfolio/releases" type="archives" %}
+- Preview of the Website: {% include util/open-link.html url="https://dhanusir.github.io/student-portfolio" type="preview" %}
+- Source code: {% include util/open-link.html url="https://github.com/dhanusir/student-portfolio" type="project" %}
+- Link of all step by step archives: {% include util/open-link.html url="https://github.com/dhanusir/student-portfolio/releases" type="archives" %}
 
 ## Where to go from here
 
