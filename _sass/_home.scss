@@ -469,6 +469,16 @@
         }
       }
     }
+    .tutorials-section {
+      .container {
+        max-width: 94%;
+      }
+    }
+    .courses-section {
+      .container {
+        max-width: 96%;
+      }
+    }
     .about-mentor-section {
       .about-mentor-wrapper {
         background: #EDF3FF;
@@ -497,6 +507,12 @@
         }
       }
     }
+  }
+  .tutorials-page .container {
+    max-width: 93%;
+  }
+  .courses-page .container {
+    max-width: 96%;
   }
   .tutorials-wrapper {
     .tutorial-card:last-child {
