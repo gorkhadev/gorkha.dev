@@ -164,13 +164,11 @@
     padding: 4rem 0 7rem;
 
     .container {
-      max-width: 900px;
+      max-width: 1000px;
 
       .wrapper {
-        height: 18rem;
         box-shadow: -2px -5px 33px rgba(221, 225, 233, 0.52), 14px 18px 61px -21px #B6BFCC;
         border-radius: 15px;
-        text-align: left;
 
         .img-wrapper {
           height: 100%;
@@ -178,6 +176,7 @@
 
           .channel-img {
             height: 100%;
+            width: 100%;
             border-radius: 15px 0 0 15px;
           }
         }
@@ -189,7 +188,6 @@
           justify-content: center;
           height: 100%;
           width: 100%;
-          padding: 2rem 2rem 2rem 1rem;
           color: $color-primary;
           padding: 3rem;
 
@@ -454,13 +452,23 @@
         }
       }
     }
-    // .join-channel-section {
-    //   .container {
-    //     .wrapper {
-    //       flex-direction: column;
-    //     }
-    //   }
-    // }
+    .join-channel-section {
+      .container {
+        max-width: 90%;
+
+        .wrapper {
+          .img-wrapper {
+            .channel-img {
+              border-radius: 15px 15px 0 0;
+            }
+          }
+
+          .caption-wrapper {
+            padding: 2.8rem 2rem;
+          }
+        }
+      }
+    }
     .about-mentor-section {
       .about-mentor-wrapper {
         background: #EDF3FF;
