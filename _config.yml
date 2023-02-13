@@ -12,6 +12,7 @@ thumbnail: thumbnail.jpg
 
 author: Dhanu
 author_url: https://dhanusir.com
+channel_link: https://t.me/+M0H_QnsZrSs5ZDRl
 
 future: true # Show blog post of future date
 permalink: /blogs/:year/:month/:day/:title/

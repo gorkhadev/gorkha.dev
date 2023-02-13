@@ -160,54 +160,44 @@
 }
 
 .home-body {
-  .updates-section {
+  .join-channel-section {
     padding: 4rem 0 7rem;
 
     .container {
-      max-width: 1000px;
+      max-width: 900px;
 
       .wrapper {
+        height: 18rem;
         box-shadow: -2px -5px 33px rgba(221, 225, 233, 0.52), 14px 18px 61px -21px #B6BFCC;
-      }
-    }
-    .title {
-      color: $color-secondary;
-      text-align: center;
-      padding: 2rem 0 0 0;
-    }
+        border-radius: 15px;
+        text-align: left;
 
-    .news-content {
-      list-style: none;
-      padding-left: 1rem;
+        .img-wrapper {
+          height: 100%;
+          padding: 0;
 
-      .news-item {
-        color: $color-primary;
-        font-size: 18px;
-
-        i {
-          float: left;
-          margin-top: 6px;
-          color: $color-secondary;
+          .channel-img {
+            height: 100%;
+            border-radius: 15px 0 0 15px;
+          }
         }
-        span {
-          display: block;
-          margin-left: 1.6rem;
+
+        .caption-wrapper {
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+          justify-content: center;
+          height: 100%;
+          width: 100%;
+          padding: 2rem 2rem 2rem 1rem;
+          color: $color-primary;
+          padding: 3rem;
+
+          h1 {
+            color: $color-secondary;
+            text-align: left;
+          }
         }
-      }
-    }
-    .update-card {
-      margin-bottom: 1rem;
-
-      p {
-        font-size: 18px;
-        padding: 10px 16px;
-        line-height: 24px;
-        color: $color-secondary;
-        margin-bottom: 0;
-      }
-
-      &:last-child {
-        margin-bottom: 0;
       }
     }
   }
@@ -464,15 +454,13 @@
         }
       }
     }
-
-    .updates-section {
-      padding: 3rem 0 6rem;
-
-      .action-btn {
-        margin-top: 2rem;
-      }
-    }
-
+    // .join-channel-section {
+    //   .container {
+    //     .wrapper {
+    //       flex-direction: column;
+    //     }
+    //   }
+    // }
     .about-mentor-section {
       .about-mentor-wrapper {
         background: #EDF3FF;
