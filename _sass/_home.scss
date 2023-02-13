@@ -421,6 +421,10 @@
   .home_header .banner-section {
     padding-top: 1rem;
 
+    .container {
+      max-width: 95%;
+    }
+
     .left-panel-wrapper {
       .banner-description {
         font-size: 2.5rem;
@@ -480,6 +484,9 @@
       }
     }
     .about-mentor-section {
+      .container {
+        max-width: 95%;
+      }
       .about-mentor-wrapper {
         background: #EDF3FF;
         padding: 2rem;
