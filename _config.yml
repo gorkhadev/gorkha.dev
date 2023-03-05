@@ -6,8 +6,8 @@ description: >-
   Helping IT Students and Professionals in Career Growth
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://dhanusir.com" # the base hostname & protocol for your site, e.g. http://example.com
-asset_base_url: /assets                                     # local assets: ending without forward slash
-# asset_base_url: https://dhanugurung.sirv.com        # cdn assets: ending without forward slash
+# asset_base_url: /assets                                     # local assets: ending without forward slash
+asset_base_url: https://dhanusir.sirv.com        # cdn assets: ending without forward slash
 thumbnail: thumbnail.jpg
 
 author: Dhanu
