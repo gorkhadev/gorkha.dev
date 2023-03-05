@@ -1,15 +1,65 @@
-- title: C Language
-  url: /c/
-  thumbnail: courses/c/thumbnail.png
-  modules: 5
-  duration: ~10 Days
-- title: Ruby Language
-  url: /ruby/
-  thumbnail: courses/ruby/thumbnail.png
-  modules: 3
-  duration: ~15 Days
-- title: Ruby on Rails
-  url: /ruby-on-rails/
-  thumbnail: courses/ror/thumbnail.png
-  modules: 3
-  duration: ~10 Days
+- title: Getting started with Linux
+  url: https://learn.dhanusir.com/courses/getting-started-with-linux/
+  thumbnail: courses/getting-start-with-linux.png
+  cost: Rs 999
+  modules: 8
+  type: video
+  duration: 15 - 20 Hrs
+- title: Bash & Shell Scripting
+  url: https://learn.dhanusir.com/courses/bash-and-shell/
+  thumbnail: courses/bash-shell.png
+  cost: Rs 4,999
+  modules: 12
+  type: lab
+  duration: 30 - 45 Hrs
+- title: Git and GitHub
+  url: https://learn.dhanusir.com/courses/git-and-github/
+  thumbnail: courses/git-github.png
+  cost: Rs 2,999
+  modules: 8
+  type: lab
+  duration: 15 - 20 Hrs
+- title: Introduction to Linux
+  url: https://learn.dhanusir.com/courses/intro-to-linux/
+  thumbnail: courses/linux.png
+  cost: Rs 7,999
+  modules: 14
+  type: lab
+  duration: 90 - 120 Hrs
+- title: Introduction to DevOps & Cloud
+  url: https://learn.dhanusir.com/courses/intro-to-devops-and-cloud/
+  thumbnail: courses/devops.png
+  cost: Rs 2,499
+  modules: 8
+  type: lab
+  duration: 20 - 25 Hrs
+- title: Container fundamentals with Docker
+  url: https://learn.dhanusir.com/courses/docker-fundamentals/
+  thumbnail: courses/docker.png
+  cost: Rs 6,999
+  modules: 10
+  type: lab
+  duration: 40 - 60 Hrs
+- title: Kubernetes 101
+  url: https://learn.dhanusir.com/courses/kubernetes-101/
+  thumbnail: courses/kubernetes.png
+  cost: Rs 6,999
+  modules: 4,999
+  type: lab
+  duration: 20 - 30 Hrs
+
+# - title: C Language
+#   url: /c/
+#   thumbnail: courses/c/thumbnail.png
+#   modules: 5
+#   duration: ~10 Days
+# - title: Ruby Language
+#   url: /ruby/
+#   thumbnail: courses/ruby/thumbnail.png
+#   modules: 3
+#   duration: ~15 Days
+# - title: Ruby on Rails
+#   url: /ruby-on-rails/
+#   thumbnail: courses/ror/thumbnail.png
+#   modules: 3
+#   duration: ~10 Days

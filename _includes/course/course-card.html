@@ -12,6 +12,15 @@
           <span>{{ include.course.modules }} {% if include.type == "project" %}Phases{% else %}Modules{% endif %}</span>
         </div>
       </div>
+      <div class="course-meta-info d-flex justify-content-between">
+        <div class="course-price">
+          <i class="fa-solid fa-hand-holding-dollar text-danger me-1"></i>
+          <span class="text-secondary">{{ include.course.cost }}</span>
+        </div>
+        <div class="course-type">
+          <span class="text-secondary">Type {% if include.type == "video" %}<i class="fa-solid fa-video text-danger"></i>{% else %}<i class="fa-solid fa-flask-vial text-danger"></i>{% endif %}</span>
+        </div>
+      </div>
     </div>
   </a>
 </div>

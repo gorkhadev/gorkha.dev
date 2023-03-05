@@ -3,8 +3,8 @@
 
   <div class="container">
     <div class="row courses-wrapper justify-content-center">
-      {% assign courses = site.data.courses | reverse %}
-      {% for course in courses limit: 3 %}
+      {% assign courses = site.data.courses %}
+      {% for course in courses limit: 8 %}
         {% include course/course-card.html course=course %}
       {% endfor %}
     </div>
