@@ -8,7 +8,7 @@
 - title: Bash & Shell Scripting
   url: https://learn.dhanusir.com/courses/bash-and-shell/
   thumbnail: courses/bash-shell.png
-  cost: Rs 4,999
+  cost: Rs 2,999
   modules: 12
   type: lab
   duration: 30 - 45 Hrs
@@ -43,8 +43,8 @@
 - title: Kubernetes 101
   url: https://learn.dhanusir.com/courses/kubernetes-101/
   thumbnail: courses/kubernetes.png
-  cost: Rs 6,999
-  modules: 4,999
+  cost: Rs 4,999
+  modules: 5
   type: lab
   duration: 20 - 30 Hrs
 

@@ -9,12 +9,14 @@ page_name: tutorials
 <div class="tutorials-page page-padding">
   <h1 class="section-heading mb-4">Learn from Our Tutorials</h1>
 
-  <div class="container">
-    <div class="row tutorials-wrapper">
-      {% assign tutorials = site.tutorials | reverse %}
-      {% for tutorial in tutorials %}
-        {% include tutorial/tutorial-card.html tutorial=tutorial %}
-      {% endfor %}
+  <div class="content-body-wrapper">
+    <div class="container">
+      <div class="row tutorials-wrapper">
+        {% assign tutorials = site.tutorials | reverse %}
+        {% for tutorial in tutorials %}
+          {% include tutorial/tutorial-card.html tutorial=tutorial %}
+        {% endfor %}
+      </div>
     </div>
   </div>
 </div>

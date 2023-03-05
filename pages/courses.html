@@ -8,12 +8,15 @@ page_name: courses
 <!-- Tutorials list -->
 <div class="courses-page page-padding">
   <h1 class="section-heading">Courses</h1>
+  <p class="section-subheading">Gain quality technical skills from our Lab or Video based courses</p>
 
-  <div class="container">
-    <div class="courses-wrapper row justify-content-center">
-      {% for course in site.data.courses %}
-        {% include course/course-card.html course=course %}
-      {% endfor %}
+  <div class="content-body-wrapper">
+    <div class="container">
+      <div class="courses-wrapper row justify-content-center">
+        {% for course in site.data.courses %}
+          {% include course/course-card.html course=course %}
+        {% endfor %}
+      </div>
     </div>
   </div>
 </div>

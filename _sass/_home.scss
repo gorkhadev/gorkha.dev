@@ -21,9 +21,15 @@
   font-family: "Playfair Display", serif;
   color: $color-primary;
   text-align: center;
-  margin-bottom: 2rem !important;
   font-weight: 600;
   font-size: 3rem;
+}
+.section-subheading {
+  text-align: center;
+  color: #666;
+}
+.content-body-wrapper {
+  margin-top: 3rem;
 }
 .page-section-heading {
   font-family: "Playfair Display", serif;
