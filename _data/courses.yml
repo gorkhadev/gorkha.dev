@@ -1,52 +1,61 @@
 - title: Getting started with Linux
   url: https://learn.dhanusir.com/courses/getting-started-with-linux/
   thumbnail: courses/getting-start-with-linux.png
-  cost: Rs 999
+  cost: FREE
+  coupon: DHANUSIRLINUXFREE
   modules: 8
   type: video
   duration: 15 - 20 Hrs
-- title: Bash & Shell Scripting
-  url: https://learn.dhanusir.com/courses/bash-and-shell/
-  thumbnail: courses/bash-shell.png
-  cost: Rs 2,999
-  modules: 12
-  type: lab
-  duration: 30 - 45 Hrs
-- title: Git and GitHub
-  url: https://learn.dhanusir.com/courses/git-and-github/
-  thumbnail: courses/git-github.png
-  cost: Rs 2,999
-  modules: 8
-  type: lab
-  duration: 15 - 20 Hrs
-- title: Introduction to Linux
-  url: https://learn.dhanusir.com/courses/intro-to-linux/
-  thumbnail: courses/linux.png
-  cost: Rs 7,999
-  modules: 14
-  type: lab
-  duration: 90 - 120 Hrs
-- title: Introduction to DevOps & Cloud
-  url: https://learn.dhanusir.com/courses/intro-to-devops-and-cloud/
-  thumbnail: courses/devops.png
-  cost: Rs 2,499
-  modules: 8
-  type: lab
-  duration: 20 - 25 Hrs
-- title: Container fundamentals with Docker
-  url: https://learn.dhanusir.com/courses/docker-fundamentals/
-  thumbnail: courses/docker.png
-  cost: Rs 6,999
-  modules: 10
-  type: lab
-  duration: 40 - 60 Hrs
-- title: Kubernetes 101
-  url: https://learn.dhanusir.com/courses/kubernetes-101/
-  thumbnail: courses/kubernetes.png
-  cost: Rs 4,999
+- title: Web Foundation
+  url: https://learn.dhanusir.com/courses/web-foundation/
+  thumbnail: courses/web-foundation.png
+  cost: FREE
+  coupon: DHANUSIRWEBFREE
   modules: 5
-  type: lab
+  type: video
   duration: 20 - 30 Hrs
+# - title: Bash & Shell Scripting
+#   url: https://learn.dhanusir.com/courses/bash-and-shell/
+#   thumbnail: courses/bash-shell.png
+#   cost: Rs 2,999
+#   modules: 12
+#   type: lab
+#   duration: 30 - 45 Hrs
+# - title: Git and GitHub
+#   url: https://learn.dhanusir.com/courses/git-and-github/
+#   thumbnail: courses/git-github.png
+#   cost: Rs 2,999
+#   modules: 8
+#   type: lab
+#   duration: 15 - 20 Hrs
+# - title: Introduction to Linux
+#   url: https://learn.dhanusir.com/courses/intro-to-linux/
+#   thumbnail: courses/linux.png
+#   cost: Rs 7,999
+#   modules: 14
+#   type: lab
+#   duration: 90 - 120 Hrs
+# - title: Introduction to DevOps & Cloud
+#   url: https://learn.dhanusir.com/courses/intro-to-devops-and-cloud/
+#   thumbnail: courses/devops.png
+#   cost: Rs 2,499
+#   modules: 8
+#   type: lab
+#   duration: 20 - 25 Hrs
+# - title: Container fundamentals with Docker
+#   url: https://learn.dhanusir.com/courses/docker-fundamentals/
+#   thumbnail: courses/docker.png
+#   cost: Rs 6,999
+#   modules: 10
+#   type: lab
+#   duration: 40 - 60 Hrs
+# - title: Kubernetes 101
+#   url: https://learn.dhanusir.com/courses/kubernetes-101/
+#   thumbnail: courses/kubernetes.png
+#   cost: Rs 4,999
+#   modules: 5
+#   type: lab
+#   duration: 20 - 30 Hrs
 
 # - title: C Language
 #   url: /c/
