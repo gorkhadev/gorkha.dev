@@ -4,6 +4,7 @@
     color: #fff;
     padding: 9rem 0;
     text-align: center;
+    font-family: $font-secondary;
 
     .heading {
       font-size: 2.5rem;
@@ -134,6 +135,55 @@
       }
     }
   }
+
+  .meet-mentors {
+    padding: 1rem 0 6rem 0;
+
+    .card-wrapper {
+      padding: 4rem 4rem 3.5rem 4rem;
+      border-radius: 20px;
+
+      .section-heading {
+        margin-bottom: 2.5rem;
+      }
+
+      .mentor-card {
+        border: 0;
+        padding: 1rem;
+
+        .card-img-top {
+          border-radius: 10px;
+        }
+        .card-body {
+          text-align: center;
+          margin-bottom: 0;
+          padding: 1rem 0 0 0;
+
+          .title {
+            font-family: $font-secondary;
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 0;
+          }
+          .nick {
+            font-size: 15px;
+            margin: 0;
+          }
+          .location {
+            font-size: 15px;
+            margin: -5px 0;
+            color: $color-secondary;
+          }
+          .description {
+            color: $color-primary;
+            font-size: 16px;
+            line-height: 24px;
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 520px) {
@@ -155,10 +205,24 @@
       }
     }
     .pricing {
+      padding-bottom: 2.5rem;
+
       .container {
         .col-md-3 {
           width: auto;
           margin-bottom: 3rem;
+        }
+      }
+    }
+    .meet-mentors {
+      padding: 0;
+      padding-bottom: 6rem;
+
+      .card-wrapper {
+        padding: 3rem 2rem;
+
+        .mentor-card {
+          margin-bottom: 1.5rem;
         }
       }
     }
