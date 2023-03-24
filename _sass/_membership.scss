@@ -1,78 +1,165 @@
-.membership-banner {
-  padding: 5rem 0;
-  background-color: $color-primary;
-  color: #fff;
-
-  h1 {
-    font-weight: 400;
-  }
-  span {
-    color: yellow;
-  }
-}
 .membership-page {
-  .cards {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-
-  .card {
-    background: #fff;
-    color: hsl(233, 13%, 49%);
-    border-radius: 0.8rem;
-  }
-
-  .cards .card.active {
-    background: linear-gradient(
-      135deg,
-      rgb(101, 111, 255) 0%,
-      rgb(36, 45, 201) 100%
-    );
+  .banner {
+    background-color: $color-primary;
     color: #fff;
-    display: flex;
-    align-items: center;
-    transform: scale(1.1);
-    z-index: 1;
-  }
-  ul {
-    padding-left: 0;
-    margin: 2.5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-  }
-  ul li {
-    color: $color-primary;
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    padding: 0.5rem 0;
-  }
-  ul li.title {
-    color: $color-secondary;
-    font-size: 1.6rem;
-    font-weight: 500;
-  }
-  ul li.price {
-    font-size: 3rem;
-    color: hsl(232, 13%, 33%);
-    padding-bottom: 2rem;
-  }
+    padding: 9rem 0;
+    text-align: center;
 
-  .card.active .price {
-    color: #fff;
+    .heading {
+      font-size: 2.5rem;
+      font-weight: 400;
+      margin-bottom: 0;
+    }
+    .sub-heading {
+      font-size: 3rem;
+      font-weight: 300;
+      color: #EEFF26;
+
+      span {
+        font-weight: 600;
+      }
+    }
+  }
+  .pricing {
+    .container {
+      .col-md-3 {
+        width: 30%;
+
+        .card-img-wrapper {
+          background-color: $color-primary;
+          border-radius: 20px 20px 0 0;
+          padding: 2.5rem;
+          color: #fff;
+
+          .caption {
+            font-weight: 300;
+            font-size: 2rem;
+            line-height: 46px;
+          }
+          .sub-caption {
+            font-weight: 400;
+            font-size: 1.2rem;
+            line-height: 28px;
+            color: $color-tertiary;
+          }
+          .right-arrow {
+            text-align: right;
+
+            i {
+              display: block;
+              margin-top: -10px;
+              font-size: 3rem;
+            }
+          }
+        }
+        .bg-img {
+          img {
+            border-radius: 0 0 23px 23px;
+          }
+        }
+        .card-member-wrapper {
+          border-radius: 20px 20px 0 0;
+          padding: 2.8rem 2.2rem;
+          color: #666;
+
+          .caption {
+            font-weight: 600;
+            font-size: 1.8rem;
+            line-height: 32px;
+            color: $color-primary;
+          }
+          .sub-caption {
+            color: #888;
+            font-size: 20px;
+            margin: 10px 0 10px 5px;
+          }
+          .features {
+            list-style: none;
+            padding-left: 5px;
+
+            .feature-item {
+              display: flex;
+              gap: 8px;
+              line-height: 38px;
+              font-weight: 300;
+
+              i {
+                display: inline-block;
+                margin-top: 8px;
+                font-size: 22px;
+              }
+              span {
+                display: inline-block;
+              }
+            }
+          }
+          .dotted-line {
+            border: 1px dashed #444;
+            margin-top: 25px;
+            margin-bottom: 35px;
+          }
+          .price {
+            padding-left: 10px;
+            .text {
+              font-size: 1.3rem;
+              color: #222;
+              margin-bottom: 0;
+            }
+            p {
+              font-size: 14px;
+            }
+          }
+        }
+        .recommendation {
+          background-color: $color-primary;
+          border-radius: 0 0 20px 20px;
+          color: #fff;
+
+          .text {
+            display: flex;
+            gap: 8px;
+            font-size: 18px;
+            font-weight: 400;
+            padding: 1.2rem 1.8rem;
+
+            i {
+              display: inline-block;
+              margin-top: 10px;
+            }
+            span {
+              display: inline-block;
+            }
+          }
+        }
+      }
+    }
   }
 }
 
 @media screen and (max-width: 520px) {
+  .mb-block {
+    display: block;
+  }
+  .mb-hide {
+    display: none;
+  }
   .membership-page {
-    .card {
-      ul {
-        margin: 1.8rem;
+    .banner {
+      padding: 6rem 0;
+
+      .heading {
+        font-size: 1.5rem;
+      }
+      .sub-heading {
+        font-size: 2rem;
+      }
+    }
+    .pricing {
+      .container {
+        .col-md-3 {
+          width: auto;
+          margin-bottom: 3rem;
+        }
       }
     }
   }
