@@ -21,6 +21,7 @@
       }
     }
   }
+
   .pricing {
     .container {
       .col-md-3 {
@@ -184,6 +185,43 @@
       }
     }
   }
+
+  .redefined-member {
+    background-color: #E8F1FF;
+
+    .section-subheading {
+      font-size: 1.3rem;
+      color: $color-secondary;
+      font-weight: 300;
+    }
+    .features {
+      margin-top: 2rem;
+      list-style: none;
+      padding-left: 5px;
+      color: $color-primary;
+
+      .feature-item {
+        display: flex;
+        gap: 8px;
+        line-height: 38px;
+        font-weight: 400;
+        font-size: 20px;
+
+        i {
+          display: inline-block;
+          margin-top: 8px;
+          margin-right: 8px;
+          font-size: 22px;
+        }
+        span {
+          display: inline-block;
+        }
+      }
+    }
+    .member-cert {
+      margin-top: 2.5rem;
+    }
+  }
 }
 
 @media screen and (max-width: 520px) {
@@ -224,6 +262,12 @@
         .mentor-card {
           margin-bottom: 1.5rem;
         }
+      }
+    }
+    .redefined-member {
+      .img-bg {
+        transform: scale(0.8);
+        margin-top: 0;
       }
     }
   }
