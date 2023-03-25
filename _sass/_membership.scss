@@ -153,7 +153,7 @@
         padding: 1rem;
 
         .card-img-top {
-          border-radius: 10px;
+          border-radius: 20px;
         }
         .card-body {
           text-align: center;
@@ -220,6 +220,19 @@
     }
     .member-cert {
       margin-top: 2.5rem;
+      border-radius: 10px;
+    }
+  }
+
+  .community-weekly-calender {
+    .note {
+      background-color: $color-primary;
+      padding: 2rem;
+      font-size: 20px;
+      color: #fff;
+      border-radius: 15px;
+      margin-top: 1.5rem;
+      text-align: center;
     }
   }
 }
