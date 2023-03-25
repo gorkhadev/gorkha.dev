@@ -243,7 +243,7 @@
       text-align: left;
       color: #999;
       font-size: 20px;
-      font-weight: 400;
+      font-weight: 300;
     }
     .features {
       margin-top: 2rem;
@@ -272,6 +272,83 @@
     .live-session-bg {
       padding: 2rem 2rem 0 2rem;
       transform: rotate(-4deg);
+    }
+  }
+
+  .mentor-tech-support {
+    .text-wrapper {
+      padding-left: 5rem;
+    }
+    .section-subheading {
+      text-align: left;
+      color: #999;
+      font-size: 20px;
+      font-weight: 300;
+    }
+    .features {
+      margin-top: 2rem;
+      list-style: none;
+      padding-left: 1rem;
+      color: $color-primary;
+
+      .feature-item {
+        display: flex;
+        gap: 8px;
+        line-height: 38px;
+        font-weight: 400;
+        font-size: 20px;
+
+        i {
+          display: inline-block;
+          margin-top: 8px;
+          margin-right: 8px;
+          font-size: 22px;
+        }
+        span {
+          display: inline-block;
+        }
+      }
+    }
+    .live-session-bg {
+      padding: 2rem 2rem 0 2rem;
+      transform: rotate(-4deg);
+    }
+  }
+
+  .join-community {
+    padding-bottom: 7rem;
+
+    .container {
+      .content-wrapper {
+        display: flex;
+        gap: 3rem;
+        max-width: 950px;
+        margin: auto;
+        padding: 4rem;
+        border-radius: 20px;
+
+        .img-wrapper {
+          .community-img {
+            height: 15rem;
+            width: 25rem;
+          }
+        }
+        .text-wrapper {
+          .section-heading {
+            text-align: left;
+          }
+          .section-subheading {
+            color: #777;
+            text-align: left;
+          }
+        }
+        .action-btn {
+          a {
+            border-radius: 8px;
+            font-size: 16px;
+          }
+        }
+      }
     }
   }
 }
@@ -320,6 +397,32 @@
       .img-bg {
         transform: scale(0.8);
         margin-top: 0;
+      }
+    }
+    .mentor-tech-support {
+      .text-wrapper {
+        padding-left: 1rem;
+      }
+    }
+    .join-community {
+      .container {
+        .content-wrapper {
+          display: flex;
+          flex-direction: column;
+          gap: 3rem;
+          padding: 4rem 3rem;
+
+          .text-wrapper {
+            .section-heading {
+              text-align: center;
+            }
+            .section-subheading {
+              text-align: center;
+            }
+
+            text-align: center;
+          }
+        }
       }
     }
   }
