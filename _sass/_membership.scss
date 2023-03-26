@@ -1,4 +1,8 @@
-.membership-page {
+.membership {
+  background-color: #F2F7FF;
+}
+.membership-page, .membership {
+
   .banner {
     background-color: $color-primary;
     color: #fff;
@@ -23,8 +27,10 @@
   }
 
   .pricing {
+    background-color: #F2F7FF;
+
     .container {
-      .col-md-4 {
+      .col-md-4, .col-md-3 {
         .card-img-wrapper {
           background-color: $color-primary;
           border-radius: 20px 20px 0 0;
@@ -52,6 +58,7 @@
           }
         }
         .card-member-wrapper {
+          background-color: #fff;
           border-radius: 20px 20px 0 0;
           padding: 2.6rem 1.6rem 1.5rem 1.6rem;
           color: #444;
@@ -131,11 +138,14 @@
           }
         }
       }
+      .payment-action {
+        margin-top: 3rem;
+      }
     }
   }
 
   .meet-mentors {
-    padding: 1rem 0 6rem 0;
+    padding: 6rem 0;
 
     .card-wrapper {
       padding: 4rem 4rem 3.5rem 4rem;
@@ -358,7 +368,10 @@
   .mb-hide {
     display: none;
   }
-  .membership-page {
+  .membership-page, .membership {
+    .section-heading {
+      font-size: 2.5rem;
+    }
     .banner {
       padding: 6rem 0;
 
@@ -370,12 +383,19 @@
       }
     }
     .pricing {
-      padding-bottom: 2.5rem;
+      padding-bottom: 6rem;
 
       .container {
         .col-md-4 {
           width: auto;
           margin-bottom: 3rem;
+        }
+        .col-md-4:last-child {
+          margin-bottom: 0;
+        }
+
+        .payment-action {
+          margin-top: 2rem;
         }
       }
     }
@@ -392,9 +412,6 @@
       }
     }
     .redefined-member {
-      .section-heading {
-        font-size: 2.5rem;
-      }
       .img-bg {
         transform: scale(0.8);
         margin-top: 0;

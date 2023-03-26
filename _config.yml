@@ -23,6 +23,11 @@ disqus:
   shortname: dhanusir
 
 contacts:
+  linkedin:
+    url: https://www.linkedin.com/in/dhanusir
+    label: LinkdIn
+    class: fab fa-linkedin-in
+    img: linkedin.png
   facebook:
     url: https://www.facebook.com/dhanusir
     label: Facebook
@@ -39,21 +44,16 @@ contacts:
     label: YouTube Channel
     class: fa-brands fa-instagram
     img: youtube.png
-  tiktok:
-    url: https://tiktok.com/@dhanusirofficial
-    label: YouTube Channel
-    class: fa-brands fa-tiktok
-    img: youtube.png
   github:
     url: https://github.com/dhanusir
     label: GitHub
     class: fab fa-github
     img: github.png
-  linkedin:
-    url: https://www.linkedin.com/in/dhanusir
-    label: LinkdIn
-    class: fab fa-linkedin-in
-    img: linkedin.png
+  tiktok:
+    url: https://tiktok.com/@dhanusirofficial
+    label: YouTube Channel
+    class: fa-brands fa-tiktok
+    img: youtube.png
   email:
     url: mailto:contact@dhanusir.com
     label: Email

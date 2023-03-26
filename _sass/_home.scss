@@ -167,7 +167,8 @@
 
 .home-body {
   .join-channel-section {
-    padding: 4rem 0 7rem;
+    background: #F6FAFF;
+    padding: 6rem 0 6rem;
 
     .container {
       max-width: 1000px;
@@ -207,7 +208,6 @@
   }
 
   .about-mentor-section {
-    background: #F6FAFF;
 
     .about-mentor-wrapper {
       background: url($asset_base_url + "/img/about-bg.png") no-repeat center center/cover;
