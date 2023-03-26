@@ -24,9 +24,7 @@
 
   .pricing {
     .container {
-      .col-md-3 {
-        width: 30%;
-
+      .col-md-4 {
         .card-img-wrapper {
           background-color: $color-primary;
           border-radius: 20px 20px 0 0;
@@ -35,22 +33,16 @@
 
           .caption {
             font-weight: 300;
-            font-size: 2rem;
-            line-height: 46px;
-          }
-          .sub-caption {
-            font-weight: 400;
-            font-size: 1.2rem;
-            line-height: 28px;
-            color: $color-tertiary;
+            font-size: 1.8rem;
+            line-height: 40px;
           }
           .right-arrow {
             text-align: right;
 
             i {
               display: block;
-              margin-top: -10px;
-              font-size: 3rem;
+              margin-top: 0;
+              font-size: 2.8rem;
             }
           }
         }
@@ -82,9 +74,9 @@
             .feature-item {
               display: flex;
               gap: 8px;
-              line-height: 24px;
+              line-height: 28px;
               font-weight: 300;
-              margin-bottom: 12px;
+              margin-bottom: 14px;
 
               i {
                 display: inline-block;
@@ -98,8 +90,8 @@
           }
           .dotted-line {
             border: 1px dashed #444;
-            margin-top: 16px;
-            margin-bottom: 28px;
+            margin-top: 24px;
+            margin-bottom: 38px;
           }
           .price {
             padding-left: 10px;
@@ -195,9 +187,10 @@
     background-color: #F2F7FF;
 
     .section-subheading {
-      font-size: 18px;
+      font-size: 20px;
       color: $color-secondary;
       font-weight: 300;
+      margin-bottom: 0;
     }
     .features {
       margin-top: 2rem;
@@ -380,7 +373,7 @@
       padding-bottom: 2.5rem;
 
       .container {
-        .col-md-3 {
+        .col-md-4 {
           width: auto;
           margin-bottom: 3rem;
         }
@@ -399,6 +392,9 @@
       }
     }
     .redefined-member {
+      .section-heading {
+        font-size: 2.5rem;
+      }
       .img-bg {
         transform: scale(0.8);
         margin-top: 0;
