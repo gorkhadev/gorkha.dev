@@ -20,28 +20,24 @@ comments: true
     quote_by="Phil Karlton"
 %}
 
-A naming convention is a set of rules for choosing the character sequence(or simply name) to be used for
-identifiers which denote variables, types, functions, and other entities in source code and documentation.
-[(Source)](https://en.wikipedia.org/wiki/Naming_convention_(programming)){:target="_blank"}
+A naming convention is a set of rules for choosing the character sequence (or simply, name) to be used for identifiers which denote variables, types, functions, and other entities in source code and documentation.
+  [(Source)](https://en.wikipedia.org/wiki/Naming_convention_(programming)){:target="_blank"}
 
 Using a naming convention has following benefits:
 
-- To reduce the effort needed to read and understand source code.
+- To reduce the effort needed to read and understand (anything, but in our specific case, source code.
 - To enable code reviews to focus on more important issues than arguing over syntax and naming standards
-- To enable code quality review tools to focus their reporting mainly on significant issues other than syntax
-  and style preferences.
-- To help improve the productivity among the team by following coding standards and reducing arguments over
-  syntax and style.
+- To enable code quality review tools to focus their reporting mainly on significant issues other than syntax and style preferences.
+- To help improve the productivity among the team by following coding standards and reducing arguments over syntax and style.
 
 ## Popular naming conventions in Ruby Community
 
-Following are the few naming conventions one should know and taken from
+Following are the few naming conventions one should know and are taken from
 [Ruby community style guide](https://rubystyle.guide/#naming-conventions){:target="_blank"}).
-These rules are set to make Ruby code more readable, acceptable in the community.
+These guides are used to make Ruby code more readable, acceptable in the community.
 
 {% include util/note.html
-    note="Although these rules are not mandatory but by following these conventions you are helping others
-to understand your code quickly and in an efficient manner."
+    note="These rules are not mandatory but by following these conventions you are helping others to understand your code quickly and in an efficient manner."
 %}
 
 ### CamelCase for Classes
@@ -100,10 +96,10 @@ Use SCREAMING_SNAKE_CASE for other constants (those that don’t refer to classe
 
 ```ruby
 # bad name
-SomeConst = 5
+SomeConstant= 5
 
 # good name
-SOME_CONST = 5
+SOME_CONSTANT = 5
 ```
 
 ### Identifiers with a Numeric Suffix
@@ -124,17 +120,23 @@ var10 = 10
 some_method1
 ```
 
+{% include util/quote.html
+    quote="Using a number against a variable name in an argument list can subdue the importance of the order.
+    If it is important that one is first and onother is really the second one, then accentuate that by using 'name_1, name_2' becuase it is important that the first name is first."
+    quote_by="Victor Goff"
+%}
+
 ### One Class per File
 
-Aim to have just a single class/module per source file. Name the file name as the class/module, but replacing
-CamelCase with snake_case.
+Aim to have just a single class/module per source file.
+Name the file name as the class/module, but replacing CamelCase with Snake_Case.
 
 ### Appropriate suffix for method names
 
-#### Question mark to method returning boolean value
+#### Question mark for method returning boolean value
 
-The names of predicate methods (methods that return a boolean value) should end in a question mark (`?`) (i.e.
-Array#empty?). Methods that don’t return a boolean, shouldn’t end in a question mark.
+The names of predicate methods (methods that return a boolean value) should end in a question mark (`?`), i.e., `Array#empty?`).
+Methods that do not return a boolean, should not end in a question mark.
 
 ```ruby
 # bad
@@ -148,9 +150,8 @@ end
 
 #### Dangerous Method Suffix
 
-The names of potentially dangerous methods (i.e. methods that modify self or the arguments, exit! (doesn’t run
-the finalizers like exit does), etc) should end with an exclamation mark if there exists a safe version of that
-dangerous method.
+The names of potentially dangerous methods (methods that modify self or the arguments, `exit!` (doesn’t run the finalizers like exit does), etc.) should end with an exclamation mark if there exists a safe version of that
+dangerous method, or if the name itself does not communicate this clearly.
 
 ```ruby
 # bad - there is no matching 'safe' method
@@ -179,8 +180,8 @@ Check more [here](https://rubystyle.guide/#dangerous-method-bang){:target="_blan
 
 ### Avoid predicate Methods prefix
 
-Avoid prefixing predicate methods with the auxiliary verbs such as is, does, or can. These words are redundant
-and inconsistent with the style of boolean methods in the Ruby core library, such as `empty?` and `include?`.
+Avoid prefixing predicate methods with the auxiliary verbs such as is, does, or can or has.
+These words are redundant and (mostly) inconsistent with the style of boolean methods in the Ruby core library, such as `empty?` and `include?`.
 
 ```ruby
 # bad
@@ -206,9 +207,9 @@ end
 
 ### Unused Variables Prefix
 
-Prefix with `_` unused block parameters and local variables. It’s also acceptable to use just `_` (although
-it’s a bit less descriptive). This convention is recognized by the Ruby interpreter and tools like RuboCop and
-will suppress their unused variable warnings.
+Prefix with `_` unused block parameters and local variables.
+It’s also acceptable to use just `_` (although it’s a bit less descriptive).
+This convention is recognized by the Ruby interpreter and tools like RuboCop and will suppress their unused variable warnings.
 
 ```ruby
 # bad
@@ -221,13 +222,13 @@ end
 # good
 result = hash.map { |_k, v| v + 1 }
 
-def something(x)
-  _unused_var, used_var = something_else(x)
+def something(collection)
+  _unused_variable, used_variable = something_else(collection)
 end
 
 result = hash.map { |_, v| v + 1 }
 
-def something(x)
-  _, used_var = something_else(x)
+def something(collection)
+  _, used_variable = something_else(collection)
 end
 ```

@@ -30,8 +30,7 @@ Ruby supports varieties of looping statements.
 
 ## loop method
 
-By using [`Kernel's#loop`](https://ruby-doc.org/core-2.7.1/Kernel.html#method-i-loop){:target="_blank"}, we can create the
-looping over Ruby statements.
+By using [`Kernel#loop`](https://ruby-doc.org/core-2.7.1/Kernel.html#method-i-loop){:target="_blank"}, we can create the looping over Ruby statements.
 
 ```ruby
 loop do
@@ -43,7 +42,8 @@ end
 
 In the above example, you can see we have created an infinite loop and we need to press `Ctrl + C` to stop it.
 
-However, we can use `break` keyword to exit the loop. But, if we add condition than it becomes _Conditional Loop_.
+However, we can use the `break` keyword to exit the loop.
+But, if we add a condition than it becomes a _Conditional Loop_.
 
 ```ruby
 # Print Hello only 5 fines
@@ -58,8 +58,11 @@ loop do
 end
 
 puts "Printing Hello ends"
+```
 
-# output
+Output:
+
+```
 1 Hello
 2 Hello
 3 Hello
@@ -68,16 +71,16 @@ puts "Printing Hello ends"
 Printing Hello ends
 ```
 
-__NOTE__: We can use `next` keyword to skip rest of statement from current looping and start execution from next iteration.
+__NOTE__: We can use the `next` keyword to skip the rest of the statement and start execution from the next iteration.
 
 ## while Statement
 
-`while` statement executes the code block while the condition is true.
+A `while` statement executes the code block while the condition is true.
 
 ### Syntax
 
 ```ruby
-while conditional [do]
+while conditional do # the do is optional
    code
 end
 ```
@@ -88,14 +91,14 @@ end
 count = 1
 while count <= 5 do
   puts "#{count} Hello"
-  if count == 5
-    break
-  end
 
   count += 1
 end
+```
 
-# output
+Output:
+
+```
 1 Hello
 2 Hello
 3 Hello
@@ -142,17 +145,16 @@ end while count >= 5   # making condition false in first attempt
 %}
 
 {% include util/note.html
-    note="'do-while' loop is not a recommended looping statement by Matz, creator of Ruby."
-    type="caution"
+    note="'do-while' loop is not a recommended looping statement by Matz, creator of Ruby." type="caution"
 %}
 ## until Statement
 
-`until` statement executes the code block while the condition is false.
+The `until` statement executes the code block _until_ the condition is true.
 
 ### Syntax
 
 ```ruby
-until conditional [do]
+until conditional do # the do is optional
    code
 end
 ```
@@ -163,14 +165,14 @@ end
 count = 1
 until count > 5 do  # only difference with 'while' loop statement
   puts "#{count} Hello"
-  if count == 5
-    break
-  end
 
   count += 1
 end
+```
 
-# output
+Output:
+
+```
 1 Hello
 2 Hello
 3 Hello
@@ -178,11 +180,12 @@ end
 5 Hello
 ```
 
-__NOTE__: Similar to `do-while` statement, we can have code block executed first and condition checked after.
+__NOTE__: Similar to `do-while` statement, we can have the code block executed first and condition checked after.
 
 ## for Statement
 
-`for` loop executes a code block once for each element in expression. It is used to loop over a collection of elements.
+The `for` loop executes a code block once for each element in the expression.
+It is used to loop over a collection of elements.
 
 {% include util/note.html
     note="'for' loop has definite end as the number of elements is finite whereas other looping statement like 'loop', 'while', 'until' can cause infinite loop if condition is not carefully written."
@@ -191,7 +194,7 @@ __NOTE__: Similar to `do-while` statement, we can have code block executed first
 ### Syntax
 
 ```ruby
-for element in collection [do]
+for element in collection do # The `do` is optional here
   code
 end
 ```
@@ -199,11 +202,14 @@ end
 ### Example
 
 ```ruby
-for ele in [1, 2, 3, 4, 5]
-  puts "#{ele} Hello"
+for element in [1, 2, 3, 4, 5]
+  puts "#{element} Hello"
 end
+```
 
-# output
+Output:
+
+```
 1 Hello
 2 Hello
 3 Hello
@@ -213,7 +219,7 @@ end
 
 ## redo Statement
 
-`redo` restarts the iteration of the most internal loop, without checking loop condition.
+The `redo` keyword restarts the iteration of the most internal loop, without checking loop condition.
 
 ```ruby
 for i in (0..5)
@@ -221,10 +227,14 @@ for i in (0..5)
       puts "#{i} Hello"
       i += 1
       redo
+      puts "This will not evaluate"
    end
 end
+```
 
-# output
+Output
+
+```
 0 Hello
 1 Hello
 2 Hello
@@ -235,7 +245,8 @@ end
 
 ## retry Statement
 
-`retry` restart the execution of code block when used in `begin-rescue` statements.
+The `retry` keyword restarts the execution of code block.
+It can also be used in `begin-rescue` statements.
 
 {% include util/note.html
     note="'begin-rescue' statements are used as a way of exception handling."
@@ -253,7 +264,11 @@ for i in (1..5)
    retry
   end
 end
+```
 
+Output:
+
+```
 # output
 Execution begin now
 1 Hello. Count 1

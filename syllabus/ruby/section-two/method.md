@@ -15,30 +15,31 @@ comments: true
 
 # Method in Ruby language
 
-Method allows us to write the piece of code at one place which get executed many times.
-This encourages modularity in the programs since writing same code at different places tend to create more errors.
+A Method allows us to write the piece of code at one place which get executed many times.
+This encourages modularity in the programs since the writing same code at different places tend to create more errors.
 
-__NOTE__: Ruby methods are similar to the functions in other languages.
+__NOTE__: Ruby methods are similar to functions in other languages.
 
 ## Defining Method
 
-In order to use a method, we need to first define it. A method is defined with the `def` keyword followed by method name and at the end we need to use `end` keyword to denote end of that method.
+In order to use a method, we need to first define it.
+A method is defined with the `def` keyword followed by method name and at the end we need to use `end` keyword to denote end of that method.
 
 ## Syntax
 
 ```ruby
 def method_name
-  code ...
+  # code ...
 end
 ```
 
-__NOTE:__ Ruby method name should follow `snake_case` as it is recommended.
+__NOTE:__ The Ruby method name should be written as `snake_case`.
 See [Naming Conventions](../naming-conventions#snake-case-for-symbols-methods-and-variables){:target="_blank"}.
 
 
 ## Method with parameters
 
-As like other programming language, we can pass arguments to method in Ruby.
+As like other programming language, we may pass arguments to a method in Ruby.
 
 ```ruby
 def hello(name)
@@ -50,7 +51,8 @@ hello("Ruby")   # output: Hello, Ruby
 
 ## Default parameters
 
-Ruby method can have default parameter. This parameter is used when call the method without passing any argument.
+Ruby method can have default parameter.
+This parameter is used when call the method without passing any argument.
 
 ```ruby
 def hello(name='Foo')
@@ -70,7 +72,8 @@ Hello, Ruby
 
 ## Return Values
 
-By default, a method returns the last statement that was evaluated in the body of the method. However, you can explicitly use the `return` keyword anywhere in the body to return from that point.
+By default, a method returns the last statement that was evaluated in the body of the method.
+However, you can explicitly use the `return` keyword anywhere in the body to return from that point.
 
 ```ruby
 def hello(name)
@@ -78,8 +81,8 @@ def hello(name)
   puts "Hello, #{name}"   # this expression is never evaluated
 end
 
-def add(num1, num2)
-  num1 + num2     # no need of 'return' keyword
+def add(number1, number2)
+  number1 + number2     # no need of 'return' keyword
 end
 
 add(10, 5)  # output: 15
@@ -87,29 +90,30 @@ add(10, 5)  # output: 15
 
 ## Multiple Return values
 
-In Ruby, we can return multiple values from a method unlike in many languages like `C`.
+In Ruby, only a single object may be returned.
+If we need multiple values from a method call, then we store those in an Array.
 
 ```ruby
-def swap(num1, num2)
-  [num2, num1]
-  # or use return num2, num1 instead of Array syntax
+def swap(number1, number2)
+  [number2, number1]
 end
 
-num1 = 10
-num2 = 5
+number1 = 10
+number2 = 5
 
-num1, num2 = swap(num1, num2)
-puts num1 # output: 5
-puts num2  # output: 10
+number1, number2 = swap(number1, number2)
+puts number1 # output: 5
+puts number2  # output: 10
 ```
 
 ## Chaining Methods
 
-We can chain methods together if we know the return value properly. This will help us to write expressive code.
+We can chain methods together if we know the return value properly.
+This will help us to write expressive code.
 
 ```ruby
-def add(num1, num2)
-  num1 + num2
+def add(number1, number2)
+  number1 + number2
 end
 
 add(2, 3).times { |i| puts "#{i} Hello" }
@@ -144,10 +148,8 @@ puts multiply(add(3, 7), subtract(10, 5)) # output: 50
 
 ## Local Variable Scope in Method
 
-A method creates its own scope. And, the variable defined in the method are only accessible within that method and cannot be
-referenced from outside of method definition.
-
-Also, this local variable cannot access data outside of the method definition unless the data itself is passed as a parameter.
+A method creates its own scope.
+A variable defined in the method are only accessible within that method and cannot be invoked from outside of method definition.
 
 ```ruby
 # we assume that the 'update_name' will update
@@ -161,7 +163,7 @@ end
 puts name # output: Foo
 ```
 
-However, we can able to access some of the data if passed as parameter.
+However, we are able to access some of the data if passed as parameter.
 
 ```ruby
 languages = ['Ruby', 'C', 'Python', 'Go']
@@ -177,4 +179,4 @@ puts languages
 ['Ruby', 'C', 'Python', 'Go']
 ```
 
-__NOTE__: We can update only `Array` here since it is passed as reference to method.
+__NOTE__: We can update the array here since it is passed as reference to method.

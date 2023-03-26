@@ -18,7 +18,7 @@ comments: true
 
 In computer programming, an iterator is an entity which enables programmer to traverse through the element of container, particularly a list (or array).
 
-In Ruby, iterator is a method that loop through the collection and allow to execute a code block.
+In Ruby, an iterator is a method that can loop through the collection and allow to execute a code block.
 
 Ruby provides many different type of iterators.
 
@@ -29,20 +29,21 @@ Ruby provides many different type of iterators.
 - `downto` Iterator
 - `step` Iterator
 - `each_line` Iterator
+- And many more…
 
 ## each Iterator
 
-This iterator loop through each element of collection (potentially Array, Hash or Range) one by one, executes the code block for each element and return the base collection.
+This iterator loops through each element of a collection (potentially Array, Hash or Range) one by one, executes the code block for each element and returns the base collection.
 
 ### Example
 
 ```ruby
-arr = [1, 2, 3, 4, 5]
-returned_val = arr.each do |num|
-  puts num
+array = [1, 2, 3, 4, 5]
+returned_value = array.each do |number|
+  puts number
 end
 
-puts returned_val
+puts returned_value
 
 # output
 1
@@ -50,8 +51,10 @@ puts returned_val
 3
 4
 5
-[1, 2, 3, 4, 5] ( similar to original array)
+[1, 2, 3, 4, 5]
 ```
+
+The Array that is shown is the same Array that `each` was called on.
 
 ## map or collect Iterator
 
@@ -60,13 +63,13 @@ Both `map` or `collect` iterators returns a new object based on the execution of
 ### Example
 
 ```ruby
-arr = [1, 2, 3, 4, 5]
-returned_val = arr.map do |num|
-  puts num
-  num * 2
+array = [1, 2, 3, 4, 5]
+returned_value = array.map do |number|
+  puts number
+  number * 2
 end
 
-puts returned_val
+puts returned_value
 
 # output
 1
@@ -74,8 +77,10 @@ puts returned_val
 3
 4
 5
-[2, 4, 6, 8, 10]  (updated array)
+[2, 4, 6, 8, 10]
 ```
+
+The Array shown is a new object.
 
 ### map! or collect! Iterator
 
@@ -84,13 +89,13 @@ This iterator will update the original collection based on the execution of code
 #### Example
 
 ```ruby
-arr = [1, 2, 3, 4, 5]
-arr.map! do |num|
-  puts num
-  num * 2
+array = [1, 2, 3, 4, 5]
+array.map! do |number|
+  puts number
+  number * 2
 end
 
-puts arr
+puts array
 
 # output
 1
@@ -98,8 +103,11 @@ puts arr
 3
 4
 5
-[2, 4, 6, 8, 10]  (original array got updated)
+[2, 4, 6, 8, 10] 
 ```
+
+The Array shown is the same array that `map!` was called on, but updated in place.
+Hence the "bang" or "danger" indicator.
 
 ## times Iterator
 
@@ -180,7 +188,7 @@ end
 
 ### Numeric step method
 
-The `step` method invokes the given block with the sequence of numbers starting at specified number, incremented by step (defaulted to 1) on each call.
+The `step` method invokes the given block with the sequence of numbers starting at specified number, incremented by step (step amount defaults to 1) on each call.
 
 The loop finishes when the value to be passed to the block is greater than limit (if step is positive) or less than limit (if step is negative), where limit is defaulted to infinity.
 
@@ -197,7 +205,8 @@ end
 9
 ```
 
-__NOTE:__ `to` and `by` are optional here. We can write as `1.step(10, 2) do ... end`
+__NOTE:__ `to:` and `by:` are optional here.
+We can write as `1.step(10, 2) do ... end`
 
 Check [`Numeric#step`](https://ruby-doc.org/core-2.7.1/Numeric.html#method-i-step){:target="_blank"} for more detail.
 
@@ -210,8 +219,11 @@ lines = "First line\nSecond line\nThird line"
 lines.each_line do |line|
   puts line
 end
+```
 
-# output
+Output:
+
+```
 First line
 Second line
 Third line

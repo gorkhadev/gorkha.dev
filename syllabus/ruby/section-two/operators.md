@@ -20,10 +20,11 @@ Operators are the foundation of any programming language.
 Operators allow us to perform different kinds of operations on operands.
 
 {% include util/note.html
-    note="Most operators are actually method calls. For example, 'a + b' is interpreted as 'a.+(b)', where the '+' method is being called by variable 'a' with 'b' as its argument."
+    note="Most operators are actually method calls.
+    For example, 'a + b' is interpreted as 'a.+(b)', where the '+' method is being called by variable 'a' with 'b' as its argument."
 %}
 
-Ruby supports a rich set of built-in operators.
+Ruby has a rich set of built-in operators.
 
 ## Types of operators
 
@@ -48,7 +49,7 @@ These operators take numerical values as their operands and return a single nume
 | * | Perform multiplication between two operands | `10 * 5` is 50 |
 | / | Divides left hand operand by right hand operand | `10 / 5` is 2 |
 | % | Divides left hand operand by right hand operand and returns remainder | `10 % 5` is 0 |
-| ** | Performs exponential (power) calculation on operands | `10 ** 5` is 100000 |
+| ** | Performs exponential (power) calculation on operands | `10**5` is 100000 |
 
 ## Assignment Operators
 
@@ -56,17 +57,18 @@ These operators assign a value to the operands.
 
 | Operator  | Description  |  Example |
 |:-:|:-| :- |
-| = | Simple assignment | `num = 10` |
-| += | Add assignment | `num += 5` ( i.e `num = num + 5`) |
-| -= | Subtract assignment | `num -= 5` (i.e `num = num - 5`) |
-| *= | Multiply assignment | `num *= 5` (i.e `num = num * 5`) |
-| /= | Division assignment | `num /= 5` (i.e `num = num / 5`) |
-| %= | Modulus assignment | `num %= 5` (i.e `num = num % 5`) |
-| **= | Exponential assignment | `num **= 5` (i.e `num = num ** 5`) |
+| = | Simple assignment | `number = 10` |
+| += | Add assignment | `number += 5` ( i.e., `number = number + 5`) |
+| -= | Subtract assignment | `number -= 5` (i.e., `number = number - 5`) |
+| *= | Multiply assignment | `number *= 5` (i.e., `number = number * 5`) |
+| /= | Division assignment | `number /= 5` (i.e., `number = number / 5`) |
+| %= | Modulus assignment | `number %= 5` (i.e., `number = number % 5`) |
+| **= | Exponential assignment | `number **= 5` (i.e., `number = number**5`) |
 
 ### Parallel Assignment Operator
 
-Ruby also supports the parallel assignment of variables. This enables multiple variables to be initialized with a single line of Ruby code.
+Ruby also supports the parallel assignment of variables.
+This enables multiple variables to be initialized with a single line of Ruby code.
 
 ```ruby
 a = 10
@@ -78,7 +80,7 @@ c = 30
 a, b, c = 10, 20, 30
 ```
 
-Parallel assignment is also useful for swapping the values held in two variables.
+Parallel assignment is also useful for swapping the values held in two variables without us needing to have a temporary variable.
 
 ```ruby
 a = 10
@@ -92,14 +94,14 @@ puts b # 10
 
 ## Comparison Operators
 
-These operators perform comparison operation between two operands.
+These operators perform a comparison between two operands.
 
-| Operator  | Description  |  Example |
+| Operator | Description  | Example |
 |:-:|:-| :- |
 | == | Checks if the value of two operands are equal or not | `(10 == 10)` is true |
 | != | Checks if the value of two operands are not equal or not | `(10 != 10)` is false |
 | > | Checks if the value of left operand is greater than the value of right operand | `(10 > 5)` is true |
-| < | Checks if the value of left operand is less than the value of right operand | `(10 < 5)`is false |
+| < | Checks if the value of left operand is less than the value of right operand | `(10 < 5)` is false |
 | >= | Checks if the value of left operand is greater than or equal to the value of right operand | `(5 <= 10)` is true |
 | <= | Checks if the value of left operand is less than or equal to the value of right operand | `(5 >= 10)` is false |
 | <=> | Combined comparison operator. Returns 0 if first operand equals second, 1 if first operand is greater than the second and -1 if first operand is less than the second | `(5 <=> 10)` is -1 |
@@ -114,7 +116,7 @@ They first convert their operands to boolean values and then perform the respect
 
 | Operator  | Description  |  Example |
 |:-:|:-| :- |
-| && | AND operator. If both the operands are non zero, then the condition becomes true. `and` is its alternative operator. | `(false && true)` is false |
+| && | AND operator.  If both the operands are non zero, then the condition becomes true. `and` is its alternative operator. | `(false && true)` is false |
 | &#124;&#124; | OR operator. If any of the two operands are non zero, then the condition becomes true. `or` is its alternative operator. | `(false or true)` is true |
 | ! | NOT operator. Use to reverses the logical state of its operand. `not` is its alternative operator. | `!(false && true)` is true |
 
@@ -122,13 +124,16 @@ These are also called Boolean operators which work on Boolean datatype. See __Bo
 
 ### Best Practice
 
-Use `&&/||` for boolean expressions, `and/or` for control flow. [(source)](https://github.com/rubocop-hq/ruby-style-guide#andor){:target="_blank"}.
+Use `&&`/`||` for boolean expressions, `and`/`or` for control flow. [(source)](https://github.com/rubocop-hq/ruby-style-guide#andor){:target="_blank"}.
 
 ```ruby
 # boolean expression
-if codition1 && condition2
+if condition1 && condition2
   do_something
 end
+
+# boolean expression in "guard statement" form.
+do_something if condition1 && condition2
 
 # control flow
 document.saved? or document.save!
@@ -136,25 +141,25 @@ document.saved? or document.save!
 
 ## Ternary Operator
 
-Ruby has only one ternary operator as similar to most of other high level languages.
+Ruby has only one ternary operator.
 
 | Operator  | Description  | Example |
 |:-:|:-| :- |
 | ?: | Conditional Expression | `5 < 10 ? puts("5 is less than 10") : puts("5 is greater than 10")` |
 
-__BEST PRACTICE:__ Use ternary operator for following type of `if/else` scenario.
+__BEST PRACTICE:__ Use ternary operator for the following type of `if`…`else` scenario.
 
 ```ruby
-if 5 < 10
-  puts("5 is less than 10")
-else
-  puts("5 is greater than 10")
-end
+answer = if 5 < 10
+           "5 is less than 10"
+         else
+           "5 is greater than 10"
+         end
 ```
 
 ## Range Operators
 
-Range operators create a range of successive values consisting of a start, end and range of values in between.
+Range operators create a range of successive values consisting of a start, end, and all values in between.
 
 | Operator  | Description  | Example |
 |:-:|:-| :- |
@@ -167,12 +172,12 @@ Bitwise operator works on bits and performs bit by bit operation.
 
 | Operator  | Description  | Example |
 |:-:|:-| :- |
-| & | Bitwise AND Operator copies a bit to the result if it exists in both operands | `0b1010 & 0b0111` is `0b0010` |
-| &#124; | Bitwise OR Operator copies a bit if it exists in either operand | `0b1010 | 0b0111` is `0b1111` |
-| ^ | Bitwise XOR Operator copies the bit which is absent in both | `0b1010 | 0b0111` is `0b1101` |
+| & | Bitwise **AND** Operator copies a bit to the result if it exists in both operands | `0b1010 & 0b0111` is `0b0010` |
+| \| | Bitwise **OR** Operator copies a bit if it exists in either operand | `0b1010 | 0b0111` is `0b1111` |
+| ^ | Bitwise **XOR** Operator copies the bit which is absent in both | `0b1010 | 0b0111` is `0b1101` |
 | ~ | Bitwise Inverse/Complement Operator and it flip the bits. Make `0` to `1` or vice-versa | `~0b1010` is `0b0101` |
-| &lt;&lt; | Bitwise Left Shift Operator moves the input bits left by a specified number of places. | `0b1010 << 4` is `0b10100000` |
-| &gt;&gt; | Bitwise Right Shift Operator moves input bits right by a certain number of places | `0b1010 >> 4` is `0b0000` |
+| << | Bitwise Left Shift Operator moves the input bits left by a specified number of places. | `0b1010 << 4` is `0b10100000` |
+| >> | Bitwise Right Shift Operator moves input bits right by a certain number of places | `0b1010 >> 4` is `0b0000` |
 
 ## Double Colon (::) Operator
 
@@ -184,11 +189,11 @@ The `::` operator is used to access the constants, instance methods and class me
 %}
 
 ```ruby
-NAME = "foo"        # constant defined on main Object class
+NAME = "foo"        # constant defined (assigned) on main Object class
 module Foo
    NAME = "bar"
-   ::NAME = "zoo"    # set global name to zoo
-   NAME = "baz"      # set local name to baz
+   ::NAME = "zoo"    # reassign global name to zoo
+   NAME = "baz"      # reassign local name to baz
 end
 
 puts NAME         # output: zoo (this is the global constant)
@@ -197,27 +202,28 @@ puts Foo::NAME    # output: baz (this is the local "Foo" constant)
 
 # Operators Precedence
 
-The following table shows the precedence level from highest to lowest. It also shows that which operator are method as well.
+The following table shows the precedence level from highest to lowest.
+It also shows that which operator are method as well.
 
 | Operator  | Description  |
-|:-:|:-|
+| :-: | :- |
 | `::` | Constant resolution operator |
-| `[][]=` | Element reference, element set |
+| `[]`, `[]=` | Element reference, element set |
 | `**` | Exponentiation |
-| `!, ~, +, -` | Boolean NOT, bitwise complement, unary plus and minus |
-| `*, /, %` | Multiplication, division, modulo |
-| `+, -` | Addition, Subtraction |
-| `>>, <<` | Bitwise shift operators |
+| `!`, `~`, `+`, `-` | Boolean NOT, bitwise complement, unary plus and minus |
+| `*`, `/`, `%` | Multiplication, division, modulo |
+| `+`, `-` | Addition, Subtraction |
+| `>>`, `<<` | Bitwise shift operators |
 | `&` | Bitwise AND |
-| `^, |` | Bitwise XOR and OR |
-| `<=, <, >, >=` | Comparison operators |
-| `<=>, ==, ===, !=, =~, !~` | Equality, pattern matching and comparison |
+| `^`, `\|` | Bitwise XOR and OR |
+| `<=`, `<`, `>`, `>=` | Comparison operators |
+| `<=>`, `==`, `===`, `!=`, `=~`, `!~` | Equality, pattern matching and comparison |
 | `&&` | Logical AND |
 | `||` | Logical OR |
-| `.., ...` | Range operators |
+| `..`, `...` | Range operators |
 | `?:` | Ternary if-then-else |
-| `=, %=, */, /=, -=, +=, |=, &=, >>=, <<=, *=, &&=, ||=, **=` | Assignment operators |
+| `=`, `%=`, `*/`, `/=`, `-=`, `+=`, `|=`, `&=`, `>>=`, `<<=`, `*=`, `&&=`, `||=`, `**=` | Assignment operators |
 | `defined?` | Test variable definition and type |
 | `not` | Boolean NOT |
 | `or, and` | Boolean OR, Boolean AND |
-| `begin/end` | Blocks |
+| `begin`… `end` | Blocks |

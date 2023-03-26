@@ -15,11 +15,10 @@ comments: true
 
 # Getting input from User in Ruby language
 
-Sometimes during the program you want ask user to interact with the program like
-asking his name or other details.
+Sometimes during the program you want ask user to interact with the program like asking his name or other details.
 
-This can be easily achieved by Ruby `gets` method which is opposite of `puts` which print the output
-to standard output device i.e monitor.
+This can be easily achieved by using the Ruby `gets` method which may be considered the opposite of `puts` which will print the output
+to standard output device, i.e., monitor.
 
 In Ruby, we can get user input like this:
 
@@ -27,8 +26,11 @@ In Ruby, we can get user input like this:
 puts "Enter your name: "
 name = gets.chomp
 puts "Hello #{name}, how are you"
+```
 
-# output
+Running this code, I would see this:
+
+```
 Enter your name:
 RubyGuru
 Hello, RubyGuru, how are you
@@ -36,20 +38,25 @@ Hello, RubyGuru, how are you
 
 {% include util/note.html
     note="The reason for using 'chomp' after 'gets' is that 'gets' will read the data entered by
-user and store into variable 'name' along with new line char '\n'. The method 'chomp' will remove
-the trailing new line char and store only entered data into 'name'."
+    user and store into variable 'name' along with new line character that you gave with the press of the enter or return key, represented by a 'newline' character as '\n'.
+    The method 'chomp' will remove the trailing new line character and store the rest of the data into 'name'."
 %}
 
 ```ruby
 puts "Enter your name: "
 name = gets
 puts "Hello #{name}, how are you"
+```
 
-# output
+Without the chomp, it will show the "enter" at the place that I pressed it.
+
+I will run the code above, and we can see:
+
+```
 Enter your name:
 RubyGuru
 Hello, RubyGuru
-, how are you     # new line effect
+, how are you
 ```
 
 ## Extended example
@@ -68,8 +75,11 @@ addr = gets.chomp
 puts "Hello, #{name}, how are you"
 puts "If I am right, your age is '#{age}'"
 puts "And, your address is '#{addr}', right?"
+```
 
-# output
+When I run the above program:
+
+```
 Enter your name: foo
 Enter your age: 10
 Enter your address: barpak, gorkha, Nepal
@@ -81,22 +91,21 @@ And, your address is 'barpak, gorkha, Nepal', right?
 ### NOTE
 
 - `to_i` is used to convert the numeric string to integer.
-- `print` is used to ask information because `puts` will add new line char and give a
-  feeling that you are entering your data in another line.
+- `print` is used to ask information because `puts` will add new line char and give a feeling that you are entering your data in another line.
 
 ## Calculator
 
-Let's build a small calculator program in Ruby. Here, we ask user two numbers and then print the
-addition of it.
+Let's build a small calculator program in Ruby.
+Here, we ask the user for two numbers and then print the addition of them.
 
 ```ruby
 print "Enter first number: "
-num1 = gets.to_f
+number1 = gets.to_f
 
 print "Enter second number: "
-num2 = gets.to_f
+number2 = gets.to_f
 
-puts "#{num1} + #{num2} = #{num1 + num2}"
+puts "#{number1} + #{number2} = #{number1 + number2}"
 ```
 
 ### Output
