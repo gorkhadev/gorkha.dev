@@ -14,8 +14,7 @@ next_link: /ruby/section-one/irb/
 
 # Hello World program in Ruby language
 
-Writing a `Hello World` program in Ruby is as simple as writing a single line in
-a file as
+Writing a `Hello World` program in Ruby is as simple as writing a single line in a file as
 
 ```ruby
 puts 'Hello World'
@@ -54,7 +53,12 @@ Hello World
 
 ## Key points to understand
 
-- File extension of Ruby program is `.rb`
+- File extension of Ruby program is `.rb`, or `.rbw`
+  - The `.rbw` extension is used for "windowed" applications.
 - To print strings into the standard output (i.e terminal), you can use `puts`,
   which means "put string".
-- `#` is used as comment operator
+- `#` is used as a comment mark.
+  - This does not have to be at the beginning of a line.
+  - This can be used on the same line after a Ruby statement.
+- `=begin` is the start of a mult-line comment.
+- `=end` is the closing of a mult-line comment.

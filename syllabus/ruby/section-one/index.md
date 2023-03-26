@@ -21,8 +21,8 @@ Say _Hi_ to Ruby.
 
 In this section, you will be getting yourself familiar with the Ruby language.
 
-Ruby is a dynamic, object-oriented, general-purpose and open-source programming language. It is a very
-simple, developer friendly and easy to use programming language.
+Ruby is a dynamic, object-oriented, general-purpose and open-source programming language.
+It is a very simple, developer friendly and easy to use programming language.
 
 #### Have a wonderful journey in learning Ruby.
 
