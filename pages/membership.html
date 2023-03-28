@@ -316,6 +316,18 @@ page_name: membership
     </div>
   </div>
 
+  <!-- free courses -->
+  <div class="courses-section section-padding">
+    <h1 class="section-heading mb-4">Check our FREE Courses</h1>
+    <div class="container">
+      <div class="courses-wrapper row justify-content-center">
+        {% for course in site.data.courses %}
+          {% include course/course-card.html course=course %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+
   <!-- join community -->
   <div class="join-community">
     <div class="container">

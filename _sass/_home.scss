@@ -317,8 +317,7 @@
     .card-body {
       background-color: #fdfdfd;
       border-radius: 0 0 6px 6px;
-      padding: 1.5rem 1.5rem 0 1.5rem;
-      height: 11.5rem;
+      padding: 1.5rem 1.5rem 1rem 1.5rem;
 
       .card-title {
         color: $color-primary;
@@ -333,7 +332,6 @@
         color: blue;
       }
       .coupon-code {
-        padding-bottom: 0.5rem;
         text-align: center;
         span {
           font-size: 15px;

@@ -9,7 +9,9 @@
           <i class="fa-regular fa-clock text-danger me-1"></i><span>{{ include.course.duration }}</span>
         </div>
         <div class="course-modules">
-          <p class="inline-block text-danger mb-0">{{ include.course.modules }} <span class="text-secondary">{% if include.type == "project" %}Phases{% else %}Modules{% endif %}</span></p>
+          {% if include.course.modules %}
+            <p class="inline-block text-danger mb-0">{{ include.course.modules }} <span class="text-secondary">{% if include.type == "project" %}Phases{% else %}Modules{% endif %}</span></p>
+          {% endif %}
         </div>
       </div>
       <div class="course-meta-info d-flex justify-content-between">
@@ -21,14 +23,14 @@
           <span class="text-secondary">{% if include.course.type == "video" %}<i class="fa-solid fa-video text-danger"></i>{% else %}<i class="fa-solid fa-flask-vial text-danger"></i>{% endif %} Type</span>
         </div>
       </div>
-      {{ if include.course.coupon }}
+      {% if include.course.coupon %}
         <div class="coupon-code">
           <p class="mb-0">
             <span class="text-secondary">Use COUPON: </span>
             <span class="text-danger">{{ include.course.coupon }}</span>
           </p>
         </div>
-      {{ endif }}
+      {% endif %}
     </div>
   </a>
 </div>

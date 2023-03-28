@@ -323,8 +323,16 @@
     }
   }
 
+  .courses-section {
+    background-color: #F2F7FF;
+
+    .courses-wrapper .course-card {
+      background-color: transparent;
+    }
+  }
+
   .join-community {
-    padding-bottom: 7rem;
+    padding: 7rem 0;
 
     .container {
       .content-wrapper {
