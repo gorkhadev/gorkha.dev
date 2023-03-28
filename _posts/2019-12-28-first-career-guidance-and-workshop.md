@@ -15,6 +15,7 @@ published: true
 author: Dhanu Sir
 thumbnail: blog/trainings/career-programming-workshop.png
 cover_img: blog/trainings/first-workshop.jpg
+page_name: blog
 ---
 
 {% include blogs/opening-para.html

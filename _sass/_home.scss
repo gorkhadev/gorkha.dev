@@ -167,7 +167,7 @@
 
 .home-body {
   .join-channel-section {
-    background: #F6FAFF;
+    // background: #F6FAFF;
     padding: 6rem 0 6rem;
 
     .container {
@@ -208,6 +208,7 @@
   }
 
   .about-mentor-section {
+    background-color: #F6FAFF;
 
     .about-mentor-wrapper {
       background: url($asset_base_url + "/img/about-bg.png") no-repeat center center/cover;

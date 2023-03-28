@@ -309,6 +309,25 @@
   }
 }
 
+// home post
+.home-post {
+  .card {
+    border: 0;
+
+    .card-img-top {
+      border-radius: 10px;
+    }
+    .card-body {
+      padding: 1.5rem 0;
+
+      .card-text {
+        color: #555;
+        font-weight: 300;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 520px) {
   .blog-post-page .post-container {
     padding: 2rem 1rem;
