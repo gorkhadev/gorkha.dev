@@ -1,30 +1,36 @@
 ---
 layout: default
 title: "Blogs: Tags"
-page_name: blogs
 ---
 
-<div class="blog-tags">
+<div class="blog-tags-page py-5">
   {% capture tags %}{% for tag in site.tags %}{{ tag[0] }}|{% endfor %}{% endcapture %}
   {% assign sortedtags = tags | split:'|' | sort %}
 
   <div class="container">
-    <div class="d-flex flex-wrap bd-highlight my-4">
-      {% for tag in sortedtags %}
-        <a type="button" href="#{{ tag }}" class="btn btn-outline-dark me-2 mb-1">{{ tag }}
-            ({{ site.tags[tag].size }})</a>
-      {% endfor %}
-    </div>
+      <ul class="post-tags mb-0">
+        {% for tag in sortedtags %}
+          <li>
+            <a type="button" href="#{{ tag }}" >{{ tag }}
+              ({{ site.tags[tag].size }})</a>
+          </li>
+        {% endfor %}
+      </ul>
 
     {% for tag in sortedtags %}
       <a name="{{ tag }}"></a>
-      <section class="mt-4">
-        <h2 class="border-bottom text-center mb-3 pb-1">
+      <section class="mt-5">
+        <h2 class="border-bottom text-center mb-3 pb-4">
           {{ tag }} <span class="gray">({{ site.tags[tag].size }} posts)</span>
         </h2>
-        {% for post in site.tags[tag] %}
-          {% include blogs/post-outline.html post=post exclude_divider=forloop.last %}
-        {% endfor %}
+        <br>
+        <div class="container">
+          <div class="row">
+            {% for post in site.tags[tag] %}
+              {% include blogs/post-outline.html post=post exclude_divider=forloop.last %}
+            {% endfor %}
+          </div>
+        </div>
       </section>
     {% endfor %}
   </div>

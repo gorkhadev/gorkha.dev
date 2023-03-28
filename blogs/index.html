@@ -1,17 +1,20 @@
 ---
 layout: default
 title: Blogs
-page_name: blogs
+page_name: blog
 ---
 
-<div class="blog-posts py-5">
-  <div class="container">
-    <div class="row">
-      {% for post in paginator.posts %}
-        {% include blogs/post-outline.html post=post %}
-      {% endfor %}
-
+<div class="blogs-page">
+  <header class="page-header text-center">
+    <h1>Learn from our blogs</h1>
+  </header>
+  <div class="blogs-body">
+    <div class="container">
+      <div class="row">
+        {% for post in site.posts %}
+          {% include blogs/post-outline.html post=post %}
+        {% endfor %}
+      </div>
     </div>
-    {% include pagination.html %}
   </div>
 </div>

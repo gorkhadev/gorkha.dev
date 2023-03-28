@@ -1,0 +1,16 @@
+<div class="home-post col-lg-4 col-md-6 card-group">
+  <div class="card h-100">
+    <div class="maxthumb">
+      <a href="{{ include.post.url }}">
+        <img src="{{ site.image_base_url }}/{{ include.post.thumbnail }}" class="card-img-top" alt="{{ include.post.title }}">
+      </a>
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">{{ include.post.title }}</h5>
+      <p class="card-text">
+        {{ include.post.content | strip_html | truncate: 110 }}
+        <a href="{{ include.post.url | prepend: site.url }}" class="text-success ml-3">Read more &#8594;</a>
+      </p>
+    </div>
+  </div>
+</div>

@@ -1,3 +1,77 @@
+.blogs-page {
+  .page-header {
+    background: url($asset_base_url + "/img/blog-page-header.jpg") no-repeat center center/cover;
+    padding: 8rem 0;
+
+    h1 {
+      font-size: 2.3rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      color: #fff !important;
+      margin-bottom: 0;
+    }
+  }
+  .blogs-body {
+    padding: 5rem 0;
+  }
+}
+.blogs-page, .blog-tags-page {
+  .card-group {
+    margin-bottom: 2rem;
+  }
+  .card {
+    border: none;
+
+    .maxthumb {
+      max-height: 300px;
+    }
+    .card-img-top {
+      height: 15rem;
+      object-fit: cover;
+    }
+    .card-title {
+      font-size: 1.3rem;
+      font-weight: 600;
+      line-height: 1.25;
+    }
+    .card-text {
+      color: rgba(0, 0, 0, .44);
+      font-size: 0.95rem;
+      line-height: 1.6;
+      font-weight: 400;
+    }
+    .card-body {
+      padding-bottom: 0;
+    }
+    .card-footer {
+      background-color: #fff;
+      border: 0;
+
+      span {
+        font-size: 13px;
+        color: #777;
+      }
+    }
+  }
+  .post-tags {
+    padding-left: 0;
+
+    li {
+      display: inline-block;
+      font-size: 0.9rem;
+      margin-right: 0.25rem;
+
+      a {
+        background: rgba(0, 0, 0, .05);
+        color: rgba(0, 0, 0, .6);
+        border-radius: 3px;
+        padding: 5px 10px;
+      }
+    }
+  }
+}
+
 .blog-post, .blog-tags {
   margin-top: 70px;
 }
@@ -98,7 +172,32 @@
 }
 .blog-post-page {
   .post-container {
-    padding: 2em 5em;
+    padding: 1.5rem 2rem 2rem 2rem;
+  }
+  .share ul {
+    padding-left: 0;
+    margin-left: 0;
+    list-style: none;
+
+    li {
+      margin-bottom: 10px;
+    }
+  }
+  .post-tags {
+    padding-left: 0;
+
+    li {
+      display: inline-block;
+      font-size: 0.9rem;
+      margin-right: 0.25rem;
+
+      a {
+        background: rgba(0, 0, 0, .05);
+        color: rgba(0, 0, 0, .6);
+        border-radius: 3px;
+        padding: 5px 10px;
+      }
+    }
   }
 }
 
@@ -207,5 +306,28 @@
   }
   .share, .share a, .share a i {
     color: $color1 !important;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .blog-post-page .post-container {
+    padding: 2rem 1rem;
+  }
+  .blog-post-page .post-body {
+    padding: 0 0.5rem;
+  }
+  .blog-post-page .post-container {
+    padding-top: 0 !important;
+  }
+  .blogs-page .page-header h1 {
+    font-size: 1.5rem;
+  }
+  .blog-post-page .share {
+    text-align: center;
+    margin-top: 0;
+
+    li {
+      display: inline-block;
+    }
   }
 }
