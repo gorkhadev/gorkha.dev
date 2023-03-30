@@ -31,25 +31,29 @@ Ruby on Rails is built around the _model-view-controller_(MVC) pattern. It's sim
 
 ## Controllers
 
-  It take user input (like a URL) and decide what to do (like show a page, post a comment etc). They are responsible for choosing the right model and sending data to the views. Also, as your Rails knowledge improves, with constant refactoring, you move business logic into the model (fat model, skinny controller). In most of cases, controllers just take inputs, may be process something useful, call model methods, and pass outputs to the view.
+  It takes user input (like a URL) and decides what to do (like show a page, post a comment, etc.)
+  They are responsible for choosing the right model and sending data to the views.
+  Also, as your Rails knowledge improves, with constant refactoring, you move business logic into the model (fat model, skinny controller).
+  In most cases, controllers just take inputs, may process something useful, call model methods, and pass values to the view.
 
-## General flow of application
+## General Flow of Application
 
-General flow of Rails application:
+The General flow of a Rails application:
 
-- Request is made at browser
-- Request is received at router of rails application
-- Request is routed to appropriate action in a controller
-- Specific action in controller either renders a view template or communicates with model
-- Model communicates with database
-- Model sends back information to controller
-- Controller renders view
+- A request is made via a browser
+- The request is received at router of rails application
+- The request is routed to appropriate action in a controller
+- The specific action in controller either renders a view template or communicates with model
+- The model communicates with database
+- The model sends back information to controller
+- The controller renders view
 
-## File naming pattern
+## File Naming Pattern
 
-Following table will give an idea how the files in Model, View or Controller and table looks like in a standard Rails application and also notice the naming pattern (or convention rather).
+The following table will give an idea how the files in Model, View or Controller and table looks like in a standard Rails application and also notice the naming pattern (or convention, rather).
 
 | Models | Views | Controllers | Table Name |
+| -- | -- | -- | -- |
 | `User` | `home.html.erb` | `users_controller.rb` | `users` |
 | `Post` | `new.html.erb` | `posts_controller.rb` | `posts` |
 | `Article` | `article.html.erb` | `articles_controller.rb` | `articles` |
