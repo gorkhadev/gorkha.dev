@@ -16,8 +16,9 @@ comments: true
 
 # Hash in Ruby language
 
-A `Hash` is a collection of key-value pairs data. These key-value pairs provide a useful way to store
-and access data. A hash is created using symbols as keys and any data types as values.
+A `Hash` is a collection of key-value pairs data.
+These key-value pairs provide a useful way to store and access data.
+A hash is created using symbols as keys and any data types as values.
 
 Hashes are often used to hold data that are related, such as the information about a user.
 
@@ -45,7 +46,8 @@ Hashes are often used to hold data that are related, such as the information abo
   puts language # {:name=>"Ruby", :birth_year=>1995, :created_by=>"Matz"}
   ```
 
-  If you pass argument to `new`, it will create a Hash with default value. It means if the value doesn't exist for any key
+  If you pass argument to `new`, it will create a Hash with default value.
+  It means if the value doesn't exist for any key
   then this default value will be returned.
 
   ```ruby
@@ -92,7 +94,7 @@ puts language
 
 ## Updating existing element in a Hash
 
-Suppose, you want to update the value of existing element. You can do so by using following syntax:
+Suppose that you want to update the value of an existing element. You can do so by using the following syntax:
 
 ```ruby
 language = { name: 'Ruby', birth_year: 1995, type: 'language', latest_version: "2.7" }
@@ -107,7 +109,7 @@ puts language
 
 ## Removing key-value from an Array
 
-You can delete a hash element using following ways:
+You can delete a hash element using the following ways:
 
 - `delete` method: It will delete key-value pair whose key is matched with the provided key.
 
@@ -120,8 +122,9 @@ You can delete a hash element using following ways:
   ```
 
 {% include util/note.html
-          note="If you use <em>language.delete('type')</em>, Ruby won't delete the element as Ruby
-                treat <em>'type'</em> as string and we have 'type' as symbol in above key." type="caution" %}
+  note="If you use <em>language.delete('type')</em>, Ruby won't delete the element as Ruby treat <em>'type'</em> as string and we have 'type' as symbol in above key."
+  type="caution"
+%}
 
 - `shift` method: Removes the first element from the Hash.
 
@@ -133,7 +136,7 @@ You can delete a hash element using following ways:
 
 ## Iterating over a Hash
 
-  Iterating over hashes is similar to iterating over arrays with some few differences.
+  Iterating over hashes is similar to iterating over arrays with a few differences.
   We have similar methods of iterating over Hash as we have for Array.
 
 - `each` method:
@@ -143,23 +146,28 @@ You can delete a hash element using following ways:
   language.each do |key, value|
     puts "Language #{key} is #{value}."
   end
+  ```
 
-  # output
+  Output:
+  ```
   Language name is Ruby.
   Language birth_year is 1995.
   Language type is language.
   Language latest_version is 2.7.
   ```
 
-  The above can be improved further as to have intended output i.e no underscore in `birth_year` and `latest_version` in output.
+  The above can be improved further as to have the intended output i.e., no underscore in `birth_year` and `latest_version` in output.
 
   ```ruby
   language = { name: 'Ruby', birth_year: 1995, type: 'language', latest_version: '2.7' }
   language.each do |key, value|
     puts "Language #{key.to_s.gsub('_', ' ')} is #{value}."
   end
+  ```
 
-  # output
+  Output:
+
+  ```
   Language name is Ruby.
   Language birth year is 1995.
   Language type is language.
@@ -173,8 +181,11 @@ You can delete a hash element using following ways:
   language.each_key do |key|
     puts key
   end
+  ```
 
-  # output
+  Output:
+
+  ```
   name
   birth_year
   type
@@ -187,8 +198,11 @@ You can delete a hash element using following ways:
   language.each_value do |value|
     puts value
   end
+  ```
 
-  # output
+  Output:
+
+  ```
   Ruby
   1995
   language
@@ -251,4 +265,6 @@ string_elements = language.select {|key, value| value.is_a?(String) }
 puts string_elements # {:name=>"Ruby", :type=>"language"}
 ```
 
-__NOTE__: You can see all Hash methods in their official documentation [here](https://ruby-doc.org/core-2.7.1/Hash.html){:target="_blank"}. Go through it and familiarize yourself. There are many handy methods available.
+__NOTE__: You can see all Hash methods in their official documentation [here](https://ruby-doc.org/core-2.7.1/Hash.html){:target="_blank"}.
+Go through it and familiarize yourself.
+There are many handy methods available.

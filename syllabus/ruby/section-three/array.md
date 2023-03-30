@@ -14,16 +14,15 @@ next_link: /ruby/section-three/hash/
 comments: true
 ---
 
-# Array in Ruby language
+# Arrays in Ruby
 
-Ruby arrays are ordered collections of objects. They can hold objects like integer, number, hash, string, symbol
-or any other array.
+Ruby arrays are ordered collections of objects.
+They can hold objects like integer, number, hash, string, symbol or any other array.
 
-An array is a list of variables enclosed in square brackets and separated by commas.
+An array is a list of values, objects, enclosed in square brackets and separated by commas.
 
-Each element in an array is referred to by an index which starts at 0 like in C. A negative index is assumed to
-be relative to the end of the array i.e `-1` indicates the last element of the array, `-2` is the 2nd last element
-and so on.
+Each element in an array is referred to by an index which starts at 0 like in C.
+A negative index is assumed to be relative to the end of the array i.e., `-1` indicates the last element of the array, `-2` is the 2nd last element and so on.
 
 ## Creating Arrays
 
@@ -49,7 +48,7 @@ The two common ways to create arrays are:
 
 ## Accessing element in Array
 
-You can access array element by using its index value.
+You can access an element of an array by using its index value.
 
 ```ruby
 fruits = ['mango', 'banana', 'apple']
@@ -58,20 +57,22 @@ puts fruits[0] # output: 'mango'
 
 ## Accessing multiple elements
 
-One can access multiple elements as well. It can be achieved by passing two indices.
+One can access multiple elements as well.
+It can be achieved by passing two indices.
 
 ```ruby
 languages = ['C', 'Ruby', 'Python', 'Go']
-high_level = languages[1,3]
+high_level = languages[1, 3]
 puts high_level # ["Ruby", "Python", "Go"]
 ```
 
 {% include util/note.html
-            note="Ruby doesn't throw any error if the user tries to access the element that doesn’t exist. Instead it returns <em>nil</em>." type="caution" %}
+  note="Ruby doesn't throw any error if the user tries to access an element that doesn’t exist.
+  Instead, it returns <em>nil</em>." type="caution" %}
 
 ## Adding element to an Array
 
-If you want to add new element to Array, then you can achieve that through following methods.
+If you want to add a new element to Array, then you can achieve that through the following methods.
 
 - `push` method:
 
@@ -81,7 +82,7 @@ If you want to add new element to Array, then you can achieve that through follo
   puts languages # ['C', 'Ruby', 'Python', 'Go', 'JavaScript']
   ```
 
-- Using `<<` operator:
+- Using the `<<` operator:
 
   ```ruby
   languages = ['C', 'Ruby', 'Python', 'Go']
@@ -89,7 +90,7 @@ If you want to add new element to Array, then you can achieve that through follo
   puts languages # ['C', 'Ruby', 'Python', 'Go', 'JavaScript']
   ```
 
-- If you want to add as the beginning, use `unshift` method:
+- If you want to add to the beginning, use the `unshift` method:
 
   ```ruby
   languages = ['C', 'Ruby', 'Python', 'Go']
@@ -97,7 +98,7 @@ If you want to add new element to Array, then you can achieve that through follo
   puts languages # ['JavaScript', 'C', 'Ruby', 'Python', 'Go']
   ```
 
-## Removing element from an Array
+## Removing an element from an Array
 
 Similar to addition, Ruby provide many methods to remove element from an Array. Following are few common methods:
 
@@ -135,7 +136,7 @@ Similar to addition, Ruby provide many methods to remove element from an Array. 
 
 ## Iterating over an Array
 
-  There are many ways we can iterate over an Array.
+There are many ways we can iterate over an Array.
 
 - `each` method is the most common way to iterator over an Array.
 
@@ -184,7 +185,7 @@ puts lang1 == lang2 # false
 
 ## Common Array methods
 
-### include?
+### `include?`
 
 This method checks whether the argument given is included in the array or not.
 
@@ -193,7 +194,7 @@ languages = ['C', 'Ruby', 'Python', 'Go']
 puts languages.include?('Ruby') # true
 ```
 
-### sort
+### `sort`
 
 This method helps to sort the Array elements.
 
@@ -202,7 +203,7 @@ languages = ['C', 'Ruby', 'Python', 'Go']
 puts languages.sort # ["C", "Go", "Python", "Ruby"]
 ```
 
-### concat
+### `concat`
 
 This method will concat another method with the existing one.
 
@@ -212,4 +213,6 @@ updated = languages.concat(['Rust', 'Dart'])
 puts updated # ["C", "Ruby", "Python", "Go", "Rust", "Dart"]
 ```
 
-__NOTE__: You can see all Array methods in their official documentation [here](https://ruby-doc.org/core-2.7.0/Array.html){:target="_blank"}. Go through it and familiarize yourself. There are many handy methods available.
+__NOTE__: You can see all Array methods in their official documentation [here](https://ruby-doc.org/core-2.7.0/Array.html){:target="_blank"}.
+Go through it and familiarize yourself.
+There are many handy methods available.

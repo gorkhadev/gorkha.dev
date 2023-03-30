@@ -12,15 +12,16 @@ prev_link: /ruby/section-three/module/
 comments: true
 ---
 
-# File Handling in Ruby language
+# File Handling in Ruby
 
-Working with file is an essential part of software development as sometime one need to write some important information to the file and read it later.
+Working with files is an essential part of software development as sometime one needs to write some important information to the file and read it later.
 
 Ruby provides many different functionalities to work with files.
 
 Let's first check the number of supported file modes.
 
 | Mode | Description |
+| -- | -- |
 | `r` | Read only mode. File pointer is positioned at start of file. |
 | `r+` | Read and write mode. File pointer is positioned at start of file. |
 | `w` | Write only mode. File pointer is positioned at start of file. |
@@ -49,7 +50,7 @@ file_object = File.new("new_file.txt", "w")
 # use file_object for processing
 ```
 
-## Write to the file
+## Write to a file
 
 To write content to the file, we can use `file_object.syswrite()` method. The file should be opened in write mode for this method.
 
@@ -63,11 +64,13 @@ file_object.write("content");
 file_object.puts("content");
 ```
 
-__NOTE:__ `write` and `puts` will write the content to the buffer, while `syswrite` will directly write to the disk. And, `puts` will add newline after the content while `write` and `syswrite` just write the specified content only.
+__NOTE:__ `write` and `puts` will write the content to the buffer, while `syswrite` will directly write to the disk.
+And, `puts` will add a newline after the content while `write` and `syswrite` just write the specified content only.
 
 ## Closing the file
 
-It is important to close the file handle after all the required operations are done. It will help to release the resources like memory to be released for other purposes.
+It is important to close the file handle after all the required operations are done.
+It will help to release the resources like memory to be released for other purposes.
 
 ```ruby
 file_object.close()
@@ -116,7 +119,8 @@ end
 
 ## File reading variants
 
-File can be read in many different ways. In the following, we will see few common reading options we have in Ruby.
+A file can be read in many different ways.
+We will see few common reading options we have in Ruby.
 
 For following examples, let's consider a file name `foo.txt` with following content:
 
@@ -144,7 +148,8 @@ this is third line
 
 ### Read line by line using IO#readlines
 
-We can read the file content line by line through `IO#readlines` method too. In such case, each line of the file will be treated like an element in the array.
+We can read the file content line by line through `IO#readlines` method too.
+In such case, each line of the file will be treated like an element in the array.
 
 ```ruby
 IO.readlines('foo.txt').each do |line|
@@ -159,7 +164,8 @@ this is third line
 
 ### Read line by line using IO#foreach
 
-We can read the file content line by line through `IO#foreach` method too. The difference between the method `foreach` and the method `readlines` is that the method `foreach` is associated with a `block`.
+We can read the file content line by line through `IO#foreach` method, too.
+The difference between the method `foreach` and the method `readlines` is that the method `foreach` is associated with a `block`.
 
 ```ruby
 IO.foreach('foo.txt') do |line|
@@ -174,8 +180,8 @@ this is third line
 
 ## Getting Information about File
 
-Sometimes it is necessary to find information about a file before even performing any operations.
-Ruby provides many different handy methods for this very purpose.
+Sometimes it is necessary to find information about a file before performing any operations.
+Ruby provides many different methods for this very purpose.
 
 We will see few common methods below:
 

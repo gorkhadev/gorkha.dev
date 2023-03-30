@@ -18,7 +18,6 @@ disable_toc: true
     note="In this phase, we will try to learn few other building blocks of the language."
 %}
 
-
 <div class="section-index">
   <hr class="panel-line">
 

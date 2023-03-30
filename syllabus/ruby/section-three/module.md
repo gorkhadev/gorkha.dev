@@ -15,18 +15,18 @@ comments: true
 
 # Module in Ruby language
 
-In Ruby, modules are similar to classes however, they hold collection of methods, constants and class variables.
+In Ruby, modules are similar to classes. They may hold a collection of constants, class variables, and methods.
 
 Important points to remember:
 
-- Module can not be instantiated. i.e, it is not possible to create objects from a module.
-- We cannot inherit modules or we can't create subclass of module.
+- A Module can not be instantiated, i.e., it is not possible to create objects from a module.
+- We cannot inherit modules nor can we create a subclass of module.
 - Modules are also used as namespaces and as mixins.
-- Name of module must start with capital letter.
-- Modules can be included into classes, and make its methods available on the class.
+- A module name must start with capital letter.
+- Modules can be included into classes, which makes its methods available to the instances of those classes.
 
 {% include util/note.html
-    note="Module is also used to make code modular where common methods are kept in module and then these methods can be used by any class who require those methods. It encourages Ruby's <strong>DRY (Don't Repeat Yourself)</strong> principle."
+    note="Module is also used to make code modular where common methods are kept in module and then these methods can be used by any class who require those methods. It enables Ruby to take advantage of the <strong>DRY (Don't Repeat Yourself)</strong> principle."
 %}
 
 ## Syntax
@@ -74,7 +74,7 @@ Shape.square_area(5)  # output: 25
 
 ## Including Module in Class
 
-The another common usage of module is to include it inside class allowing to share common functionalities between classes.
+The common usage of module is to include it inside a class allowing to share common functionalities between classes.
 This concept is also known as __Mixin__. It eliminates the need for multiple inheritance which we will see in later.
 
 ```ruby
@@ -93,12 +93,12 @@ class MyClass2
 end
 
 puts "MyClass1 display: "
-obj1 = MyClass1.new
-obj1.display
+object1 = MyClass1.new
+object1.display
 
 puts "MyClass2 display: "
-obj2 = MyClass2.new
-obj2.display
+object2 = MyClass2.new
+object2.display
 
 # output
 Showing display of MyClass1
@@ -111,7 +111,9 @@ Showing display of MyClass2
 
 ## Module as Namespace
 
-Namespace in programming is a way of grouping logically related entities together. In Ruby, module is the convenient way to achieve it. It also allows us to avoid with _conflicting names of classes or modules_ to exists together.
+A _namespace_ in programming is a way of grouping logically related entities together.
+In Ruby, using a module is a convenient way to achieve it.
+It also allows us to avoid _conflicting names of classes or modules_ that exist together.
 
 Example:
 
@@ -134,8 +136,11 @@ end
 
 Fruit::Array.new.show
 Shape::Array.new.show
+```
 
-# output
+Output:
+
+```
 Fruit's Array
 Shape's Array
 ```
