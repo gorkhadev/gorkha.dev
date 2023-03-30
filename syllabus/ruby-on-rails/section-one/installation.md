@@ -25,7 +25,7 @@ Before installing Ruby we need to install the prerequisites or dependencies pack
     note="Ubuntu is our default or recommended OS for Ruby on Rails app development."
 %}
 
-Go through with following commands to install `curl` and setup package repositories in your terminal:
+Go through with following commands to install `curl` and set up package repositories in your terminal:
 
 ```shell
 sudo apt install curl
@@ -43,7 +43,8 @@ sudo apt-get install git-core zlib1g-dev build-essential libssl-dev libreadline-
 
 ## macOS
 
-Unlike Ubuntu, macOS has all the pre-requisite packages installed when you install `Xcode`. If you find any error related to these packages, consider reinstalling Xcode via following command:
+Unlike Ubuntu, macOS has all the pre-requisite packages installed when you install `Xcode`.
+If you find any error related to these packages, consider reinstalling Xcode via following command:
 
 ```shell
 xcode-select --install
@@ -57,22 +58,22 @@ Verify the installation by running following command:
 
 ```shell
 $ ruby -v
-ruby 2.7.1p83 (2020-03-31 revision a0c7c23c9c) [x86_64-darwin19]
+ruby 3.0.2p107 (2021-07-07 revision 0db68f0233) [x86_64-linux-gnu]
 ```
 
-__NOTE:__ You might have different version depending on your OS and Ruby version.
+__NOTE:__ You might have a different version depending on your OS and Ruby version.
 
 ## Install bundler
 
-Install the `bundler` which manages Ruby gems (or packages as in other languages).
+Install the `bundler` gem which manages Ruby gems (or packages as in other languages).
 
 ```shell
-$ gem install bundler
+gem install bundler
 ```
 
 # Installing Ruby on Rails
 
-Run the following command in your Terminal to install latest version of Rails.
+Run the following command in your Terminal to install the latest version of Rails.
 
 ```shell
 gem install rails

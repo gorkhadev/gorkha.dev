@@ -16,9 +16,11 @@ disable_toc: true
 
 # Git and GitHub setup
 
-We'll be using Git for our version control system which has become a default version control system for most of the developers.
+We'll be using Git for our version control system.
+Git has become a default version control system for many developers.
 
-It also integrates well with [GitHub](https://github.com){:target="\_blank"} account. If you don't already have a GitHub account, make sure to create one.
+It is the heart of hosting services such as Github, Bitbucket, Gitlab and others. 
+If you don't already have a [GitHub](https://github.com){:target="\_blank"} account, make sure to create one.
 
 Now, replace the `your name` and `your email` in the following steps with the ones you used for your GitHub account.
 
@@ -30,14 +32,15 @@ git config --global core.editor "vim" # make vim as your default Git editor
 
 # Setup Editor
 
-I personally recommend [VS Code](https://code.visualstudio.com/){:target="_blank"} which has become popular among developers in recent years. In fact, VSCode tops the StackOverflow 2019 survey for Most Popular Development Environments.
+I personally recommend [VS Code](https://code.visualstudio.com/){:target="_blank"} which has become popular among developers in recent years.
+In fact, VSCode tops the StackOverflow 2019 survey for Most Popular Development Environments.
 
 It offers wide range of features like:
 
 - __Intellisense:__ For code-completion and syntax highlighting
 - __Extension:__  Third-party plugins that makes VSCode more usable
-- __Git Integrated Terminal:__ Provides a built-in terminal inside VSCode
+- __Integrated Terminal:__ Provides a built-in terminal inside VSCode
 
 Check this nice blog on [Beginners guide for Ruby on Rails ready VS Code](https://medium.com/@ivanraybuglosa/beginners-guide-for-a-ruby-on-rails-ready-visual-studio-code-da9fe77a1356){:target="_blank"}.
 
-I would recommend you to install extensions mentioned above to have nice experience in developing Ruby on Rails application.
+I would recommend installing the extensions mentioned above to have nice experience in developing Ruby on Rails application.
