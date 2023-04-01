@@ -431,6 +431,12 @@
 }
 
 @media screen and (max-width: 520px) {
+  .section-padding {
+    padding: 5rem 0;
+  }
+  .section-heading {
+    font-size: 2.7rem
+  }
   .home_header .banner-section {
     padding-top: 1rem;
 
