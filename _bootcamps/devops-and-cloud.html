@@ -23,6 +23,34 @@ thumbnail: bootcamp/devops-and-cloud.jpg
     </div>
   </section>
 
+  <!-- partner banner -->
+  <section class="partner-banner section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="wrapper">
+            <h2 class="caption">
+              This Bootcamp is brought to you in partnership with
+              CloudYuga Technologies.
+            </h2>
+            <p class="sub-caption">
+              CloudYuga provides quality training in the Cloud Technolgies
+              and make it simplify with Hands-on Labs Learning
+              experience.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <img src="{{ site.asset_base_url }}/img/cloudyuga.png"
+          class="img-fluid partner-logo" alt="Partner CloudYuga">
+          <p class="text-center">
+            <a href="https://cloudyuga.guru" target="_blank" class="text-white">www.cloudyuga.guru</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Bootcamp Curriculum -->
   <section class="bg-light-blue section-padding">
     <div class="container">
@@ -264,15 +292,19 @@ thumbnail: bootcamp/devops-and-cloud.jpg
     </div>
   </section>
 
-  <!-- certificate -->
+  <!-- certificate and testimonial -->
   <div class="certificate section-padding">
-    <h2 class="section-subheading font-weight-bold mb-4">Get Certified</h2>
 
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-md-7">
+        <div class="col-md-6">
+          <h2 class="section-subheading font-weight-bold mb-4">Get Certified</h2>
           <img src="{{ site.asset_base_url }}/img/certs/devops-and-cloud-engineer.jpg"
-            class="img-fluid" alt="Dhanu Sir Community Calender">
+          class="img-fluid" alt="Dhanu Sir Community Calender">
+        </div>
+        <div class="col-md-6">
+          <h2 class="section-subheading font-weight-bold mb-4 mt-4">Student Words</h2>
+          {% include util/embed-youtube.html id="7oTRegomSow" %}
         </div>
       </div>
     </div>
