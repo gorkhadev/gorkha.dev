@@ -91,3 +91,7 @@ plugins:
   - jekyll-feed
   - jekyll-paginate
   - jekyll-redirect-from
+exclude:
+  - vagrant.cfg/*
+  - Vagrant
+
