@@ -1,0 +1,23 @@
+---
+layout: default
+title: Screencast
+permalink: /screencast/
+page_name: screencast
+---
+
+<!-- projects list -->
+<div class="projects-page page-padding">
+  <h1 class="section-heading mb-5">Learn by Watching Screencast</h1>
+
+  <div class="container">
+    <div class="row courses-wrapper justify-content-center">
+      {% for screencast in site.data.screencast %}
+        <div class="col-md-4">
+            {% assign screencast = screencast %}
+            {% include util/embed-youtube.html id=screencast.id %}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
