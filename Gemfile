@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-ruby "2.7.0"
+# ruby "3.2.0"
 
 gem "nokogiri", ">= 1.11.0"
 gem "kramdown", ">= 2.3.1"
