@@ -17,8 +17,7 @@ comments: true
 
 In this tutorial, we are going to see how to build a simple calculator in Ruby.
 
-We will create a menu driven program where we ask user an option out of available options to perform
-specific operations.
+We will create a menu driven program where we ask user an option from the displayed options shown to perform specific operations.
 
 ## Demo
 
@@ -26,8 +25,8 @@ specific operations.
 
 ## Prerequisites
 
-- Enthusiasm and passion to Learn
-- Basic knowledge of Ruby language
+- Enthusiasm and passion to learn
+- Basic knowledge of the Ruby language
   - [Variables](/ruby/section-two/variables-constants/){:target="_blank"}
   - [Loop](/ruby/section-two/loops/){:target="_blank"}
   - [Conditional Operators](/ruby/section-two/conditionals/){:target="_blank"}
@@ -36,14 +35,14 @@ specific operations.
 ## Solution Steps
 
 {% include util/note.html
-    note="The solution I described here is one of the simplest solution.
-          I recommend you to first try to write program which is functional and then think of optimization or
-          style improvement later." type="caution"
+    note="The solution I described here is one of the simplests solutions.
+    I recommend to write a working program first, and then think of optimization or style improvements later."
+    type="caution"
 %}
 
-Follow the steps below to build the simple calculator in Ruby.
+Follow the steps below to build a simple calculator in Ruby.
 
-- Let's first print the menu to the screen to get operation to be performed from user.
+- Let's print a menu to the screen to show the available operations to the user.
 
   ```ruby
   puts "--- Calculator ---"
@@ -52,20 +51,20 @@ Follow the steps below to build the simple calculator in Ruby.
   puts "3. Multiplication"
   puts "4. Division"
   puts "5. Exit"
-  print "Which operation you want to perform: "
   ```
 
-- Next step is to get option from user.
+- The next step is to ask the user for an option.
 
   ```ruby
+  print "Which operation you want to perform: "
   operation = gets.to_i
   # get option from user and convert into number
   ```
 
-  __NOTE:__ `gets` will return the data in String format and hence we need to convert it into number explicitly to be used for later purpose.
+  __NOTE:__ `gets` will return the data in as a String, hence we need to convert it into a number.
 
-- Now, since we need to accept two numbers from user for each operation, we can define a method as `accept_operands` at the
-  top of program and then call later whenever it is required.
+  - We will need to accept two numbers from the user for each operation.
+    We can define a method as `accept_operands` at the top of program and then call it later whenever it is needed.
 
   ```ruby
   def accept_operands
@@ -77,34 +76,34 @@ Follow the steps below to build the simple calculator in Ruby.
   end
   ```
 
-  __NOTE:__ We can return multiple values from Ruby methods.
+  __NOTE:__ We can only return a single value from a method, and so we choose to return an Array with two elements.
 
-- We need to check the `operation` option we accepted from user in the 2nd step and perform respective operation:
+- We need to check the `operation` option we accepted from the user in the 2nd step and perform the chosen operation:
 
   ```ruby
   case operation
   when 1
-    num1, num2 = accept_operands()
-    res = num1 + num2
-    puts "#{num1} + #{num2} = #{res}"
+    number1, number2 = accept_operands()
+    result = number1 + number2
+    puts "#{number1} + #{number2} = #{result}"
   when 2
-    num1, num2 = accept_operands()
-    res = num1 - num2
-    puts "#{num1} - #{num2} = #{res}"
+    number1, number2 = accept_operands()
+    result = number1 - number2
+    puts "#{number1} - #{number2} = #{result}"
   when 3
-    num1, num2 = accept_operands()
-    res = num1 * num2
-    puts "#{num1} * #{num2} = #{res}"
+    number1, number2 = accept_operands()
+    result = number1 * number2
+    puts "#{number1} * #{number2} = #{result}"
   when 4
-    num1, num2 = accept_operands()
-    res = num1.to_f / num2
-    puts "#{num1} / #{num2} = #{res}"
+    number1, number2 = accept_operands()
+    result = number1.to_f / number2
+    puts "#{number1} / #{number2} = #{result}"
   else
     puts "Invalid choice"
   end
   ```
 
-- Wrap above code in a loop using `loop` statement and `break` out of loop when `operation` is equal to `5`.
+- Wrap the above code in a loop using the `loop` statement and `break` out of loop when `operation` is equal to `5`.
 
   ```ruby
   loop do
@@ -142,31 +141,31 @@ loop do
 
   case operation
   when 1
-    num1, num2 = accept_operands()
-    res = num1 + num2
-    puts "#{num1} + #{num2} = #{res}"
+    number1, number2 = accept_operands()
+    result = number1 + number2
+    puts "#{number1} + #{number2} = #{result}"
   when 2
-    num1, num2 = accept_operands()
-    res = num1 - num2
-    puts "#{num1} - #{num2} = #{res}"
+    number1, number2 = accept_operands()
+    result = number1 - number2
+    puts "#{number1} - #{number2} = #{result}"
   when 3
-    num1, num2 = accept_operands()
-    res = num1 * num2
-    puts "#{num1} * #{num2} = #{res}"
+    number1, number2 = accept_operands()
+    result = number1 * number2
+    puts "#{number1} * #{number2} = #{result}"
   when 4
-    num1, num2 = accept_operands()
-    res = num1.to_f / num2
-    puts "#{num1} / #{num2} = #{res}"
+    number1, number2 = accept_operands()
+    result = number1.to_f / number2
+    puts "#{number1} / #{number2} = #{result}"
   else
     puts "Invalid choice"
   end
 
-  puts ""   # needed to print next iteration in next line
+  puts # Will print a newline
 end
 ```
 
 ## Possible optimizations
 
-- You can add other mathematical operations as per your need.
+- You can add other mathematical operations.
 - We can accept multiple operands in operations like addition.
-- We can make it _Object Oriented_ by wrapping the program in a class and use method as operations name.
+- We can make it _Object Oriented_ by wrapping the program in a class and use methods as operations name.
