@@ -12,7 +12,7 @@ page_name: bootcamps
   <div class="container">
     <div class="row justify-content-center">
       {% for bootcamp in site.bootcamps %}
-        <div class="card col-md-6 text-center border-0">
+        <div class="card col-md-6 text-center border-0 mb-5">
           <img src="/assets/img/{{ bootcamp.thumbnail }}" class="card-img-top shadow" alt="{{ bootcamp.title }}">
           <div class="card-body mt-2">
             <a href="{{ bootcamp.url }}" class="btn btn-sm px-3 btn-primary">View Details</a>

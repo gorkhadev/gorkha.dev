@@ -8,6 +8,13 @@
     color: $color-primary;
     font-weight: 600;
   }
+  .section-wrapper {
+    h4 {
+      font-weight: 300;
+      color: #444;
+      line-height: 32px;
+    }
+  }
   .partner-banner {
     background-color: $color-primary;
     color: #fff;
