@@ -15,26 +15,33 @@ disable_toc: true
 
 # MVC Architecture
 
-Ruby on Rails is built around the _model-view-controller_(MVC) pattern. It's simply means to separate the data, logic, and display layers of your program.
+Ruby on Rails is built around the _model-view-controller_(MVC) pattern.
+It simply means to separate the data, logic, and display layers of your program.
 
 ## Models
 
-  These are basically classes in Ruby on Rails that talk to the database. These classes act as an interface between you and database. You need not to write SQL queries most of the time.
+These are basically classes in Ruby on Rails that talk to the database.
+These classes act as an interface between you and database.
+You need not to write SQL queries most of the time.
 
-  - These are resources that you use in the application. For example: `User`, `Post`, `Article`, `Idea` etc
-  - They are usually accompanied by database layer. Most of the time you will have tables in the database accompanying your model. Like a `User` model will have `users` table etc.
+- These are resources that you use in the application.
+  For example: `User`, `Post`, `Article`, `Idea` etc.
+- They are usually accompanied by database layer.
+  Most of the time you will have tables in the database accompanying your model. Like a `User` model will have `users` table etc.
 
 ## Views
 
-  It handles the front-end of your application. It displays the output to browser and responding with non-html data. In a standard Rails application, views comprises of HTML, CSS, JavaScript, template engines etc. You will have to work with view
-  files like for displaying list of users, you will have `users.html.erb` where `.erb` is an ERB template which contains HTML as well as Ruby statements.
+It handles the front-end of your application.
+It displays the output to browser and responding with non-html data.
+In a standard Rails application, views comprises of HTML, CSS, JavaScript, template engines etc.
+You will have to work with view files like for displaying list of users, you will have `users.html.erb` where `.erb` is an ERB template which contains HTML as well as Ruby statements.
 
 ## Controllers
 
-  It takes user input (like a URL) and decides what to do (like show a page, post a comment, etc.)
-  They are responsible for choosing the right model and sending data to the views.
-  Also, as your Rails knowledge improves, with constant refactoring, you move business logic into the model (fat model, skinny controller).
-  In most cases, controllers just take inputs, may process something useful, call model methods, and pass values to the view.
+It takes user input (like a URL) and decides what to do (like show a page, post a comment, etc.)
+They are responsible for choosing the right model and sending data to the views.
+Also, as your Rails knowledge improves, with constant refactoring, you move business logic into the model (fat model, skinny controller).
+In most cases, controllers just take inputs, may process something useful, call model methods, and pass values to the view.
 
 ## General Flow of Application
 
