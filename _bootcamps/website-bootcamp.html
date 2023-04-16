@@ -7,17 +7,762 @@ page_name: bootcamp
 thumbnail: bootcamp/website.jpg
 ---
 
-<div class="bootcamps-page">
+<div class="bootcamps-page pt-6">
 
-  <h1 class="section-heading mt-6">Under Consutruction ...</h1>
+  <!-- page header -->
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 overview">
+          <h1 class="section-heading">{{ page.title }}</h1>
 
-  <!-- <section class="bootcamp-section mt-5">
+          <p class="mt-4">
+            {% include util/lazy-img.html src="bootcamp/website.jpg" alt="Website Bootcamp" %}
+          </p>
+        </div>
+      </div>
+
+      <hr class="mt-6">
+    </div>
+  </section>
+
+  <!-- Introduction -->
+  <section class="section-padding">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <a href="/bootcamps/" class="btn btn-primary" role="button">All Bootcamps</a>
+          <h2 class="section-heading">Introduction</h2>
+        </div>
+      </div>
+
+      <div class="row mt-4 justify-content-center">
+        <div class="col-md-10">
+          <div class="section-wrapper">
+            <p>
+              <span class="opening">
+                It is a fully <strong>PRACTICAL</strong> based <strong>Coding Bootcamp</strong> for building Website using HTML, CSS and JavaScript.
+              </span>
+
+              <h4 class="mt-4 fw-semibold">
+                Features of the bootcamp:
+              </h4>
+              <ul>
+                <li>Practical</li>
+                <li>Feedback Driven</li>
+                <li>Project Driven</li>
+                <li>Learn from Industry Expert</li>
+              </ul>
+
+              <h4 class="mt-4 fw-semibold">
+                What you will gain after this bootcamp?
+              </h4>
+              <ul>
+                <li>Practical knowledge of HTML, CSS and JavaScript</li>
+                <li>Learn what are different Web Components</li>
+                <li>Know how to build Website from Start</li>
+                <li>Learn to build Portfolio Website</li>
+                <li>Learn to build School Website</li>
+              </ul>
+
+              <h4 class="mt-4">
+                Websites a student will built during this bootcamp:
+              </h4>
+
+              <table class="table table-striped table-hover mt-3">
+                <thead class="thead-dark">
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Name</th>
+                    <!-- <th scope="col">Preview</th> -->
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>Portfolio Website</td>
+                    <!-- <td>
+                      Coming Soon ...
+                    </td> -->
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Consultancy Website</td>
+                    <!-- <td>
+                      <a href="https://"></a>
+                    </td> -->
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>School Website</td>
+                    <!-- <td>
+                      <a href="#youtubeVideoModal" role="button" class="btn youtube-video-btn"
+                        data-src="https://www.youtube.com/embed/NUy7MAONW_Q?autoplay=1" data-bs-toggle="modal"
+                        data-bs-target="#youtubeVideoModal">
+                        <i class="fab fa-youtube fa-lg"></i>
+                      </a>
+                    </td> -->
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>Travel Website</td>
+                    <!-- <td>
+                      <a href="#youtubeVideoModal" role="button" class="btn youtube-video-btn"
+                        data-src="https://www.youtube.com/embed/we4nxGOX4Zk?autoplay=1" data-bs-toggle="modal"
+                        data-bs-target="#youtubeVideoModal">
+                        <i class="fab fa-youtube fa-lg"></i>
+                      </a>
+                    </td> -->
+                  </tr>
+                </tbody>
+              </table>
+
+              {% include util/highlight.html
+                text="Bootcamp key details including fees and duration can be found at the bottom of this page. Click <a href='#key-details'>here</a>." class="h4"
+              %}
+
+              <!-- {% include util/embed-youtube.html id="yZYH4RXT0X0" %} -->
+            </p>
+          </div>
         </div>
       </div>
     </div>
-  </section> -->
+  </section>
+
+  <!-- Your instructor -->
+  <section class="bg-light-blue section-padding">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+          <h2 class="section-heading">Your Instructor</h2>
+        </div>
+      </div>
+
+      <div class="row mt-4 justify-content-center">
+        <div class="col-md-10">
+          <div class="section-wrapper">
+            <p>
+              The instructor for this bootcamp is <strong>Budh Ram Gurung</strong>.
+              He is also known as <b>Dhanu Sir</b>.
+              He is a <em>Career Growth Coach, IT Coach, Life Coach, and an Entrepreneur.</em>
+
+              <div class="para-caption mb-0">
+                He has been teaching independently from 2019 and helping students in
+                developing skills required for IT industry job.<br>
+                <br>
+                Previously, he has worked as software developer ranging from
+                <span class="color-secondary"><em>startups to MNC</em></span>
+                and has around <span class="color-secondary"><em>~12 Years of IT experience</em></span>.<br>
+                He had profound knowledge on ...
+                <a href="/about/"><span class="color-primary text-decoration-underline">Read More</span></a>
+              </div>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What are you going to learn -->
+  <section class="py-6">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+          <h2 class="section-heading">What are you going to learn</h2>
+        </div>
+      </div>
+
+      <div class="row mt-4 justify-content-center">
+        <div class="col-md-10">
+          <div class="section-wrapper">
+            <h4>
+              After completion of this bootcamp, you should have knowledge on following things:
+            </h4>
+            <ul>
+              <li>Good practical knowledge of <em>HTML, CSS and JavaScript.</em></li>
+              <li>Understanding of how Website is created.</li>
+              <li>Good practical knowledge of CSS Framework like Bootstrap v5.</li>
+              <li>How to deploy website and publish?</li>
+              <li>How to build your portfolio website?</li>
+              <li>Understanding of how to work with Developer Tools</li>
+              <li>Identify and troubleshoot <em>common issues</em> in Website Development.</li>
+            </ul>
+            <h4>
+              Bonus Knowledge
+            </h4>
+            <ul>
+              <li>Experience with <em>Git and GitHub</em></li>
+              <li>Familiar with <em>Project Deployment</em> process</li>
+              <li><em>Interview</em> related questions</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Target job positions -->
+  <section class="bg-light-blue section-padding">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+          <h2 class="section-heading">Target Job Positions</h2>
+        </div>
+      </div>
+
+      <div class="row mt-4 justify-content-center">
+        <div class="col-md-10">
+          <div class="section-wrapper">
+            <h4>
+              After completion of this bootcamp, you should have enough technical knowledge to
+              work in the following positions:
+            </h4>
+
+            <ul>
+              <li>Freelance Website Developer</li>
+              <li>Foundation for Front End Developer</li>
+              <li>Foundation for Full Stack Engineer</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Detailed Curriculum -->
+  <section id="detailed-curriculum" class="py-6">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+          <h2 class="section-heading">Detailed Curriculum</h2>
+        </div>
+      </div>
+
+      <div class="row mt-4 justify-content-center">
+        <div class="col-md-10">
+          <div class="section-wrapper">
+            <h4>
+              This coding bootcamp is structured into 7 phases. Following are the key phases in this bootcamp.
+            </h4>
+            <br>
+            <table class="table table-striped table-hover">
+              <thead class="thead-dark">
+                <tr>
+                  <th scope="col">Phase</th>
+                  <th scope="col">Goal</th>
+                  <th scope="col">Session(s)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Preparation</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>HTML Basics</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>CSS Basics</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>CSS Intermediate</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>JavaScript Basics, DOM and BOM</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>jQuery and Bootstrap v5</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td>Building Full Website</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td>Git, GitHub and Deploying</td>
+                  <td>2</td>
+                </tr>
+              </tbody>
+            </table>
+
+            {% include util/note.html
+                note="1 Session = (1 - 1.5 Hrs), 2 Sessions = 1 Week,  <strong>Total = 16 Sessions = 8 Weeks = 2 Months</strong>." class="w-100 mb-0"
+            %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Phase 1 - Preparation -->
+  <section class="bg-light-blue section-padding">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+          <h2 class="section-heading">Phase 1 - Preparation</h2>
+        </div>
+      </div>
+
+      <div class="row mt-4 justify-content-center">
+        <div class="col-md-10">
+          <div class="section-wrapper">
+            <h4>
+              This phase helps prepare students mentally and set up the development environment as well.
+              <br><br>
+              It includes:
+            </h4>
+
+            <ul>
+              <li>Introduction of Instructor and Students</li>
+              <li>Brief of how the bootcamp will work</li>
+              <li>Introduction to the communication platforms</li>
+              <li>Web, HTTP and REST Introduction - How the web works</li>
+              <li>Introduction the necessary tools required for this bootcamp</li>
+              <li>Git/GitHub workflow and basic commands</li>
+              <li>Software Development workflow in an IT company</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Phase 2 - HTML Basics -->
+  <section class="py-6">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+          <h2 class="section-heading">Phase 2 - HTML Basics</h2>
+        </div>
+      </div>
+
+      <div class="row mt-4 justify-content-center">
+        <div class="col-md-10">
+          <div class="section-wrapper">
+            <h4>
+              This phase helps prepare students with prerequisite concepts of HTML5 needed for the understanding of Website development.
+            </h4>
+
+            <div class="card section-card">
+              <div class="card-body">
+                <ul>
+                  <li>Understanding Basic Layout and Hello World</li>
+                  <li>Understanding Element, Tag and Attribute</li>
+                  <li>Using Meta Tag</li>
+                  <li>Using Headings and Paragraph</li>
+                  <li>Using Div and Span</li>
+                  <li>Performing Text Formatting in HTML</li>
+                  <li>Hyperlink in HTML</li>
+                  <li>Using Image in HTML</li>
+                  <li>Inline and Block elements in HTML</li>
+                  <li>Creating list in HTML</li>
+                  <li>Creating table in HTML</li>
+                  <li>HTML Form and Input Elements</li>
+                  <li>ID and Class in HTML</li>
+                  <li>Semantic Tags</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Phase 3 - CSS Basics -->
+  <section class="bg-light-blue section-padding">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+          <h2 class="section-heading">Phase 3 - CSS Basics</h2>
+        </div>
+      </div>
+
+      <div class="row mt-4 justify-content-center">
+        <div class="col-md-10">
+          <div class="section-wrapper">
+            <h4>
+              In this phase, students will understand the basics of CSS required to style the Website.
+            </h4>
+
+            <div class="card section-card">
+              <div class="card-body">
+                <ul>
+                  <li>CSS introduction, types and comment</li>
+                  <li>Introduction to browser developer tools</li>
+                  <li>Using CSS selector</li>
+                  <li>CSS colors and its types</li>
+                  <li>Fonts in CSS</li>
+                  <li>Enhancing with Google Fonts</li>
+                  <li>CSS Units</li>
+                  <li>CSS Backgrounds</li>
+                  <li>CSS Borders</li>
+                  <li>Margin, Padding and Box Model</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Phase 4 - CSS Intermediate -->
+  <section class="py-6">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+          <h2 class="section-heading">Phase 4 - CSS Intermediate</h2>
+        </div>
+      </div>
+
+      <div class="row mt-4 justify-content-center">
+        <div class="col-md-10">
+          <div class="section-wrapper">
+            <h4>
+              In this phase, students will learn more about CSS and try to understand concepts like float, auto margin, style the navigation bar, CSS positioning etc.
+            </h4>
+
+            <div class="card section-card">
+              <div class="card-body">
+                <ul>
+                  <li>CSS rounding corners</li>
+                  <li>Text formatting in CSS</li>
+                  <li>Max-width and margin auto</li>
+                  <li>Float and Clear</li>
+                  <li>Challenge: Create a basic image gallery</li>
+                  <li>Links, its states and button styling</li>
+                  <li>CSS display: inline, block and inline-block</li>
+                  <li>Styling navigation menu bar</li>
+                  <li>Styling a login form</li>
+                  <li>Challenge: Style a sign-up form</li>
+                  <li>Positioning with CSS</li>
+                  <li>CSS Z-index property</li>
+                  <li>CSS Specificity and !important Rule</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Phase 5 - JavaScript Basics, DOM and BOM -->
+  <section class="bg-light-blue section-padding">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+          <h2 class="section-heading">Phase 5 - JavaScript Basics, DOM and BOM</h2>
+        </div>
+      </div>
+
+      <div class="row mt-4 justify-content-center">
+        <div class="col-md-10">
+          <div class="section-wrapper">
+            <h4>
+              This phase will help students understand the JavaScript basics, document object model (DOM)
+              and browser object model (BOM).
+            </h4>
+
+            <div class="card section-card">
+              <div class="card-body">
+                <ul>
+                  <li>Introduction and first JavaScript(JS) code</li>
+                  <li>JS statements, syntax and comments</li>
+                  <li>Variables: var, let, and const</li>
+                  <li>Operators and Assignemnt</li>
+                  <li>Data Types in JavaScript</li>
+                  <li>Functions in JavaScript</li>
+                  <li>Objects in JavaScript</li>
+                  <li>Events in JavaScript</li>
+                  <li>String and its methods</li>
+                  <li>Array and its methods</li>
+                  <li>Conditional statements in JavaScript</li>
+                  <li>Loops in JavaScript</li>
+                  <li>Switch in JavaScript</li>
+                  <li>Comparision and Logical Operators</li>
+                  <li>typeof operator and type conversion</li>
+                  <li>JavaScript Hoisting concept and strict mode</li>
+                  <li>Concept of 'this' keyword</li>
+                  <li>Arrow function in JavaScript</li>
+                  <li>Introduction to Class and Module</li>
+                  <li>
+                    DOM Concepts
+                    <ul>
+                      <li>Introduction to DOM and document object</li>
+                      <li>Accessing HTML elements using DOM</li>
+                      <li>Updating HTML content with DOM</li>
+                      <li>Updating Styling with DOM</li>
+                      <li>Working with Event and Event listener with DOM</li>
+                      <li>DOM Node and Navigatio</li>
+                    </ul>
+                  </li>
+                  <li>
+                    BOM Concepts
+                    <ul>
+                      <li>Introduction to BOM and window object</li>
+                      <li>Working with different popup</li>
+                      <li>Working with window's screen object</li>
+                      <li>Working with window's location object</li>
+                      <li>Working with window's history object</li>
+                      <li>Working with setTimeout and setInterval timing functions</li>
+                      <li>Introduction to JavaScript cookie</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Phase 6 - jQuery and Bootstrap v5 -->
+  <section class="py-6">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+          <h2 class="section-heading">Phase 6 - jQuery and Bootstrap v5</h2>
+        </div>
+      </div>
+
+      <div class="row mt-4 justify-content-center">
+        <div class="col-md-10">
+          <div class="section-wrapper">
+            <h4>
+              In this module, we will learn about the most popular JavaScript framework called jQuery and its common usage.<br>
+              After that, then, we will learn about the usage of the most popular CSS framework called Bootstrap.
+            </h4>
+
+            <div class="card section-card">
+              <div class="card-body">
+                <ul>
+                  <li>
+                    jQuery Concepts
+
+                    <ul>
+                      <li>jQuery Introduction and getting started</li>
+                      <li>jQuery Syntaxes</li>
+                      <li>Selectors in jQuery</li>
+                      <li>Working with events in jQuery</li>
+                      <li>Important methods in jQuery</li>
+                    </ul>
+                  </li>
+                  <li>
+                    Bootstrap v5 Concepts
+
+                    <ul>
+                      <li>Bootstrap Introduction and getting started</li>
+                      <li>Container, Grid System and Responsiveness concepts</li>
+                      <li>Typography and colors</li>
+                      <li>Working with images</li>
+                      <li>Working with buttons</li>
+                      <li>Working with Cards</li>
+                      <li>Dropdown and Collapse component</li>
+                      <li>Working with Carousel and Modal</li>
+                      <li>Flexbox in Bootstrap</li>
+                      <li>Working with Forms</li>
+                      <li>Working with Basic Templates</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Phase 7 - Projects building -->
+  <section class="bg-light-blue section-padding">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+          <h2 class="section-heading">Phase 7 - Projects building</h2>
+        </div>
+      </div>
+
+      <div class="row mt-4 justify-content-center">
+        <div class="col-md-10">
+          <div class="section-wrapper">
+            <h4>
+              In this phase, students will learn how to build a complete Website project from scratch,
+              understand the project building workflow, comprehend and find path through the issues,
+              understand the complexities of building website etc.
+
+              <br><br>
+
+              Student will build following website in this phase:
+            </h4>
+
+            <div class="card section-card">
+              <div class="card-body">
+                <ul>
+                  <li>Portfolio Website</li>
+                  <li>School or College Website</li>
+                  <li>Restaurant Website</li>
+                  <li>Consultancy Website</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Phase 8 - Git, GitHub and Deployment -->
+  <section class="bg-light-blue section-padding">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+          <h2 class="section-heading">Phase 8 - Git, GitHub and Deployment</h2>
+        </div>
+      </div>
+
+      <div class="row mt-4 justify-content-center">
+        <div class="col-md-10">
+          <div class="section-wrapper">
+            <h4>
+              In this phase, students will learn basics of source control management with Git and GitHub.
+              <br>
+              Here, they will learn how to manage code with Git and publish in GitHub so that
+              it will be easily accessible with others for collaboration.
+              <br>
+              Finally, students will learn how to deploy the website in the platform like Netlify.
+            </h4>
+
+            <div class="card section-card">
+              <div class="card-body">
+                <ul>
+                  <li>Getting started with Git and GitHub</li>
+                  <li>Initializing website project with Git</li>
+                  <li>Git basic commands</li>
+                  <li>Publish the website to GitHub</li>
+                  <li>Getting started with Netlify</li>
+                  <li>Deploy the website in Netlify</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What's next from here -->
+  <section class="py-6">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+          <h2 class="section-heading">What's next from here</h2>
+        </div>
+      </div>
+
+      <div class="row mt-4 justify-content-center">
+        <div class="col-md-10">
+          <div class="section-wrapper">
+            <h4>
+              After completion of this bootcamp, you can try following options based on your
+              interests:
+            </h4>
+
+            <ul>
+              <li>Work as freelancer Website Developer (check with Ask Dhanu Sir)</li>
+              <li>Go for Front End Developer</li>
+              <li>Keep building website and build a portfolio and sell</li>
+            </ul>
+
+            {% include util/note.html
+                note="Remember! Learning is a continuous process. This bootcamp is just the beginning. Good luck!" class="w-100"
+            %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bootcamp fees, duration and other details -->
+  <section id="key-details" class="bg-light-blue section-padding">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+          <h2 class="section-heading">Bootcamp Key Details</h2>
+        </div>
+      </div>
+
+      <div class="row mt-4 justify-content-center">
+        <div class="col-md-10">
+          <table class="table table-striped table-hover">
+            <tbody>
+              <tr>
+                <th scope="row">Format</th>
+                <td>Online Interactive</td>
+              </tr>
+              <tr>
+                <th scope="row">Prerequisites</th>
+                <td>
+                  Computer, Internet and Enthusiasm to learn
+                  <!-- Check <a href="/bootcamp/website/"><em>Website Development bootcamp</em>.</a>
+                  1 to 3 hours of dedication post each session. -->
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Fees</th>
+                <td>Rs 5,000 Only</td>
+              </tr>
+              <tr>
+                <th scope="row">Duration</th>
+                <td>2 Months, 16 Sessions, 8 Weeks, 2 Sessions per week, 1 - 1.5 Hrs per session</td>
+              </tr>
+              <tr>
+                <th scope="row">Batch Size</th>
+                <td>Max 30 Students</td>
+              </tr>
+              <tr>
+                <th scope="row">Workflow</th>
+                <td>Theory &rarr; Practical &rarr; Assignment &rarr; Feedback</td>
+              </tr>
+              <tr>
+                <th scope="row">Other</th>
+                <td>Pair programming to resolve issues</td>
+              </tr>
+              <tr>
+                <th scope="row">Key Features</th>
+                <td>Practical. Feedback Oriented. Result Oriented. Possible freelance jobs after successful completion.</td>
+              </tr>
+              <tr>
+                <th scope="row">Support</th>
+                <td>Bootcamp Support in Private Discord Channel to solve queries and other issues.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bootcamp-section section-padding">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+          <a href="/bootcamp/" class="btn btn-primary px-5 py-3" role="button">Back to All Bootcamps</a>
+        </div>
+      </div>
+    </div>
+  </section>
 </div>
