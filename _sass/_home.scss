@@ -444,6 +444,14 @@
   .section-heading {
     font-size: 2.7rem
   }
+  .home_body .bootcamp-section {
+    .card {
+      margin-bottom: 3rem;
+    }
+    .card:last-child {
+      margin-bottom: 0;
+    }
+  }
   .home_header .banner-section {
     padding-top: 3rem;
 

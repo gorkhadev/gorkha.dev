@@ -1,0 +1,20 @@
+<div class="bootcamp-section section-padding">
+  <div class="section-caption mb-5">
+    <h1 class="section-heading">Get Trained. Get JOB.</h1>
+    <h5 class="section-subheading">
+      Enroll into our JOB ready bootcamp to secure job.
+    </h5>
+  </div>
+  <div class="container">
+    <div class="row justify-content-center">
+      {% for bootcamp in site.bootcamps %}
+        <div class="card col-md-4 text-center border-0">
+          <img src="/assets/img/{{ bootcamp.thumbnail }}" class="card-img-top shadow" alt="{{ bootcamp.title }}">
+          <div class="card-body mt-2">
+            <a href="{{ bootcamp.url }}" class="btn btn-sm px-3 btn-primary">View Details</a>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
