@@ -16,7 +16,7 @@ comments: true
 
 # Loops in Ruby language
 
-Loops are the way to execute sequence of statements many times in Ruby when some of the condition evaluates to true or false.
+Loops are a way to execute sequence of statements many times in Ruby when some of the condition evaluates to true or false.
 
 Ruby supports varieties of looping statements.
 
@@ -43,7 +43,7 @@ end
 In the above example, you can see we have created an infinite loop and we need to press `Ctrl + C` to stop it.
 
 However, we can use the `break` keyword to exit the loop.
-But, if we add a condition than it becomes a _Conditional Loop_.
+But, if we add a conditional statement than it becomes a _Conditional Loop_.
 
 ```ruby
 # Print Hello only 5 fines
