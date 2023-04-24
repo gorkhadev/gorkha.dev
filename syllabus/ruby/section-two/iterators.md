@@ -34,6 +34,7 @@ Ruby provides many different type of iterators.
 ## `each` Iterator
 
 This iterator loops through each element of a collection (potentially Array, Hash, Range, or even your own collection) one by one, executes the code block for each element and returns the base collection.
+This iterator is a requirement for including `Enumerable` module, without it, most methods that `Enumerable` provides will not work.
 
 ### Example
 
