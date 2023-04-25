@@ -72,7 +72,7 @@ Hello, Ruby
 ```
 
 {% include util/note.html
-  note="The parentheses are optional in method call if you are not passing any argument."
+    note="The parentheses are usually not used when using a method without arguments."
 %}
 
 ## Return Values
