@@ -44,7 +44,7 @@ The two common ways to create arrays are:
   puts languages # ['ruby', 'ruby', 'ruby', 'ruby', 'ruby]
   ```
 
-  This approach is quite useful in creating an array with some default values.
+This approach is quite useful in creating an array with some default values.
 
 ## Accessing element in Array
 
@@ -67,12 +67,14 @@ puts high_level # ["Ruby", "Python", "Go"]
 ```
 
 {% include util/note.html
-  note="Ruby doesn't throw any error if the user tries to access an element that doesn’t exist.
-  Instead, it returns <em>nil</em>." type="caution" %}
+  note="Ruby doesn't throw an error if the user tries to access an element that doesn’t exist.
+  Instead, it returns <code>nil</code>."
+  type="caution"
+%}
 
-## Adding element to an Array
+## Adding an element to an Array
 
-If you want to add a new element to Array, then you can achieve that through the following methods.
+If you want to add a new element to Array, you can achieve that through the following methods.
 
 - `push` method:
 
@@ -98,11 +100,18 @@ If you want to add a new element to Array, then you can achieve that through the
   puts languages # ['JavaScript', 'C', 'Ruby', 'Python', 'Go']
   ```
 
+{% include util/note.html
+    note="<code>unshift</code> has an alias called <code>prepend</code> as well.
+    Use the one that makes sense to you."
+    type="note"
+%}
+
 ## Removing an element from an Array
 
-Similar to addition, Ruby provide many methods to remove element from an Array. Following are few common methods:
+Similar to addition, Ruby provide many methods to remove element from an Array.
+Following are a few methods:
 
-- `delete` method: It will delete all the occurrences of the specified element from array.
+- `delete` method: It will delete the occurrences of the specified element from array.
 
   ```ruby
   languages = ['C', 'Ruby', 'Python', 'Go', 'C']
@@ -142,15 +151,15 @@ There are many ways we can iterate over an Array.
 
   ```ruby
   languages = ['C', 'Ruby', 'Python', 'Go']
-  languages.each do |lang|
-    puts "#{lang} is Nice"
+  languages.each do |language|
+    puts "#{language} is nice."
   end
 
   # output
-  C is Nice
-  Ruby is Nice
-  Python is Nice
-  Go is Nice
+  C is nice.
+  Ruby is nice.
+  Python is nice.
+  Go is nice.
   ```
 
   __NOTE__: Method `each_index` will only give index instead of element.
@@ -159,15 +168,15 @@ There are many ways we can iterate over an Array.
 
   ```ruby
   languages = ['C', 'Ruby', 'Python', 'Go']
-  languages.each_with_index do |lang, i|
-    puts "#{i+1}. #{lang} is Nice"
+  languages.each_with_index do |language, i|
+    puts "#{i + 1}. #{language} is nice."
   end
 
   # output
-  1. C is Nice
-  2. Ruby is Nice
-  3. Python is Nice
-  4. Go is Nice
+  1. C is nice.
+  2. Ruby is nice.
+  3. Python is nice.
+  4. Go is nice.
   ```
 
 ## Comparing Arrays
@@ -175,12 +184,12 @@ There are many ways we can iterate over an Array.
 You can compare two arrays for equality using the `==` operator.
 
 ```ruby
-lang1 = ['C', 'Ruby', 'Python', 'Go']
-lang2 = ['C', 'Ruby', 'Python', 'Go']
-puts lang1 == lang2 # true
+language1 = ['C', 'Ruby', 'Python', 'Go']
+language2 = ['C', 'Ruby', 'Python', 'Go']
+puts language1 == language2 # true
 
-lang2.delete('C')
-puts lang1 == lang2 # false
+language2.delete('C')
+puts language1 == language2 # false
 ```
 
 ## Common Array methods
@@ -196,11 +205,21 @@ puts languages.include?('Ruby') # true
 
 ### `sort`
 
-This method helps to sort the Array elements.
+This method sorts the Array elements.
 
 ```ruby
 languages = ['C', 'Ruby', 'Python', 'Go']
 puts languages.sort # ["C", "Go", "Python", "Ruby"]
+```
+
+### `sort!`
+
+This method sorts the Array elements in place.  Notice the `!` to indicate "dangerous".
+
+```ruby
+languages = ['C', 'Ruby', 'Python', 'Go']
+languages.sort!
+puts languages      # ["C", "Go", "Python", "Ruby"]
 ```
 
 ### `concat`
