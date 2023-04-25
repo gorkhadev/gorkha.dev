@@ -13,10 +13,10 @@ next_link: /ruby/section-two/naming-conventions/
 comments: true
 ---
 
-# Method in Ruby language
+# Method in Ruby
 
-A Method allows us to write the piece of code at one place which get executed many times.
-This encourages modularity in the programs since the writing same code at different places tend to create more errors.
+A method allows us to write the piece of code at one place which get executed many times.
+This encourages modularity in the programs since writing the same code at different places tend to create more errors.
 
 __NOTE__: Ruby methods are similar to functions in other languages.
 
@@ -37,9 +37,9 @@ __NOTE:__ The Ruby method name should be written as `snake_case`.
 See [Naming Conventions](../naming-conventions#snake-case-for-symbols-methods-and-variables){:target="_blank"}.
 
 
-## Method with parameters
+## Method with arguments
 
-As like other programming language, we may pass arguments to a method in Ruby.
+As like other programming languages, we may pass arguments to a method in Ruby.
 
 ```ruby
 def hello(name)
@@ -49,36 +49,41 @@ end
 hello("Ruby")   # output: Hello, Ruby
 ```
 
-## Default parameters
+## Default arguments
 
-Ruby method can have default parameter.
-This parameter is used when call the method without passing any argument.
+Ruby method can have default arguments.
+This arguments is used when call the method without passing any argument.
 
 ```ruby
-def hello(name='Foo')
+def hello(name = 'Foo')
   puts "Hello, #{name}"
 end
 
-hello() # or just hello
+hello()        # or just hello which is usually preferred
 hello("Ruby")
+```
 
+Output:
+
+```plain
 # output
 Hello, Foo
 Hello, Ruby
 ```
 
 {% include util/note.html
-            note="The parentheses are optional in method call if you are not passing any argument." %}
+  note="The parentheses are optional in method call if you are not passing any argument."
+%}
 
 ## Return Values
 
-By default, a method returns the last statement that was evaluated in the body of the method.
+By default, a method returns the result of the last statement evaluated in the body of the method.
 However, you can explicitly use the `return` keyword anywhere in the body to return from that point.
 
 ```ruby
 def hello(name)
-  return "Returned"
-  puts "Hello, #{name}"   # this expression is never evaluated
+  return "Returned" # our early return
+  puts "Hello, #{name}" # this expression is never evaluated
 end
 
 def add(number1, number2)
@@ -117,8 +122,11 @@ def add(number1, number2)
 end
 
 add(2, 3).times { |i| puts "#{i} Hello" }
+```
 
-# output
+Output:
+
+```plain
 0 Hello
 1 Hello
 2 Hello
@@ -128,19 +136,19 @@ add(2, 3).times { |i| puts "#{i} Hello" }
 
 ## Method calls as arguments
 
-In Ruby, we can use method call as an argument to other methods.
+In Ruby, we can use a method call as an argument to other methods.
 
 ```ruby
-def add(num1, num2)
-  num1 + num2
+def add(number1, number2)
+  number1 + number2
 end
 
-def subtract(num1, num2)
-  num1 - num2
+def subtract(number1, number2)
+  number1 - number2
 end
 
-def multiply(num1, num2)
-  num1 * num2
+def multiply(number1, number2)
+  number1 * number2
 end
 
 puts multiply(add(3, 7), subtract(10, 5)) # output: 50
@@ -152,8 +160,8 @@ A method creates its own scope.
 A variable defined in the method are only accessible within that method and cannot be invoked from outside of method definition.
 
 ```ruby
-# we assume that the 'update_name' will update
-# the name variable from 'Foo' to 'Ruby'
+# we might assume that the 'update_name' will
+# update the name variable from 'Foo' to 'Ruby'
 name = "Foo"
 
 def update_name
@@ -163,7 +171,7 @@ end
 puts name # output: Foo
 ```
 
-However, we are able to access some of the data if passed as parameter.
+However, we are able to access some of the data if passed as argument.
 
 ```ruby
 languages = ['Ruby', 'C', 'Python', 'Go']
