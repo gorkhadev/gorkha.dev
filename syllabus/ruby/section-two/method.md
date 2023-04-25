@@ -182,9 +182,16 @@ end
 
 update_language(languages)
 puts languages
+```
 
-# output
-['Ruby', 'C', 'Python', 'Go']
+Output:
+
+```plain
+Ruby
+C
+Python
+Go
+JavaScript
 ```
 
 __NOTE__: We can update the array here since it is passed as reference to method.
