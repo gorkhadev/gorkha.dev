@@ -59,7 +59,7 @@ def hello(name = 'Foo')
   puts "Hello, #{name}"
 end
 
-hello()        # or just hello which is usually preferred
+hello()        # or just `hello` which is usually preferred with no argument
 hello("Ruby")
 ```
 
