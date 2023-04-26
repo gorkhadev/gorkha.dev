@@ -21,12 +21,13 @@ Important points to remember:
 
 - A Module can not be instantiated, i.e., it is not possible to create objects from a module.
 - We cannot inherit modules nor can we create a subclass of module.
-- Modules are also used as namespaces and as mixins.
+- Modules can be used as namespaces and as mixins.
 - A module name must start with capital letter.
 - Modules can be included into classes, which makes its methods available to the instances of those classes.
 
 {% include util/note.html
-    note="Module is also used to make code modular where common methods are kept in module and then these methods can be used by any class who require those methods. It enables Ruby to take advantage of the <strong>DRY (Don't Repeat Yourself)</strong> principle."
+    note="Module is also used to make code modular where common methods are kept in module and then these methods can be used by any class who require those methods. 
+    It enables Ruby to take advantage of the <strong>DRY (Don't Repeat Yourself)</strong> principle."
 %}
 
 ## Syntax
@@ -34,8 +35,8 @@ Important points to remember:
 ```ruby
 module ModuleName
   #  constants
-  CONST1 = value1
-  CONST2 = value2
+  CONSTANT1 = 'value1'
+  CONSTANT2 = 'value2'
   # methods (will act as instance method when included by class)
   def method_1
     # ...
@@ -60,7 +61,7 @@ module Shape
   PI = 3.14
 
   def self.circle_area(radius)
-    PI * radius * radius
+    PI * radius**2
   end
 
   def self.square_area(side)
@@ -75,7 +76,8 @@ Shape.square_area(5)  # output: 25
 ## Including Module in Class
 
 The common usage of module is to include it inside a class allowing to share common functionalities between classes.
-This concept is also known as __Mixin__. It eliminates the need for multiple inheritance which we will see in later.
+This concept is also known as __mixin__.
+It eliminates the need for multiple inheritance which we will see in later.
 
 ```ruby
 module HelperMethods
@@ -106,14 +108,14 @@ Showing display of MyClass2
 ```
 
 {% include util/note.html
-    note="If module is defined in another file, then it is required to include that file before embedding it in class using 'module' keyword."
+    note="If the module is defined in another file, then it is required to include that file before embedding it in class using the `require` method."
 %}
 
 ## Module as Namespace
 
 A _namespace_ in programming is a way of grouping logically related entities together.
 In Ruby, using a module is a convenient way to achieve it.
-It also allows us to avoid _conflicting names of classes or modules_ that exist together.
+It allows us to avoid colliding with existing classes and modules, and other constants, that exist together.
 
 Example:
 
