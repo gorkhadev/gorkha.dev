@@ -226,4 +226,4 @@ We will see few common methods below:
   File.extname("foo.txt") # .txt
   ```
 
-You can file all the file related methods in [File official documentation](https://ruby-doc.org/core-2.7.1/File.html){:target="_blank"}.
+You can file all the file related methods in [File official documentation](https://ruby-doc.org/core-3.2.2/File.html){:target="_blank"}.

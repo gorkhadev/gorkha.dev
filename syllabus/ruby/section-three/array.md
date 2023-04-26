@@ -232,6 +232,6 @@ updated = languages.concat(['Rust', 'Dart'])
 puts updated # ["C", "Ruby", "Python", "Go", "Rust", "Dart"]
 ```
 
-__NOTE__: You can see all Array methods in their official documentation [here](https://ruby-doc.org/core-2.7.0/Array.html){:target="_blank"}.
+__NOTE__: You can see all Array methods in their official documentation [here](https://ruby-doc.org/core-3.2.2/Array.html){:target="_blank"}.
 Go through it and familiarize yourself.
 There are many handy methods available.

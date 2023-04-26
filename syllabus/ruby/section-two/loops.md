@@ -30,7 +30,7 @@ Ruby supports varieties of looping statements.
 
 ## loop method
 
-By using [`Kernel#loop`](https://ruby-doc.org/core-2.7.1/Kernel.html#method-i-loop){:target="_blank"}, we can create the looping over Ruby statements.
+By using [`Kernel#loop`](https://ruby-doc.org/core-3.2.2/Kernel.html#method-i-loop){:target="_blank"}, we can create the looping over Ruby statements.
 
 ```ruby
 loop do
