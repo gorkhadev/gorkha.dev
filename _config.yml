@@ -17,7 +17,7 @@ channel_link: https://t.me/+M0H_QnsZrSs5ZDRl
 future: true # Show blog post of future date
 permalink: /blogs/:year/:month/:day/:title/
 
-google_analytics: G-MRQN1VZ14Y
+google_analytics: G-PSKFQHJ0VY
 # Disqus Comments
 disqus:
   shortname: dhanusir
