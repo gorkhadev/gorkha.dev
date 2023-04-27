@@ -14,10 +14,10 @@ next_link: /ruby/section-two/
 
 # Interactive Ruby
 
-Interactive Ruby Shell (`IRB` or `irb`) is a REPL for programming in the object-oriented scripting language Ruby.
+Interactive Ruby Shell (`IRB` or `irb`) is a REPL (Read Eval Print Loop) for programming in the object-oriented scripting language Ruby.
 As mentioned, we presume the abbreviation `irb` comes from the fact that the filename extension for Ruby is `.rb`.
 
-The program is launched from a command line and _allows the execution of Ruby statements giving an immediate response, letting us experimenting in real-time_.
+The program is launched from a command line and _allows the execution of Ruby statements giving an immediate response, letting us experiment interactively_.
 It features command history, line editing capabilities, and job control, and is able to communicate directly as a shell script over the Internet and interact with a live server.
 
 **NOTE:** `irb` was developed by Keiju Ishitsuka.

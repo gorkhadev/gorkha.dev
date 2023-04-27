@@ -31,9 +31,10 @@ Ruby provides many different type of iterators.
 - `each_line` Iterator
 - And many more…
 
-## each Iterator
+## `each` Iterator
 
-This iterator loops through each element of a collection (potentially Array, Hash or Range) one by one, executes the code block for each element and returns the base collection.
+This iterator loops through each element of a collection (potentially Array, Hash, Range, or even your own collection) one by one, executes the code block for each element and returns the base collection.
+This iterator is a requirement for including `Enumerable` module, without it, most methods that `Enumerable` provides will not work.
 
 ### Example
 
@@ -44,8 +45,10 @@ returned_value = array.each do |number|
 end
 
 puts returned_value
+```
 
-# output
+Output:
+```plain
 1
 2
 3
@@ -70,8 +73,11 @@ returned_value = array.map do |number|
 end
 
 puts returned_value
+```
 
-# output
+Output:
+
+```plain
 1
 2
 3
@@ -96,8 +102,11 @@ array.map! do |number|
 end
 
 puts array
+```
 
-# output
+Output:
+
+```plain
 1
 2
 3
@@ -119,8 +128,11 @@ By using `times` iterator we can execute a code block specified number of times.
 5.times do |num|
   puts num
 end
+```
 
-# output
+Output:
+
+```plain
 0
 1
 2
@@ -138,8 +150,11 @@ __NOTE__: The destination number should be greater than source number.
 1.upto(5) do |num|
   puts num
 end
+```
 
-# output
+Output:
+
+```plain
 1
 2
 3
@@ -157,8 +172,11 @@ __NOTE__: The destination number should be lesser than source number.
 10.downto(5) do |num|
   puts num
 end
+```
 
-# output
+Output:
+
+```plain
 10
 9
 8
@@ -177,8 +195,11 @@ __NOTE__: The `step` iterator only works for `Range` datatype not on `Array`.
 (1..10).step(2) do |num|
   puts num
 end
+```
 
-# output
+Output:
+
+```plain
 1
 3
 5
@@ -196,8 +217,11 @@ The loop finishes when the value to be passed to the block is greater than limit
 1.step(to: 10, by: 2) do |num|
   puts num
 end
+```
 
-# output
+Output:
+
+```plain
 1
 3
 5
@@ -208,7 +232,7 @@ end
 __NOTE:__ `to:` and `by:` are optional here.
 We can write as `1.step(10, 2) do ... end`
 
-Check [`Numeric#step`](https://ruby-doc.org/core-2.7.1/Numeric.html#method-i-step){:target="_blank"} for more detail.
+Check [`Numeric#step`](https://ruby-doc.org/3.2.2/Numeric.html#method-i-step){:target="_blank"} for more detail.
 
 ## each_line Iterator
 
@@ -223,7 +247,7 @@ end
 
 Output:
 
-```
+```plain
 First line
 Second line
 Third line

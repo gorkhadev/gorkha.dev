@@ -122,7 +122,7 @@ some_method1
 
 {% include util/quote.html
     quote="Using a number against a variable name in an argument list can subdue the importance of the order.
-    If it is important that one is first and onother is really the second one, then accentuate that by using 'name_1, name_2' becuase it is important that the first name is first."
+    If it is important that one is first and onother is really the second one, then accentuate that by using 'name_1, name_2' because it is important that the first name is first."
     quote_by="Victor Goff"
 %}
 

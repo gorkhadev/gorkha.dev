@@ -340,21 +340,21 @@ However, when you create two Symbols, it is the same object. See below results.
 
 ### Best practice
 
-Use symbol to identify something since it refer to only one object.
+Use symbol to identify something since it refers to only one object.
 This is why keys are often symbols in a `Hash`.
 
 ## Range
 
-Ruby ranges describes a set of values with an indicated beginning and end. 
-alues of a range can be numbers, characters, strings or objects.
+Ruby ranges describes a set of values with an indicated beginning and end.
+Values of a range can be numbers, characters, strings or objects.
 It provides the flexibility and can reduce the size of code.
 
 A common use is to define a range of values for array.
 
 There are two basic forms:
 
-- Using `start..end`(two dots): Include the end's value as part of object
-- Using `start...end`(three dots): Exclude the end's value as part of object
+- Using `start..end`(two dots): Include the end value as part of object
+- Using `start...end`(three dots): Exclude the end value as part of object
 
 ```ruby
 (1..10).to_a    # evaluation: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
@@ -364,9 +364,9 @@ There are two basic forms:
 
 ## Nil
 
-`nil` is a Ruby object used to represent an "empty" or "default" value.
+`nil` is a Ruby object used to represent "nothing".
 It’s the only other object that will evaluate as "false" in a conditional statement by itself, the other being `false`.
-We call this "falsey", since it is not literally `false`, yet it evaluates as such. value, meaning that it behaves like `false`, and it ecan be used as a conditional statement for this purpose.
+We call this "falsey", since it is not literally `false`, yet it evaluates as such a value, meaning that it behaves like `false`, and it ecan be used as a conditional statement for this purpose.
 `nil` is the single object of `NilClass`.
 
-__NOTE__: There is ONLY one `nil` object, with an `object_id` of 8 in 64-bit machine(4 in 32-bit). 
+__NOTE__: There is ONLY one `nil` object, with an `object_id` of 8 on a 64-bit machine, an `object_id` of 4 on a 32-bit machine or operating system..

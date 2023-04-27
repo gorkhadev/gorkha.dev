@@ -13,7 +13,7 @@ next_link: /ruby/section-two/conditionals/
 comments: true
 ---
 
-# Operators in Ruby language
+# Operators in Ruby
 
 An operator is a programming entity that represents an operation to be performed with one or more operand.
 Operators are the foundation of any programming language.
@@ -48,8 +48,8 @@ These operators take numerical values as their operands and return a single nume
 | - | Subtracts right hand operand from left hand operand | `10 - 5` is 5 |
 | * | Perform multiplication between two operands | `10 * 5` is 50 |
 | / | Divides left hand operand by right hand operand | `10 / 5` is 2 |
-| % | Divides left hand operand by right hand operand and returns remainder | `10 % 5` is 0 |
-| ** | Performs exponential (power) calculation on operands | `10**5` is 100000 |
+| % | Divides left hand operand by right hand operand and return the modulus | `10 % 5` is 0 |
+| ** | Performs exponential (power) calculation on operands | `10**5` is `100_000` |
 
 ## Assignment Operators
 
@@ -145,15 +145,15 @@ Ruby has only one ternary operator.
 
 | Operator  | Description  | Example |
 |:-:|:-| :- |
-| ?: | Conditional Expression | `5 < 10 ? puts("5 is less than 10") : puts("5 is greater than 10")` |
+| ?: | Conditional Expression | `5 < 10 ? "less than" : "equal or greater than"` |
 
 __BEST PRACTICE:__ Use ternary operator for the following type of `if`…`else` scenario.
 
 ```ruby
 answer = if 5 < 10
-           "5 is less than 10"
+           "less than"
          else
-           "5 is greater than 10"
+           "equal or greater than"
          end
 ```
 
@@ -179,31 +179,30 @@ Bitwise operator works on bits and performs bit by bit operation.
 | << | Bitwise Left Shift Operator moves the input bits left by a specified number of places. | `0b1010 << 4` is `0b10100000` |
 | >> | Bitwise Right Shift Operator moves input bits right by a certain number of places | `0b1010 >> 4` is `0b0000` |
 
-## Double Colon (::) Operator
+## Scope (::) Operator
 
 The `::` operator is used to access the constants, instance methods and class methods defined within a class or module from anywhere outside the class or module.
 
 {% include util/note.html
-    note="In Ruby, classes and methods may be considered constants too."
+    note="In Ruby, classes and methods may be considered constants, too."
     type="important"
 %}
 
 ```ruby
-NAME = "foo"        # constant defined (assigned) on main Object class
+NAME = "foo"      # constant defined (assigned) on main Object class
 module Foo
    NAME = "bar"
-   ::NAME = "zoo"    # reassign global name to zoo
-   NAME = "baz"      # reassign local name to baz
+   ::NAME = "zoo" # reassign global name to zoo
+   NAME = "baz"   # reassign local name to baz
 end
 
 puts NAME         # output: zoo (this is the global constant)
 puts Foo::NAME    # output: baz (this is the local "Foo" constant)
 ```
 
-# Operators Precedence
+# Operator Precedence
 
 The following table shows the precedence level from highest to lowest.
-It also shows that which operator are method as well.
 
 | Operator  | Description  |
 | :-: | :- |

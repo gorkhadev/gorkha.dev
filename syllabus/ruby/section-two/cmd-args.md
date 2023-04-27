@@ -16,15 +16,15 @@ comments: true
 
 # Command Line Arguments in Ruby language
 
-As the name says itself `Command line arguments`, you can assume pretty correctly that these might be the arguments you pass while running your Ruby programs as how we pass arguments to a method.
+As the name itself says, `Command line arguments`, you can assume pretty correctly that these might be the arguments you pass while running your Ruby programs, similar to how we pass arguments to a method.
 
 ```ruby
 $ ruby languages.rb Ruby C Python JavaScript
 ```
 
 Where
-- `ruby languages.rb` is the way to run Ruby program
-- Ruby, C, Python and JavaScript are four different arguments passed to it
+- `ruby languages.rb` is the way to run the Ruby program
+- `Ruby C Python JavaScript` are four different arguments passed to it
 
 {% include util/note.html
     note="This concept forms the basis in writing Command Line Interface(CLI) applications."
@@ -36,16 +36,17 @@ Where
 It contains the full list of arguments in the order as passed as arguments.
 
 {% include util/note.html
-    note="All the arguments are in the string form.
-    If you are passing numeric value then it need to be converted."
+    note="All the arguments are as a string.
+    If you are passing a numeric value then it need to be converted."
 %}
 
 ## Key points to remember
 
-- `ARGV` is an array which contains all the argument passed while running Ruby program.
-- You can use `ARGV.length` method to find the total arguments passed.
-- You can use `ARGV.each` method to iterate over the list of arguments and then perform operation on each argument.
-- You can use `__FILE__` pseudo variable to access the file name from Ruby program.
+- `ARGV` is an array which contains all the argument passed while running a Ruby program.
+- You can use the `ARGV.length` method to find the number of arguments passed.
+- You can use the `ARGV.each` method to iterate over the list of arguments and then perform operations on each argument.
+  - Indeed, any of the methods that you can use for an instance of `Array` you can use for `ARGV`.
+- You can use the `__FILE__` pseudo variable to access the file name from Ruby program.
   See [Ruby Pseudo Variables](../variables-constants#ruby-pseudo-variables){:target="_blank"}.
 
 ### Example
@@ -62,8 +63,7 @@ ARGV.each do |arg|
 end
 ```
 
-
-And, run `languages.rb` as
+And, run `languages.rb` as:
 
 ```shell
 $ ruby cmd.rb Ruby C Python JavaScript
@@ -72,7 +72,6 @@ $ ruby cmd.rb Ruby C Python JavaScript
 The output is:
 
 ```
-# output:
 File name is: languages.rb
 Total arguments length: 4
 Arguments are:
@@ -84,36 +83,32 @@ Arguments are:
 
 ## Exercises
 
-- Write a command line program to check whether given number is even or odd.
+- Write a command line program to check whether a given number is even or odd.
 
-Create file named `cmd_even_odd.rb`.
+Create a file named `cmd_even_odd.rb`.
 
 ```ruby
 number = ARGV[0]       # store into meaningful variable
 number = number.to_i      # convert the numeric string into integer
-puts "Checking whether number #{number} is even or odd"
+puts "Checking whether number #{number} is even or odd."
 
 answer = if number.even?
-           "#{number} is even."
+           "even."
          else
-           "#{number} is odd."
+           "odd."
          end
 
-puts answer
+puts "number is #{answer}."
 ```
 
 Run the program as:
 
 ```ruby
 $ ruby cmd_even_odd.rb 10
-
-# output:
-Checking whether number 10 is even or odd
+Checking whether number 10 is even or odd.
 10 is even.
-
 $ ruby cmd_even_odd.rb 5
-# output:
-Checking whether number 5 is even or odd
+Checking whether number 5 is even or odd.
 5 is odd.
 ```
 
@@ -125,8 +120,8 @@ Create file named `info.rb`.
 ```ruby
 name, phone, age = ARGV[0], ARGV[1], ARGV[2]
 age = age.to_i
-puts "Name is #{name}"
-puts "Phone is #{phone}"
+puts "Name is #{name}."
+puts "Phone is #{phone}."
 
 answer = 
   if age > 16
@@ -144,7 +139,7 @@ Run the program as:
 $ ruby info.rb Foo 1213131 17
 
 # output:
-Name is Foo
-Phone is 1213131
+Name is Foo.
+Phone is 1213131.
 You are an adult now.
 ```

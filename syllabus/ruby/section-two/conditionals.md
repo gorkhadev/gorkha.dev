@@ -13,7 +13,7 @@ next_link: /ruby/section-two/loops/
 comments: true
 ---
 
-# Flow Control statements in Ruby language
+# Flow Control statements in Ruby
 
 Flow control uses a conditional statement to perform decision making operations based on that conditional statement.
 Decision making process in programming is similar to decision making in real life.
@@ -27,7 +27,7 @@ There are various types of flow control statements in Ruby.
 - `?:` ternary operator
 - `unless` statement
 - `case` statement
-- 'and' and 'or'
+- `and` and `or`
 
 ## Ruby if, elsif, else statement
 
@@ -71,8 +71,8 @@ puts answer
 
 ### if modifier
 
-Executes code if condition is true.
-This can be used when `else` part is unnecessary.
+Executes code if the condition evaluates as true.
+This can be used when the `else` part is unnecessary.
 This is also called a "guard clause", or an "if statement as a guard clause".
 
 ```ruby
@@ -82,20 +82,20 @@ puts "Number is even" if number.even?
 
 ## Ruby Ternary Operator ( `?:` )
 
-The ternary operator results to only one value based on some condition.
+The ternary operator results to only one branch being evaluated based on a conditional statements evaluation.
 It is used in place of the `if-else` statement.
 
 ### Syntax
 
 ```ruby
 # Pseudo-code
-condition ? return this value if true : return this value if false
+condition ? evaluate this statement if condition is true : evaluate this statement if condition false
 ```
 
 ### Example
 
 ```ruby
-5 < 10 ? puts("5 is less than 10") : puts("5 is greater than 10")
+5 < 10 ? puts("5 is less than 10") : puts("5 is equal to or greater than 10")
 ```
 
 The output would be:
@@ -106,8 +106,8 @@ The output would be:
 
 ## unless statement
 
-It is similar to `if-else` statement however it executes the code block when condition is false.
-If the condition is true, code block in the `else` clause is executed.
+It is similar to `if-else` statement however it executes the code block when the condition evaluates as false.
+If the condition evaluates as true, the code block in the `else` clause is executed.
 
 ### Syntax
 
@@ -139,7 +139,7 @@ end
 The output would be:
 
 ```
-count is less than 5
+I need to eat.
 ```
 
 ### unless modifier

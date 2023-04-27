@@ -13,19 +13,19 @@ next_link: /ruby/section-two/operators/
 comments: true
 ---
 
-# Variable in Ruby language
+# Variables in Ruby
 
-A Variable is a label that gives a name to a memory location, which hold any data to be used by the program.
-The data can be of any data type. Examples include integer, boolean, string, array, hash, and others.
+A variable is a label that gives a name to a memory location, which holds any data to be used by the program.
+The data can be of any data type. Examples include integer, true, false, string, array, hash, and others.
 
-Suppose, you want to use some name, then in Ruby(or in any language), you have to use variable to do that.
+Suppose, you want to use some name, then in Ruby (as in many languages), you would use a variable to do that.
 
 ```ruby
 name = "foo"
 ```
 
-In above code, variable with name `name` is created to identify the value of some name `foo`.
-During the program, variable `name` will refer to `foo` data.
+In the above code, a variable with name `name` is created to reference the value of the string `foo`.
+During the program, the variable `name` will refer to `"foo"` string.
 
 ```ruby
 # print name of some person
@@ -34,7 +34,7 @@ puts "Name of the person is #{name}"
 # output: Name of the person is foo
 ```
 
-You can see in above code how `name` variable is used.
+You can see in the above code how the `name` variable is used.
 
 {% include util/note.html
     note="The value stored in the variable can be changed anywhere in the program."
@@ -46,8 +46,8 @@ You can see in above code how `name` variable is used.
 ## Local Variable
 
 A local variable name starts with a lowercase letter or underscore(`_`).
-It is only accessible or has its scope within the block where it is initialized.
-Once the code block completes, the variable has no scope i.e after that it is not accessible.
+It is only accessible, or has its scope, within the block where it is assigned.
+Once the code block completes, the variable has no scope, i.e., after that it is not accessible.
 
 When using a bareword (such as a variable name) that does not exist as a variable, then, a method is looked up, and, if it exists, is called.
 
@@ -63,9 +63,9 @@ puts name             # calling variable name here will give an error
 
 ## Instance Variable
 
-An instance variable begins with `@` sign.
+An instance variable begins with an `@` sign.
 It belongs to one instance of the class and can be accessed from any method of that instance.
-Uninitialized instance variables have the value `nil`.
+An unassigned instance variables references the value `nil`.
 
 ```ruby
 class RubyStudent
@@ -75,7 +75,7 @@ class RubyStudent
     @student_addr = addr
   end
 
-  def display_details()
+  def display_details
     puts "Student ID: #{@student_id}"
     puts "Student Name: #{@student_name}"
     puts "Student Address: #{@student_addr}"
@@ -83,13 +83,16 @@ class RubyStudent
 end
 
 # Create Students
-stud1 = RubyStudent.new(1001, "Foo", "Some Address One")
-stud2 = RubyStudent.new(1002, "Bar", "Some Address Two")
+student1 = RubyStudent.new(1001, "Foo", "Some Address One")
+student2 = RubyStudent.new(1002, "Bar", "Some Address Two")
 
-stud1.display_details()
-stud2.display_details()
+student1.display_details
+student2.display_details
+```
 
-# Output
+The output from this program should look like:
+
+```plain
 Student ID: 1001
 Student Name: Foo
 Student Address: Some Address One
@@ -101,7 +104,7 @@ Student Address: Some Address Two
 ## Class variable
 
 A class variable name starts with `@@` sign.
-_They need to be initialized before use._
+_They need to be assigned before use._
 A class variable belongs to the class and can be accessible from anywhere inside the class.
 If the value will be changed at one instance, it will be changed at every instance.
 
@@ -141,8 +144,9 @@ Total number of students: 3
 
 ## Global Variable
 
-A global variable name starts with a `$` sign. Its scope is global, which means it can be accessed from any where in a program.
-An uninitialized global variable will have a `nil` value.
+A global variable name starts with a `$` sign.
+Its scope is global, which means it can be accessed from any where in a program.
+An unassigned global variable will have a `nil` value.
 
 {% include util/note.html
     note="It is advised not to use global variable as they make programs complex."
@@ -154,13 +158,13 @@ $global_guru = "Guru"
 
 class RubyGuru
   def print_global
-    puts "Global guru in RubyGuru class is #{$global_guru}"
+    puts "Global guru in the RubyGuru class is #{$global_guru}"
   end
 end
 
 class RubyStudent
   def print_global
-    puts "Global guru in RubyStudent class is #{$global_guru}"
+    puts "Global guru in the RubyStudent class is #{$global_guru}"
   end
 end
 
@@ -168,13 +172,16 @@ teacher = RubyGuru.new
 teacher.print_global
 student = RubyStudent.new
 student.print_global
-
-# Output
-Global guru in RubyGuru class is Guru
-Global guru in RubyStudent class is Guru
 ```
 
-# Constant in Ruby
+If we run the above program, it should look like this:
+
+```plain
+Global guru in the RubyGuru class is Guru
+Global guru in the RubyStudent class is Guru
+```
+
+# Constants in Ruby
 
 A constant has a name starting with an uppercase character.
 It should be assigned a value at most once.
@@ -198,7 +205,7 @@ puts A_CONSTANT
 # output 20
 ```
 
-So, in above case, the value of constant `A_CONST` changes after second assignment with only warning.
+So, in the above case, the value of constant `A_CONST` changes after second assignment with only warning.
 
 ## Key points
 
@@ -207,6 +214,7 @@ So, in above case, the value of constant `A_CONST` changes after second assignme
 - Constants defined outside any class or module may be accessed as it is or by using the scope operator with no prefix.
 - Constants may not be defined in methods.
 - Constants may be added to existing classes and modules from the outside by using the class or module name and the scope operator before the constant name.
+- Constants may be public or private
 
 The following program shows all aspect as mentioned in the __Key points__ section.
 
@@ -214,21 +222,27 @@ The following program shows all aspect as mentioned in the __Key points__ sectio
 OUTER_CONSTANT = 99
 
 class Constant
+
+  PRIVATE_CONSTANT = "I am a private constant"
+  private_constant :PRIVATE_CONSTANT
+
   def get_constant
     CONSTANT
   end
   CONSTANT = OUTER_CONSTANT + 1
+
 end
 
 puts Constant.new.get_constant      # 100
 puts Constant::CONSTANT             # 100
 puts ::OUTER_CONSTANT               # 99
 puts Constant::NEW_CONSTANT = 123   # 123
+puts Constant::PRIVATE_CONSTANT     # Raises NameError exception
 ```
 
 # Ruby Pseudo Variables
 
-These are special type of variables but behave like _read only_ constants as we cannot assign any value to these variables.
+These are special types of variables but behave like _read only_ constants as we cannot assign any value to these variables.
 
 Ruby has following Pseudo variables:
 
