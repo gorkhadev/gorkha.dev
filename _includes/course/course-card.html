@@ -4,32 +4,34 @@
     <div class="card-body d-flex flex-column justify-content-between shadow-sm">
       <h5 class="card-title">{{ include.course.title }}</h5>
 
-      <div class="course-card-info d-flex justify-content-between">
-        <div class="course-duration">
-          <i class="fa-regular fa-clock text-danger me-1"></i><span>{{ include.course.duration }}</span>
+      {% if include.course == "workshop" %}
+        <div class="course-card-info d-flex justify-content-between">
+          <div class="course-duration">
+            <i class="fa-regular fa-clock text-danger me-1"></i><span>{{ include.course.duration }}</span>
+          </div>
+          <div class="course-modules">
+            {% if include.course.modules %}
+              <p class="inline-block text-danger mb-0">{{ include.course.modules }} <span class="text-secondary">{% if include.type == "project" %}Phases{% else %}Modules{% endif %}</span></p>
+            {% endif %}
+          </div>
         </div>
-        <div class="course-modules">
-          {% if include.course.modules %}
-            <p class="inline-block text-danger mb-0">{{ include.course.modules }} <span class="text-secondary">{% if include.type == "project" %}Phases{% else %}Modules{% endif %}</span></p>
-          {% endif %}
+        <div class="course-meta-info d-flex justify-content-between">
+          <div class="course-price">
+            <i class="fa-solid fa-hand-holding-dollar text-danger me-1"></i>
+            <span class="text-secondary">{{ include.course.cost }}</span>
+          </div>
+          <div class="course-type">
+            <span class="text-secondary">{% if include.course.type == "video" %}<i class="fa-solid fa-video text-danger"></i>{% else %}<i class="fa-solid fa-flask-vial text-danger"></i>{% endif %} Type</span>
+          </div>
         </div>
-      </div>
-      <div class="course-meta-info d-flex justify-content-between">
-        <div class="course-price">
-          <i class="fa-solid fa-hand-holding-dollar text-danger me-1"></i>
-          <span class="text-secondary">{{ include.course.cost }}</span>
-        </div>
-        <div class="course-type">
-          <span class="text-secondary">{% if include.course.type == "video" %}<i class="fa-solid fa-video text-danger"></i>{% else %}<i class="fa-solid fa-flask-vial text-danger"></i>{% endif %} Type</span>
-        </div>
-      </div>
-      {% if include.course.coupon %}
-        <div class="coupon-code">
-          <p class="mb-0">
-            <span class="text-secondary">Use COUPON: </span>
-            <span class="text-danger">{{ include.course.coupon }}</span>
-          </p>
-        </div>
+        {% if include.course.coupon %}
+          <div class="coupon-code">
+            <p class="mb-0">
+              <span class="text-secondary">Use COUPON: </span>
+              <span class="text-danger">{{ include.course.coupon }}</span>
+            </p>
+          </div>
+        {% endif %}
       {% endif %}
     </div>
   </a>

@@ -13,6 +13,8 @@ disable_sidebar: true
 disable_toc: true
 ---
 
+{% include util/lazy-img.html src="workshop/ideapasal/thumbnail.jpg" alt="Ruby and Rails Hands-on Workshop" %}
+
 In this hands-on workshow, you will get the practical learning experience of Ruby language and Ruby on Rails framework.
 
 ## Why learn Ruby?
@@ -50,15 +52,18 @@ Ruby is a general-purpose programming language and it has been used for many dif
 
 ## Join Ruby and Rails Community in Nepal
 
-{% include image.html
-  path="ruby-rails-nepal.jpg"
-  title="Ruby and Rails Community Nepal"
-  class="shadow"
-%}
+{% include util/lazy-img.html src="ruby-rails-nepal.jpg" alt="Ruby and Rails Community Nepal" %}
 
 If you want to join Ruby/Rails community in Nepal, then check [Ruby Nepal Community](https://rubynepal.org/){:target="_blank"}.
 
-## Phases
+## Like and Join Community
+
+If you want to get updates for any workshop, tutorial, learning materials, training or others, then:
+
+- Like the facebook page: [https://facebook.com/dhanusir](https://facebook.com/dhanusir)
+- [Click Join the Community](https://discord.gg/mGsNsdm6Sp)
+
+## Workshop Phases
 
 <div class="section-index">
   <hr class="panel-line">

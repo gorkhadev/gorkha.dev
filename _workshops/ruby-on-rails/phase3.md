@@ -5,6 +5,7 @@ tutorial_name: ruby-and-rails
 date: 11th Oct, 2020 02:00:00
 title: Getting started with first Ruby on Rails app
 description: Create the basic Ruby on Rails application and understand the CRUD concept
+excerpt: A hands-on learning experience on Ruby language and Ruby on Rails framework
 thumbnail: workshop/ideapasal/thumbnail.jpg
 permalink: /workshop/ruby-and-rails/phase3/
 prev_link: /workshop/ruby-and-rails/phase2/

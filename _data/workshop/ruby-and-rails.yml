@@ -4,7 +4,7 @@
     - title: Introduction and Lab Preparation
       description: Introduction of the instructor(s), participants and lab preparation.
       url: workshop/ruby-and-rails/phase1
-      thumbnail: workshop/ideapasal/thumbnail.jpg
+      thumbnail: workshop/ideapasal/intro-and-lab.jpg
     - title: Introduction to Ruby language
       description: Get started with Ruby language and play around with its basics language features.
       url: workshop/ruby-and-rails/phase2
