@@ -8,12 +8,12 @@ date: 11th Oct, 2020 02:00:00
 description: A hands-on learning experience on Ruby language and Ruby on Rails framework
 excerpt: A hands-on learning experience on Ruby language and Ruby on Rails framework
 permalink: /workshop/ruby-and-rails/
-thumbnail: workshop/ideapasal/thumbnail.jpg
+thumbnail: workshop/ideapasal/thumbnail.png
 disable_sidebar: true
 disable_toc: true
 ---
 
-{% include util/lazy-img.html src="workshop/ideapasal/thumbnail.jpg" alt="Ruby and Rails Hands-on Workshop" %}
+{% include util/lazy-img.html src="workshop/ideapasal/thumbnail.png" alt="Ruby and Rails Hands-on Workshop" %}
 
 In this hands-on workshow, you will get the practical learning experience of Ruby language and Ruby on Rails framework.
 

@@ -6,7 +6,7 @@ tutorial_name: ruby-and-rails
 title: Introduction and Lab Preparation
 description: Introduction of the instructor(s), participants and lab preparation.
 excerpt: A hands-on learning experience on Ruby language and Ruby on Rails framework
-thumbnail: workshop/ideapasal/thumbnail.jpg
+thumbnail: workshop/ideapasal/thumbnail.png
 permalink: /workshop/ruby-and-rails/phase1/
 prev_link: /workshop/ruby-and-rails/
 next_link: /workshop/ruby-and-rails/phase2/

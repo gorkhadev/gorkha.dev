@@ -6,7 +6,7 @@ date: 11th Oct, 2020 02:00:00
 title: Adding uploading image feature
 description: Learn to add image to the idea in the application.
 excerpt: A hands-on learning experience on Ruby language and Ruby on Rails framework
-thumbnail: workshop/ideapasal/thumbnail.jpg
+thumbnail: workshop/ideapasal/thumbnail.png
 permalink: /workshop/ruby-and-rails/phase5/
 prev_link: /workshop/ruby-and-rails/phase4/
 next_link: /workshop/ruby-and-rails/phase6/
