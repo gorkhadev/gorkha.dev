@@ -366,6 +366,16 @@ textarea {
   }
 }
 
+.congrats-wrapper {
+  hr {
+    margin: 2rem;
+  }
+  .image-caption-wrapper {
+    display: flex;
+    gap: 3rem;
+  }
+}
+
 @import "docsy-jekyll";
 @import "syntax-highlighting";
 @import "animate.min";

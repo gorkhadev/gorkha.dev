@@ -162,6 +162,17 @@
 }
 
 @media (max-width: 520px) {
+  .congrats-wrapper {
+
+    .image-caption-wrapper {
+      flex-wrap: wrap;
+      gap: 1rem;
+
+      h2 {
+        margin-top: 0;
+      }
+    }
+  }
   .display-non-mb {
     display: none;
   }

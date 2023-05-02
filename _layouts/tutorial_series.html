@@ -16,7 +16,7 @@
         <div class="td-main">
           <div class="row justify-content-center flex-xl-nowrap">
             <div class="col-12 col-md-3 col-xl-3 td-sidebar">
-              {% include tutorial/sidebar.html %}
+              {% include tutorial/sidebar.html current_title=page.title %}
             </div>
 
             <main class="col-12 col-md-9 col-xl-6 px-md-2 pr-md-4" role="main">
@@ -29,7 +29,7 @@
                 {% if page.thumbnail_credit %}
                   <p class="thumbnail-credit">Image: {{ page.thumbnail_credit }}</p>
                 {% endif %}
-                <h1 id="{{ page.title | remove: ':' | remove: ',' | downcase | split: ' ' | join: '-' }}" class="mb-0">{{ page.title }}</h1>
+                <h1 id="{{ page.title | remove: ':' | remove: ',' | downcase | split: ' ' | join: '-' }}" class="mb-4">{{ page.title }}</h1>
                 <h4 class="m-0">{{ page.description }}</h4>
 
                 {% if page.tags %}

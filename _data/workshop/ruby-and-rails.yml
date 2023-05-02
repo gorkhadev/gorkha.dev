@@ -1,0 +1,30 @@
+- title: Ruby and Ruby on Rails Hands-on Workshop
+  url: workshop/ruby-and-rails/
+  links:
+    - title: Introduction and Lab Preparation
+      description: Introduction of the instructor(s), participants and lab preparation.
+      url: workshop/ruby-and-rails/phase1
+      thumbnail: workshop/ideapasal/thumbnail.jpg
+    - title: Introduction to Ruby language
+      description: Get started with Ruby language and play around with its basics language features.
+      url: workshop/ruby-and-rails/phase2
+      thumbnail: workshop/ideapasal/try-ruby.jpg
+    - title: Getting started with first Ruby on Rails app
+      description: Create the basic Ruby on Rails application and understand the CRUD concept.
+      url: workshop/ruby-and-rails/phase3
+      thumbnail: workshop/ideapasal/ideapasal1.jpg
+    - title: Adding Bootstrap v5 and Basic Styling
+      description: Learn to add CSS framework like Bootstrap v5 and perform basic styling.
+      url: workshop/ruby-and-rails/phase4
+      thumbnail: workshop/ideapasal/ideapasal3.jpg
+    - title: Adding uploading image feature
+      description: Learn to add image to the idea in the application
+      url: workshop/ruby-and-rails/phase5
+      thumbnail: workshop/ideapasal/ideapasal5.jpg
+    - title: Final styling
+      description: Performing the final styling of the application
+      url: workshop/ruby-and-rails/phase6
+      thumbnail: workshop/ideapasal/ideapasal.jpg
+
+
+

@@ -7,8 +7,8 @@
   </button>
   <nav class="collapse td-sidebar-nav pt-2" id="td-section-nav">
     {% for section in site.data[page.learning_type][page.tutorial_name] %}
-      <ul class="td-sidebar-nav__section pl-0 pr-md-3 mb-2 py-1">
-        <li class="td-sidebar-nav__section-title ps-3">
+      <ul class="td-sidebar-nav__section pl-0 pr-md-3 mb-2 py-3">
+        <li class="td-sidebar-nav__section-title">
           <a  href="{% if section.url %}{{ site.baseurl }}/{{ section.url }}{% else %}{{ section.external_url }}{% endif %}"
             class="align-left pl-0 pe-2 active td-sidebar-link td-sidebar-link__section">{{ section.title }}</a>
         </li>
@@ -19,8 +19,8 @@
               {% for entry in section.links %}
                 <li class="td-sidebar-nav__section-title">
                   <a href="{% if entry.url %}{{ site.baseurl }}/{{ entry.url }}{% else %}{{ entry.external_url }}{% endif %}"
-                    class="align-left pl-0 px-2 td-sidebar-link td-sidebar-link__section">
-                    {{ forloop.index + 1}}. {{ entry.title }}
+                    class="align-left pl-0 px-2 td-sidebar-link td-sidebar-link__section d-flex{% if entry.title == include.current_title %} title_active{% endif %}">
+                    <span class="inline-block">{{ forloop.index + 1}}.</span> <span class="inline-block ms-1">{{ entry.title }}</span>
                   </a>
                 </li>
                 <ul>
@@ -45,10 +45,10 @@
       {% unless page.disable_toc %}
         <!-- TOC -->
         <nav id="TableOfContents">
-          <p class="h4 mb-2 text-muted">Table of contents</p>
+          <p class="h4 mb-2">Table of contents</p>
           <ul>
             <li>
-              <ul id="TOC">
+              <ul id="TOC" class="ms-2">
                 <!-- Links will be appended here-->
               </ul>
             </li>

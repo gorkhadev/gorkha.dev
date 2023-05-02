@@ -103,7 +103,7 @@ Let's design the home page to include navigation bar and a header with welcome m
 
 Update the `app/views/pages/home.html.erb` file with following HTML content:
 
-```html
+```erb
 <header id="home">
   <!-- Navbar -->
   <nav id="navbar">
@@ -328,7 +328,7 @@ Now, move the navigation related HTML content from `app/views/pages/home.html.er
 
 The body of `application.html.erb` file should look like as:
 
-```html
+```erb
 <body>
   <header id="home">
     <!-- Navbar -->

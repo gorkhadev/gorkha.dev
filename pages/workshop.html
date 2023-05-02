@@ -1,0 +1,20 @@
+---
+layout: default
+title: Workshops
+permalink: /workshop/
+page_name: workshop
+---
+
+<!-- workshops list -->
+<div class="projects-page page-padding">
+  <h1 class="text-center mb-4">Hands-on Workshops</h1>
+
+  <div class="container">
+    <div class="row courses-wrapper justify-content-center">
+      {% assign workshops = site.workshops | where: "projects", true | reverse %}
+      {% for workshop in workshops %}
+        {% include course/course-card.html course=workshop type="project" %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
