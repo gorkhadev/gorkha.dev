@@ -547,7 +547,7 @@ Add the following content in the first `div` with `column` class having comment 
 
 ```html
 <div class="card">
-  <img src="img/website.jpg" alt="Web Development">
+  <img src="img/website1.jpg" alt="Web Development">
   <div class="blog-body">
     <h3 class="blog-title">Getting start with Web Development</h3>
     <div class="meta">
