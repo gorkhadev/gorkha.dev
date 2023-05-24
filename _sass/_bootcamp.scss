@@ -44,9 +44,21 @@
     }
   }
 
+  .curriculum-highlight {
+    background-color: $color-primary;
+    color: #fff;
+    text-align: center;
+  }
   .curriculum {
     .curriculum-module {
       margin-bottom: 1rem;
+      border: 0;
+      background-color: #F6FAFF;
+
+      .card-header {
+        border-bottom: 0;
+        background-color: #daeaff;
+      }
 
       button {
         text-decoration: none;
