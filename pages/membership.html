@@ -123,7 +123,7 @@ page_name: membership
                   </div>
                 </div>
               </div>
-              <div class="col-md-4">
+              <!-- <div class="col-md-4">
                 <div class="card mentor-card">
                   <img src="{{ site.asset_base_url }}/img/mentors/vic.jpg" class="card-img-top shadow" alt="Mentor Dhanu Sir">
                   <div class="card-body">
@@ -136,7 +136,7 @@ page_name: membership
                     </p>
                   </div>
                 </div>
-              </div>
+              </div> -->
               <!-- <div class="col-md-4">
                 <div class="card mentor-card">
                   <img src="{{ site.asset_base_url }}/img/mentors/mentor.jpg" class="card-img-top shadow" alt="Mentor Dhanu Sir">
@@ -156,8 +156,65 @@ page_name: membership
     </div>
   </div>
 
+  <!-- community live session -->
+  <div class="community-live-session section-padding">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-6">
+          <h1 class="section-heading text-start">Community LIVE Sessions</h1>
+          <h4 class="section-subheading">
+            Learn at least <strong>Two Days weekly</strong> from the Community LIVE Sessions.
+          </h4>
+          <ul class="features">
+            <li class="feature-item">
+              <i class="fa-solid fa-check"></i>
+              <span class="feature-item-txt">
+                LIVE Coding Session
+              </span>
+            </li>
+            <li class="feature-item">
+              <i class="fa-solid fa-check"></i>
+              <span class="feature-item-txt">
+                LIVE Q and A Session
+              </span>
+            </li>
+            <li class="feature-item">
+              <i class="fa-solid fa-check"></i>
+              Coding Challenges Event
+            </li>
+            <li class="feature-item">
+              <i class="fa-solid fa-check"></i>
+              Soft Skills Training
+            </li>
+            <li class="feature-item">
+              <i class="fa-solid fa-check"></i>
+              Community Tech Talks
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <img src="{{ site.asset_base_url }}/img/live-session-bg.jpg"
+            class="img-fluid live-session-bg" alt="Community Live Session">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- community weekly calender
+  <div class="community-weekly-calender section-padding">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-7">
+          <img src="{{ site.asset_base_url }}/img/community-calendar.jpg"
+            class="img-fluid" alt="Dhanu Sir Community Calender">
+        </div>
+      </div>
+    </div>
+  </div> -->
+
   <!-- redefined member -->
-  <div class="redefined-member section-padding">
+  <!-- <div class="redefined-member section-padding">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-md-7">
@@ -220,76 +277,7 @@ page_name: membership
         </div>
       </div>
     </div>
-  </div>
-
-  <!-- community weekly calender -->
-  <div class="community-weekly-calender section-padding">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-md-7">
-          <img src="{{ site.asset_base_url }}/img/community-calendar.jpg"
-            class="img-fluid" alt="Dhanu Sir Community Calender">
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- community live session -->
-  <div class="community-live-session section-padding">
-    <div class="container">
-
-      <div class="row">
-        <div class="col-md-6">
-          <h1 class="section-heading text-start">Community LIVE Sessions</h1>
-          <h4 class="section-subheading">
-            Learn at least <strong>Two Days weekly</strong> from the Community LIVE Sessions.
-          </h4>
-          <ul class="features">
-            <li class="feature-item">
-              <i class="fa-solid fa-check"></i>
-              <span class="feature-item-txt">
-                LIVE Coding Session
-              </span>
-            </li>
-            <li class="feature-item">
-              <i class="fa-solid fa-check"></i>
-              <span class="feature-item-txt">
-                LIVE Q and A Session
-              </span>
-            </li>
-            <li class="feature-item">
-              <i class="fa-solid fa-check"></i>
-              Coding Challenges Event
-            </li>
-            <li class="feature-item">
-              <i class="fa-solid fa-check"></i>
-              Soft Skills Training
-            </li>
-            <li class="feature-item">
-              <i class="fa-solid fa-check"></i>
-              Community Tech Talks
-            </li>
-          </ul>
-        </div>
-        <div class="col-md-6">
-          <img src="{{ site.asset_base_url }}/img/live-session-bg.jpg"
-            class="img-fluid live-session-bg" alt="Community Live Session">
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- free courses -->
-  <div class="courses-section section-padding">
-    <h1 class="section-heading mb-4">Check our FREE Courses</h1>
-    <div class="container">
-      <div class="courses-wrapper row justify-content-center">
-        {% for course in site.data.courses %}
-          {% include course/course-card.html course=course %}
-        {% endfor %}
-      </div>
-    </div>
-  </div>
+  </div> -->
 
   <!-- join community -->
   <div class="join-community">
@@ -313,4 +301,18 @@ page_name: membership
       </div>
     </div>
   </div>
+
+  <!-- free courses -->
+  <div class="courses-section section-padding">
+    <h1 class="section-heading mb-4">Check our FREE Courses</h1>
+    <div class="container">
+      <div class="courses-wrapper row justify-content-center">
+        {% for course in site.data.courses %}
+          {% include course/course-card.html course=course %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+
+
 </div>
