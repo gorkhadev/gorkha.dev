@@ -1,0 +1,18 @@
+.visit-nepal-page {
+  .content-wrapper {
+    height: 95vh;
+    margin-bottom: 5vh;
+    border: 1px solid #cecece;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    .title {
+      color: red;
+    }
+    .description {
+      color: #1200AF;
+    }
+  }
+}
