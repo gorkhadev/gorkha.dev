@@ -492,6 +492,11 @@
     .banner-img-wrapper {
       margin-top: 3rem;
     }
+    .action-btns {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
   }
   .home-body {
     .section-heading {
