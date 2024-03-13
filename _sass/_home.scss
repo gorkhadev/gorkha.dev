@@ -105,7 +105,6 @@
     padding: 2rem 0 0 0;
 
     .left-panel-wrapper {
-      margin-right: 2rem;
 
       h4 {
         color: #777;
@@ -119,31 +118,20 @@
       }
       .banner-title {
         font-family: 'Kaisei Decol', serif;
-        font-size: 3.5rem;
-        font-weight: 500;
-        margin-bottom: 10px;
-        line-height: 60px;
-
-        .h3 {
-          color: #444;
-        }
-      }
-      .banner-tagline {
-        color: $color-secondary;
-        font-size: 20px;
-        font-weight: 300;
-        margin-bottom: 1rem;
-      }
-      .banner-description {
-        font-family: 'Kaisei Decol', serif;
         font-size: 3rem;
-        font-weight: 500;
-        color: #666;
+        font-weight: 600;
+        color: #111;
         margin-top: 1rem;
 
         .highlight {
           color: $color-secondary;
         }
+      }
+      .banner-description {
+        font-weight: 300;
+        margin: 10px 0;
+        width: 90%;
+        line-height: 36px;
       }
       .services-wrapper {
         display: flex;
@@ -169,15 +157,15 @@
         margin-top: 2rem;
       }
     }
-    .banner-img-wrapper {
-      .profile-img {
-        transform: scale(0.7);
-      }
-    }
   }
 }
 
 .home-body {
+  .client-item {
+    transform: scale(0.8);
+  }
+
+
   .join-channel-section {
     // background: #F6FAFF;
     padding: 6rem 0 6rem;
@@ -465,7 +453,8 @@
     }
   }
   .home_header .banner-section {
-    padding-top: 3rem;
+    padding-top: 0;
+    padding-bottom: 5rem;
 
     .container {
       max-width: 95%;
@@ -477,11 +466,12 @@
         margin-bottom: 1rem;
       }
       .banner-title {
-        font-size: 3rem;
+        font-size: 2.5rem;
         line-height: 50px;
       }
       .banner-description {
-        font-size: 2.5rem;
+        font-size: 1.5rem;
+        width: 100%;
       }
       .services-wrapper {
         flex-direction: column;

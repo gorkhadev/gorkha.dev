@@ -1,9 +1,9 @@
 title: Dhanu Sir
-email: contact@dhanusir.com
-year: 2023
-tagline: 11+ Years of IT Experience
+email: dhanusirofficial@gmail.com
+year: 2024
+tagline: 12+ Years of IT Experience
 description: >-
-  Helping IT Students and Professionals in Career Growth
+  Helping businesses or individual with Growth
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://dhanusir.com" # the base hostname & protocol for your site, e.g. http://example.com
 # asset_base_url: /assets                        # local assets: ending without forward slash
@@ -49,13 +49,13 @@ contacts:
     label: GitHub
     class: fab fa-github
     img: github.png
-  tiktok:
-    url: https://tiktok.com/@dhanusirofficial
-    label: YouTube Channel
-    class: fa-brands fa-tiktok
-    img: youtube.png
+  # tiktok:
+  #   url: https://tiktok.com/@dhanusirofficial
+  #   label: YouTube Channel
+  #   class: fa-brands fa-tiktok
+  #   img: youtube.png
   email:
-    url: mailto:contact@dhanusir.com
+    url: mailto:dhanusirofficial@gmail.com
     label: Email
     class: fas fa-envelope
     img: mail.png
