@@ -162,7 +162,12 @@
 
 .home-body {
   .client-item {
+    height: 10rem;
     transform: scale(0.8);
+
+    img {
+      height: 100%;
+    }
   }
 
 
