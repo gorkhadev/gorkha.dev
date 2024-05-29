@@ -376,6 +376,10 @@ textarea {
   }
 }
 
+.dropdown-menu {
+  z-index: 10000;
+}
+
 @import "docsy-jekyll";
 @import "syntax-highlighting";
 @import "animate.min";

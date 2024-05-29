@@ -1,96 +1,31 @@
 <section class="my-clients section-padding pt-5">
-  <h1 class="section-heading">Clients I am helping</h1>
+  <h1 class="section-heading">Artists I am helping</h1>
   <p class="section-subheading">
     Helping in digital marketing, branding and providing technical mentoring.
   </p>
 
   <div class="container">
     <div class="row justify-content-center text-center">
-      <div class="col-md-10">
-        <div class="row">
-          <div class="col-md-2 col-6">
-            <div class="client-item">
-              <img src="{{ site.asset_base_url }}/img/clients/c2e.jpg" class="img-fluid" alt="Client">
-            </div>
-          </div>
-          <div class="col-md-2 col-6">
-            <div class="client-item">
-              <img src="{{ site.asset_base_url }}/img/clients/gorkha-dev.jpg" class="img-fluid" alt="Client">
-            </div>
-          </div>
-          <div class="col-md-2 col-6">
-            <div class="client-item">
-              <img src="{{ site.asset_base_url }}/img/clients/barpak-inn.jpg" class="img-fluid" alt="Client">
-            </div>
-          </div>
-          <div class="col-md-2 col-6">
-            <div class="client-item">
-              <img src="{{ site.asset_base_url }}/img/clients/barpak-singa.jpg" class="img-fluid" alt="Client">
-            </div>
-          </div>
-          <div class="col-md-2 col-6">
-            <div class="client-item">
-              <img src="{{ site.asset_base_url }}/img/clients/panipuri.jpg" class="img-fluid" alt="Client">
-            </div>
-          </div>
-          <div class="col-md-2 col-6">
-            <div class="client-item">
-              <img src="{{ site.asset_base_url }}/img/clients/dip-films.jpg" class="img-fluid" alt="Client">
-            </div>
-          </div>
-          <div class="col-md-2 col-6">
-            <div class="client-item">
-              <img src="{{ site.asset_base_url }}/img/clients/dance-and-aerobic.jpg" class="img-fluid" alt="Client">
-            </div>
-          </div>
-          <div class="col-md-2 col-6">
-            <div class="client-item">
-              <img src="{{ site.asset_base_url }}/img/clients/tamu-hyula.png" class="img-fluid" alt="Client">
-            </div>
-          </div>
-          <div class="col-md-2 col-6">
-            <div class="client-item">
-              <img src="{{ site.asset_base_url }}/img/clients/ugsa.jpg" class="img-fluid" alt="Client">
-            </div>
-          </div>
-          <div class="col-md-2 col-6">
-            <div class="client-item">
-              <img src="{{ site.asset_base_url }}/img/clients/tamustudent.jpg" class="img-fluid" alt="Client">
-            </div>
-          </div>
-
-          <div class="col-md-2 col-6">
-            <div class="client-item">
-              <img src="{{ site.asset_base_url }}/img/clients/dip.jpg" class="img-fluid rounded-circle" alt="Client">
-            </div>
-          </div>
-          <div class="col-md-2 col-6">
-            <div class="client-item">
-              <img src="{{ site.asset_base_url }}/img/clients/anand.jpg" class="img-fluid rounded-circle" alt="Client">
-            </div>
-          </div>
-          <div class="col-md-2 col-6">
-            <div class="client-item">
-              <img src="{{ site.asset_base_url }}/img/clients/esha.jpg" class="img-fluid rounded-circle" alt="Client">
-            </div>
-          </div>
-          <div class="col-md-2 col-6">
-            <div class="client-item">
-              <img src="{{ site.asset_base_url }}/img/clients/laxmi.jpg" class="img-fluid rounded-circle" alt="Client">
-            </div>
-          </div>
-          <div class="col-md-2 col-6">
-            <div class="client-item">
-              <img src="{{ site.asset_base_url }}/img/clients/anju.jpg" class="img-fluid rounded-circle" alt="Client">
-            </div>
-          </div>
-          <div class="col-md-2 col-6">
-            <div class="client-item">
-              <img src="{{ site.asset_base_url }}/img/clients/laxmi-regmi.jpg" class="img-fluid rounded-circle" alt="Client">
-            </div>
-          </div>
+      {% for client in site.data.client.aritsts %}
+        <div class="col-md-2 col-6">
+          {% include home/client-card.html client=client %}
         </div>
-      </div>
+      {% endfor %}
+    </div>
+  </div>
+
+  <h1 class="section-heading">Software Engineers I am helping</h1>
+  <p class="section-subheading">
+    Helping in digital marketing, branding and providing technical mentoring.
+  </p>
+
+  <div class="container">
+    <div class="row justify-content-center text-center">
+      {% for client in site.data.client.aritsts %}
+        <div class="col-md-2 col-6">
+          {% include home/client-card.html client=client %}
+        </div>
+      {% endfor %}
     </div>
   </div>
 </section>

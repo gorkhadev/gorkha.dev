@@ -1,0 +1,119 @@
+- title: HTML and CSS foundation
+  url: html-css
+  links:
+    - title: HTML Basics
+      description: Getting familiar with HTML
+      url: html-css/html-basics/
+      children:
+        - title: Basic layout in HTML
+          url: html-css/html-basics/basic-layout/
+        - title: Element, Tag and Attribute in HTML
+          url: html-css/html-basics/element-tag-attribute/
+        - title: Using Meta tags in HTML
+          url: html-css/html-basics/meta-tags/
+        - title: Headings, Paragraph, Pre and Code tags in HTML
+          url: html-css/html-basics/headings-para-pre-code/
+        - title: Div and Span tags in HTML
+          url: html-css/html-basics/div-and-span/
+        - title: Using Hyperlink in HTML
+          url: html-css/html-basics/link/
+        - title: Using Image in HTML
+          url: html-css/html-basics/image/
+        - title: Inline and Block elements in HTML
+          url: html-css/html-basics/inline-and-block/
+        - title: Creating Lists in HTML
+          url: html-css/html-basics/list/
+        - title: Creating Table in HTML
+          url: html-css/html-basics/table/
+        - title: Using Form and Input elements in HTML
+          url: html-css/html-basics/form-and-input/
+        - title: Using ID and Class in HTML
+          url: html-css/html-basics/id-and-class/
+        - title: Using Semantic tags in HTML
+          url: html-css/html-basics/semantic-tags/
+
+    - title: CSS Basics
+      description: Getting familiar with the basics of CSS
+      url: html-css/css-basics/
+      children:
+        - title: Introduction, types and comment
+          url: html-css/css-basics/intro-type-and-comment/
+        - title: CSS selectors
+          url: html-css/css-basics/css-selectors
+        - title: Inspecting CSS
+          url: html-css/css-basics/inspecting-css/
+        - title: CSS colors and its types
+          url: html-css/css-basics/color-and-types/
+        - title: CSS fonts and its properties
+          url: html-css/css-basics/fonts-and-properties/
+        - title: Using Google fonts
+          url: html-css/css-basics/google-font/
+        - title: CSS Units
+          url: html-css/css-basics/css-units/
+        - title: Text formatting in CSS
+          url: html-css/css-basics/text-formatting-in-css/
+        - title: CSS Box Model
+          url: html-css/css-basics/css-box-model/
+        - title: CSS Background
+          url: html-css/css-basics/css-background/
+
+    - title: CSS Intermediate
+      description: Getting stronger in working with CSS
+      url: html-css/css-intermediate/
+      children:
+        - title: CSS display property
+          url: html-css/css-intermediate/display-property/
+        - title: CSS rounding corners
+          url: html-css/css-intermediate/rounding-corners
+        - title: Using box shadow in CSS
+          url: html-css/css-intermediate/box-shadow/
+        - title: Max width and margin auto
+          url: html-css/css-intermediate/max-width-and-margin-auto/
+        - title: Float and clear properties
+          url: html-css/css-intermediate/float-and-clear-properties/
+        - title: Building basic image gallery
+          url: html-css/css-intermediate/basic-image-gallery/
+        - title: Link states and button styling
+          url: html-css/css-intermediate/link-states-and-btn-styling/
+        - title: Pseudo classes and elements
+          url: html-css/css-intermediate/pseudo-classes-and-elements/
+        - title: Using overflow property
+          url: html-css/css-intermediate/overflow-property/
+        - title: Styling menu bar
+          url: html-css/css-intermediate/menu-bar/
+        - title: CSS positioning
+          url: html-css/css-intermediate/positioning/
+        - title: Using z-index property
+          url: html-css/css-intermediate/z-index/
+        - title: CSS specificity
+          url: html-css/css-intermediate/specificity/
+
+    - title: CSS Advanced
+      description: Getting familiar with advanced concepts of CSS
+      url: html-css/css-advanced/
+      children:
+        - title: CSS variables
+          url: html-css/css-advanced/variables/
+        - title: CSS flexbox basics
+          url: html-css/css-advanced/flexbox-basics/
+        - title: Flexbox container properties
+          url: html-css/css-advanced/flexbox-container-properties/
+        - title: Flexbox item properties
+          url: html-css/css-advanced/flexbox-item-properties/
+        - title: Building image gallery using flexbox
+          url: html-css/css-advanced/image-gallery-using-flexbox/
+        - title: CSS Animation
+          url: html-css/css-advanced/animation/
+        - title: CSS Transition
+          url: html-css/css-advanced/transition/
+        - title: CSS Transform
+          url: html-css/css-advanced/transform/
+        - title: CSS Media Queries
+          url: html-css/css-advanced/media-queries/
+
+    - title: Web Projects
+      description: Learn and practice CSS by building web projects
+      url: html-css/web-projects/
+      children:
+        - title: Simple Sign Up form
+          url: html-css/web-projects/sign-up/

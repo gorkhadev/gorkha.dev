@@ -1,24 +1,12 @@
-- title: Getting Started With
-  url: https://learn.dhanusir.com/courses/getting-started-with/
-  thumbnail: courses/getting-started-with.png
-  cost: FREE
-  # coupon:
-  # modules:
-  type: video
-  duration: Not Applicable
-- title: Getting started with Linux
-  url: https://learn.dhanusir.com/courses/getting-started-with-linux/
-  thumbnail: courses/getting-start-with-linux.png
-  cost: FREE
-  coupon: DHANUSIRLINUXFREE
-  modules: 8
-  type: video
-  duration: 15 - 20 Hrs
-- title: Web Foundation
-  url: https://learn.dhanusir.com/courses/web-foundation/
-  thumbnail: courses/web-foundation.png
-  cost: FREE
-  coupon: DHANUSIRWEBFREE
-  modules: 5
-  type: video
-  duration: 20 - 30 Hrs
+- title: HTML & CSS Mastery
+  url: /html-css/
+  thumbnail: courses/html-css/thumbnail.png
+- title: Ruby on Rails
+  url: /ruby-on-rails/
+  thumbnail: courses/ror/thumbnail.png
+- title: C Language
+  url: /c/
+  thumbnail: courses/c/thumbnail.png
+- title: Ruby
+  url: /ruby/
+  thumbnail: courses/ruby/thumbnail.png

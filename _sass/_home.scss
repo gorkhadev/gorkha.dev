@@ -60,9 +60,9 @@
   padding: 1rem;
 
   .brand {
-    font-size: 1.6rem;
-    color: #fff;
-    font-family: "Poppins", sans-serif;
+    font-size: 2.2rem;
+    color: #111;
+    font-family: $font-secondary;
     font-weight: 800;
     line-height: 24px;
 
@@ -131,7 +131,7 @@
         font-weight: 300;
         margin: 10px 0;
         width: 90%;
-        line-height: 36px;
+        color: #333;
       }
       .services-wrapper {
         display: flex;
@@ -169,7 +169,6 @@
       height: 100%;
     }
   }
-
 
   .join-channel-section {
     // background: #F6FAFF;
@@ -243,6 +242,69 @@
     h1 {
       font-family: "Playfair Display", serif;
       font-weight: 600;
+    }
+  }
+
+  // self taught resources
+  .self-taught-section {
+    margin-top:  3rem;
+
+    .container {
+      max-width: 1100px;
+    }
+    .content-wrapper {
+      border-radius: 18px;
+      padding: 3rem 1rem;
+      flex-direction: row;
+      display: flex;
+      flex-wrap: wrap;
+      height: 100%;
+      align-items: center;
+      justify-content: space-around;
+
+      .caption-wrapper {
+        display: flex;
+        flex-direction: column;
+      }
+      .free-list {
+        list-style: none;
+        padding-left: 0;
+        margin-bottom: 0;
+        margin-top: 1rem;
+
+        .free-item {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          font-size: 1.2rem;
+          margin-right: 8px;
+          color: #333;
+
+          i {
+            color: #14B058;
+          }
+        }
+      }
+    }
+  }
+
+  .free-list {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+    margin-top: 1rem;
+
+    .free-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1.2rem;
+      margin-right: 8px;
+      color: #333;
+
+      i {
+        color: #14B058;
+      }
     }
   }
 }
@@ -333,8 +395,9 @@
       padding: 1.5rem 1.5rem 1rem 1.5rem;
 
       .card-title {
-        color: $color-primary;
+        color: #111;
         font-weight: 500;
+        text-align: center;
       }
       .course-card-info {
         font-size: 14px;
@@ -403,6 +466,37 @@
 .projects-page {
   img {
     height: 10rem;
+  }
+}
+
+// Self-taught learning resources
+.self-taught-page {
+  .banner {
+    background-color: $color-primary;
+    color: #fff;
+    padding: 7rem 0 8rem;
+    text-align: center;
+    font-family: $font-secondary;
+
+    .heading {
+      font-size: 3rem;
+      font-weight: 400;
+      margin-bottom: 0;
+    }
+    .sub-heading {
+      font-size: 1.8rem;
+      font-weight: 300;
+      color: #ddd;
+
+      span {
+        font-weight: 600;
+      }
+    }
+  }
+  .section-header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
 }
 
@@ -581,6 +675,18 @@
   .tutorials-wrapper {
     .tutorial-card:last-child {
       margin-bottom: 0;
+    }
+  }
+  .self-taught-page {
+    .banner {
+      padding: 4rem 0 5rem;
+
+      .heading {
+        font-size: 2.5rem;
+      }
+      .sub-heading {
+        font-size: 1.3rem;
+      }
     }
   }
 }

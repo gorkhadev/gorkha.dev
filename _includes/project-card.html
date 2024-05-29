@@ -1,0 +1,19 @@
+<div class="card course-card col-md-3 p-3 border-0">
+  <a href="{{ include.project.url }}" class="inline-block">
+    <img src="{{ site.asset_base_url }}/img/{{ include.project.thumbnail }}" class="course-card-img w-100 shadow-sm" alt="{{ include.project.title }}">
+    <div class="card-body d-flex flex-column justify-content-between shadow-sm">
+      <h5 class="card-title">{{ include.project.title }}</h5>
+
+      <div class="course-card-info d-flex justify-content-between">
+        <div class="course-duration">
+          <i class="fa-regular fa-clock text-danger me-1"></i><span>{{ include.project.duration }}</span>
+        </div>
+        <div class="course-modules">
+          {% if include.project.modules %}
+            <p class="inline-block text-danger mb-0">{{ include.project.modules }} <span class="text-secondary">{% if include.type == "project" %}Phases{% else %}Modules{% endif %}</span></p>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </a>
+</div>

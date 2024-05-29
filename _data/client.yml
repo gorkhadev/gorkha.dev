@@ -1,0 +1,32 @@
+company:
+  - title: Dip Films Production
+    type: Entertainment
+    img: dip-films.jpg
+  - title: Gauri Shankar Dance & Aerobics
+    type: Dance & Fitness
+    img: dance-and-aerobic.jpg
+  - title: Tamu Hyula Chhonj Dhee Gurung Rashtriya Parishad
+    type: Non Profit Organization
+    img: tamu-hyula.png
+  - title: United Gurung Society of America
+    type: Non Profit Organization
+    img: ugsa.jpg
+  - title: The Council House of Tamu (Gurung) Student Nepal
+    type: Non Profit Organization
+    img: tamustudent.jpg
+aritsts:
+  - title: Dip Gurung
+    type: Director & Choreographer
+    img: dip.jpg
+  - title: Esha Gurung
+    type: Model & Fashioni Designer
+    img: esha.jpg
+  - title: Anand Gurung
+    type: Actor & Model
+    img: anand.jpg
+  - title: Laxmi Gurung
+    type: Actress & Model
+    img: laxmi.jpg
+  - title: Anju Gurung
+    type: Actress & Model
+    img: anju.jpg

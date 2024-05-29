@@ -1,24 +1,11 @@
-<div id="courses" class="courses-section section-padding">
-  <h1 class="section-heading">Learn from Our Courses</h1>
-  <p class="section-subheading">Gain quality technical skills from our Lab or Video based courses</p>
+<div class="courses-page section-padding">
+  <h1 class="section-heading">Learn from our Courses</h1>
 
-  <div class="content-body-wrapper">
-    <div class="container">
-      <div class="row courses-wrapper justify-content-center">
-        {% assign courses = site.data.courses %}
-        {% for course in courses limit: 8 %}
-          {% include course/course-card.html course=course %}
-        {% endfor %}
-      </div>
-
-      <div class="row course-btns-wrapper justify-content-center text-center mt-4">
-        <div class="col-md-3">
-          <a href="/courses/" class="btn btn-primary all-view-btn">View All Courses</a>
-        </div>
-        <!-- <div class="col-md-2">
-          <a href="" class="btn btn-outline-danger px-4 py-2">Contribute</a>
-        </div> -->
-      </div>
+  <div class="container">
+    <div class="courses-wrapper row justify-content-center">
+      {% for course in site.data.courses %}
+        {% include course/course-card.html course=course %}
+      {% endfor %}
     </div>
   </div>
 </div>
