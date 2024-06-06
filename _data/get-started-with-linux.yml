@@ -1,0 +1,112 @@
+- title: Get started with Linux
+  url: get-started-with-linux
+  links:
+    - title: Introduction and setup
+      description: Introduction, course roadmap, installation and lab setup
+      url: get-started-with-linux/intro-and-setup/
+      children:
+        - title: Course Roadmap
+          url: get-started-with-linux/intro-and-setup/course-roadmap/
+        - title: Role of Linux, benefits and Job prospects
+          url: get-started-with-linux/intro-and-setup/role-of-linux/
+        - title: How to get best out of this course
+          url: get-started-with-linux/intro-and-setup/get-best-from-course/
+        - title: Linux Installation
+          url: get-started-with-linux/intro-and-setup/linux-installation/
+        - title: Setting up your Lab
+          url: get-started-with-linux/intro-and-setup/setup-lab/
+
+    - title: Exploring Linux Operating Systems
+      description: Exploring Linux filesystem, running app and working with settings
+      url: get-started-with-linux/exploring-linux/
+      children:
+        - title: Post Installation TODOs
+          url: get-started-with-linux/exploring-linux/post-installation/
+        - title: Explore UI based file system
+          url: get-started-with-linux/exploring-linux/ui-filesystem/
+        - title: Installing and Running an app
+          url: get-started-with-linux/exploring-linux/installing-app/
+        - title: Working with OS Settings
+          url: get-started-with-linux/exploring-linux/os-settings/
+
+    - title: What and why Linux?
+      description: What, why and different distributions of Linux OS
+      url: get-started-with-linux/what-and-why-linux/
+      children:
+        - title: What is Linux?
+          url: get-started-with-linux/what-and-why-linux/what-is-linux/
+        - title: Why use Linux?
+          url: get-started-with-linux/what-and-why-linux/why-use-linux/
+        - title: Various distributions in Linux
+          url: get-started-with-linux/what-and-why-linux/distros-in-linux/
+
+    - title: Introduction to Linux
+      description: Introduction to important concepts of Linux OS
+      url: get-started-with-linux/intro-to-linux/
+      children:
+        - title: Introduction to Bash and Sh
+          url: get-started-with-linux/intro-to-linux/bash-and-sh/
+        - title: Tab completion and arrow keys
+          url: get-started-with-linux/intro-to-linux/tab-completion/
+        - title: Linux filesystem hierarchy
+          url: get-started-with-linux/intro-to-linux/filesystem/
+        - title: Files and directories commands
+          url: get-started-with-linux/intro-to-linux/file-commands/
+        - title: Package management in Linux
+          url: get-started-with-linux/intro-to-linux/package-management/
+        - title: Other file related commands
+          url: get-started-with-linux/intro-to-linux/other-file-commands/
+
+    - title: Linux intermediate concepts
+      description: Understanding the intermediate concepts of Linux OS
+      url: get-started-with-linux/intermediate-concepts/
+      children:
+        - title: File display commands
+          url: get-started-with-linux/intermediate-concepts/file-display-commands/
+        - title: Managing environment variables
+          url: get-started-with-linux/intermediate-concepts/env-variables/
+        - title: Monitoring process and memory
+          url: get-started-with-linux/intermediate-concepts/process-and-memory/
+        - title: Working with compressing and archiving
+          url: get-started-with-linux/intermediate-concepts/archiving/
+        - title: Other useful commands in Linux
+          url: get-started-with-linux/intermediate-concepts/other-useful-commands/
+        - title: Bonus 1 - Running C program in Linux
+          url: get-started-with-linux/intermediate-concepts/running-c-program/
+        - title: Bonus 2 - Installing MySQL in Linux
+          url: get-started-with-linux/intermediate-concepts/installing-mysql/
+
+    - title: Text editors and Tmux
+      description: Understanding the working of Text editors and Tmux
+      url: get-started-with-linux/text-editors-and-tmux/
+      children:
+        - title: Introduction to Vim editor
+          url: get-started-with-linux/text-editors-and-tmux/intro-to-vim/
+        - title: Vim advanced commands
+          url: get-started-with-linux/text-editors-and-tmux/vim-advanced-commands/
+        - title: Introduction to Tmux
+          url: get-started-with-linux/text-editors-and-tmux/intro-to-tmux/
+
+    - title: User and group management
+      description: Understanding the concept of user and group management
+      url: get-started-with-linux/user-and-group-management/
+      children:
+        - title: User management
+          url: get-started-with-linux/user-and-group-management/user/
+        - title: Group management
+          url: get-started-with-linux/user-and-group-management/group/
+        - title: Understanding sudo and su
+          url: get-started-with-linux/user-and-group-management/sudo-and-su/
+
+    - title: File ownership and permissions
+      description: Working with file ownership and permissions
+      url: get-started-with-linux/ownership-and-permissions/
+      children:
+        - title: Understanding file ownership concepts in Linux
+          url: get-started-with-linux/ownership-and-permissions/file-ownership/
+        - title: Working with the file permissions in Linux
+          url: get-started-with-linux/ownership-and-permissions/file-permissions/
+
+    - title: Where to go next from here?
+      description: Understand the different options after finishing this course
+      url: get-started-with-linux/what-next/

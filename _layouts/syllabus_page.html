@@ -3,7 +3,7 @@ layout: course
 ---
 
 {% if page.header %}
-  <h1 class="my-3">{{ page.header.title }}</h1>
+  <h1 class="my-3" id="{{ page.header.title | downcase }}">{{ page.header.title }}</h1>
   {% assign video_id = page.header.video_id %}
   {% include util/embed-youtube.html id=video_id %}
 {% endif %}

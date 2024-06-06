@@ -2612,8 +2612,10 @@ html body .md-typeset .headerlink {
     font-weight: 700;
     font-size: 20px;
 }
-.td-sidebar-nav__section-title > .title_active {
-    color: red;
+.td-sidebar-nav__section-title > .title_active,
+.td-sidebar-nav .td-sidebar-link__page.title_active {
+    text-decoration: underline !important;
+    background: #ebebeb;
 }
 
 .td-sidebar-nav .dropdown a {

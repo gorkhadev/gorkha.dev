@@ -1,4 +1,5 @@
 {% assign course_name = page.course %}
+{% assign page_permalink = page.permalink | replace_first: "/", "" %}
 <div id="td-sidebar-menu" class="td-sidebar__inner">
   <button class="btn btn-sm btn-primary btn-block py-2 w-100 text-white w-100 td-sidebar__toggle d-md-none m-0 font-weight-bold"
   type="button" data-bs-toggle="collapse" data-bs-target="#td-section-nav" aria-controls="td-docs-nav"
@@ -18,13 +19,15 @@
             <ul class="td-sidebar-nav__section">
               {% for entry in section.links %}
                 <li class="td-sidebar-nav__section-title">
-                  <a href="{% if entry.url %}{{ site.baseurl }}/{{ entry.url }}{% else %}{{ entry.external_url }}{% endif %}" class="align-left pl-0 td-sidebar-link td-sidebar-link__section">{{ entry.title }}</a>
+                  <a href="{% if entry.url %}{{ site.baseurl }}/{{ entry.url }}{% else %}{{ entry.external_url }}{% endif %}" class="align-left pl-0 td-sidebar-link td-sidebar-link__section{% if entry.url == page_permalink %} title_active{% endif %}">
+                    {{ forloop.index }}. {{ entry.title }}
+                  </a>
                 </li>
                 <ul>
                   <li class="collapse show" id="{{ child.title | slugify }}">
                     {% if entry.children %}
                       {% for child in entry.children %}
-                        <a class="td-sidebar-link td-sidebar-link__page "
+                        <a class="td-sidebar-link td-sidebar-link__page{% if child.url == page_permalink %} title_active{% endif %}"
                           id="m-{{ section.title | slugify }}-{{ entry.title | slugify }}-{{ child.title | slugify }}"
                           href="{% if child.url %}{{ site.baseurl }}/{{ child.url }}{% else %}{{ child.external_url }}{% endif %}">
                           {{ child.title }}

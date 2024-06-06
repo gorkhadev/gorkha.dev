@@ -1,6 +1,9 @@
 - title: HTML & CSS Mastery
   url: /html-css/
   thumbnail: courses/html-css/thumbnail.png
+- title: Get started with Linux
+  url: /get-started-with-linux/
+  thumbnail: courses/get-started-with-linux/thumbnail.jpg
 - title: Ruby on Rails
   url: /ruby-on-rails/
   thumbnail: courses/ror/thumbnail.png
