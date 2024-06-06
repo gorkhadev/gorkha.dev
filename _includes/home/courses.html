@@ -1,9 +1,9 @@
-<div class="courses-page section-padding">
+<div class="courses-page section-padding pb-0">
   <h1 class="section-heading">Learn from FREE Courses</h1>
 
   <div class="container">
     <div class="courses-wrapper row justify-content-center">
-      {% for course in site.data.courses %}
+      {% for course in site.data.courses limit: 4 %}
         {% include course/course-card.html course=course %}
       {% endfor %}
     </div>
