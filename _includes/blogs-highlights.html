@@ -9,7 +9,7 @@
       <div class="col-lg-5 col-md-5 blogs-highlight-left">
         <div class="card border-0 mb-5 box-shadow">
           <a href="{{ site.baseurl }}{{ latest_post.url }}">
-            <div class="top-first-image" style="background-image: url({{ site.asset_base_url }}/img/{{ latest_post.thumbnail }});"></div>
+            <div class="top-first-image" style="background-image: url({{ site.asset_url }}/img/{{ latest_post.thumbnail }});"></div>
           </a>
           <div class="card-body pt-3 pb-0 d-flex flex-column align-items-start">
             <h2 class="h4 post-title font-weight-bold">
@@ -32,7 +32,7 @@
           <div class="mb-3 d-flex align-items-center">
             <div class="col-md-4">
               <a href="{{ site.baseurl }}{{ post.url }}">
-                <img class="w-100 h-120" src="{{ site.asset_base_url }}/img/{{ post.thumbnail }}" alt="{{ post.title }}">
+                <img class="w-100 h-120" src="{{ site.asset_url }}/img/{{ post.thumbnail }}" alt="{{ post.title }}">
               </a>
             </div>
 
