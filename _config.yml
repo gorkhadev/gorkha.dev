@@ -12,7 +12,7 @@ thumbnail: thumbnail.jpg
 
 author: Dhanu
 author_url: https://dhanusir.com
-channel_link: https://t.me/+M0H_QnsZrSs5ZDRl
+channel_link: https://t.me/dhanusirchannel
 
 future: true # Show blog post of future date
 permalink: /blogs/:year/:month/:day/:title/
@@ -34,7 +34,7 @@ contacts:
     class: fab fa-facebook-f
     img: facebook.png
   twitter:
-    url: https://twitter.com/dhanumentor
+    url: https://twitter.com/gorkhadeveloper
     label: Twitter
     class: fab fa-twitter
     username: "@dhanumentor"
