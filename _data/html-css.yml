@@ -39,7 +39,7 @@
         - title: Introduction, types and comment
           url: html-css/css-basics/intro-type-and-comment/
         - title: CSS selectors
-          url: html-css/css-basics/css-selectors
+          url: html-css/css-basics/css-selectors/
         - title: Inspecting CSS
           url: html-css/css-basics/inspecting-css/
         - title: CSS colors and its types
@@ -53,7 +53,7 @@
         - title: Text formatting in CSS
           url: html-css/css-basics/text-formatting-in-css/
         - title: CSS Box Model
-          url: html-css/css-basics/css-box-model/
+          url: html-css/css-basics/box-model/
         - title: CSS Background
           url: html-css/css-basics/css-background/
 
@@ -64,7 +64,7 @@
         - title: CSS display property
           url: html-css/css-intermediate/display-property/
         - title: CSS rounding corners
-          url: html-css/css-intermediate/rounding-corners
+          url: html-css/css-intermediate/rounding-corners/
         - title: Using box shadow in CSS
           url: html-css/css-intermediate/box-shadow/
         - title: Max width and margin auto
