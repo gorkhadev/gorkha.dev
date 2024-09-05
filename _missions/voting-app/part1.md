@@ -1,13 +1,13 @@
 ---
 layout: tutorial_series
-learning_type: projects
+learning_type: missions
 tutorial_name: voting-app-sinatra
 title: Sinatra intro and basic app
 date: 11th Oct, 2020 02:00:00
 description: Getting start with Sinatra and create a basic web app
-permalink: /projects/voting-app-sinatra/part1/
-prev_link: /projects/voting-app-sinatra/
-next_link: /projects/voting-app-sinatra/part2/
+permalink: /missions/voting-app-sinatra/part1/
+prev_link: /missions/voting-app-sinatra/
+next_link: /missions/voting-app-sinatra/part2/
 comments: true
 ---
 
@@ -114,4 +114,4 @@ Restart the app by pressing `Ctrl+C` to stop the existing server and then run `r
 
 You will see `Hello, voter!` in heading H1 format in the browser.
 
-{% include util/lazy-img.html src="projects/voting-app-sinatra/0.png" alt="Voting basic app" %}
+{% include util/lazy-img.html src="missions/voting-app-sinatra/0.png" alt="Voting basic app" %}

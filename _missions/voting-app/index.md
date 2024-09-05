@@ -1,13 +1,13 @@
 ---
 layout: tutorial_series
 projects: true
-learning_type: projects
+learning_type: missions
 tutorial_name: voting-app-sinatra
 title: Voting Web App in Sinatra
 date: 11th Oct, 2020 02:00:00
 description: Voting Web App in Sinatra
-permalink: /projects/voting-app-sinatra/
-thumbnail: projects/voting-app-sinatra/6.gif
+permalink: /missions/voting-app-sinatra/
+thumbnail: missions/voting-app-sinatra/6.gif
 disable_sidebar: true
 disable_toc: true
 ---
@@ -47,7 +47,7 @@ I am presenting it in my own way with little or updated content.
   <hr class="panel-line">
 
   <div class="container-fluid mt-4">
-    {% for section_hash in site.data.projects.voting-app-sinatra %}
+    {% for section_hash in site.data.missions.voting-app-sinatra %}
       {% for section in section_hash.links %}
         <div class="row mb-3 project-phase">
           <div class="col-md-7">

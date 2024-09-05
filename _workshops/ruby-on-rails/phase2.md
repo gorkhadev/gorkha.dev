@@ -1,15 +1,15 @@
 ---
 layout: tutorial_series
-learning_type: workshop
+learning_type: workshops
 tutorial_name: ruby-and-rails
 title: Introduction to Ruby language
 date: 11th Oct, 2020 02:00:00
 description: Get started with Ruby language and play around with its basics language features.
 excerpt: A hands-on learning experience on Ruby language and Ruby on Rails framework
-thumbnail: workshop/ideapasal/thumbnail.png
-permalink: /workshop/ruby-and-rails/phase2/
-prev_link: /workshop/ruby-and-rails/phase1
-next_link: /workshop/ruby-and-rails/phase3/
+thumbnail: workshops/ideapasal/thumbnail.png
+permalink: /workshops/ruby-and-rails/phase2/
+prev_link: /workshops/ruby-and-rails/phase1
+next_link: /workshops/ruby-and-rails/phase3/
 comments: true
 ---
 
@@ -19,7 +19,7 @@ Now, you will get hands-on experience with Ruby language.
 
 ## Try Ruby
 
-{% include util/lazy-img.html src="workshop/ideapasal/try-ruby.jpg" alt="Try Ruby" %}
+{% include util/lazy-img.html src="workshops/ideapasal/try-ruby.jpg" alt="Try Ruby" %}
 
 Visit the [Try Ruby portal](https://try.ruby-lang.org/){:target="_blank"}.
 
@@ -29,7 +29,7 @@ Now, just read and follow the instructions given in the left section, try to cop
 
 You can also go through the basic Ruby Course. [Click here](/ruby/section-one/).
 
-{% include util/lazy-img.html src="workshop/ideapasal/ruby-basics.jpg" alt="Ruby Basics Course" %}
+{% include util/lazy-img.html src="workshops/ideapasal/ruby-basics.jpg" alt="Ruby Basics Course" %}
 
 Just follow the course content, copy the code and try to run the Ruby statements in the IRB.
 

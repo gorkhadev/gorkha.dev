@@ -1,6 +1,6 @@
 ---
 layout: tutorial_series
-learning_type: projects
+learning_type: missions
 tutorial_name: calculator
 title: Calculator - UI and functional changes
 date: 17th Oct, 2020 02:00:00
@@ -9,10 +9,10 @@ tags:
  - javascript
  - beginner
 description: Calculator - UI and functional changes
-permalink: /projects/calculator/part2/
-next_link: /projects/calculator/part3/
-prev_link: /projects/calculator/part1/
-thumbnail: projects/calculator/part2_5.png
+permalink: /missions/calculator/part2/
+next_link: /missions/calculator/part3/
+prev_link: /missions/calculator/part1/
+thumbnail: missions/calculator/part2_5.png
 comments: true
 ---
 

@@ -1,19 +1,19 @@
 ---
 layout: tutorial_series
-projects: true
-learning_type: workshop
+workshops: true
+learning_type: workshops
 tutorial_name: ruby-and-rails
 title: Ruby and Ruby on Rails Hands-on Workshop
 date: 11th Oct, 2020 02:00:00
 description: A hands-on learning experience on Ruby language and Ruby on Rails framework
 excerpt: A hands-on learning experience on Ruby language and Ruby on Rails framework
-permalink: /workshop/ruby-and-rails/
-thumbnail: workshop/ideapasal/thumbnail.png
+permalink: /workshops/ruby-and-rails/
+thumbnail: workshops/ideapasal/thumbnail.png
 disable_sidebar: true
 disable_toc: true
 ---
 
-{% include util/lazy-img.html src="workshop/ideapasal/thumbnail.png" alt="Ruby and Rails Hands-on Workshop" %}
+{% include util/lazy-img.html src="workshops/ideapasal/thumbnail.png" alt="Ruby and Rails Hands-on Workshop" %}
 
 In this hands-on workshow, you will get the practical learning experience of Ruby language and Ruby on Rails framework.
 
@@ -56,12 +56,9 @@ Ruby is a general-purpose programming language and it has been used for many dif
 
 If you want to join Ruby/Rails community in Nepal, then check [Ruby Nepal Community](https://rubynepal.org/){:target="_blank"}.
 
-## Like and Join Community
+## Connect with Instructor
 
-If you want to get updates for any workshop, tutorial, learning materials, training or others, then:
-
-- Like the facebook page: [https://facebook.com/dhanusir](https://facebook.com/dhanusir)
-- [Click Join the Community](https://discord.gg/mGsNsdm6Sp)
+- [Dhanu Sir's Facebook page](https://facebook.com/dhanusir)
 
 ## Workshop Phases
 
@@ -69,7 +66,7 @@ If you want to get updates for any workshop, tutorial, learning materials, train
   <hr class="panel-line">
 
   <div class="container-fluid mt-4">
-    {% for section_hash in site.data.workshop.ruby-and-rails %}
+    {% for section_hash in site.data.workshops.ruby-and-rails %}
       {% for section in section_hash.links %}
         <div class="row mb-4 project-phase shadow-sm">
           <div class="col-md-7">

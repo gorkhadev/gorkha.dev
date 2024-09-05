@@ -18,7 +18,7 @@
   color: #666;
 }
 .section-heading {
-  font-family: "Playfair Display", serif;
+  font-family: "Kaisei Decol", serif;
   color: $color-primary;
   text-align: center;
   font-weight: 600;
@@ -32,7 +32,7 @@
   margin-top: 3rem;
 }
 .page-section-heading {
-  font-family: "Playfair Display", serif;
+  font-family: "Kaisei Decol", serif;
   color: $color-primary;
   text-align: center;
   font-weight: 500;
@@ -60,8 +60,8 @@
   padding: 1rem;
 
   .brand {
-    font-size: 2.2rem;
-    color: #111;
+    font-size: 2.5rem;
+    color: #000;
     font-family: $font-secondary;
     font-weight: 800;
     line-height: 24px;
@@ -102,40 +102,56 @@
 // Header SCSS
 .home_header {
   .banner-section {
-    padding: 2rem 0 0 0;
+    padding: 4rem 0 1rem;
+    background-color: #000;
+
+    .banner-img-wrapper {
+      .banner-img {
+        transform: scale(0.7);
+      }
+    }
 
     .left-panel-wrapper {
-
       h4 {
         color: #777;
       }
-      .slogan {
-        font-family: 'Kaisei Decol', serif;
-        font-size: 2.5rem;
-        color: $color-secondary;
-        font-weight: 600;
-        margin-bottom: 2rem;
-      }
+
       .banner-title {
-        font-family: 'Kaisei Decol', serif;
-        font-size: 3rem;
-        font-weight: 600;
-        color: #111;
-        margin-top: 1rem;
+        font-family: $font-secondary;
+        font-size: 3.2rem;
+        font-weight: 500;
+        margin-bottom: 1.5rem;
+        line-height: 60px;
+
+        h3 {
+          color: #ebebeb;
+          font-size: 2.5rem;
+          width: 90%;
+        }
+        .earning-color {
+          color: #14B058;
+        }
+        .typed {
+          color: #fff;
+          font-size: 2.8rem;
+        }
+        .typed-cursor {
+          color: #fff;
+        }
+      }
+      .banner-description {
+        font-family: $font-primary;
+        font-size: 1.5rem;
+        font-weight: 300;
+        color: #ebebeb;
+        width: 90%;
 
         .highlight {
           color: $color-secondary;
         }
       }
-      .banner-description {
-        font-weight: 300;
-        margin: 10px 0;
-        width: 90%;
-        color: #333;
-      }
       .services-wrapper {
-        display: flex;
-        gap: 2rem;
+        margin-top: 1rem;
 
         .service-list {
           list-style: none;
@@ -143,9 +159,12 @@
           margin-bottom: 0;
 
           .service-item {
-            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.2rem;
             margin-right: 8px;
-            color: #555;
+            color: #333;
 
             i {
               color: #14B058;
@@ -156,6 +175,11 @@
       .action-btns {
         margin-top: 2rem;
       }
+    }
+    .action-btns {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
     }
   }
 }
@@ -240,7 +264,7 @@
     background: #F6FAFF;
 
     h1 {
-      font-family: "Playfair Display", serif;
+      font-family: "Kaisei Decol", serif;
       font-weight: 600;
     }
   }
@@ -281,7 +305,7 @@
           color: #333;
 
           i {
-            color: #14B058;
+            color: #000;
           }
         }
       }
@@ -316,10 +340,10 @@
 
 // footer css
 .footer-section {
-  background: linear-gradient(180deg, #142850 0%, #0b1a38 70%);
+  background: #000;
 
   .footer-text {
-    font-family: "Playfair Display", serif;
+    font-family: "Kaisei Decol", serif;
     font-size: 30px;
     color: #fff;
     line-height: 25px;
@@ -382,15 +406,10 @@
 // common in courses page and home/course-section
 .courses-wrapper {
   .course-card {
-    border-radius: 6px;
-
-    .course-card-img {
-      border-radius: 6px 6px 0 0;
-    }
+    border-radius: 0;
 
     .card-body {
       background-color: #fdfdfd;
-      border-radius: 0 0 6px 6px;
       padding: 1.5rem 1.5rem 1rem 1.5rem;
 
       .card-title {
@@ -453,7 +472,7 @@
   padding: 4rem 0;
 
   .card-title {
-    color: $color-secondary;
+    color: $color-primary;
   }
   .link-btn {
     color: $color-primary;
@@ -496,6 +515,19 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+  }
+
+  .content-body-wrapper {
+    .card {
+      .card-title {
+        color: #111;
+      }
+      .tutorial-duration {
+        span {
+          color: #333;
+        }
+      }
+    }
   }
 }
 
@@ -578,7 +610,7 @@
     }
 
     .banner-img-wrapper {
-      margin-top: 3rem;
+      margin-top: 1rem;
     }
     .action-btns {
       display: flex;

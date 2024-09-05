@@ -6,6 +6,14 @@ $(function(){
     observer.observe();
   }
 
+  if (location.pathname == "/") {
+    var typed = new Typed(".typed", {
+      strings: ["Bad Softwares."],
+      typeSpeed: 100,
+      startDelay: 500,
+      backSpeed: 100,
+    });
+  }
   // Activate wow.js
   new WOW().init();
 

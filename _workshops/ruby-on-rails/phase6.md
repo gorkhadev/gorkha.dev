@@ -1,18 +1,18 @@
 ---
 layout: tutorial_series
-learning_type: workshop
+learning_type: workshops
 tutorial_name: ruby-and-rails
 date: 11th Oct, 2020 02:00:00
 title: Final styling
 description: Performing the final styling of the application
 excerpt: A hands-on learning experience on Ruby language and Ruby on Rails framework
-thumbnail: workshop/ideapasal/thumbnail.png
-permalink: /workshop/ruby-and-rails/phase6/
-prev_link: /workshop/ruby-and-rails/phase5/
+thumbnail: workshops/ideapasal/thumbnail.png
+permalink: /workshops/ruby-and-rails/phase6/
+prev_link: /workshops/ruby-and-rails/phase5/
 comments: true
 ---
 
-{% include util/lazy-img.html src="workshop/ideapasal/ideapasal.jpg" alt="Idea Pasal Final Styling" %}
+{% include util/lazy-img.html src="workshops/ideapasal/ideapasal.jpg" alt="Idea Pasal Final Styling" %}
 
 Now, you will perform the final UI changes to your application.
 

@@ -1,6 +1,6 @@
 ---
 layout: tutorial_series
-learning_type: projects
+learning_type: missions
 tutorial_name: calculator
 title: Calculator - build a simple one
 date: 16th Oct, 2020 02:00:00
@@ -9,10 +9,10 @@ tags:
  - javascript
  - beginner
 description: Calculator - build a simple one
-permalink: /projects/calculator/part1/
-prev_link: /projects/calculator/
-next_link: /projects/calculator/part2/
-thumbnail: projects/calculator/4.gif
+permalink: /missions/calculator/part1/
+prev_link: /missions/calculator/
+next_link: /missions/calculator/part2/
+thumbnail: missions/calculator/4.gif
 comments: true
 ---
 

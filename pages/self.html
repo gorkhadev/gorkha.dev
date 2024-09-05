@@ -20,12 +20,12 @@ page_name: self
   </div>
 
   <!-- tutorials -->
-  <div class="tutorials-section section-padding">
+  <div class="section-padding">
     <div class="container">
       <div class="section-header">
         <h1 class="section-heading">Learn from Hands-on Tutorials</h1>
         <div class="action-wrapper">
-          <a href="/tutorials/" class="btn btn-primary all-view-btn d-none d-sm-block">View All</a>
+          <a href="/tutorials/" class="btn btn-primary py-2 px-4 d-none d-sm-block">View All</a>
         </div>
       </div>
     </div>
@@ -40,35 +40,7 @@ page_name: self
         </div>
         <div class="row justify-content-center">
           <div class="action-wrapper mt-3">
-            <a href="/tutorials/" class="btn btn-primary all-view-btn d-block d-sm-none">View All</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- hands on projects -->
-  <div class="tutorials-section">
-    <div class="container">
-      <div class="section-header">
-        <h1 class="section-heading">Learn from Hands-on Projects</h1>
-        <div class="action-wrapper">
-          <a href="/projects/" class="btn btn-primary all-view-btn d-none d-sm-block">View All</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="content-body-wrapper">
-      <div class="container">
-        <div class="row tutorials-wrapper">
-          {% assign projects = site.projects | where: "projects", true | reverse %}
-          {% for project in projects %}
-            {% include project-card.html project=project %}
-          {% endfor %}
-        </div>
-        <div class="row justify-content-center">
-          <div class="action-wrapper mt-3">
-            <a href="/projects/" class="btn btn-primary all-view-btn d-block d-sm-none">View All</a>
+            <a href="/tutorials/" class="btn btn-primary py-2 px-4 d-sm-none">View All</a>
           </div>
         </div>
       </div>
@@ -76,12 +48,12 @@ page_name: self
   </div>
 
   <!-- hands on workshops -->
-  <div class="tutorials-section section-padding">
+  <div class="section-padding pt-0">
     <div class="container">
       <div class="section-header">
         <h1 class="section-heading">Learn from Hands-on Workshops</h1>
         <div class="action-wrapper">
-          <a href="/workshops/" class="btn btn-primary all-view-btn d-none d-sm-block">View All</a>
+          <a href="/workshops/" class="btn btn-dark py-2 px-4 d-none d-sm-block">View All</a>
         </div>
       </div>
     </div>
@@ -89,14 +61,14 @@ page_name: self
     <div class="content-body-wrapper">
       <div class="container">
         <div class="row tutorials-wrapper">
-          {% assign workshops = site.workshops | where: "projects", true | reverse %}
+          {% assign workshops = site.workshops | where: "workshops", true | reverse %}
         {% for workshop in workshops %}
           {% include course/course-card.html course=workshop type="project" %}
         {% endfor %}
         </div>
         <div class="row justify-content-center">
           <div class="action-wrapper mt-3">
-            <a href="/workshops/" class="btn btn-primary all-view-btn d-block d-sm-none">View All</a>
+            <a href="/workshops/" class="btn btn-dark py-2 px-4 d-sm-none">View All</a>
           </div>
         </div>
       </div>
@@ -104,12 +76,12 @@ page_name: self
   </div>
 
   <!-- courses -->
-  <div class="tutorials-section section-padding pt-0">
+  <div class="section-padding pt-0">
     <div class="container">
       <div class="section-header">
         <h1 class="section-heading">Learn from Courses</h1>
         <div class="action-wrapper">
-          <a href="/courses/" class="btn btn-primary all-view-btn d-none d-sm-block">View All</a>
+          <a href="/courses/" class="btn btn-dark py-2 px-4 d-none d-sm-block">View All</a>
         </div>
       </div>
     </div>
@@ -124,7 +96,7 @@ page_name: self
         </div>
         <div class="row justify-content-center">
           <div class="action-wrapper mt-3">
-            <a href="/courses/" class="btn btn-primary all-view-btn d-block d-sm-none">View All</a>
+            <a href="/courses/" class="btn btn-dark py-2 px-4 d-sm-none">View All</a>
           </div>
         </div>
       </div>

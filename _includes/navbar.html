@@ -1,8 +1,8 @@
 <nav class="navbar navbar-expand-lg navbar-light">
   <div class="container">
     <a href="/" class="brand">
-      <img src="{{ site.asset_url }}/img/logo.png" alt="Dhanu Sir Logo" />
-      <!-- <span>{{ site.title }}</span> -->
+      <!-- <img src="{{ site.asset_url }}/img/logo.png" alt="Dhanu Sir Logo" /> -->
+      <span class="brand-text">{{ site.title }}</span>
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
       aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -13,13 +13,19 @@
         <li class="nav-item{% if page.page_name == 'home' %} active{% endif %}">
           <a class="nav-link" href="/">Home</a>
         </li>
-        <li class="nav-item ms-3{% if page.page_name == 'about' %} active{% endif %}">
-          <a class="nav-link" href="/about/">About</a>
+        <li class="nav-item {% if page.page_name == 'self' %} active{% endif %}">
+          <a class="nav-link" href="/self/">Self</a>
         </li>
-        <!-- <li class="nav-item ms-3{% if page.page_name == 'bootcamp' %} active{% endif %}">
+        <!-- <li class="nav-item {% if page.page_name == 'about' %} active{% endif %}">
+          <a class="nav-link" href="/about/">About</a>
+        </li> -->
+        <li class="nav-item {% if page.page_name == 'missions' or page.learning_type == 'missions' %} active{% endif %}">
+          <a class="nav-link" href="/missions/">Missions</a>
+        </li>
+        <!-- <li class="nav-item {% if page.page_name == 'bootcamp' %} active{% endif %}">
           <a class="nav-link" href="/bootcamp/">Bootcamp</a>
         </li> -->
-        <li class="nav-item{% if page.page_name == 'courses' or page.page_name == 'tutorials' or page.page_name == 'projects' %} active{% endif %}">
+        <li class="nav-item{% if page.page_name == 'courses' or page.page_name == 'workshops' or page.learning_type == 'workshops' %} active{% endif %}">
           <div class="dropdown">
             <a class="dropdown-toggle nav-link" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Learn
@@ -27,7 +33,6 @@
 
             <div class="dropdown-menu text-center" aria-labelledby="dropdownMenuLink">
               <a class="dropdown-item" href="/tutorials/">Tutorials</a>
-              <a class="dropdown-item" href="/projects/">Projects</a>
               <a class="dropdown-item" href="/workshops/">Workshops</a>
               <a class="dropdown-item" href="/courses/">Courses</a>
               <!-- <a class="dropdown-item" href="/workshop/">Hands-on Workshops</a> -->
@@ -37,15 +42,14 @@
         <li class="nav-item{% if page.page_name == 'blog' %} active{% endif %}">
           <a class="nav-link" href="/blogs/">Blogs</a>
         </li>
-        <li class="nav-item{% if page.page_name == 'courses' or page.page_name == 'tutorials' or page.page_name == 'projects' %} active{% endif %}">
+        <li class="nav-item">
           <div class="dropdown">
             <a class="dropdown-toggle nav-link" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Others
             </a>
 
             <div class="dropdown-menu text-center" aria-labelledby="dropdownMenuLink">
-              <a class="dropdown-item" href="https://codetoearn.dev">Code To Earn(c2e)</a>
-              <a class="dropdown-item" href="https://gorkha.dev">Gorkha Dev</a>
+              <a class="dropdown-item" href="/links">Useful Links</a>
             </div>
           </div>
         </li>

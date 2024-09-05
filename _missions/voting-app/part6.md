@@ -1,12 +1,12 @@
 ---
 layout: tutorial_series
-learning_type: projects
+learning_type: missions
 tutorial_name: voting-app-sinatra
 title: Storing voting results
 date: 11th Oct, 2020 02:00:00
 description: Data persistence with YAML Store
-permalink: /projects/voting-app-sinatra/part6/
-prev_link: /projects/voting-app-sinatra/part5/
+permalink: /missions/voting-app-sinatra/part6/
+prev_link: /missions/voting-app-sinatra/part5/
 comments: true
 ---
 
@@ -59,7 +59,7 @@ We are using YAML here to easily manage our voting data.
 
 The web app now will functionally look like below:
 
-{% include util/lazy-img.html src="projects/voting-app-sinatra/6.gif" alt="Voting app final view" %}
+{% include util/lazy-img.html src="missions/voting-app-sinatra/6.gif" alt="Voting app final view" %}
 
 {% include util/highlight.html
     text="There are many areas of improvement here which I leave up to you. This is quite basic and serve as the base for

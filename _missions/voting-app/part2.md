@@ -1,13 +1,13 @@
 ---
 layout: tutorial_series
-learning_type: projects
+learning_type: missions
 tutorial_name: voting-app-sinatra
 title: List of choices to vote from
 date: 11th Oct, 2020 02:00:00
 description: Create a page to list different choices one can vote for
-permalink: /projects/voting-app-sinatra/part2/
-prev_link: /projects/voting-app-sinatra/part1
-next_link: /projects/voting-app-sinatra/part3/
+permalink: /missions/voting-app-sinatra/part2/
+prev_link: /missions/voting-app-sinatra/part1
+next_link: /missions/voting-app-sinatra/part3/
 comments: true
 ---
 
@@ -68,7 +68,7 @@ end
 
 After restarting the server, the web page will now show following:
 
-{% include util/lazy-img.html src="projects/voting-app-sinatra/1.png" alt="Voting app view index" %}
+{% include util/lazy-img.html src="missions/voting-app-sinatra/1.png" alt="Voting app view index" %}
 
 ## Code explanation
 

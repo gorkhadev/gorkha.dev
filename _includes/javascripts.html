@@ -6,6 +6,13 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.0/smooth-scroll.polyfills.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 
+<!-- extra js libraries -->
+{% if page.js_libs %}
+  {% for js_lib in page.js_libs %}
+    <script src="{{ js_lib }}"></script>
+  {% endfor %}
+{% endif %}
+
 <!-- Lazy load images -->
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
 <script type="text/javascript" src="{{ "/assets/js/custom.js" | relative_url }}"></script>

@@ -1,35 +1,36 @@
-title: Dhanu Sir
-email: dhanusirofficial@gmail.com
+title: Gorkha Dev
+email: gorkhadeveloper@gmail.com
 year: 2024
-tagline: 12+ Years of IT Experience
+tagline: Saving the World from Bad Softwares
 description: >-
-  Helping businesses or individual with Growth
+  We are the bravest of brave, loyal, humble, disciplined and
+  professional Software Developers from Nepal.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://dhanusir.com" # the base hostname & protocol for your site, e.g. http://example.com
-# asset_url: /assets                        # local assets: ending without forward slash
-asset_url: https://dhanusir.sirv.com        # cdn assets: ending without forward slash
+url: "https://gorkha.dev" # the base hostname & protocol for your site, e.g. http://example.com
+# asset_url: /assets                              # local assets: ending without forward slash
+asset_url: https://gorkhadev.sirv.com        # cdn assets: ending without forward slash
 thumbnail: thumbnail.jpg
 
 author: Dhanu
 author_url: https://dhanusir.com
-channel_link: https://t.me/dhanusirchannel
+channel_link: https://t.me/gorkhadev
 
 future: true # Show blog post of future date
 permalink: /blogs/:year/:month/:day/:title/
 
-google_analytics: G-PSKFQHJ0VY
+google_analytics:
 # Disqus Comments
 disqus:
-  shortname: dhanusir
+  shortname: gorkhadev
 
 contacts:
   linkedin:
-    url: https://www.linkedin.com/in/dhanusir
+    url: https://www.linkedin.com/company/gorkhadev
     label: LinkdIn
     class: fab fa-linkedin-in
     img: linkedin.png
   facebook:
-    url: https://www.facebook.com/dhanusir
+    url: https://www.facebook.com/gorkhadevnepal
     label: Facebook
     class: fab fa-facebook-f
     img: facebook.png
@@ -39,45 +40,36 @@ contacts:
     class: fab fa-twitter
     username: "@dhanumentor"
     img: twitter.png
-  instagram:
-    url: https://instagram.com/dhanusirofficial
-    label: YouTube Channel
-    class: fa-brands fa-instagram
-    img: youtube.png
+  # instagram:
+  #   url: https://instagram.com/c2edev
+  #   label: YouTube Channel
+  #   class: fa-brands fa-instagram
+  #   img: youtube.png
   github:
-    url: https://github.com/dhanusir
+    url: https://github.com/gorkhadev
     label: GitHub
     class: fab fa-github
     img: github.png
   # tiktok:
-  #   url: https://tiktok.com/@dhanusirofficial
+  #   url: https://tiktok.com/@c2edev
   #   label: YouTube Channel
   #   class: fa-brands fa-tiktok
   #   img: youtube.png
   email:
-    url: mailto:dhanusirofficial@gmail.com
+    url: mailto:gorkhadeveloper@gmail.com
     label: Email
     class: fas fa-envelope
     img: mail.png
   youtube:
-    url: https://www.youtube.com/@dhanusir
+    url: https://www.youtube.com/@gorkhadev
     label: YouTube Channel
     class: fab fa-youtube
     img: youtube.png
-  # discord:
-  #   url: https://discord.gg/hwNSzvE92F
-  #   label: Discord
-  #   class: fab fa-discord
-  #   img: discord.png
 
 collections:
   tutorials:
     output: true
-  getting_tastes:
-    output: true
-  exercises:
-    output: true
-  projects:
+  missions:
     output: true
   bootcamps:
     output: true

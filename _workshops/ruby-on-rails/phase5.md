@@ -1,19 +1,19 @@
 ---
 layout: tutorial_series
-learning_type: workshop
+learning_type: workshops
 tutorial_name: ruby-and-rails
 date: 11th Oct, 2020 02:00:00
 title: Adding uploading image feature
 description: Learn to add image to the idea in the application.
 excerpt: A hands-on learning experience on Ruby language and Ruby on Rails framework
-thumbnail: workshop/ideapasal/thumbnail.png
-permalink: /workshop/ruby-and-rails/phase5/
-prev_link: /workshop/ruby-and-rails/phase4/
-next_link: /workshop/ruby-and-rails/phase6/
+thumbnail: workshops/ideapasal/thumbnail.png
+permalink: /workshops/ruby-and-rails/phase5/
+prev_link: /workshops/ruby-and-rails/phase4/
+next_link: /workshops/ruby-and-rails/phase6/
 comments: true
 ---
 
-{% include util/lazy-img.html src="workshop/ideapasal/ideapasal5.jpg" alt="Idea Pasal Image uploading" %}
+{% include util/lazy-img.html src="workshops/ideapasal/ideapasal5.jpg" alt="Idea Pasal Image uploading" %}
 
 In this phase, we will add the feature of idea image upload in our application.
 

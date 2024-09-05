@@ -1,13 +1,13 @@
 ---
 layout: tutorial_series
-learning_type: projects
+learning_type: missions
 tutorial_name: voting-app-sinatra
 title: Layout and views
 date: 11th Oct, 2020 02:00:00
 description: Extract common view component into layout
-permalink: /projects/voting-app-sinatra/part4/
-prev_link: /projects/voting-app-sinatra/part3/
-next_link: /projects/voting-app-sinatra/part5/
+permalink: /missions/voting-app-sinatra/part4/
+prev_link: /missions/voting-app-sinatra/part3/
+next_link: /missions/voting-app-sinatra/part5/
 comments: true
 ---
 

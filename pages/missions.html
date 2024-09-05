@@ -1,17 +1,17 @@
 ---
 layout: default
-title: Projects
-permalink: /projects/
-page_name: projects
+title: Our Missions
+permalink: /missions/
+page_name: missions
 ---
 
 <!-- projects list -->
 <div class="projects-page page-padding">
-  <h1 class="text-center mb-4">Learn by building Projects</h1>
+  <h1 class="text-center mb-4">Our Missions</h1>
 
   <div class="container">
     <div class="row courses-wrapper justify-content-center">
-      {% assign projects = site.projects | where: "projects", true | reverse %}
+      {% assign projects = site.missions | where: "projects", true | reverse %}
       {% for project in projects %}
         {% include course/course-card.html course=project type="project" %}
       {% endfor %}

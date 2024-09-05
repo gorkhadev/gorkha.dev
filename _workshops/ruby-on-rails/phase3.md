@@ -1,19 +1,19 @@
 ---
 layout: tutorial_series
-learning_type: workshop
+learning_type: workshops
 tutorial_name: ruby-and-rails
 date: 11th Oct, 2020 02:00:00
 title: Getting started with first Ruby on Rails app
 description: Create the basic Ruby on Rails application and understand the CRUD concept
 excerpt: A hands-on learning experience on Ruby language and Ruby on Rails framework
-thumbnail: workshop/ideapasal/thumbnail.png
-permalink: /workshop/ruby-and-rails/phase3/
-prev_link: /workshop/ruby-and-rails/phase2/
-next_link: /workshop/ruby-and-rails/phase4/
+thumbnail: workshops/ideapasal/thumbnail.png
+permalink: /workshops/ruby-and-rails/phase3/
+prev_link: /workshops/ruby-and-rails/phase2/
+next_link: /workshops/ruby-and-rails/phase4/
 comments: true
 ---
 
-{% include util/lazy-img.html src="workshop/ideapasal/ideapasal1.jpg" alt="Idea Pasal server" %}
+{% include util/lazy-img.html src="workshops/ideapasal/ideapasal1.jpg" alt="Idea Pasal server" %}
 
 Now, we are ready to create our first Ruby on Rails application.
 
@@ -63,7 +63,7 @@ Go through the following commands to get started with application:
 
 4. Open the url [http://localhost:3000](http://localhost:3000){:target="_blank"} in the browser, you should see following output:
 
-    {% include util/lazy-img.html src="workshop/ideapasal/ideapasal2.jpg" alt="Idea Pasal server" %}
+    {% include util/lazy-img.html src="workshops/ideapasal/ideapasal2.jpg" alt="Idea Pasal server" %}
 
 ## Create the scaffold for Idea
 

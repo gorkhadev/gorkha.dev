@@ -1,15 +1,15 @@
 ---
 layout: tutorial_series
 projects: true
-learning_type: projects
+learning_type: missions
 tutorial_name: calculator
 title: Calculator in HTML, CSS and JavaScript
 date: 26th Oct, 2020 1:00:00
 duration: 6 Hrs
 modules: 3
 description: Calculator in HTML, CSS and JavaScript
-permalink: /projects/calculator/
-thumbnail: projects/calculator/thumbnail.png
+permalink: /missions/calculator/
+thumbnail: missions/calculator/thumbnail.png
 disable_sidebar: true
 disable_toc: true
 ---
@@ -28,7 +28,7 @@ Go through the following phases to build the calculator.
   <hr class="panel-line">
 
   <div class="container-fluid mt-4">
-    {% for section_hash in site.data.projects.calculator %}
+    {% for section_hash in site.data.missions.calculator %}
       {% for section in section_hash.links %}
         <div class="row mb-3 project-phase">
           <div class="col-md-7">

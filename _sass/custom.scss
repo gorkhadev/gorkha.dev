@@ -1,6 +1,6 @@
 /* Custom SCSS */
 // https://colorhunt.co/palette/167893
-$color-primary: #1200AF;
+$color-primary: #111;
 $color-secondary: #dd0033;
 $color-tertiary: #EEFF26;
 $color1: #fff;
@@ -10,14 +10,14 @@ $color4: #365586;
 $color5: #7bff98;
 $site-color: #555;
 
-$font-primary: "Poppins", Helvetica, Arial, sans-serif;
+$font-primary: "Open Sans", Helvetica, Arial, sans-serif;
 $font-secondary: "Kaisei Decol", serif;
 
 html, body {
   height: 100%;
 }
 body {
-  font-family: "Poppins", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-size: 17px;
   font-weight: 300;
 }

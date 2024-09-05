@@ -1,19 +1,19 @@
 ---
 layout: tutorial_series
-learning_type: workshop
+learning_type: workshops
 tutorial_name: ruby-and-rails
 date: 11th Oct, 2020 02:00:00
 title: Adding Bootstrap v5 and Basic Styling
 description: Learn to add CSS framework like Bootstrap v5 and perform basic styling.
 excerpt: A hands-on learning experience on Ruby language and Ruby on Rails framework
-thumbnail: workshop/ideapasal/thumbnail.png
-permalink: /workshop/ruby-and-rails/phase4/
-prev_link: /workshop/ruby-and-rails/phase3/
-next_link: /workshop/ruby-and-rails/phase5/
+thumbnail: workshops/ideapasal/thumbnail.png
+permalink: /workshops/ruby-and-rails/phase4/
+prev_link: /workshops/ruby-and-rails/phase3/
+next_link: /workshops/ruby-and-rails/phase5/
 comments: true
 ---
 
-{% include util/lazy-img.html src="workshop/ideapasal/ideapasal3.jpg" alt="Idea Pasal Styling" %}
+{% include util/lazy-img.html src="workshops/ideapasal/ideapasal3.jpg" alt="Idea Pasal Styling" %}
 
 To style the application, we will be using one of the popular CSS framework [Bootstrap v5](https://getbootstrap.com/docs/5.2/getting-started/introduction/){:target="_blank"}.
 
@@ -45,7 +45,7 @@ In the same file above, replace this line `<%= yield %>` with the following line
 
 Your application should looke like below:
 
-{% include util/lazy-img.html src="workshop/ideapasal/ideapasal4.jpg" alt="Idea Pasal Styling" %}
+{% include util/lazy-img.html src="workshops/ideapasal/ideapasal4.jpg" alt="Idea Pasal Styling" %}
 
 ## Adding basic styling
 

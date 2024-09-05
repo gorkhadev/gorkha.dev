@@ -1,13 +1,13 @@
 ---
 layout: tutorial_series
-learning_type: projects
+learning_type: missions
 tutorial_name: voting-app-sinatra
 title: Result page
 date: 11th Oct, 2020 02:00:00
 description: Add result route and its view
-permalink: /projects/voting-app-sinatra/part5/
-prev_link: /projects/voting-app-sinatra/part4/
-next_link: /projects/voting-app-sinatra/part6/
+permalink: /missions/voting-app-sinatra/part5/
+prev_link: /missions/voting-app-sinatra/part4/
+next_link: /missions/voting-app-sinatra/part6/
 comments: true
 ---
 
@@ -17,7 +17,7 @@ Till now we are able to cast vote. However, now we need to create a page to disp
 
 We need to add route for the result page as `/results` which you can see as a hyperlink in `/cast` page as you can notice below.
 
-{% include util/lazy-img.html src="projects/voting-app-sinatra/5.1.png" %}
+{% include util/lazy-img.html src="missions/voting-app-sinatra/5.1.png" %}
 
 Add the following code into `voting.rb` file:
 
@@ -49,7 +49,7 @@ Now, create its view file as `results.erb` under `views` directory.
 
 Now, check the results page after restarting the server (`Ctrl+c` and run app again). You will see following similar page:
 
-{% include util/lazy-img.html src="projects/voting-app-sinatra/5.2.png" alt="Voting app add results route" %}
+{% include util/lazy-img.html src="missions/voting-app-sinatra/5.2.png" alt="Voting app add results route" %}
 
 ## Code explanation
 

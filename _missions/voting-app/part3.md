@@ -1,13 +1,13 @@
 ---
 layout: tutorial_series
-learning_type: projects
+learning_type: missions
 tutorial_name: voting-app-sinatra
 title: Styling voting page
 date: 11th Oct, 2020 02:00:00
 description: Styling the list of choices page through CSS
-permalink: /projects/voting-app-sinatra/part3/
-prev_link: /projects/voting-app-sinatra/part2/
-next_link: /projects/voting-app-sinatra/part4/
+permalink: /missions/voting-app-sinatra/part3/
+prev_link: /missions/voting-app-sinatra/part2/
+next_link: /missions/voting-app-sinatra/part4/
 comments: true
 ---
 
@@ -47,4 +47,4 @@ button {
 }
 ```
 
-{% include util/lazy-img.html src="projects/voting-app-sinatra/2.png" alt="Voting app adding CSS" %}
+{% include util/lazy-img.html src="missions/voting-app-sinatra/2.png" alt="Voting app adding CSS" %}
