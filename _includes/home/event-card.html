@@ -1,0 +1,26 @@
+<div class="card event-card shadow-sm border-1 rounded-0">
+  <div class="card-body p-0">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="event-date border-bottom h-100">
+          <div class="date_day">
+            <div class="date">{{ include.event.date }}</div>
+            <div class="day">({{ include.event.day }})</div>
+          </div>
+          <div class="timing">{{ include.event.timing }}</div>
+        </div>
+      </div>
+      <div class="col-md-12">
+        <div class="event-details">
+          <h2 class="card-title mb-0">{{ include.event.name }}</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card-footer">
+    <span class="venue">{{ include.event.venue }}</span>
+    <span class="line me-3">
+      <!-- <a href="{{ include.event.url }}" class="text-dark">Read More <i class="fa-solid fa-arrow-right"></i></a> -->
+    </span>
+  </div>
+</div>

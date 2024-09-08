@@ -1,0 +1,18 @@
+placeholder:
+  # copy below template to create new event
+  - name: Coming Soon ...
+    venue: # online or offline
+    venue_addr: # Physical address
+    date: # 18th - 20th Sept
+    day: # Web - Fri
+    timing: # 5PM - 7PM NPT
+    url: # URL of event /events/sfd-2024/
+upcoming:
+  - name: HTML and CSS 101 Mastery
+    venue: online
+    venue_addr:
+    date: 18th - 20th Sept
+    day: Web - Fri
+    timing: 5PM - 7PM NPT
+    url: /events/sfd-2024/
+past:
