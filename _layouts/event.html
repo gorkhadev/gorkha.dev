@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
+  <body id="pagetop" class="d-flex flex-column default_body">
+    <header class="default_header">
+      {%- include navbar.html -%}
+    </header>
+    <main class="tutorial-body">
+      <div class="container-fluid td-outer">
+        <div class="td-main">
+          <div class="row justify-content-center flex-xl-nowrap">
+
+            <main class="col-12 col-md-10 col-xl-7 px-md-2 pr-md-4" role="main">
+              <div class="td-content">
+                {% if page.thumbnail %}
+                  <img src="{{ site.asset_url }}/img/{{ page.thumbnail }}" class="thumbnail shadow img-fluid" />
+                {% endif %}
+                {% if page.thumbnail_credit %}
+                  <p class="thumbnail-credit">Image: {{ page.thumbnail_credit }}</p>
+                {% endif %}
+
+                {% if page.description %}
+                  <h1 id="{{ page.description | remove: ':' | remove: ',' | downcase | split: ' ' | join: '-' }}">{{ page.description }}</h1>
+                {% endif %}
+
+                {% if page.tags %}
+                  <div class="tags my-4"></div>
+                {% endif %}
+
+                <hr class="mb-5">
+
+                {{ content | markdownify }}
+
+                <div class="show-share mt-4">
+                  {% include share-page.html %}
+                </div>
+                {% if site.disqus.shortname and page.comments == true  %}
+                  <div id="comments" class="mt-3">
+                    <h4 class="text-center">Help us with comment or feedback to improve this tutorial.</h4>
+                    <!-- {% include disqus_comments.html %} -->
+                  </div>
+                {% endif %}
+              </div>
+            </main>
+
+            <div class="d-none d-xl-block col-md-2 td-toc d-print-none">
+              {% include share-page.html %}
+              {% include course/useful-links.html %}
+              <a href="/events/" class="btn btn-outline-dark font-weight-bold text-center d-block fs-5 py-3">Back to All Events</a>
+
+              <div id="event-toc">
+                <p class="h4 mb-2">Table of Contents</p>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+
+        {% include footer.html %}
+
+        {% include event-toc.html %}
+      </div>
+    </main>
+
+    {% include course/toc.html %}
+
+    {% include course/tags.html %}
+
+
+    <a href="#pagetop" class="scroll" id="toTop">
+      <img src="/assets/img/top.png" id="toTopHover" style="opacity: 1;" />
+    </a>
+
+    {% include javascripts.html %}
+    {% include youtube-video-modal.html %}
+  </body>
+
+</html>

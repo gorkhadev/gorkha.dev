@@ -1,0 +1,29 @@
+---
+layout: default
+title: Events
+permalink: /events/
+page_name: events
+---
+
+<div class="community-events page-margin mb-5">
+  <div class="container">
+    <div class="section-header text-center mb-5">
+      <h1 class="mb-0">All Events</h1>
+    </div>
+    <div class="row justify-content-center mt-5">
+      {% if site.data.events.upcoming.size > 0 %}
+        {% for event in site.data.events.upcoming %}
+          <div class="col-lg-6 mb-4">
+            {% include home/event-card.html event=event %}
+          </div>
+        {% endfor %}
+      {% else %}
+        {% assign event = site.data.events.placeholder %}
+        <div class="col-lg-6 mb-4">
+          {% include home/event-card.html event=event %}
+        </div>
+      {% endif %}
+    </div>
+
+  </div>
+</div>

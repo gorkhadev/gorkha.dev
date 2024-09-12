@@ -806,3 +806,34 @@
     }
   }
 }
+
+.tutorial-body {
+  #event-toc {
+    margin-top: 1rem;
+    padding: 1rem 0.8rem;
+    border: 1px solid #ddd;
+    background-color: #f6f6f6;
+    border-radius: 5px;
+
+    .md-nav__item {
+      .md-nav {
+        margin-bottom: 0;
+      }
+      .md-nav__link {
+        color: #222;
+        font-size: 18px;
+      }
+
+      .md-nav__link.nav-h2 {
+        color: #555;
+        font-size: 16px;
+        padding: 2px 1px 2px 5px;
+      }
+    }
+  }
+  .tags {
+    .badge {
+      background-color: #333;
+    }
+  }
+}

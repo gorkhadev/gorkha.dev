@@ -9,8 +9,6 @@ description: A hands-on learning experience on Ruby language and Ruby on Rails f
 excerpt: A hands-on learning experience on Ruby language and Ruby on Rails framework
 permalink: /workshops/ruby-and-rails/
 thumbnail: workshops/ideapasal/thumbnail.png
-disable_sidebar: true
-disable_toc: true
 ---
 
 {% include util/lazy-img.html src="workshops/ideapasal/thumbnail.png" alt="Ruby and Rails Hands-on Workshop" %}
