@@ -1,0 +1,25 @@
+title: Self-evaluate your learning
+randomized: false
+questions:
+
+ - type: "multiple-choice"
+   question: Which of the following is the correct doctype for HTML5 document?
+   items:
+    - choice: <html5 doctype>
+      correct: false
+    - choice: <!DOCTYPE HTML>
+      correct: true
+    - choice: <!HTML doctype>
+      correct: false
+   followup: |
+     In HTML5, we use <!DOCTYPE HTML> to denote the document as HTML5 document.
+
+ - type: "multiple-choice"
+   question: The <title> tag is used to add title for the document.
+   items:
+    - choice: True
+      correct: true
+    - choice: False
+      correct: false
+   followup: |
+      In HTML, we use <title> tag to add title for the document.
