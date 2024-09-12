@@ -10,7 +10,7 @@ questions:
     - choice: False
       correct: true
    followup: |
-     In Ruby we use \# for single line comments
+     In Ruby we use \# for single line comments.
 
  - type: "multiple-choice"
    question: "We use .ruby as our extension for Ruby programs."
