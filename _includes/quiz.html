@@ -1,4 +1,9 @@
-{% assign quiz = site.data.quizzes[include.file] %}
+{% if include.folder %}
+  {% assign quiz = site.data.quizzes[include.folder][include.file] %}
+{% else %}
+  {% assign quiz = site.data.quizzes[include.file] %}
+{% endif %}
+
 {% assign id_tokens = quiz.title | downcase | split: " " %}
 {% if quiz.randomize == true %}{% assign questions = quiz.questions | sample %}{% else %}{% assign questions = quiz.questions %}{% endif %}{% if quiz.title %}<h2 id="{{ id_tokens | join: '_' }}"><i class="fa-solid fa-user-check me-2"></i>{{ quiz.title }}</h2>{% endif %}{% for item in questions %}
 {% if item.type == "multiple-choice" %}{% include quiz/multiple-choice.html item=item count=forloop.index %}{% endif %}{% endfor %}

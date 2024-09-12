@@ -2,7 +2,7 @@
   <p class="admonition-title">
     {% if include.item.question %}
       <i class="fa-solid fa-circle-question fa-xl color-primary me-2"></i>
-      <span class="color-primary fs-5">{{ include.item.question }}</span>
+      <span class="color-primary fs-5">{{ include.item.question | escape }}</span>
     {% else %}
       Question {{ include.count }}
     {% endif %}
@@ -13,7 +13,7 @@
         {% if choice.correct == true %}
           <span class="correct-{{ include.count }}">
         {% endif %}
-        {{ forloop.index }}. {{ choice.choice }}
+        {{ forloop.index }}. {{ choice.choice | escape }}
         {% if choice.correct == true %}
           </span>
         {% endif %}
@@ -27,6 +27,6 @@
     $(".correct-more-{{ include.count }}").css("display", "block")'>Verify Answer
   </button>
   {% if include.item.followup %}
-    <p class="well border border-danger p-2 correct-more-{{ include.count }}" style="display:none; line-height: 28px;">{{ include.item.followup }}</p>
+    <p class="well border border-danger p-2 correct-more-{{ include.count }}" style="display:none; line-height: 28px;">{{ include.item.followup | escape }}</p>
   {% endif %}
 </div>
