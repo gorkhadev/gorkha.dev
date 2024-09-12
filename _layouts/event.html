@@ -33,7 +33,7 @@
 
                 {{ content | markdownify }}
 
-                <div class="show-share mt-4">
+                <div class="show-share mt-4 d-none d-sm-block">
                   {% include share-page.html %}
                 </div>
                 {% if site.disqus.shortname and page.comments == true  %}
@@ -45,12 +45,12 @@
               </div>
             </main>
 
-            <div class="d-none d-xl-block col-md-2 td-toc d-print-none">
+            <div class="d-md-block col-md-2 td-toc d-print-none">
               {% include share-page.html %}
               {% include course/useful-links.html %}
               <a href="/events/" class="btn btn-outline-dark font-weight-bold text-center d-block fs-5 py-3">Back to All Events</a>
 
-              <div id="event-toc">
+              <div id="event-toc" class="d-none d-sm-block">
                 <p class="h4 mb-2">Table of Contents</p>
               </div>
             </div>
