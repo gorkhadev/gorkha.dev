@@ -6,7 +6,7 @@ title: Introduction to Ruby language
 date: 11th Oct, 2020 02:00:00
 description: Get started with Ruby language and play around with its basics language features.
 excerpt: A hands-on learning experience on Ruby language and Ruby on Rails framework
-thumbnail: workshops/ideapasal/thumbnail.png
+thumbnail: workshops/ruby-on-rails-101/thumb.jpg
 permalink: /workshops/ruby-and-rails/phase2/
 prev_link: /workshops/ruby-and-rails/phase1
 next_link: /workshops/ruby-and-rails/phase3/

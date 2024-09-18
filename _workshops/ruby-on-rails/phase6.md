@@ -6,7 +6,7 @@ date: 11th Oct, 2020 02:00:00
 title: Final styling
 description: Performing the final styling of the application
 excerpt: A hands-on learning experience on Ruby language and Ruby on Rails framework
-thumbnail: workshops/ideapasal/thumbnail.png
+thumbnail: workshops/ruby-on-rails-101/thumb.jpg
 permalink: /workshops/ruby-and-rails/phase6/
 prev_link: /workshops/ruby-and-rails/phase5/
 comments: true
