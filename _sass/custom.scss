@@ -29,7 +29,9 @@ code, kbd, pre, samp {
   font-size: 15.5px;
   line-height: 22px;
 }
-
+.btn {
+  border-radius: 0;
+}
 .color-primary {
   color: $color-primary;
 }
@@ -45,7 +47,7 @@ code, kbd, pre, samp {
 .secondary-color {
   color: $color5;
 }
-.btn-primary {
+.btn-dark {
   background-color: $color-primary;
   border-color: $color-primary;
 }
@@ -263,9 +265,16 @@ a {
   margin-bottom: 1rem;
 }
 .td-content .highlighter-rouge, .td-content figure.highlight {
-  padding: 0.6rem 1rem;
-  background: #eee;
   border-radius: 0;
+
+  pre.highlight {
+    background-color: #f8f8f8 !important;
+    padding: 10px;
+
+    code {
+      background-color: transparent;
+    }
+  }
 }
 
 textarea {
@@ -394,5 +403,5 @@ textarea {
 @import "membership";
 @import "calendar";
 @import "bootcamp";
-@import "visit_nepal";
+@import "learning-page";
 @import "responsive";

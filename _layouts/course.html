@@ -11,7 +11,7 @@
         {% include staticbanner.html %}
       {% endif %}
     </header>
-    <main class="course-body">
+    <main class="learning-page course-body">
       <div class="container-fluid td-outer">
         <div class="td-main">
           <div class="row justify-content-center flex-xl-nowrap">
@@ -57,17 +57,17 @@
               </nav> -->
               <div class="td-content">
                 {% if page.prev_section %}
-                  <a href="{{ page.prev_section }}" class="btn btn-primary rounded-0" role="button">Go to Previous Section</a>
+                  <a href="{{ page.prev_section }}" class="btn btn-dark rounded-0" role="button">Go to Previous Section</a>
                 {% endif %}
 
                 {{ content }}
 
                 <div class="mt-5 d-flex justify-content-between">
                   {% if page.prev_link %}
-                    <a href="{{ page.prev_link }}" class="btn btn-primary px-4 me-5" role="button">Previous</a>
+                    <a href="{{ page.prev_link }}" class="btn btn-dark px-4 me-5" role="button">Previous</a>
                   {% endif %}
                   {% if page.next_link %}
-                    <a href="{{ page.next_link }}" class="btn btn-primary px-4" role="button">Next</a>
+                    <a href="{{ page.next_link }}" class="btn btn-dark px-4" role="button">Next</a>
                   {% endif %}
                 </div>
 
