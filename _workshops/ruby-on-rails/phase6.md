@@ -23,7 +23,7 @@ Update the `app/views/ideas/index.html.erb` file with the following content:
 ```erb
 <h1>Ideas</h1>
 
-<%= link_to "Add a new idea", new_idea_path, class: "btn btn-primary mb-3" %>
+<%= link_to "Add a new idea", new_idea_path, class: "btn btn-dark mb-3" %>
 
 <div class="list-group w-auto">
   <% @ideas.each do |idea| %>
@@ -51,7 +51,7 @@ Update the `app/views/ideas/show.html.erb` file:
 </div>
 
 <div class="d-flex gap-2 py-2">
-  <%= link_to "Edit this idea", edit_idea_path(@idea), class: "btn btn-primary" %>
+  <%= link_to "Edit this idea", edit_idea_path(@idea), class: "btn btn-dark" %>
   <%= link_to "Back to ideas", ideas_path, class: "btn btn-outline-secondary" %>
   <%= button_to "Destroy this idea", @idea, method: :delete, class: "btn btn-danger", form: { data: { turbo_confirm: "Are you sure?" } } %>
 </div>
@@ -98,7 +98,7 @@ Update the `app/views/ideas/edit.html.erb` file:
 <br>
 
 <div class="d-flex gap-2 py-2">
-  <%= link_to "Show this idea", @idea, class: "btn btn-primary" %>
+  <%= link_to "Show this idea", @idea, class: "btn btn-dark" %>
   <%= link_to "Back to ideas", ideas_path, class: "btn btn-outline-secondary" %>
 </div>
 ```

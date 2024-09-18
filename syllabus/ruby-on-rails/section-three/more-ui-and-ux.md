@@ -131,7 +131,7 @@ Update the `app/views/pages/home.html.erb` file with following HTML content:
         Get your idea validated by people, work on it and build your next startup!
       </p>
       <p>
-        <%= link_to  "Visit all ideas", ideas_path, class: 'btn btn-primary' %>
+        <%= link_to  "Visit all ideas", ideas_path, class: 'btn btn-dark' %>
       </p>
     </div>
   </section>
@@ -207,7 +207,7 @@ p {
   line-height: 1.5;
   border-radius: .25rem;
 }
-.btn-primary {
+.btn-dark {
   color: #fff;
   background-color: #007bff;
   border-color: #007bff;
