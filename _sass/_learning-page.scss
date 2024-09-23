@@ -16,17 +16,17 @@ $color-source:      #360084 !default;
 // blockquotes
 $color-callout:     #f4fd9c !default;
 $color-caution:     #cf000e !default;
-$color-challenge:   #eec275 !default;
+$color-challenge:   #060606 !default;
 $color-checklist:   #dfd2a0 !default;
 $color-discussion:  #eec275 !default;
 $color-keypoints:   #7ae78e !default;
 $color-objectives:  #daee84 !default;
 $color-prereq:      #9cd6dc !default;
-$color-solution:    #ded4b9 !default;
+$color-solution:    #4e4e4e !default;
 $color-testimonial: #fc8dc1 !default;
 $color-takeaways:   #fad586 !default;
-$color-instructor:  #fbeeac !default;
-$color-example:     #eee !default;
+$color-instructor:  #1c1c1c !default;
+$color-example:     #060606 !default;
 
 //----------------------------------------
 // Specialized code blocks.
@@ -135,7 +135,7 @@ $color-example:     #eee !default;
     margin: 48px 0 16px;
     border-bottom: solid 1px #eaecef;
     padding-bottom: 0.3em;
-    line-height: 1.25;
+    line-height: 1.25;    
   }
 
   section h3 { margin: 30px 0 14px; }
@@ -159,11 +159,12 @@ $color-example:     #eee !default;
     padding: 0 0 $codeblock-padding $codeblock-padding !important;
     border: 1px solid !important;
     border-color: $color !important;
-    border-radius: 0 !important;
+    border-radius: 0 !important;    
 
     margin: 15px 5px 10px 0 !important;
 
     h2 {
+      color: #fff !important;
       padding-top: $codeblock-padding !important;
       padding-bottom: $codeblock-padding !important;
       font-size: 20px !important;
@@ -223,7 +224,7 @@ $color-example:     #eee !default;
   .keypoints    { background-color: #7ae78e20; }
   .objectives   { background-color: #daee8420; }
   .prereq       { background-color: #9cd6dc20; }
-  .solution     { background-color: #ded4b94d; }
+  .solution     { background-color: #fff; }
   .testimonial  { background-color: #fc8dc120; }
   .takeaways    { background-color: #fff8e8b8; }
   .overview     { background-color: #daee8420; }
@@ -249,7 +250,7 @@ $color-example:     #eee !default;
   // Override Bootstrap settings.
   //----------------------------------------
 
-  blockquote { font-size: inherit; }
+  blockquote { font-size: inherit; margin-bottom: 0 !important; }
 
   // a code {
   //   color: #006cad;
