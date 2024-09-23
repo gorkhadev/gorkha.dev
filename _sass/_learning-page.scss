@@ -174,15 +174,6 @@ $color-example:     #060606 !default;
       padding-left: 8px !important;
       margin-left: -$codeblock-padding !important; // to move back to the left margin of the enclosing blockquote
     }
-    h2:before {
-      font-family: 'boxicons'!important;
-      content: $glyph !important;
-      float: left !important;
-      padding-left: $codeblock-padding !important;
-      padding-right: $codeblock-padding !important;
-      display: inline-block !important;
-      -webkit-font-smoothing: antialiased !important;
-    }
   }
 
   .callout{ @include bkSetup($color-callout, "\e94b"); }
@@ -285,17 +276,8 @@ $color-example:     #060606 !default;
         cursor: pointer;
       }
 
-      &:before {
-        font-family: 'boxicons'!important;
-        content: "\ea92";
-        float: left;
-        padding-left: 5px;
-        padding-right: 5px;
-        display: inline-block;
-        -webkit-font-smoothing: antialiased;
-      }
       span.fold-unfold {
-        margin-left: 1em;
+        margin-left: 10px;
         opacity: 0.5;
       }
       .icon {
@@ -353,7 +335,7 @@ $color-example:     #060606 !default;
   }
 
   span.fold-unfold {
-    margin-left: 1em;
+    margin-left: 10px;
     opacity: 0.5;
   }
 

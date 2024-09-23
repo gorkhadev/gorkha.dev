@@ -18,14 +18,13 @@ comments: true
 The instructor for this workshop is __Budh Ram Gurung__.
 He is also known as __Dhanu Sir__ and founder of this platform.
 
-He is a _Career Growth Coach, IT Coach, Life Coach, and an Entrepreneur._
+He is an _IT Trainer, Mentor, and an Entrepreneur._
 
 He has been teaching independently from 2019 and helping students in developing skills required get JOB in IT industry.
 
 Previously, he has worked as a Software Developer ranging from startup to MNC ([Red Hat](https://redhat.com/){:target="_blank"}).
-He has around 12 Years of IT experience.
 
-Read more about him [here](/about).
+He has 13+ Years of IT experience ranging from Web Development, Quality Assurance(QA) and DevOps.
 
 ## Participant Introduction
 
@@ -53,7 +52,7 @@ For the hands-on lab experience, you can go with either two approaches:
   - Click on the VS Code binary after it get downloaded.
   - Follow the instllation instructions.
 
-    NOTE: Tick both the check boxes that says "Add 'Open with Code' action ..." 
+    NOTE: Tick both the check boxes that says `Add 'Open with Code' action ...`
 
 2. Launch the VS code after installation is complete.
 
