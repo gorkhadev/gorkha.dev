@@ -2,14 +2,14 @@
 layout: tutorial_series
 learning_type: workshops
 date: 11th Oct, 2020 02:00:00
-tutorial_name: ruby-and-rails
+tutorial_name: ruby-and-rails-101
 title: Introduction and Lab Preparation
 description: Introduction of the instructor(s), participants and lab preparation.
 excerpt: A hands-on learning experience on Ruby language and Ruby on Rails framework
 thumbnail: workshops/ruby-on-rails-101/thumb.jpg
-permalink: /workshops/ruby-and-rails/phase1/
-prev_link: /workshops/ruby-and-rails/
-next_link: /workshops/ruby-and-rails/phase2/
+permalink: /workshops/ruby-and-rails-101/phase1/
+prev_link: /workshops/ruby-and-rails-101/
+next_link: /workshops/ruby-and-rails-101/phase2/
 comments: true
 ---
 

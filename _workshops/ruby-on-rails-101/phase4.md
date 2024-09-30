@@ -1,15 +1,15 @@
 ---
 layout: tutorial_series
 learning_type: workshops
-tutorial_name: ruby-and-rails
+tutorial_name: ruby-and-rails-101
 date: 11th Oct, 2020 02:00:00
 title: Adding Bootstrap v5 and Basic Styling
 description: Learn to add CSS framework like Bootstrap v5 and perform basic styling.
 excerpt: A hands-on learning experience on Ruby language and Ruby on Rails framework
 thumbnail: workshops/ruby-on-rails-101/thumb.jpg
-permalink: /workshops/ruby-and-rails/phase4/
-prev_link: /workshops/ruby-and-rails/phase3/
-next_link: /workshops/ruby-and-rails/phase5/
+permalink: /workshops/ruby-and-rails-101/phase4/
+prev_link: /workshops/ruby-and-rails-101/phase3/
+next_link: /workshops/ruby-and-rails-101/phase5/
 comments: true
 ---
 

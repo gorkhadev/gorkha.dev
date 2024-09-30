@@ -1,1 +1,4 @@
-<img data-src="{{ site.asset_url }}/img/{{ include.src }}" class="lozad img-fluid shadow" alt="{{ include.alt }}" data-proofer-ignore />
+<img data-src="{{ site.asset_url }}/img/{{ include.src }}" class="lozad img-fluid shadow mb-0" alt="{{ include.alt }}" data-proofer-ignore />
+{% if include.caption %}
+  <p class="image-caption">Image: {{ include.caption }}</p>
+{% endif %}

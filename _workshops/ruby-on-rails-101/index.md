@@ -2,12 +2,12 @@
 layout: tutorial_series
 workshops: true
 learning_type: workshops
-tutorial_name: ruby-and-rails
+tutorial_name: ruby-and-rails-101
 title: Ruby and Ruby on Rails Hands-on Workshop
 date: 11th Oct, 2020 02:00:00
 description: A hands-on learning experience on Ruby language and Ruby on Rails framework
 excerpt: A hands-on learning experience on Ruby language and Ruby on Rails framework
-permalink: /workshops/ruby-and-rails/
+permalink: /workshops/ruby-and-rails-101/
 thumbnail: workshops/ruby-on-rails-101/thumb.jpg
 ---
 
@@ -64,7 +64,7 @@ If you want to join Ruby/Rails community in Nepal, then check [Ruby Nepal Commun
   <hr class="panel-line">
 
   <div class="container-fluid mt-4">
-    {% for section_hash in site.data.workshops.ruby-and-rails %}
+    {% for section_hash in site.data.workshops.ruby-and-rails-101 %}
       {% for section in section_hash.links %}
         <div class="row mb-4 project-phase shadow-sm">
           <div class="col-md-7">
