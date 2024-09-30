@@ -50,7 +50,7 @@ Go through following steps to setup Docker in your machine:
 - Visit [Official Docker Documentation](https://docs.docker.com/get-docker/){:target="_blank"}.
 - Choose the installation path as per your operating system.
 
-  <img class="embed-img" height="80%" src="{{ site.image_base_url }}/docker/installation-path.jpg" alt="Docker Installation Path">
+  {% include util/lazy-img.html src="workshops/docker-101/installation-path.jpg" alt="Docker Installation Path" %}
 
   __NOTE:__ For Windows or macOS, a native binary will be downloaded. Run the binary as per
   the instructions given in the official documentation.
