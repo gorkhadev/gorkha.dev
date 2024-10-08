@@ -20,10 +20,22 @@ page_name: events
       {% else %}
         {% assign event = site.data.events.placeholder %}
         <div class="col-lg-6 mb-4">
-          {% include home/event-card.html event=event %}
+          <h3 class="text-center">New event yet to be decided.</h3>
         </div>
       {% endif %}
     </div>
 
+    <hr>
+    
+    <div class="section-header text-center mb-4 mt-5">
+      <h2 class="mb-0">Past Events</h2>
+    </div>
+    <div class="row justify-content-center">
+      {% for event in site.data.events.past %}
+        <div class="col-lg-6 mb-4">
+          {% include home/event-card.html event=event %}
+        </div>
+      {% endfor %}
+    </div>
   </div>
 </div>
