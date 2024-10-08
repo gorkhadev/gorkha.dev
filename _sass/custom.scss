@@ -389,6 +389,25 @@ textarea {
   z-index: 10000;
 }
 
+// copy code
+.highlighter-rouge {
+  position: relative;
+
+  .copy-code {
+    position: absolute;
+    top: 2px;
+    right: 5px;
+    border: none;
+    background: #111;
+    color: #fff;
+    // border-radius: 3px;
+    padding: 2px 6px;
+  }
+  .copy-code:hover {
+    transform: scale(1.1);
+  }
+}
+
 @import "docsy-jekyll";
 @import "syntax-highlighting";
 @import "animate.min";

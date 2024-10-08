@@ -8,6 +8,7 @@ placeholder:
     timing: # 5PM - 7PM NPT
     url: # URL of event /events/sfd-2024/
 upcoming:
+past:
   - name: HTML and CSS 101 Mastery
     venue: online
     venue_addr:
@@ -15,4 +16,3 @@ upcoming:
     day: Mon - Wed
     timing: 5PM - 7PM NPT
     url: /events/html-css-101-mastery/
-past:
