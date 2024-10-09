@@ -392,20 +392,21 @@ textarea {
 // copy code
 .highlighter-rouge {
   position: relative;
+  transition: transform 0.3s;
 
   .copy-code {
     position: absolute;
-    top: 2px;
-    right: 5px;
+    top: 5px;
+    right: 8px;
     border: none;
-    background: #111;
+    background: rgb(46, 45, 116);
     color: #fff;
-    // border-radius: 3px;
+    border-radius: 4px;
     padding: 2px 6px;
   }
-  .copy-code:hover {
-    transform: scale(1.1);
-  }
+  // .copy-code:hover {
+
+  // }
 }
 
 @import "docsy-jekyll";
