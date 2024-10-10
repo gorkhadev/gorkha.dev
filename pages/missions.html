@@ -11,9 +11,9 @@ page_name: missions
 
   <div class="container">
     <div class="row courses-wrapper justify-content-center">
-      {% assign projects = site.missions | where: "projects", true | reverse %}
-      {% for project in projects %}
-        {% include course/course-card.html course=project type="project" %}
+      {% assign missions = site.missions | where: "mission", true | reverse %}
+      {% for mission in missions %}
+        {% include mission-card.html mission=mission %}
       {% endfor %}
     </div>
   </div>

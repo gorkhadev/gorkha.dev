@@ -1,6 +1,7 @@
 ---
-layout: tutorial
-tutorial: true
+layout: single-task-mission
+mission: true
+mission_type: single-task
 title: Simple Calculator in Ruby
 date: 20th Sept, 2020 02:00:00
 duration: 1.5 Hrs
@@ -9,8 +10,8 @@ tags:
  - ruby
  - beginner
 description: Simple Calculator in Ruby
-permalink: /tutorials/calculator-ruby/
-thumbnail: https://asciinema.org/a/361518.svg
+permalink: /missions/calculator-ruby/
+thumbnail: missions/single-task/calculator-ruby-thumb.jpg
 external: true
 comments: true
 ---

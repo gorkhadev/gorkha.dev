@@ -1,0 +1,17 @@
+<div class="card mission-card col-md-4 p-3 border-0">
+  <a href="{{ include.mission.url }}" class="inline-block shadow">
+    <img src="{{ site.asset_url }}/img/{{ include.mission.thumbnail }}" 
+      class="mission-card-img w-100" alt="{{ include.mission.title }}">
+    <div class="card-body d-flex flex-column justify-content-between">
+      <h5 class="card-title">{{ include.mission.title }}</h5>
+      <div class="mission-meta d-flex justify-content-between">
+        {% assign tokens = include.mission.mission_type | split: "-" %}
+        {% assign mission_type = tokens | join: " " %}
+        <p class="text-secondary mb-0">{{ mission_type | capitalize }}</p>
+        {% if include.mission.mission_type == "multi-task" %}
+          <p class="text-light bg-dark rounded-1 px-2 mb-0">{{ include.mission.modules }} Tasks</p>
+        {% endif %}
+      </div>
+    </div>
+  </a>
+</div>

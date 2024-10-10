@@ -1,12 +1,13 @@
 ---
 layout: tutorial_series
-projects: true
+mission: true
+mission_type: multi-task
+modules: 3
 learning_type: missions
 tutorial_name: calculator
 title: Calculator in HTML, CSS and JavaScript
 date: 26th Oct, 2020 1:00:00
 duration: 6 Hrs
-modules: 3
 description: Calculator in HTML, CSS and JavaScript
 permalink: /missions/calculator/
 thumbnail: missions/calculator/thumbnail.png

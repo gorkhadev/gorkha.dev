@@ -1,0 +1,17 @@
+<section class="missions-section section-padding">
+  <h1 class="section-heading mb-3">Try Our Missions</h1>
+
+  <div class="container">
+    <div class="row justify-content-center">
+      {% assign missions = site.missions | where: "mission", true | reverse %}
+      {% for mission in missions limit: 6 %}
+        {% include mission-card.html mission=mission %}
+      {% endfor %}
+    </div>
+    <div class="row justify-content-center mt-2">
+      <div class="col-md-2">
+        <a href="/missions/" class="btn btn-dark px-3 w-100">See All</a>
+      </div>
+    </div>
+  </div>
+</section>  

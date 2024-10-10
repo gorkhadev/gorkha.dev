@@ -555,50 +555,17 @@
 // projects page
 .projects-page {
   img {
-    height: 15rem;
+    height: 14rem;
   }
 }
 
-// Self-taught learning resources
-.self-taught-page {
-  .banner {
-    background-color: $color-primary;
-    color: #fff;
-    padding: 7rem 0 8rem;
-    text-align: center;
-    font-family: $font-secondary;
-
-    .heading {
-      font-size: 3rem;
-      font-weight: 400;
-      margin-bottom: 0;
+.missions-body, .missions-section {
+  .mission-card {
+    .mission-card-img {
+      height: 14rem; 
     }
-    .sub-heading {
-      font-size: 1.8rem;
-      font-weight: 300;
-      color: #ddd;
-
-      span {
-        font-weight: 600;
-      }
-    }
-  }
-  .section-header {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-
-  .content-body-wrapper {
-    .card {
-      .card-title {
-        color: #111;
-      }
-      .tutorial-duration {
-        span {
-          color: #333;
-        }
-      }
+    .card-title {
+      color: $color-primary;
     }
   }
 }
