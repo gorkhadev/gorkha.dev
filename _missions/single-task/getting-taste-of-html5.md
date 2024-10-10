@@ -1,6 +1,7 @@
 ---
-layout: tutorial
-tutorial: true
+layout: single-task-mission
+mission: true
+mission_type: single-task
 title: Getting tastes of HTML5
 date: 25th August, 2020 02:00:00
 duration: 2 Hrs
@@ -9,9 +10,9 @@ tags:
  - html-css
  - webdevelopment
  - beginner
-description: 'Get the taste of HTML5: Fifth and the latest major version of HTML'
-permalink: /tutorials/html5/
-thumbnail: tutorials/html5.jpg
+description: Get start with the semantic web page building using HTML5
+permalink: /missions/html5/
+thumbnail: missions/single-task/html5-thumb.jpg
 include_header_image: true
 comments: true
 ---

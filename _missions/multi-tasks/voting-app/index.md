@@ -1,6 +1,8 @@
 ---
 layout: tutorial_series
-projects: true
+mission: true
+mission_type: multi-task
+modules: 6
 learning_type: missions
 tutorial_name: voting-app-sinatra
 title: Voting Web App in Sinatra

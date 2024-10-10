@@ -1,6 +1,7 @@
 ---
-layout: tutorial
-tutorial: true
+layout: single-task-mission
+mission: true
+mission_type: single-task
 title: Number Guessing game in Ruby
 date: 20th Sept, 2020 02:00:00
 duration: 2 Hrs
@@ -9,8 +10,8 @@ tags:
  - ruby
  - beginner
 description: Number Guessing game in Ruby
-permalink: /tutorials/number-guess-ruby/
-thumbnail: https://asciinema.org/a/361520.svg
+permalink: /missions/number-guess-ruby/
+thumbnail: missions/single-task/number-guess-ruby-thumb.jpg
 external: true
 comments: true
 ---

@@ -1,6 +1,7 @@
 ---
-layout: tutorial
-tutorial: true
+layout: single-task-mission
+mission: true
+mission_type: single-task
 title: Getting tastes of HTML and CSS
 date: 13th August, 2020 02:00:00
 duration: 2 Hrs
@@ -9,9 +10,9 @@ tags:
  - html-css
  - webdevelopment
  - beginner
-description: 'Get the taste of HTML and CSS: structure and style your web pages'
-permalink: /tutorials/html-css/
-thumbnail: tutorials/getting-html-css-taste.jpg
+description: Structuring and stylying your web page using HTML and CSS
+permalink: /missions/html-css/
+thumbnail: missions/single-task/getting-html-css-taste-thumb.jpg
 include_header_image: true
 thumbnail_credit: ice cream cup by Nicole Yip from the Noun Project
 comments: true

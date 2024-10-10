@@ -28,10 +28,8 @@
                 </div>
                 {% include course/useful-links.html %}
 
-                {% if page.permalink contains 'tutorials' %}
-                  <a role="button" class="btn btn-sm btn-success w-100 mb-3 py-2" href="/tutorials/">Back to all Tutorials</a>
-                {% elsif page.permalink contains 'exercises' %}
-                  <a role="button" class="btn btn-sm btn-success w-100 mb-3 py-2" href="/exercises/">Back to all Exercises</a>
+                {% if page.permalink contains 'missions' %}
+                  <a role="button" class="btn btn-sm btn-secondary w-100 mb-3 py-2" href="/missions/">Back to all Missions</a>
                 {% endif %}
 
                 <nav class="collapse td-sidebar-nav pt-2" id="td-section-nav">
@@ -53,7 +51,7 @@
               <div class="td-content">
                 {% if page.thumbnail and page.include_header_image %}
                   <center>
-                    <img src="{{ site.baseurl }}/assets/img/{{ page.thumbnail }}" class="thumbnail img-fluid" />
+                    <img src="{{ site.asset_url }}/img/{{ page.thumbnail }}" class="thumbnail img-fluid" />
                   </center>
                 {% endif %}
                 {% if page.thumbnail_credit %}
