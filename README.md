@@ -1,26 +1,24 @@
-# Dhanu Sir Website
+# Gorkha Dev Platform 
 
-Repository for [Dhanu Sir](https://dhanusir.com) website.
+Repository for [Gorkha Dev platform](https://gorkha.dev) website.
 
-## Development
+# Run via Docker command
 
-Run:
+Run the following command:
 
-```sh
-bundle install
-jekyll serve -l --watch
+```
+docker run -d --name gorkhadev -p 4000:4000 -v $(pwd):/site bretfisher/jekyll-serve
 ```
 
-### Using Vagrant
+To stop the container run as:
 
-If you have virtual box installed, and vagrant installed, run:
-
-```sh
-vagrant up
-vagrant ssh -c serve_jekyll
+```
+docker stop gorkhadev
 ```
 
-You will be able to see the website created:
+Then, to start the container again for development in later days, run as:
 
-Open the development server in your browser: http://localhost:4000
+```
+docker start gorkhadev
+```
 
