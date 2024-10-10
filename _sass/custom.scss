@@ -404,9 +404,9 @@ textarea {
     border-radius: 4px;
     padding: 2px 6px;
   }
-  // .copy-code:hover {
-
-  // }
+  .copy-code:hover {
+    transform: scale(1.1);
+  }
 }
 
 @import "docsy-jekyll";

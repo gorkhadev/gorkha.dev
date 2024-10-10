@@ -136,7 +136,7 @@ $(function(){
 function createCopyButton(pre) {
   var button = document.createElement("button");
   button.classList.add("copy-code")
-  button.innerHTML = 'Copy Code';
+  button.innerHTML = '📝 Copy Code';
   button.addEventListener("click", function() {
       var code = pre.querySelector("code").innerText;
       navigator.clipboard.writeText(code).then(function() {
@@ -144,8 +144,8 @@ function createCopyButton(pre) {
           button.classList.add("copied");
           setTimeout(()=>{
               button.classList.remove("copied");
-              button.innerHTML = 'Copy Code';
-          },1000);
+              button.innerHTML = '📝 Copy Code';
+          }, 2000);
       }, function(err) {
           console.error("Could not copy text: ", err);
       });
