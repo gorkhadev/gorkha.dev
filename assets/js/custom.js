@@ -144,8 +144,8 @@ function createCopyButton(pre) {
           button.classList.add("copied");
           setTimeout(()=>{
               button.classList.remove("copied");
-              button.innerHTML = '📋 Copy Code';
-          },3000);
+              button.innerHTML = '📝 Copy Code';
+          }, 2000);
       }, function(err) {
           console.error("Could not copy text: ", err);
       });
