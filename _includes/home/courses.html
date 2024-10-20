@@ -1,11 +1,16 @@
-<div class="courses-page section-padding pb-0">
-  <h1 class="section-heading">Learn from FREE Courses</h1>
+<div class="courses-section section-padding">
+  <h1 class="section-heading">Learn from Courses</h1>
 
   <div class="container">
     <div class="courses-wrapper row justify-content-center">
       {% for course in site.data.courses limit: 4 %}
-        {% include course/course-card.html course=course %}
+        {% include course/course-card.html course=course class="col-md-3" %}
       {% endfor %}
+    </div>
+    <div class="row justify-content-center mt-2">
+      <div class="col-md-2">
+        <a href="/courses/" class="btn btn-dark px-3 w-100">See All</a>
+      </div>
     </div>
   </div>
 </div>

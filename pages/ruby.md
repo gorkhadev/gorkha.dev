@@ -1,5 +1,6 @@
 ---
 layout: course
+learning_type: course
 title: Ruby Basics
 course: ruby
 permalink: /ruby/

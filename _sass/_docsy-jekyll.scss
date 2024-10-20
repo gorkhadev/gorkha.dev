@@ -64,10 +64,6 @@
     color: #1e53a0
 }
 
-.-text-blue {
-    color: #72a1e5
-}
-
 .-bg-indigo {
     color: #fff;
     background-color: #6610f2
@@ -390,20 +386,6 @@
 
 .-text-danger {
     color: #ed6a5a
-}
-
-.-bg-light {
-    color: #222;
-    background-color: #d3f3ee
-}
-
-.-bg-light p>a {
-    color: #6993d0
-}
-
-.-bg-light p>a:hover,
-.-bg-light p>a:focus {
-    color: #1e53a0
 }
 
 .-text-light {
@@ -2353,13 +2335,6 @@
     z-index: 22
 }
 
-// .td-content figure.highlight {
-//     margin: 2rem 0;
-//     padding: 1rem;
-//     background-color: #f8f9fa;
-//     border: 1px solid rgba(0, 0, 0, .125);
-// }
-
 .td-content .highlight pre,
 .td-content .highlight div {
     background-color: inherit!important
@@ -2367,7 +2342,6 @@
 
 .td-content .highlight pre {
     margin: 0;
-    padding: 0
 }
 
 .td-content p code,

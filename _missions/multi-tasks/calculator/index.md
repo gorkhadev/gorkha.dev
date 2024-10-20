@@ -1,5 +1,6 @@
 ---
 layout: tutorial_series
+learning_type: missions
 mission: true
 mission_type: multi-task
 modules: 3

@@ -4,7 +4,7 @@
   {%- include head.html -%}
 
   <body id="pagetop" class="d-flex flex-column default_body">
-    <header class="{% if page.page_name == 'home' %}home{% else %}default{% endif %}_header">
+    <header class="{% if page.page_name == 'home' %}home{% else %}default{% endif %}-header">
       {%- include navbar.html -%}
 
       {% if page.page_name == "home" %}
@@ -21,7 +21,7 @@
 
             <main class="col-12 col-md-9 col-xl-6 px-md-2 pr-md-4" role="main">
               <div class="td-content">
-                {% if page.thumbnail and page.include_header_image %}
+                {% if page.thumbnail and page.include-header_image %}
                   <center>
                     <img src="{{ site.baseurl }}/assets/img/{{ page.thumbnail }}" class="thumbnail img-fluid" />
                   </center>
@@ -78,8 +78,6 @@
     </a> -->
 
     {% include javascripts.html %}
-
-    {% include youtube-video-modal.html %}
   </body>
 
 </html>

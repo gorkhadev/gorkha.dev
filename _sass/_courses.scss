@@ -1,44 +1,37 @@
-.courses {
-  line-height: 26px !important;
+.courses-page {
+  .courses-wrapper {
+    .course-card {
+      border-radius: 0;
 
-  h2, h3, h4, h5, h6 {
-    color: #555;
-  }
+      .card-body {
+        background-color: #fdfdfd;
+        padding: 1.5rem 1.5rem 1rem 1.5rem;
 
-  iframe {
-    height: 600px;
-    width: 100%;
-    border: 0;
-    box-shadow: 0 6px 22px 0 rgba(0, 0, 0, 0.1);
-  }
-  .quote-text {
-    font-size: 18px;
-  }
-  .key-points {
-    font-size: 16px;
-  }
-  .course-key-points {
-    padding-left: 1rem;
-    font-size: 16px;
-  }
-  .tab-content {
-    background-color: #f2f2f2;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-  }
-  .nav-pills .nav-link  {
-    color: #333;
-
-    &:hover {
-      background-color: #777;
-      color: #fff;
+        .card-title {
+          color: #111;
+          font-weight: 500;
+          text-align: center;
+        }
+        .course-card-info {
+          font-size: 14px;
+          color: #666;
+          font-weight: 500;
+        }
+        .course-modules {
+          color: blue;
+        }
+        .coupon-code {
+          text-align: center;
+          span {
+            font-size: 15px;
+          }
+        }
+      }
     }
-  }
-  .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
-    background: #777;
-    color: #fff;
   }
 }
 
+// override docsy-jekyll css
 .tutorial-series-body {
   .td-sidebar-nav {
     margin: 0;

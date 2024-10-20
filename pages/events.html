@@ -5,12 +5,10 @@ permalink: /events/
 page_name: events
 ---
 
-<div class="community-events page-margin mb-5">
+<div class="events-page page-padding">
+  <h1 class="section-heading">All Events</h1>
   <div class="container">
-    <div class="section-header text-center mb-5">
-      <h1 class="mb-0">All Events</h1>
-    </div>
-    <div class="row justify-content-center mt-5">
+    <div class="row justify-content-center">
       {% if site.data.events.upcoming.size > 0 %}
         {% for event in site.data.events.upcoming %}
           <div class="col-lg-6 mb-4">

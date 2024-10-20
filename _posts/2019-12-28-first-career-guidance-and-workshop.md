@@ -55,9 +55,9 @@ It was a full Python introduction workshop right from installing, some students 
 
 I started with the famous `Hello World` program in the Python interactive shell.
 
-~~~shell
+```shell
 >>> print(“Hello World”)
-~~~
+```
 
 and then explained a bit about the differences between Interpreted and Compiled language.
 

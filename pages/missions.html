@@ -6,15 +6,19 @@ page_name: missions
 ---
 
 <!-- projects list -->
-<div class="projects-page page-padding">
-  <h1 class="text-center mb-4">Our Missions</h1>
+<div class="missions-page page-padding">
+  <h1 class="page-heading">Our Missions</h1>
 
-  <div class="container">
-    <div class="row courses-wrapper justify-content-center">
-      {% assign missions = site.missions | where: "mission", true | reverse %}
-      {% for mission in missions %}
-        {% include mission-card.html mission=mission %}
-      {% endfor %}
+  <div class="content-body-wrapper">
+    <div class="container">
+      <div class="row missions-wrapper justify-content-center">
+        {% assign missions = site.missions | where: "mission", true | reverse %}
+        {% for mission in missions %}
+          {% include mission-card.html mission=mission %}
+        {% endfor %}
+      </div>
     </div>
   </div>
 </div>
+
+{% include home/stay-connected.html %}

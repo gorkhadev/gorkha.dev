@@ -4,7 +4,7 @@
   {%- include head.html -%}
 
   <body id="pagetop" class="d-flex flex-column default_body">
-    <header class="{% if page.page_name == 'home' %}home{% else %}default{% endif %}_header">
+    <header class="{% if page.page_name == 'home' %}home{% else %}default{% endif %}-header">
       {%- include navbar.html -%}
 
       {% if page.page_name == "home" %}
@@ -100,8 +100,6 @@
     </a> -->
 
     {% include javascripts.html %}
-
-    {% include youtube-video-modal.html %}
   </body>
 
 </html>

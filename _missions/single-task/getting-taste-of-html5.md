@@ -1,5 +1,6 @@
 ---
 layout: single-task-mission
+learning_type: missions
 mission: true
 mission_type: single-task
 title: Getting tastes of HTML5
@@ -13,7 +14,7 @@ tags:
 description: Get start with the semantic web page building using HTML5
 permalink: /missions/html5/
 thumbnail: missions/single-task/html5-thumb.jpg
-include_header_image: true
+include-header_image: true
 comments: true
 ---
 

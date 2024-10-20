@@ -1,0 +1,226 @@
+$color-primary: #000;
+$color-secondary: #2b2b2b;
+$site-color: #555;
+
+$font-primary: "Open Sans", Helvetica, Arial, sans-serif;
+$font-secondary: "Kaisei Decol", serif;
+
+html, body {
+  height: 100%;
+}
+body {
+  font-family: $font-primary;
+  font-size: 17px;
+  font-weight: 300;
+}
+main {
+  line-height: 30px;
+}
+code, kbd, pre, samp {
+  font-family: 'Fira Code', SFMono-Regular,Menlo,Monaco,Consolas,monospace;
+  font-size: 15.5px;
+  line-height: 22px;
+}
+
+#page-content {
+  flex: 1 0 auto;
+}
+
+// HTML elements overrides
+a {
+  text-decoration: none !important;
+}
+textarea {
+  resize: none;
+}
+
+// Bootstrap CSS overrires
+.btn {
+  border-radius: 0;
+}
+
+// Utility Classes
+.page-padding {
+  padding: 4rem 0 5rem 0;
+}
+.section-padding {
+  padding: 6rem 0;
+}
+.page-heading {
+  font-family: $font-secondary;
+  color: $color-primary;
+  text-align: center;
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+.page-subheading {
+  font-family: $font-primary;
+  text-align: center;
+  color: #444;
+  font-size: 20px;
+  font-weight: 300;
+  margin-top: -1rem;
+}
+.section-heading {
+  font-family: $font-secondary;
+  color: $color-primary;
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.section-subheading {
+  text-align: center;
+  color: #666;
+}
+.content-body-wrapper {
+  margin-top: 1rem;
+}
+.congrats-wrapper {
+  hr {
+    margin: 2rem;
+  }
+  .image-caption-wrapper {
+    display: flex;
+    gap: 3rem;
+  }
+}
+.dropdown-menu {
+  z-index: 10000;
+}
+
+// Footer Classes
+.social-contacts {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+
+  a i {
+    font-size: 2rem;
+  }
+}
+
+// Page Top
+// TODO: Fix the goto top page feature
+// #toTop {
+//   display: none;
+//   text-decoration: none;
+//   position: fixed;
+//   bottom: 23%;
+//   right: 4%;
+//   overflow: hidden;
+//   z-index: 999;
+//   width: 32px;
+//   height: auto;
+//   border: none;
+//   text-indent: 100%;
+// }
+// #toTopHover {
+//   width: 32px;
+//   height: 32px;
+//   display: block;
+//   overflow: hidden;
+//   float: right;
+//   opacity: 0;
+//   -moz-opacity: 0;
+//   filter: alpha(opacity=0);
+// }
+
+// copy code
+.highlighter-rouge {
+  position: relative;
+  transition: transform 0.3s;
+
+  .copy-code {
+    position: absolute;
+    top: 5px;
+    right: 8px;
+    border: none;
+    background: rgb(46, 45, 116);
+    color: #fff;
+    border-radius: 4px;
+    padding: 2px 6px;
+  }
+  .copy-code:hover {
+    transform: scale(1.1);
+  }
+}
+
+// stay connected section
+.stay-connected-section {
+  background-color: $color-primary;
+  color: #fff;
+}
+
+// share page in missions, courses
+.sidebar-share-page {
+  h5 {
+    font-size: 16px;
+  }
+  .badge {
+    display: inline-block;
+  }
+  .twitter-share {
+    background-color: #55acee;
+  }
+  .facebook-share {
+    background-color: #3b5998;
+  }
+  .linkedin-share {
+    background-color: #0077B5;
+  }
+  a {
+    font-weight: 300;
+  }
+  .email-share {
+    background-color: #999;
+
+    &:hover {
+      color: #fff;
+    }
+
+    svg {
+      height: 12px;
+    }
+  }
+}
+
+// footer css
+.footer-section {
+  background: #000;
+
+  .footer-text {
+    font-family: $font-secondary;
+    font-size: 30px;
+    color: #fff;
+    line-height: 25px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .footer-tagline {
+    color: yellow;
+    font-size: 13px;
+    font-style: italic;
+  }
+  .footer-social {
+    a {
+      font-size: 18px;
+    }
+  }
+}
+
+// responsive code
+@media screen and (max-width: 520px) {
+  .social-contacts {
+    margin-top: 1rem;
+  }
+  .congrats-wrapper {
+    .image-caption-wrapper {
+      flex-wrap: wrap;
+      gap: 1rem;
+
+      h2 {
+        margin-top: 0 !important;
+      }
+    }
+  }
+}

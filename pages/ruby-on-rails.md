@@ -1,5 +1,6 @@
 ---
 layout: course
+learning_type: course
 title: Ruby on Rails
 course: ruby-on-rails
 permalink: /ruby-on-rails/

@@ -1,0 +1,17 @@
+<div class="workshops-section section-padding">
+  <h1 class="section-heading">Learn from Self-paced Workshops</h1>
+
+  <div class="container">
+    <div class="workshops-wrapper row justify-content-center">
+      {% assign workshops = site.workshops | where: "workshops", true | reverse %}
+      {% for workshop in workshops %}
+        {% include workshop-card.html workshop=workshop %}
+      {% endfor %}
+    </div>
+    <!-- <div class="row justify-content-center mt-2">
+      <div class="col-md-2">
+        <a href="/workshops/" class="btn btn-dark px-3 w-100">See All</a>
+      </div>
+    </div> -->
+  </div>
+</div>

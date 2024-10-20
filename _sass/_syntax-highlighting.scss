@@ -1,11 +1,14 @@
-.highlight { background: #fff; }
 code.highlighter-rouge {
   padding: 2px 5px !important;
 }
 .highlighter-rouge code {
   color: #333;
 }
-.highlighter-rouge .highlight { background: #eee; }
+.highlighter-rouge pre.highlight { 
+  background: #fdfdfd; 
+  padding: 1rem;
+  margin: 0;
+}
 
 .highlight .c { color: #998; font-style: italic; }
 

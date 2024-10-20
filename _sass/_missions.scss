@@ -1,0 +1,17 @@
+// missions page
+.missions-page{
+  img {
+    height: 14rem;
+  }
+
+  .missions-wrapper {
+    .mission-card {
+      .mission-card-img {
+        height: 14rem; 
+      }
+      .card-title {
+        color: $color-primary;
+      }
+    }
+  }
+}

@@ -1,5 +1,6 @@
 ---
 layout: course
+learning_type: course
 title: Get started with Linux
 course: get-started-with-linux
 permalink: /get-started-with-linux/

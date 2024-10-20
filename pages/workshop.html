@@ -6,15 +6,17 @@ page_name: workshops
 ---
 
 <!-- workshops list -->
-<div class="projects-page page-padding">
-  <h1 class="text-center mb-4">Hands-on Workshops</h1>
+<div class="workshops-page page-padding">
+  <h1 class="page-heading">Hands-on Workshops</h1>
 
-  <div class="container">
-    <div class="row courses-wrapper justify-content-center">
-      {% assign workshops = site.workshops | where: "workshops", true | reverse %}
-      {% for workshop in workshops %}
-        {% include course/course-card.html course=workshop type="project" %}
-      {% endfor %}
+  <div class="content-body-wrapper">
+    <div class="container">
+      <div class="row workshops-wrapper justify-content-center">
+        {% assign workshops = site.workshops | where: "workshops", true | reverse %}
+        {% for workshop in workshops %}
+          {% include workshop-card.html workshop=workshop %}
+        {% endfor %}
+      </div>
     </div>
   </div>
 </div>

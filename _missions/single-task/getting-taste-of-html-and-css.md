@@ -1,5 +1,6 @@
 ---
 layout: single-task-mission
+learning_type: missions
 mission: true
 mission_type: single-task
 title: Getting tastes of HTML and CSS
@@ -13,7 +14,7 @@ tags:
 description: Structuring and stylying your web page using HTML and CSS
 permalink: /missions/html-css/
 thumbnail: missions/single-task/getting-html-css-taste-thumb.jpg
-include_header_image: true
+include-header_image: true
 thumbnail_credit: ice cream cup by Nicole Yip from the Noun Project
 comments: true
 ---

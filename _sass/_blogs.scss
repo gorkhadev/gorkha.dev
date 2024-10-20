@@ -23,6 +23,7 @@
   }
   .card {
     border: none;
+    border-radius: 0;
 
     .maxthumb {
       max-height: 300px;
@@ -30,6 +31,7 @@
     .card-img-top {
       height: 15rem;
       object-fit: cover;
+      border-radius: 0;
     }
     .card-title {
       font-size: 1.3rem;
@@ -87,7 +89,7 @@
   }
 }
 .post-title {
-  font-family: "Kaisei Decol", serif;
+  font-family: $font-secondary;
   color: $color-primary;
   font-size: 2.3em;
   font-weight: 500;
@@ -148,32 +150,8 @@
     margin: 0.5em 0;
   }
 }
-.post-area {
-  padding: 10px;
-  width: 100%;
-  background-color: white;
-  border-bottom: 1px dotted #ddd;
-}
-.blog-post-short {
-  padding: 0.2em 1.5em 0.1em 1.5em;
-  width: 100%;
-  border-radius: 5px;
-  box-shadow: 1px 1px 1px #111;
-}
-.blog-post-short:hover {
-  box-shadow: 1px 1px 10px #111;
-}
-
-.post-area a:link,
-.post-area a:visited {
-  font-size: 30px;
-  color: #333;
-}
-.post-area a:hover {
-  color: #0d0017;
-}
 .blog-post-page {
-  font-family: "Open Sans", sans-serif;
+  font-family: $font-primary;
 
   .post-container {
     padding: 1.5rem 2rem 2rem 2rem;
@@ -254,13 +232,6 @@
     color: #003594;
     border-radius: 5px;
   }
-
-  .cover-image {
-    img {
-      display: block;
-      margin: auto;
-    }
-  }
   .post-container {
     padding: 2em 5em;
 
@@ -313,25 +284,6 @@
   }
   .share, .share a, .share a i {
     color: #444 !important;
-  }
-}
-
-// home post
-.home-post {
-  .card {
-    border: 0;
-
-    .card-img-top {
-      border-radius: 10px;
-    }
-    .card-body {
-      padding: 1.5rem 0;
-
-      .card-text {
-        color: #555;
-        font-weight: 300;
-      }
-    }
   }
 }
 

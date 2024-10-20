@@ -1,5 +1,6 @@
 ---
 layout: single-task-mission
+learning_type: missions
 mission: true
 mission_type: single-task
 title: Simple Calculator in C language

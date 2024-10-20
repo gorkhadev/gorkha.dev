@@ -1,11 +1,31 @@
-.workshops-section {
+.workshops-page {
   .workshop-card {
-    background: rgb(0,0,0);
-    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(142,142,142,1) 100%);
-    color: #fff;
+    border-radius: 0;
 
-    .card-title {
-      font-size: 2rem;
+    .card-body {
+      height: 6rem;
+      background-color: #fdfdfd;
+      padding: 1.5rem 1.5rem 1rem 1.5rem;
+
+      .card-title {
+        color: #111;
+        font-weight: 500;
+        text-align: center;
+      }
+      .workshop-card-info {
+        font-size: 14px;
+        color: #666;
+        font-weight: 500;
+      }
+      .workshop-modules {
+        color: blue;
+      }
+      .coupon-code {
+        text-align: center;
+        span {
+          font-size: 15px;
+        }
+      }
     }
   }
 }

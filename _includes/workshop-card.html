@@ -1,10 +1,12 @@
-<div class="card workshop-card shadow rounded">
-  <div class="card-body p-5">
-    <h5 class="card-title font-weight-bold">{{ include.data.title }}</h5>
-    <span class="badge badge-success px-3 py-2 rounded-0">Duration {{ include.data.duration}}</span>
-    <p class="card-text mt-3">
-      {{ include.data.description }}
-    </p>
-    <a href="{{ include.data.url }}" class="btn btn-lg btn-block btn-light rounded-0">View Details</a>
-  </div>
+{% assign col_class = "col-md-4" %}
+{% if include.class %}
+  {% assign col_class = include.class %}
+{% endif %}
+<div class="card workshop-card {{ col_class }} p-3 border-0">
+  <a href="{{ include.workshop.url }}" class="inline-block shadow">
+    <img src="{{ site.asset_url }}/img/{{ include.workshop.thumbnail }}" class="workshop-card-img w-100" alt="{{ include.workshop.title }}">
+    <div class="card-body d-flex flex-column justify-content-between">
+      <h5 class="card-title">{{ include.workshop.title }}</h5>
+    </div>
+  </a>
 </div>

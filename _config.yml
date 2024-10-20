@@ -67,11 +67,7 @@ contacts:
     img: youtube.png
 
 collections:
-  tutorials:
-    output: true
   missions:
-    output: true
-  bootcamps:
     output: true
   workshops:
     output: true

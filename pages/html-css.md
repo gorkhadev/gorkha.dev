@@ -1,5 +1,6 @@
 ---
 layout: course
+learning_type: course
 title: HTML and CSS foundation
 course: html-css
 permalink: /html-css/
