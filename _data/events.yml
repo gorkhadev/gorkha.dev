@@ -8,13 +8,6 @@ placeholder:
     timing: # 5PM - 7PM NPT
     url: # URL of event /events/sfd-2024/
 upcoming:
-  - name: HTML and CSS 101 Mastery
-    venue: online
-    venue_addr:
-    date: 23rd - 25th Sept
-    day: Mon - Wed
-    timing: 5PM - 7PM NPT
-    url: /events/html-css-101-mastery/
 past:
   - name: HTML and CSS 101 Mastery
     venue: online
