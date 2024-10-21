@@ -1,8 +1,8 @@
 <!-- community events -->
 
-<div class="section-padding">
+<section class="events-section section-padding">
   {% if site.data.events.upcoming.size > 0 %}
-    <section class="events-page">
+    <div class="community-events-wrapper">
       <h1 class="section-heading">Community Events</h1>
 
       <div class="container">
@@ -14,48 +14,44 @@
           {% endfor %}
         </div>
       </div>
-    </section>
+    </div>
   {% endif %}
 
-  <!-- paid events -->
-  <section class="event-section">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-md-12">
-          <div class="event-wrapper shadow">
-            <div class="row">
-              <div class="col-md-6">
-                <img src="{{ site.asset_url }}/img/event-banner.jpg" alt="Event Banner" class="img-fluid">
-              </div>
-              <div class="col-md-6">
-                <div class="event-details">
-                  <div class="event-header">
-                    <h2>Book Event</h2>
-                    <p>
-                      Book for fast-tracked and highly effective event from our Industry Experts.
-                    </p>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-12">
+        <div class="event-wrapper shadow">
+          <div class="row">
+            <div class="col-md-6">
+              <img src="{{ site.asset_url }}/img/event-banner.jpg" alt="Event Banner" class="img-fluid">
+            </div>
+            <div class="col-md-6">
+              <div class="event-info">
+                <div class="event-header">
+                  <h2>Book Paid Workshop</h2>
+                  <p class="event-caption">
+                    Book for fast-tracked and highly effective event from our Industry Experts.
+                  </p>
 
-                    <div class="event-info">
-                      <!-- <a href="tel:+977 9765819215" class="btn btn-outline-dark rounded-0 px-4"><i class="fa-solid fa-phone me-2"></i>9765819215</a> -->
-                      <a href="mailto:gorkhadeveloper@gmail.com" class="btn btn-outline-secondary rounded-0 px-4 py-2 fs-5"><i class="fa-regular fa-envelope me-2"></i> gorkhadeveloper@gmail.com</a>
-                    </div>
+                  <ul class="event-types">
+                    <li class="event-item fs-6">
+                      <i class="fa-solid fa-check"></i>
+                      <span>6 Hrs One Day Workshop</span>
+                    </li>
+                    <li class="event-item fs-6">
+                      <i class="fa-solid fa-check"></i>
+                      <span>18 Hrs Three Days Workshops</span>
+                    </li>
+                    <li class="event-item fs-6">
+                      <i class="fa-solid fa-check"></i>
+                      <span>60 Hrs Ten Days Workshops</span>
+                    </li>
+                  </ul>
 
-                    <ul class="free-list">
-                      <li class="free-item fs-6">
-                        <i class="fa-solid fa-check"></i>
-                        <span>6 Hrs One Day Workshop</span>
-                      </li>
-                      <li class="free-item fs-6">
-                        <i class="fa-solid fa-check"></i>
-                        <span>18 Hrs Three Days Workshops</span>
-                      </li>
-                      <li class="free-item fs-6">
-                        <i class="fa-solid fa-check"></i>
-                        <span>60 Hrs Ten Days Workshops</span>
-                      </li>
-                    </ul>
+                  <div class="book-info"></div>
+                    <!-- <a href="tel:+977 9765819215" class="btn btn-outline-dark rounded-0 px-4"><i class="fa-solid fa-phone me-2"></i>9765819215</a> -->
+                    <a href="mailto:gorkhadeveloper@gmail.com" class="btn btn-outline-secondary rounded-0 px-4 py-2 fs-5"><i class="fa-regular fa-envelope me-2"></i> gorkhadeveloper@gmail.com</a>
                   </div>
-
                 </div>
               </div>
             </div>
@@ -63,5 +59,5 @@
         </div>
       </div>
     </div>
-  </section>
-</div>
+  </div>
+</section>

@@ -1,0 +1,47 @@
+.events-page {
+  .event-card {
+    .card-body {
+      .event-date {
+        display: flex;
+        justify-content: space-between;
+        gap: 5px;
+        font-size: 18px;
+        padding: 8px 1rem;
+        text-align: center;
+        font-weight: 400;
+
+        .date_day {
+          display: flex;
+          gap: 2rem;
+        }
+      }
+
+      .event-details {
+        padding: 1rem;
+
+        .card-title {
+          color: #666;
+          font-size: 24px;
+          font-weight: bold;
+        }
+      }
+    }
+
+    .card-footer {
+      background-color: transparent;
+      display: flex;
+      gap: 8px;
+      justify-content: space-between;
+      padding: 0;
+      border: 0;
+
+      .venue {
+        text-transform: uppercase;
+        font-weight: 400;
+        background-color: #222;
+        color: #fff;
+        padding: 3px 10px;
+      }
+    }
+  }
+}

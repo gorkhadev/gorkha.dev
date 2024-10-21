@@ -1,10 +1,11 @@
 title: Gorkha Dev
 email: gorkhadeveloper@gmail.com
 year: 2024
-tagline: Saving the World from Bad Softwares
+motto: Saving the World from Bad Softwares
 description: >-
-  We are group of brave, loyal, cultured, disciplined and
-  professional Software Developers from Nepal.
+  A Software Developer management platform from Nepal,
+  aiming to produce brave, loyal, cultured, disciplined,
+  and professional developers.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://gorkha.dev" # the base hostname & protocol for your site, e.g. http://example.com
 # asset_url: /assets                              # local assets: ending without forward slash
@@ -40,21 +41,11 @@ contacts:
     class: fab fa-twitter
     username: "@dhanumentor"
     img: twitter.png
-  # instagram:
-  #   url: https://instagram.com/c2edev
-  #   label: YouTube Channel
-  #   class: fa-brands fa-instagram
-  #   img: youtube.png
   github:
     url: https://github.com/gorkhadev
     label: GitHub
     class: fab fa-github
     img: github.png
-  # tiktok:
-  #   url: https://tiktok.com/@c2edev
-  #   label: YouTube Channel
-  #   class: fa-brands fa-tiktok
-  #   img: youtube.png
   email:
     url: mailto:gorkhadeveloper@gmail.com
     label: Email

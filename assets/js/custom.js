@@ -33,7 +33,7 @@ $(function(){
 
   if (location.pathname == "/") {
     var typed = new Typed(".typed", {
-      strings: ["Bad Softwares."],
+      strings: ["Bad Software."],
       typeSpeed: 100,
       startDelay: 500,
       backSpeed: 100,

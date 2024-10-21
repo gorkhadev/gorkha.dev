@@ -133,63 +133,84 @@
     }
   }
 
-  // .events-page {
-  //   .event-card {
-  //     .card-body {
-  //       .event-date {
-  //         display: flex;
-  //         justify-content: space-between;
-  //         gap: 5px;
-  //         font-size: 18px;
-  //         padding: 8px 1rem;
-  //         text-align: center;
-  //         font-weight: 400;
+  .events-section {
+    .community-events-wrapper {
+      margin-bottom: 2rem;
 
-  //         .date_day {
-  //           display: flex;
-  //           gap: 2rem;
-  //         }
-  //       }
+      .event-card {
+        .card-body {
+          .event-date {
+            display: flex;
+            justify-content: space-between;
+            gap: 5px;
+            font-size: 18px;
+            padding: 8px 1rem;
+            text-align: center;
+            font-weight: 400;
 
-  //       .event-details {
-  //         padding: 1rem;
+            .date_day {
+              display: flex;
+              gap: 2rem;
+            }
+          }
 
-  //         .card-title {
-  //           color: #666;
-  //           font-size: 24px;
-  //           font-weight: bold;
-  //         }
-  //       }
-  //     }
+          .event-details {
+            padding: 1rem;
 
-  //     .card-footer {
-  //       background-color: transparent;
-  //       display: flex;
-  //       gap: 8px;
-  //       justify-content: space-between;
-  //       padding: 0;
-  //       border: 0;
+            .card-title {
+              color: #666;
+              font-size: 24px;
+              font-weight: bold;
+            }
+          }
+        }
 
-  //       .venue {
-  //         text-transform: uppercase;
-  //         font-weight: 400;
-  //         background-color: #222;
-  //         color: #fff;
-  //         padding: 3px 10px;
-  //       }
-  //     }
-  //   }
-  // }
+        .card-footer {
+          background-color: transparent;
+          display: flex;
+          gap: 8px;
+          justify-content: space-between;
+          padding: 0;
+          border: 0;
 
+          .venue {
+            text-transform: uppercase;
+            font-weight: 400;
+            background-color: #222;
+            color: #fff;
+            padding: 3px 10px;
+          }
+        }
+      }
+    }
+    .event-wrapper {
+      height: 100%;
 
+      .event-info {
+        display: flex;
+        align-items: center;
+        height: 100%;
+
+        .event-caption {
+          color: #444;
+        }
+
+        .event-types {
+          list-style: none;
+          padding-left: 1rem;
+          color: #444;
+        }
+      }
+    }
+  }
 
   // missions section
-  .missions-section { 
+  .missions-section {
     background-color: #f8f8f8;
 
     .mission-card {
       .mission-card-img {
-        height: 14rem; 
+        height: 14rem;
       }
       .card-title {
         color: $color-primary;
@@ -202,12 +223,12 @@
     .workshops-wrapper {
       .workshop-card {
         border-radius: 0;
-  
+
         .card-body {
           height: 6rem;
           background-color: #fdfdfd;
           padding: 1.5rem 1.5rem 1rem 1.5rem;
-  
+
           .card-title {
             color: #111;
             font-weight: 500;
@@ -226,9 +247,9 @@
 
   .courses-section {
     background-color: #f8f8f8;
-    
+
     .courses-wrapper {
-      
+
       .course-card {
         background-color: #f8f8f8;
         border-radius: 0;
@@ -284,70 +305,64 @@
 
 // only supporting mobile layout
 @media screen and (max-width: 520px) {
-  .section-padding {
-    padding: 5rem 0;
-  }
-  .section-heading {
-    font-size: 2.7rem
-  }
-  .home_body .bootcamp-section {
-    .card {
-      margin-bottom: 3rem;
-    }
-    .card:last-child {
-      margin-bottom: 0;
-    }
-  }
-  .home-header .banner-section {
-    padding-top: 0;
-    padding-bottom: 5rem;
+  .home-header {
+    .banner-section {
+      padding-top: 0;
+      padding-bottom: 5rem;
 
-    .container {
-      max-width: 95%;
-    }
-
-    .left-panel-wrapper {
-      .slogan {
-        font-size: 3rem;
-        margin-bottom: 1rem;
+      .container {
+        max-width: 95%;
       }
-      .banner-title {
-        line-height: 50px;
 
-        h3 {
-          font-size: 1.8rem;
+      .left-panel-wrapper {
+        .banner-title {
+          line-height: 50px;
+
+          h3 {
+            font-size: 1.8rem;
+          }
+          .typed {
+            font-size: 2.5rem;
+          }
         }
-        .typed {
-          font-size: 2.5rem;
+        .banner-description {
+          font-size: 1.2rem;
+          width: 100%;
         }
       }
-      .banner-description {
-        font-size: 1.2rem;
-        width: 100%;
-      }
-      .services-wrapper {
-        flex-direction: column;
-        gap: 0;
-      }
-    }
 
-    .banner-img-wrapper {
-      margin-top: 1rem;
-    }
-    .action-btns {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
+      .banner-img-wrapper {
+        margin-top: 1rem;
+      }
+      .action-btns {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
     }
   }
+
   .home-body {
-    .section-heading {
-      font-size: 2.5rem;
+    .events-section {
+      .event-wrapper {
+        .event-info {
+          padding: 1.5rem 1rem;
+        }
+      }
     }
+    .courses-section {
+      .container {
+        max-width: 96%;
+      }
+      .courses-wrapper {
+        .course-card {
+          padding: 1rem !important;
 
-    .stay-connected-section {
-      padding: 4rem 0;
-      text-align: center;
+          .course-card-img {
+            height: 210px;
+          }
+        }
+      }
     }
     .join-channel-section {
       .container {
@@ -364,77 +379,6 @@
             padding: 2.8rem 2rem;
           }
         }
-      }
-    }
-    .tutorials-section {
-      .container {
-        max-width: 94%;
-      }
-    }
-    .courses-section {
-      .container {
-        max-width: 96%;
-      }
-    }
-    .about-mentor-section {
-      .container {
-        max-width: 95%;
-      }
-      .about-mentor-wrapper {
-        background: #EDF3FF;
-        padding: 2rem;
-      }
-    }
-
-    .courses-section {
-      .courses-wrapper {
-        .course-card {
-          padding: 1rem !important;
-
-          .course-card-img {
-            height: 210px;
-          }
-        }
-      }
-    }
-  }
-  .events-page .event-card {
-    .card-body {
-      .event-date {
-        flex-wrap: wrap;
-      }
-    }
-  }
-  .event-section {
-    .event-wrapper {
-      .event-details {
-        padding: 1rem;
-      }
-    }
-  }
-  .quote-highlight h1 {
-    font-size: 2.5rem;
-  }
-  .tutorials-page .container {
-    max-width: 93%;
-  }
-  .courses-page .container {
-    max-width: 96%;
-  }
-  .tutorials-wrapper {
-    .tutorial-card:last-child {
-      margin-bottom: 0;
-    }
-  }
-  .self-taught-page {
-    .banner {
-      padding: 4rem 0 5rem;
-
-      .heading {
-        font-size: 2.5rem;
-      }
-      .sub-heading {
-        font-size: 1.3rem;
       }
     }
   }

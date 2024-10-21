@@ -210,8 +210,26 @@ textarea {
 
 // responsive code
 @media screen and (max-width: 520px) {
+  .page-heading {
+    font-size: 3rem;
+    padding: 0 1rem;
+  }
+  .section-heading {
+    font-size: 2.5rem;
+    padding: 0 1rem;
+  }
+  .section-subheading {
+    padding: 0 1rem;
+  }
+  .section-padding {
+    padding: 5rem 0;
+  }
   .social-contacts {
     margin-top: 1rem;
+  }
+  .stay-connected-section {
+    padding: 4rem 0;
+    text-align: center;
   }
   .congrats-wrapper {
     .image-caption-wrapper {
