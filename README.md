@@ -1,6 +1,10 @@
-# Gorkha Dev Platform 
+# Gorkha Dev
 
-Repository for [Gorkha Dev platform](https://gorkha.dev) website.
+A Software Developer management platform from Nepal, aiming to produce brave, loyal,cultured, disciplined, and professional developers.
+
+# Website
+
+[www.gorkha.dev](https://gorkha.dev)
 
 # Run via Docker command
 
@@ -22,3 +26,8 @@ Then, to start the container again for development in later days, run as:
 docker start gorkhadev
 ```
 
+Restart the container as:
+
+```
+docker restart gorkhadev
+```
