@@ -6,28 +6,54 @@ A Software Developer management platform from Nepal, aiming to produce brave, lo
 
 [www.gorkha.dev](https://gorkha.dev)
 
-# Run via Docker command
+# Run via Docker Compose
 
-Run the following command:
+We recommend using the `docker compose` command to manage your developer environment.
 
-```
-docker run -d --name gorkhadev -p 4000:4000 -v $(pwd):/site bretfisher/jekyll-serve
-```
+Go through the following instructions to find how to manage different scenarios during development:
 
-To stop the container run as:
+## Bring up the server for first time
 
-```
-docker stop gorkhadev
-```
-
-Then, to start the container again for development in later days, run as:
+To bring up the server, run the following command:
 
 ```
-docker start gorkhadev
+docker compose up -d
 ```
 
-Restart the container as:
+## Stop the server
+
+To stop the server, run the following command:
 
 ```
-docker restart gorkhadev
+docker compose stop
 ```
+
+## Start the server
+
+To start the stopped server, run the following command:
+
+```
+docker compose start
+```
+
+## Restart the server
+
+While working you might need to restart server on configuration changse, then restart the server by running following command:
+
+```
+docker compose restart
+```
+
+## Remove the server instance
+
+If you want to remove the server and start fresh, then run the following command:
+
+```
+docker compose down
+```
+
+# Maintainers
+
+- [Dhanu Sir](@dhanusir) - Mentor
+- [Gorkha Dev](@gorkhadev01) - Lead
+
